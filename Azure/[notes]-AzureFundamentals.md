@@ -44,3 +44,10 @@ July, 2020
 
 ![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/Azure/img/AzureFundamentals/%5Bimg%5D_azure_firewall_rules_2.png "Azure Firewall Rules 2 ")
 
+## Azure Security Features Identity
+### 1. Authentication & Authorization
+![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/Azure/img/AzureFundamentals/%5Bimg%5D_azure_security_features_Identity_AuthenticationAuthorization.png "Authentication & Authorization ")
+### 2. Active Directory 
+![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/Azure/img/AzureFundamentals/%5Bimg%5D_azure_security_features_AzureActiveDirectory.png "Active Directory ")
+### 3. MFA 
+![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/Azure/img/AzureFundamentals/%5Bimg%5D_azure_security_features-identity-MFA.png "MFA ")
