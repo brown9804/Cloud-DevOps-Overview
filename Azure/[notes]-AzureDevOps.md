@@ -10,8 +10,9 @@ Jan, 2021
 ----------
 
 
-# References 
-[1] From https://docs.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?view=azure-devops 
+# References
+[1] Learning Azure DevOps (2018) - From https://www.linkedin.com/learning/learning-azure-devops-2018/idea-to-release-with-azure-devops?u=2095204
+[2] Cycle Time and Lead Time Reference - From https://docs.microsoft.com/en-us/azure/devops/report/dashboards/cycle-time-and-lead-time?view=azure-devops 
 
 
 # Items Duration 
