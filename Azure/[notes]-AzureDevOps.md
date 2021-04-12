@@ -16,5 +16,5 @@ Jan, 2021
 
 # Items Duration 
 Any item (product backlog, task, user story, feature, etc) in Azure DevOps has two different attributes that allow you to track lifetime.
-![Alt text](https://github.com/brown9804/ML_DS_path/blob/main/_docs/img/AzureDevOps/%5Bimg%5D_AzureDevOps%20-%20DurationCycle.png "Scrum life cycle ")
+![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/Azure/img/AzureDevOps/%5Bimg%5D_AzureDevOps%20-%20DurationCycle.png "Scrum life cycle ")
 
