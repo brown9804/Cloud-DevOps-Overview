@@ -9,6 +9,15 @@ July, 2020
 
 ----------
 
+## References 
+
+[1] DevOps Foundations- From https://www.linkedin.com/learning/devops-foundations/development-and-operations-2?u=2095204
+[2] Agile Software Development: Kanban for Developers - From https://www.linkedin.com/learning/agile-software-development-kanban-for-developers/putting-kanban-to-work-in-your-development-team?u=2095204
+[3] DevOps Foundations: Lean and Agile - From https://www.linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3?u=2095204
+[4] Agile Software Development: Scrum for Developers - From https://www.linkedin.com/learning/agile-software-development-scrum-for-developers/scrum-for-agile-software-development?u=2095204
+[5] Transitioning from Waterfall to Agile Project Management - From https://www.linkedin.com/learning/transitioning-from-waterfall-to-agile-project-management-2019/build-a-successful-transition-to-agile?u=2095204
+
+
 Has his roots in agile and iterative 
 
 `
