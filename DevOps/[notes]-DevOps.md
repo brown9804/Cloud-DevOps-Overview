@@ -5,7 +5,7 @@ Costa Rica
 
 Belinda Brown, belindabrownr04@gmail.com
 
-Jun, 2020
+July, 2020
 
 ----------
 
