@@ -1,11 +1,12 @@
 # Azure, DevOps & Agile Initial Path
+
 ----------
 
 Costa Rica
 
 Belinda Brown, belindabrownr04@gmail.com
 
-Sep, 2020
+July, 2020
 
 ----------
 
