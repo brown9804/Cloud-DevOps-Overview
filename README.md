@@ -1,4 +1,4 @@
-# Azure, DevOps & Agile Initial Path
+# DevOps, Agile Initial Path
 
 ----------
 
