@@ -40,7 +40,7 @@ These web services expose their data to the outside world through an API. REST A
 
 ![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_vs_endpoint_table.png)
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_endpoint_diagram.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_endpoint_dgm.png)
 
 ![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_interface.png)
 
