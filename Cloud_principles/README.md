@@ -42,9 +42,6 @@ These web services expose their data to the outside world through an API. REST A
 
 ![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_endpoint_dgm.png)
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_interface.png)
-
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/get_response_diagram.png)
 
 ## References
 
@@ -54,5 +51,7 @@ These web services expose their data to the outside world through an API. REST A
 [4] From https://towardsdatascience.com/using-github-pages-for-creating-global-api-76b296c4b3b5 <br/>
 [5] From https://blog.hubspot.com/website/api-endpoint <br/>
 [6] From https://github.com/brown9804/SAP_initial_path/tree/main/Pre-Requisites/REST%20APIs <br/>
+[7] From https://www.guru99.com/api-vs-web-service-difference.html#:~:text=Web%20service%20is%20used%20for,APIs%20are%20not%20web%20services <br/>
+[8] From https://site.financialmodelingprep.com/education/api-endpoint <br/>
 
 ## END
