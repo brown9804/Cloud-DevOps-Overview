@@ -13,7 +13,15 @@ Jan, 2021
 
 ## Overview 
 
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/webservice_SaaS.png)
+
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/process_api_database.png)
+
+
 REST (**Representational State Transfer**) is an architecture that is based on web standards. It defines a **set of constraints and protocols** which need to be followed **while creating web services**. <br/>
+
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/webservice_vs_apis.png)
+
 - It follows the **HTTP protocol** and considers every **component as a resource**. These components can be accessed with the help of **HTTP standard methods**. <br/>
 - REST architecture includes the **REST server and client**.
     - REST **server** provides **access to the resources**. 
@@ -29,6 +37,12 @@ A REST web service is any web service that adheres to REST architecture constrai
 These web services expose their data to the outside world through an API. REST APIs provide access to web service data through public web URLs.
 
 > > -- <cite> Real Python From [1]  </cite>
+
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_interface.png)
+
+
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/get_response_diagram.png)
+
 
 ## References
 
