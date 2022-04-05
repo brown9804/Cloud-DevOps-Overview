@@ -1,4 +1,4 @@
-# Cloud Principles overview
+# Cloud Principles Overview
 
 ----------------------
 Costa Rica
@@ -17,3 +17,5 @@ March, 2022
 Topics:
 
 [0. API Currency Exchange Example](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud_principles/0-api_curr_exchange_eg)
+
+
