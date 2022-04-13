@@ -16,14 +16,14 @@ March, 2022
 
 ## Overview 
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/webservice_SaaS.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/webservice_SaaS.png)
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/process_api_database.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/process_api_database.png)
 
 
 REST (**Representational State Transfer**) is an architecture that is based on web standards. It defines a **set of constraints and protocols** which need to be followed **while creating web services**. <br/>
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/webservice_vs_apis.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/webservice_vs_apis.png)
 
 - It follows the **HTTP protocol** and considers every **component as a resource**. These components can be accessed with the help of **HTTP standard methods**. <br/>
 - REST architecture includes the **REST server and client**.
@@ -33,7 +33,7 @@ REST (**Representational State Transfer**) is an architecture that is based on w
 
 > > -- <cite> Qa Tech Hub From [2]  </cite>
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/REST_architecture_works.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/REST_architecture_works.png)
 
 REST is not a specification but a set of guidelines on how to architect a network-connected software system. <br/>
 A REST web service is any web service that adheres to REST architecture constraints. <br/>
@@ -41,9 +41,9 @@ These web services expose their data to the outside world through an API. REST A
 
 > > -- <cite> Real Python From [1]  </cite>
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_vs_endpoint_table.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/api_vs_endpoint_table.png)
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud_principles/img/api_endpoint_dgm.png)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/api_endpoint_dgm.png)
 
 
 ## References
