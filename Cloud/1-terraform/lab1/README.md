@@ -74,6 +74,10 @@ Jan, 2022
 
 `$ terraform destroy --auto-approve` 
 
+`$ terraform workspace delete test`
+
+`$ terraform workspace list`
+
 ## References
 
 [1] From https://help.acloud.guru/hc/en-us/articles/360001382275-Hands-On-Labs-Getting-Started?_ga=2.173162026.84959279.1650153500-266741931.1648820099 <br/>
