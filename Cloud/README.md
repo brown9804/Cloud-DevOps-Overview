@@ -14,8 +14,19 @@ March, 2022
 
 ----------------------
 
-Topics:
+# Content:
 
-[0. API Currency Exchange Example](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud_principles/0-api_curr_exchange_eg)
-
+<details>
+<summary><b>Table of Contents</b> (click to open)</summary>
+<!-- MarkdownTOC -->
+  
+- [0. API Currency Exchange Example](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud_principles/0-api_curr_exchange_eg)
+- [1. Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform)
+  - [Installing Terraform and Working with Terraform Providers](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/lab0)
+  - [Using Terraform CLI Commands (workspace and state) to Manipulate a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/lab1)
+  - [Building and Testing a Basic Terraform Module](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/lab2)
+  - [Exploring Terraform State Functionality](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/lab3)
+  
+<!-- /MarkdownTOC -->
+</details>
 
