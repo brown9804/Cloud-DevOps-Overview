@@ -23,6 +23,10 @@ Jan, 2022
 
 `$ wget -c <location>`
 
+> For windows <br/>
+> see ![Install Terraform On Windows 10 – Learn IT And DevOps Daily](
+> 
+
 Binary List link:https://releases.hashicorp.com/terraform
 
 Recommended: https://releases.hashicorp.com/terraform/0.13.4/
