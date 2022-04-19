@@ -23,9 +23,10 @@ Jan, 2022
 
 `$ wget -c <location>`
 
-> For windows <br/>
-> see ![Install Terraform On Windows 10 – Learn IT And DevOps Daily](
-> 
+For Windows:<br/>
+
+> See [Install Terraform On Windows 10 – Learn IT And DevOps Daily](https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/refs/Install%20Terraform%20On%20Windows%2010%20%E2%80%93%20Learn%20IT%20And%20DevOps%20Daily.pdf)
+
 
 Binary List link:https://releases.hashicorp.com/terraform
 
