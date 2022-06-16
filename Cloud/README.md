@@ -32,3 +32,5 @@ March, 2022
 <!-- /MarkdownTOC -->
 </details>
 
+# Wiki:
+- [How to connect to Microsoft Azure Storage Explorer](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
