@@ -36,3 +36,4 @@ March, 2022
 - [How to connect to Microsoft Azure Storage Explorer](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
 - [Terraform Environment Variables - export log files](https://www.terraform.io/cli/config/environment-variables)
 - [How to enable debug logging when using Terraform](https://www.suse.com/support/kb/doc/?id=000020022)
+- ['export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
