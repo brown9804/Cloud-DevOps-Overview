@@ -37,3 +37,4 @@ March, 2022
 - [Terraform Environment Variables - export log files](https://www.terraform.io/cli/config/environment-variables)
 - [How to enable debug logging when using Terraform](https://www.suse.com/support/kb/doc/?id=000020022)
 - ['export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
+- [List Azure role assignments using the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal)
