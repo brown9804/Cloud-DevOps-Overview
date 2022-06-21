@@ -60,6 +60,9 @@ Recommended: https://releases.hashicorp.com/terraform/0.13.4/
 
 `$ export TF_LOG=TRACE`
 
+`export TF_LOG_PATH=./terraform.log`  
+
+
 ### _Initializes_:
 
 `$ terraform init`
