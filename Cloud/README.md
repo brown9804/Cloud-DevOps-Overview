@@ -38,3 +38,4 @@ March, 2022
 - [How to enable debug logging when using Terraform](https://www.suse.com/support/kb/doc/?id=000020022)
 - ['export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
 - [List Azure role assignments using the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal)
+- [How to solve the Filename too long error when using `git clone` in windows](https://www.bswen.com/2021/12/how-to-solve-filename-too-long-error-when-using-git-clone-in-windows.html). Solution 2.2.2 might be useful, if not go to [How to Make Windows 10 Accept File Paths Over 260 Characters](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/). And, if that does not fix this try using Git Bash, WSL, or the Command Prompt.
