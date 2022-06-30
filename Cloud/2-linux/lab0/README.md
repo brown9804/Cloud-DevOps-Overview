@@ -1,4 +1,4 @@
-# Linux Overview
+# Working with Users and Permissions
 
 ----------------------
 Costa Rica
@@ -14,16 +14,6 @@ March, 2022
 
 ----------------------
 
-# Content
+### _Connect to the server_:
 
-<details>
-<summary><b>Table of Contents</b> (click to open)</summary>
-<!-- MarkdownTOC -->
-  
-- [Linux](httpsgithub.combrown9804DevOps-Agile-Cloud_pathtreemainCloud1-terraform)
-  - [Working with Users and Permissions](httpsgithub.combrown9804DevOps-Agile-Cloud_pathtreemainCloud1-terraformlab0)
-  
-  
-<!-- /MarkdownTOC -->
-</details>
-
+`ssh <user_name>@<IPadress>`
