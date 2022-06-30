@@ -16,12 +16,14 @@ March, 2022
 
 # Content
 
-details
-summarybTable of Contentsb (click to open)summary
-!-- MarkdownTOC --
+<details>
+<summary><b>Table of Contents</b> (click to open)</summary>
+<!-- MarkdownTOC -->
   
 - [Linux](httpsgithub.combrown9804DevOps-Agile-Cloud_pathtreemainCloud1-terraform)
   - [Working with Users and Permissions](httpsgithub.combrown9804DevOps-Agile-Cloud_pathtreemainCloud1-terraformlab0)
   
-!-- MarkdownTOC --
-details
+  
+<!-- /MarkdownTOC -->
+</details>
+
