@@ -19,7 +19,7 @@ March, 2022
 `ssh <user_name>@<IPadress>`
 
 ### _Become root_:
-`sudo -i`
+`sudo -i` <br/>
 Enter the cloud_user password at the prompt.
 
 ### _Add the Users to the Server_:
