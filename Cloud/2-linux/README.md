@@ -23,6 +23,7 @@ March, 2022
 - [Linux](httpsgithub.combrown9804DevOps-Agile-Cloud_pathtreemainCloud1-terraform)
   - [Working with Users and Permissions](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab0)
   - [System Service Management, Runlevels and Boot Targets](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab1)
+  - [Securely Accessing Your System](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab2)
   
 <!-- /MarkdownTOC -->
 </details>
