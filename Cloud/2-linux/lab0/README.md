@@ -136,3 +136,7 @@ We'll see the new files and their permissions.
 `[dev@server2]$ chmod +x deploy.sh` 
 3. Run it: <br/>
 `[dev@server2]$ ./deploy.sh`
+
+### References
+
+https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
