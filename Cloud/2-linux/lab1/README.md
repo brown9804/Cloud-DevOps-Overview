@@ -29,7 +29,7 @@ The current default target is set to multi-user.target. Use the appropriate comm
 The administrator will need to change the default target so that the computer boots into a graphical desktop: <br/>
 `sudo systemctl set-default graphical.target`
 
-### _Check the Default Target again_:
+### _Check the Default Target again_: 
 Now verify that the system is set for a graphical boot: <br/>
 `systemctl get-default`
 
@@ -102,6 +102,31 @@ When the file is correct, remember to write and quit properly from vi using the 
 [root@$host ~]# systemctl status web-backup.service
 ```
 They both show as running, meaning this server is ready to go back to the Dev team.
+
+## Working with System Service Log Files Using the Journal Control:
+This is to understand how to use the built-in journalctl utility to view and troubleshoot system services.
+
+### _Check the Web Server Configuration File_:
+1. Change to the root account: <br/>
+`sudo su -`
+2. Check the status of the web service: <br/>
+`systemctl status httpd.service`
+3.Attempt to start the web service: <br/>
+`systemctl start httpd.service`
+4. After the service fails to start, check the journal: <br/>
+`journalctl -u httpd.service`
+5. Check the directory where the httpd configuration file should be: <br/>
+`ls /etc/httpd/conf`
+6. Restore the original httpd configuration file: <br/>
+`mv /etc/httpd/conf/httpd.conf.bkup /etc/httpd/conf/httpd.conf`
+7. Restart the service: <br/>
+`systemctl restart httpd.service`
+
+### _Verify That the Web Server Service Is Running_:
+1. Check the status of the service: <br/>
+`systemctl status httpd.service`
+2. Navigate to the local web page: <br/>
+`elinks http://localhost`
 
 ### References
 
