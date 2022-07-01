@@ -81,7 +81,25 @@ Understand how to create secure keys for remote access, how to exchange them, an
 2. Attempt to log in to Server 1 from Server 2 without a password:
 `ssh cloud_user@&lt;SERVER1PUBLIC_IP&gt;`
 
+## Create and Use an SSH Tunnel for Network Traffic:
 
+### _Generating ssh key_:
+`ssh-keygen` <br/>
+Enter the following parameters 
+
+### _Copying the key_:
+`ssh-copy-id <user_name>@<IPadress>`
+
+### _Login the key_:
+`ssh <user_name>@<IPadress>`
+
+### _Creating the tunnel_:
+`ssh -f <user_name>@<IPadress> -L port:<IPadress> -N`
+
+### _Testing_:
+`curl localhost:2000` <br/>
+Output: <br/>
+`Webpage worked`
 
 ### References
 
