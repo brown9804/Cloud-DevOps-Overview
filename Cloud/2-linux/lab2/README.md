@@ -80,3 +80,9 @@ Understand how to create secure keys for remote access, how to exchange them, an
 `ssh cloud_user@&lt;SERVER2PUBLIC_IP&gt;`
 2. Attempt to log in to Server 1 from Server 2 without a password:
 `ssh cloud_user@&lt;SERVER1PUBLIC_IP&gt;`
+
+
+
+### References
+
+https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
