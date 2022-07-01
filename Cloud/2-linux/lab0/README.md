@@ -17,3 +17,37 @@ March, 2022
 ### _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
+
+### _Become root_:
+`sudo -i`
+Enter the cloud_user password at the prompt.
+
+### _Add the Users to the Server_:
+```
+useradd tstark 
+useradd cdanvers
+useradd dprince
+```
+
+### _Create the new group_:
+`groupadd superhero` <br/>
+Set wheel Group as the the tstark Account's Primary Group. The usermod command will change which group a user is in. Change tstark:
+`usermod -g wheel tstark` <br/>
+Make sure it worked: <br/>
+`id tstark` <br/>
+The command's output should show his primary group is now wheel.
+
+### _Supplementary Group on All Three Users_:
+Run the usermod command for each user:
+```
+usermod -aG superhero tstark
+usermod -aG superhero dprince
+usermod -aG superhero cdanvers
+```
+
+Check with any of the users to make sure it worked: <br/>
+`id <USERNAME>`
+
+### _Lock a specific Account_:
+`usermod -L dprince`
+
