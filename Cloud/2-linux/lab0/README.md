@@ -95,3 +95,44 @@ sudo passwd avance
 `sudo cat /etc/sudoers.d/web_admin` <br/>
 Since the cat command is not listed in the command alias group for WEB, gfreeman cannot use sudo to read this file.
 
+### _Enable SSH to Connect Without a Password from the dev User on server1 to the dev User on server2_:
+1. Generate an SSH key: <br/>
+`[dev@server1]$ ssh-keygen` 
+2. Press Enter three times to accept the defaults.
+3. Then copy it over to the private IP of the other server: <br/>
+`[dev@server1]$ ssh-copy-id <server2_PRIVATE_IP>`
+4. Now if we try to log into server2 without a password, it should work. Try it: <br/>
+`[dev@server1]$ ssh <server2_PRIVATE_IP>`
+5. Log out to get back to server1: <br/>
+`[dev@server2]$ logout`
+
+### _Copy All tar Files from /home/dev/ on server1 to /home/dev/ on server2_:
+1. Copy the files: <br/>
+`[dev@server1]$ scp *.gz <server2_PRIVATE_IP>:~/`
+2. Connect to server2 again: <br/>
+`[dev@server1]$ ssh <server2_PRIVATE_IP>`
+3. Make sure they're there: <br/>
+`[dev@server2]$ ll` <br/>
+It should show the two files.
+
+### _Extract the Files, Making Sure the Output is Redirected_:
+1. Extract the files: <br/>
+```
+[dev@server2]$ tar -xvf deploy_content.tar.gz >> tar-output.log
+[dev@server2]$ tar -xvf deploy_script.tar.gz >> tar-output.log
+```
+2.Take a look at what's in the directory now: <br/>
+`ll` <br/>
+We'll see the new files and their permissions.
+
+### _Set the Umask So New Files Are Only Readable and Writeable by the Owner_:
+1. We need to make new files with 0600 (`-rw-------`) permissions. Since the default is 0666, and we want it to be 0600, run the following: <br/>
+`[dev@server2]$ umask 0066`
+
+### _Verify the /home/dev/deploy.sh Script Is Executable and Run It_:
+1. Check permissions on deploy.sh: <br/>
+`[dev@server2]$ ls -l deploy.sh` 
+2. Make the script executable: <br/>
+`[dev@server2]$ chmod +x deploy.sh` 
+3. Run it: <br/>
+`[dev@server2]$ ./deploy.sh`
