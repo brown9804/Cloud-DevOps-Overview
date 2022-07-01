@@ -51,11 +51,50 @@ sudo rpm -i elinks-0.12-0.37.pre6.el7.0.1.x86_64.rpm
 `sudo yum install js`
 4. All of our dependencies were not resolved with that one package installation. Attempt to install the RPM again. If any other dependencies are needed, repeat steps 3 and 4 (substituting libmozjs185 with whatever dependency is still missing) to resolve that issue: <br/>
 `sudo rpm -i elinks-0.12-0.37.pre6.el7.0.1.x86_64.rpm`
-5. Once the RPM is installed successfully, run elinks to ensure the application is working properly:
+5. Once the RPM is installed successfully, run elinks to ensure the application is working properly: <br/>
 `elinks`
-6. Attempt to open a website by providing a URL:
+6. Attempt to open a website by providing a URL: <br/>
 `http://www.amazon.com`
 
+## Troubleshooting RPM Issues:
+Understand how to install telnet and install Apache.
+
+1. Become the root user: <br/>
+`sudo -i`
+
+### _Telnet Installation_:
+1. Install the telnet package: <br/>
+`yum install -y telnet`
+2. Verify the integrity of the RPM database: <br/>
+```
+cd /var/lib/rpm/
+/usr/lib/rpm/rpmdb_verify Packages
+```
+3. Move Packages to Packages.bad and create a new RPM database from Packages.bad: <br/>
+```
+mv Packages Packages.bad
+/usr/lib/rpm/rpmdb_dump Packages.bad | /usr/lib/rpm/rpmdb_load Packages
+```
+4. Verify the integrity of the new RPM database: <br/>
+`/usr/lib/rpm/rpmdb_verify Packages`
+5. Query installed packages for errors: <br/>
+`rpm -qa > /dev/null`
+6. Rebuild the RPM database: <br/>
+`rpm -vv --rebuilddb`
+7. Install telnet: <br/>
+`yum install -y telnet`
+
+### _Update Apache_:
+1. Attempt to install Apache: <br/>
+`yum install -y httpd`
+2. Edit /etc/yum.conf: <br/>
+`vim /etc/yum.conf`
+3. Remove the exclusion for httpd: <br/>
+`exclude=httpd`
+4. Save and close the file: <br/>
+`:wq`
+5. Install Apache: <br/>
+`yum install -y httpd`
 
 ### References
 
