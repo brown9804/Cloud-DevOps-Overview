@@ -117,3 +117,33 @@ How to read the contents of compressed files without having to actually decompre
 `[cloud_user@host]$ tar -cvJf passwd.tar.xz passwd`
 2. And we can use the xzcat command to read its contents: <br/>
 `[cloud_user@host]$ xzcat passwd.tar.xz`
+
+## Managing File Attributes and Permissions:
+### _Objectives_:
+1. Reset a directory's permissions to the following:
+  - Everyone can access the directory
+  - Everyone can read the files in the directory
+  - No one can execute files in the directory
+2. Apply all of these permissions to all subdirectories recursively
+
+### _Grant Access to the Directory_:
+1. Change to the opt directory: <br/>
+`cd /opt`
+2. Next, open all of the directory's files and permissions with the following command:  <br/>
+`ls -la`
+3. Let's try to access the myapp directory. Run the following command:  <br/>
+`cd myapp/`
+4. How to fix "Permission denied":
+`sudo chmod 777 myapp`
+5. Reopen the directory files and permissions using the ls -la command. Now let's try to open the directory again:
+`cd myapp`
+
+### _Change the Directory Permissions_:
+1. Give all users read and write permissions for this directory: <br/>
+`sudo chmod -f -x -R *`
+> Just everyone read and write permissions 
+`sudo chmod 666 -f -R *`
+2. List the directory files and permissions again: <br/>
+`ls -la`
+3. How to set the directories as executable: <br/>
+`sudo find /opt/myapp -type d -exec chmod o+x {} \;`
