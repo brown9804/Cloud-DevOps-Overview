@@ -37,6 +37,26 @@ Understanding how to use package manager and installation utility apt to manage 
 `wget --output-document=local_index.response http://localhost`
 
 
+## Installing and Managing Packages on Red Hat/CentOS Systems
+1. Attempt to install the RPM to determine what dependencies are required: <br/>
+```
+cd Downloads
+sudo rpm -i elinks-0.12-0.37.pre6.el7.0.1.x86_64.rpm
+```
+> We'll get some dependency errors (version numbers may vary).
+2. Use the package manager to determine which packages provide the dependencies: <br/>
+`sudo yum provides libmozjs185*` <br/>
+> The output shows that the js package provides libmozjs185.
+3. Install the packages that provide those dependencies: <br/>
+`sudo yum install js`
+4. All of our dependencies were not resolved with that one package installation. Attempt to install the RPM again. If any other dependencies are needed, repeat steps 3 and 4 (substituting libmozjs185 with whatever dependency is still missing) to resolve that issue: <br/>
+`sudo rpm -i elinks-0.12-0.37.pre6.el7.0.1.x86_64.rpm`
+5. Once the RPM is installed successfully, run elinks to ensure the application is working properly:
+`elinks`
+6. Attempt to open a website by providing a URL:
+`http://www.amazon.com`
+
+
 ### References
 
 https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
