@@ -101,6 +101,43 @@ Enter the following parameters
 Output: <br/>
 `Webpage worked`
 
+## Configure sshd to use Sockets:
+1. Verify that the sshd.socket unit is not active:
+`systemctl status sshd.socket`
+2. Set up an at job that stops the sshd.service unit and starts sshd.socket:
+`sudo at now + 3 minutes`
+3. Enter your password at the prompt.
+4. Add the following:
+```
+at> systemctl stop sshd.service
+at> systemctl start sshd.socket
+```
+5. Press `Ctrl + D` to end the at job configuration.
+6. Verify that the sshd.socket unit is active and running. <br/>
+`systemctl status sshd.socket`
+7. Enable the socket for SSH and disable the service for SSH: <br/>
+```
+sudo systemctl enable sshd.socket
+sudo systemctl disable sshd.service
+```
+
+## Set Up TCP Wrappers to Only Allow SSH
+1. Verify that the sshd server has been compiled to use TCP wrappers: <br/>
+`ldd /usr/sbin/sshd | grep libwrap`
+2. Edit the /etc/hosts.allow file: <br/>
+`sudo vim /etc/hosts.allow`
+3. Add the following line to the file: <br/>
+`sshd2 sshd : ALL`
+4. Edit the /etc/hosts.deny file: <br/>
+`sudo vim /etc/hosts.deny`
+5. Add the following line to the file: <br/>
+`ALL : ALL`
+6. Exit the SSH session: <br/>
+`exit`
+7. Reconnect to the secure shell session: <br/>
+`ssh cloud_user@&lt;PUBLIC_IP&gt;` <br/>
+Enter your password at the prompt.
+
 ### References
 
 https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
