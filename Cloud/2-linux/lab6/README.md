@@ -208,8 +208,8 @@ Understanding of how to use  LVM managent tool
 ### _Create a Logical Volume_:
 1. Now we can create the our logical volume using the lvcreate command: <br/>
 `[root@host]# lvcreate -n pinehead -L 3G RHCSA`
-> -n denotes the name of the LV
-> -L denotes the size of the LV
+> -n denotes the name of the LV <br/>
+> -L denotes the size of the LV <br/>
 > RHCSA is the name of the Volume Group we're creating this LV in
 
 ### _Format the LV as XFS and Mount It Persistently at /mnt/lvol_:
