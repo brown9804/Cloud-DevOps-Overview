@@ -19,6 +19,17 @@ March, 2022
 `ssh <user_name>@<IPadress>`
 
 
+## Modify a Text File Using sed:
+> Someone got confused and wrote about cows instead of ants in a text file. We've got to replace all instances of cows and with Ants, regardless of whether or not cows contains any capital letters.
+### _ See File Content_:
+1. Let's look at the file we're dealing with: <br/>
+`cat fable.txt`
+
+### _The Fix_:
+1. Replace information
+> We're going to run a sed command. The -i means "do this in place," as in don't create another file. The capital I near the end stands for "case-insensitive" and means that whether cows has any capital letters in it or not, change it to Ants. The g means do it globally, throughout the whole file.
+`sed -i 's/cows/Ants/Ig' fable.txt`
+> Now if we run our cat command again, we'll see that all the cows are gone.
 
 
 ## References
