@@ -147,3 +147,62 @@ How to read the contents of compressed files without having to actually decompre
 `ls -la`
 3. How to set the directories as executable: <br/>
 `sudo find /opt/myapp -type d -exec chmod o+x {} \;`
+
+### _Create a Symbolic (Soft) Link_:
+1. Creating a symbolic (or soft) link from the /etc/redhat-release file to a new link file named release in the home directory: <br/>
+`ln -s /etc/redhat-release release`
+2. Verify if the link is valid: <br/>
+`ls -l`
+3. Check if you can read the file's contents: <br/>
+`cat release`
+4. Check the link's contents: <br />
+`cat /etc/redhat-release`
+> Should be the same
+
+### _Check the Inode Numbers for the Link_:
+1. Look at the inode number of /home/cloud_user/release: <br/>
+`ls -i release`
+2. Check the inode number for /etc/redhat-release: <br/>
+`ls -i /etc/redhat-release`
+> They should be different, as the symbolic link is just a new filesystem entry that references the original file.
+
+### _Create a Hard Link_:
+1. Create docs directory: <br/>
+`mkdir docs`
+2. Copy /etc/services into the docs directory: <br/>
+`cp /etc/services docs/`
+3. Create a hard link from the /home/cloud_user/docs/services file to a new link location named /home/cloud_user/services: <br/>
+`ln docs/services services`
+4. Check the link's inode number as well as the inode number for the original /etc/services: <br/>
+`ls -l`
+5. View the contents of the inodes: <br/>
+> This should verify for us that this is a hard link, not a soft link. It won't have an arrow pointing to the actual file it's linked to, like a soft link does. Just to verify, check these two with cat and make sure they're the same:
+```
+ls -i services
+ls -i docs/services
+```
+> You should see they the same inode number, meaning they're essentially the same file.
+
+### _Attempt to Create a Hard Link Across Filesystems_:
+1. View the individual block devices: <br/>
+`lsblk`
+> Each partition has its own set of inodes, hard links across partitions don't work. Soft links should.
+2. Trying to make a hard link from /home/cloud_user/docs/services to /opt/services: <br/>
+`ln /home/cloud_user/docs/services /opt/services`
+> Should get a failed to create hard link error
+
+### _Attempt to Create a Soft Link Across Filesystems_:
+1. Trying to make the same sort of cross-partition link, using the -s flag to make it a soft link: <br/>
+`sudo ln -s /etc/redhat-release /opt/release`
+> There shouldn't be any output, meaning it was successful.
+2. View the contents of the inodes again: <br/>
+```
+ls -i /etc/redhat-release
+ls -i /opt/release
+```
+> You should see they have different inodes, but the linking will work.
+
+
+## References
+
+https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
