@@ -190,7 +190,8 @@ Understanding of how to use these tools is a fundamental component of a Linux sy
 ### _Working with LVM Storage_:
 Understanding of how to use  LVM managent tool
 
->>  *Scenario* <br/>
+>>  *Scenario* 
+  
 > We've been tasked with creating a large logical volume out of the two disks attached to this server. The volume group name should be RHCSA. The Logical Volume name should be pinehead and should be 3 GB in size.
 > Make sure that the resulting logical volume is formatted as XFS, and persistently mounted at /mnt/lvol.
 > After that is complete, we should grow the logical volume and the filesystem by 200 MB.
