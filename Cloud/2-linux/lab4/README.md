@@ -202,6 +202,83 @@ ls -i /opt/release
 ```
 > You should see they have different inodes, but the linking will work.
 
+## Encrypt a File Using GPG:
+Understand how to new public GPG key, encrypt a file and sign it, and send that file to another user to decrypt with "A Cloud Guru" public key.
+
+### _Create a GPG Key for cloud user_:
+1. Generate a new GPG key: <br/>
+`[cloud_user@host]$ gpg --gen-key`
+2. Credentials:
+> Accept the defaults for each prompt. For the user ID, enter cloud_user, and use cloud_user@localhost for the email address. We can leave the comment field blank by just pressing Enter, and press o at the end for OK. 
+> We'll use password321 when we're prompted for a passphrase, and when we're prompted to confirm it.
+3. Now that the key has been created, we need to export it so that Gordon Freeman can decrypt files he gets from us. We'll do that like this: <br/>
+`[cloud_user@host]$ gpg -a -o gfreeman.key --export &lt;KEY_ID>`
+4. In that command, use the public key reference ID from the output of the key generation. It will be a random string, and the line it's sitting on (in the key generation output) looks like this: <br/>
+ `gpg: key XXXXXXXX marked as ultimately trusted`
+5. Now, we'll use the mail command to send an email to Gordon Freeman containing the cloud_user public key as an attachment: <br/>
+```
+[cloud_user@host]$ mail -s "here is your key" -a gfreeman.key gfreeman@localhost`
+Don't lose this!  I'll call you with the passphrase.
+.
+```
+> Include that final period (on the line by itself) and then press Enter to send the message.
+
+### _Configure GPG for Gordon_:
+1. Just as we did with the cloud_user account, we'll generate a GPG key for Mr. Freeman, accepting the defaults for each prompt. The only difference will be having a user ID of gfreeman and an email address of gfreeman@localhost: <br/>
+`[gfreeman@host]$ gpg --gen-key`
+2. Once we've created the key for Mr. Freeman, we can open up the mutt email client, and save the public key sent over by the cloud_user account: <br/>
+`[gfreeman@host]$ mutt`
+> Arrow up and down to highlight the cloud_user message, then press Enter. Press v to view the attachment, and press s to save it to Mr. Freeman's home directory. Finally, press q to quit Mutt.
+3. Now, to import the public key from cloud_user into Mr. Freeman's keyring, run the following command: <br/>
+`[gfreeman@host]$ gpg --import gfreeman.key`
+4. We can run this to view the contents of Mr. Freeman's keyring: <br/>
+`[gfreeman@host]$ gpg --list-keys`
+5. Let's log out of gfreeman's account: <br/>
+`[gfreeman@host]$ exit`
+
+### _Generate a Signed Document and Send It to Gordon_:
+1. When we digitally sign a file, we are using our private GPG key to guarantee that this file came from us. The user that receives the file will use their copy of the public key from us to verify that we signed the file. Let's generate a test document: <br/>
+`[cloud_user@host]$ echo "Just need you to verify this file." > note.txt`
+2. Now we'll use cloud_user's private key to sign the file:  <br/>
+`[cloud_user@host]$ gpg --clearsign note.txt`
+> Remember that we need to use the passphrase we created earlier (password321).
+> Now there should now be a note.txt.asc file in cloud_user's home directory. We can run a quick ls to make sure.
+3. Now that we've made the file, let's email it to gfreeman@localhost:  <br/>
+```
+[cloud_user@host]$ mail -s "check this out" -a note.txt.asc gfreeman@localhost
+Could you verify this file for me?
+.
+```
+
+### _Verify the Signature of the Emailed Document_:
+> Use the mutt email client, and just as before, view and save the new email message's attachment.
+1. Now, verify the note.txt.asc file that was emailed: <br/>
+`[gfreeman@host]$ gpg --verify note.txt.asc`
+2. We'll get a warning about the signature not being verified by a third party, and that's ok. What is important is the following line from the output:  <br/>
+`gpg: Good signature from "cloud_user <cloud_user@localhost>"`
+> This is what a verified file displays.
+3. Next, encrypt a copy of the /etc/fstab file like this:  <br/>
+```
+[gfreeman@host]$ cp /etc/fstab ~
+[gfreeman@host]$ gpg -a -r cloud_user -e ~/fstab
+```
+> You will see a general warning displayed about the key possibly not belonging to the named person. We already know that this key is from cloud_user, so just press y at the prompt.
+4. Verify that there is a file called fstab.asc in the gfreeman home directory (by running ls). Create a new email to cloud_user and attach this file:  <br/>
+```
+[gfreeman@host]$ mail -s "looks good" -a fstab.asc cloud_user@localhost
+Can you decrypt this?
+.
+```
+5. Log out:  <br/>
+`[gfreeman@host]$ exit`
+
+### _Decrypt the Attached File_:
+> Now, as cloud_user, open up the mutt email client and save the fstab.asc attachment from the new email.
+1. Decrypt the saved fstab.asc file with the gpg command, and enter the passphrase for cloud_user's key when prompted: <br/>
+`[cloud_user@host]$ gpg fstab.asc` 
+2. Now let's verify that we can read the contents of the decrypted file:  <br/>
+`[cloud_user@host]$ cat fstab`
+
 
 ## References
 
