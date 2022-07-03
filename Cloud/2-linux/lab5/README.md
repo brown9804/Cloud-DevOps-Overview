@@ -21,7 +21,7 @@ March, 2022
 
 ## Modify a Text File Using sed:
 > Someone got confused and wrote about cows instead of ants in a text file. We've got to replace all instances of cows and with Ants, regardless of whether or not cows contains any capital letters.
-### _ See File Content_:
+### _See File Content_:
 1. Let's look at the file we're dealing with: <br/>
 `cat fable.txt`
 
