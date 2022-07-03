@@ -110,6 +110,116 @@ This is a test
 `[root@server1]# less /home/cloud_user/traffic_log.txt`
 > We should see some log entries showing traffic going from server2 to server1 on port 2525.
 
+
+## Network Filesystems:
+Understand how to configure network filesystems, how to set up both a Linux Samba fileshare and an NFS fileshare that can then be used by a remote client to store files.
+
+### _Set Up the Samba Server_:
+1. Become root: <br/>
+`[cloud_user@samba-server]$ sudo -i`
+2. Create the /smb path: <br/>
+`[root@samba-server]# mkdir /smb`
+3. Make sure the client can write to the path: <br/>
+`[root@samba-server]# chmod 777 /smb`
+4. Install the Samba packages: <br/>
+`[root@samba-server]# yum install samba -y`
+5. Open /etc/samba/smb.conf: <br/>
+`[root@samba-server]# vim /etc/samba/smb.conf`
+6. Add the following section at the bottom: <br/>
+```
+[share]
+        browsable = yes
+        path = /smb
+        writable = yes
+```
+7. Save and exit the file by pressing Escape followed by :wq.
+8. Check that our changes saved correctly:
+`[root@samba-server]# testparm`
+
+### _Samba Share User_:
+1. Create the user on the server: <br/>
+`[root@samba-server]# useradd shareuser`
+2. Give it a password: <br/>
+`[root@samba-server]# smbpasswd -a shareuser`
+> Enter and confirm a password you'll easily remember (e.g., 123456), as we'll need to reenter it later.
+
+### _Start It Up_:
+1. Start the Samba daemon: <br/>
+`[root@samba-server]# systemctl start smb`
+
+### _Set Up the Samba Client_:
+1. Open up a new terminal.
+2. Log in to the NFS server
+3. Become root: <br/>
+`[cloud_user@nfs-server]$ sudo -i`
+4. Install software: <br/>
+`[root@nfs-server]# yum install cifs-utils -y`
+
+### _Make a Mount Point_:
+Create a place for mounting the share:
+`[root@nfs-server]# mkdir /mnt/smb`
+
+### _The Mount_:
+1. In the Samba server terminal, get its IP address: <br/>
+`[root@samba-server]# ip a s`
+2. Copy the private inet address on eth0, and paste it into a text file, as we'll need it next.
+3. In the NFS terminal, run the following command, replacing <SERVER_IP> with the IP you just copied and <SMBPASSWD_PASS> with the password you created earlier:
+`[root@nfs-server]# mount -t cifs //<SERVER_IP>/share /mnt/smb -o username=shareuser,password=<SMBPASSWD_PASS>`
+4. Make sure you see it listed when you run: <br/>
+`[root@nfs-server]# mount`
+5. Change directory: <br/>
+`[root@nfs-server]# cd /mnt/smb`
+6. Create a file: <br/>
+`[root@nfs-server smb]# touch file`
+7. List the contents: <br/>
+`[root@nfs-server smb]# ls`
+> We should see the new file called file.
+
+### _Set Up the NFS Share_:
+1. Install software: <br/>
+`[root@nfs-server smb]# yum install nfs-utils -y`
+2. Create the directory that will be shared out: <br/>
+`[root@nfs-server smb]# mkdir /nfs`
+3. Open /etc/exports: <br/>
+`[root@nfs-server smb]# vim /etc/exports`
+4. Add the following line: <br/>
+`/nfs *(rw)`
+5. Save and exit the file by pressing Escape followed by :wq. <br/>
+6. Edit permissions, to make sure it's going to be writable, on the shared directory: <br/>
+`[root@nfs-server smb]# chmod 777 /nfs`
+7. Implement what we've configured in /etc/exports: <br/>
+`[root@nfs-server smb]# exportfs -a`
+8. Start the required services: <br/>
+`[root@nfs-server smb]# systemctl start {rpcbind,nfs-server,rpc-statd,nfs-idmapd}`
+9. Verify it: <br/>
+`[root@nfs-server smb]# showmount -e localhost`
+10. Run the following to get the NFS server's IP: <br/>
+`[root@nfs-server smb]# ip a s`
+11. Copy the inet address on eth0 and paste it into a text file, as we'll need it shortly.
+
+### _Set Up the NFS Client_:
+1. In the Samba server terminal, install software: <br/>
+`[root@samba-server]# yum install nfs-utils -y`
+2. Create a mount point: <br/>
+`[root@samba-server]# mkdir /mnt/nfs`
+3. Check to see what's being shared out on the NFS server, replacing <NFS_SERVER_IP> with the IP you copied earlier: <br/>
+`[root@samba-server]# showmount -e <NFS_SERVER_IP>`
+4. To be able to mount NFS shares, we need start a daemon: <br/>
+`[root@samba-server]# systemctl start rpcbind`
+
+### _Mount the NFS Share_:
+1. Mount it, replacing <NFS_SERVER_IP> with the IP you copied earlier: <br/>
+`[root@samba-server]# mount -t nfs <NFS_SERVER_IP>:/nfs /mnt/nfs`
+2. Make sure you see it listed after running: <br/>
+`[root@samba-server]# mount`
+3. Change directory: <br/>
+`[root@samba-server]# cd /mnt/nfs`
+4. Create a file: <br/>
+`[root@samba-server nfs]# touch file`
+5. List the contents: <br/>
+`[root@samba-server nfs]# ls`
+> We should see the new file, called file.
+
 ## References
 
 https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
