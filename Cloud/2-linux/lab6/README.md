@@ -123,7 +123,69 @@ sudo cupsaccept CUPS-PDF
 15. Verify that the CUPS-PDF printer is once again ready to accept new jobs:
 `lpq`
 
+## Storage Management:
+Understanding of how to use these tools is a fundamental component of a Linux sysadmin career.
 
+> Then, become root: <br/>
+`sudo -i`
+
+### _Create a 2 GB GPT Partition on /dev/nvme1n1_:
+1. Create the partition: <br/>
+`gdisk /dev/nvme1n1`
+2. Enter n to create a new partition.
+3. Accept the default for the partition number.
+4. Accept the default for the starting sector.
+5. For the ending sector, enter +2G to create a 2 GB partition.
+6. Accept the default partition type.
+7. Enter w to write the partition information.
+8. Enter y to proceed.
+9. Finalize the settings: <br/>
+`partprobe`
+
+### _Create a 2 GB MBR Partition on /dev/nvme2n1_:
+1. Create the partition: <br/>
+`fdisk /dev/nvme2n1`
+2. Enter n to create a new partition.
+3. Accept the default partition type.
+4. Accept the default for the partition number.
+5. Accept the default for the starting sector.
+6. For the ending sector, type +2G to create a 2 GB partition.
+7. Enter w to write the partition information.
+8. Finalize the settings: <br/>
+`partprobe`
+
+### _Format the GPT Partition with XFS and Mount the Device on /mnt/gptxfs Persistently_:
+1. Format the partition: <br/>
+`mkfs.xfs /dev/nvme1n1p1`
+> Getting It Ready for Mounting
+2. Run the following: <br/>
+`blkid`
+3. Copy the UUID of the partition at /dev/nvme1n1p1.
+4. Open the /etc/fstab file: <br/>
+`vim /etc/fstab`
+5. Add the following, replacing <UUID> with the UUID you just copied: <br/>
+`UUID="<UUID>" /mnt/gptxfs xfs defaults 0 0`
+6. Save and exit the file by pressing Escape followed by :wq.
+
+> Create a Mount Point
+1. Create the mount point we specified in fstab: <br/>
+`mkdir /mnt/gptxfs`
+2. Mount everything that's described in fstab: <br/>
+`mount -a`
+3. Check that it's mounted: <br/>
+`mount`
+> The partition should be listed in the output.
+
+### _Format the MBR Partition with ext4 and Mount the Device on /mnt/mbrext4_:
+1. Format the partition: <br/>
+`mkfs.ext4 /dev/nvme2n1p1`
+2. Create the mount point: <br/>
+`mkdir /mnt/mbrext4`
+3. Mount it: <br/>
+`mount /dev/nvme2n1p1 /mnt/mbrext4`
+4. Check that it's mounted: <br/>
+`mount`
+> The partition should be listed in the output.
 
 ## References
 
