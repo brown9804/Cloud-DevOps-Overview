@@ -31,7 +31,7 @@ March, 2022
   - [Create Azure NSGs with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab7)
   - [Deploying an Azure VM with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab8)
   - [Deploy a Web Application with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab9)
-  - [Deploy a MySQL Database with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab10)
+  - [Deploy a MySQL Database with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_10)
 
 <!-- /MarkdownTOC -->
 </details>
