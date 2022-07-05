@@ -86,3 +86,4 @@ Recommended: https://releases.hashicorp.com/terraform/0.13.4/
 [1] From https://help.acloud.guru/hc/en-us/articles/360001382275-Hands-On-Labs-Getting-Started?_ga=2.173162026.84959279.1650153500-266741931.1648820099 <br/>
 [2] From https://github.com/linuxacademy/content-hashicorp-certified-terraform-associate-foundations <br/>
 [3] From https://releases.hashicorp.com/terraform/0.13.4/ <br/>
+[4] From https://learn.acloud.guru/course/using-terraform-to-manage-applications-and-infrastructure/overview
