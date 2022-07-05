@@ -27,6 +27,8 @@ March, 2022
   - [Exploring Terraform State Functionality](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab3)
   - [Deploy an Azure Storage Account with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab4)
   - [Deploy an Azure File Share and Blob Storage with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab5)
+  - [Deploy Azure VNETs and Subnets with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab6)
+  - [Create Azure NSGs with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab7)
   
 <!-- /MarkdownTOC -->
 </details>
