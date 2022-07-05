@@ -15,7 +15,6 @@ Jan, 2022
 
 ----------
 
-
 ### _Initialize_:
 
 `$ terraform init`
