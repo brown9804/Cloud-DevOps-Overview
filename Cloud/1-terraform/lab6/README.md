@@ -1,4 +1,4 @@
-# Installing Terraform and Working with Terraform Providers
+# Deploy Azure VNETs and Subnets with Terraform
 ----------
 
 Costa Rica
