@@ -19,6 +19,27 @@ Jan, 2022
 
 `ssh <user_name>@<IPadress>`
 
+### _Initializes_:
+
+`export TF_LOG=TRACE`
+
+`export TF_LOG_PATH=./terraform.log`
+
+`$ terraform init`
+
+`$ ls -a`
+
+`$ terraform fmt`
+
+`$ terraform plan`
+
+`$ terraform apply`
+
+> Enter a value: yes
+
+`$ terraform destroy`
+
+> Enter a value: yes
 
 ## Reference:
 
