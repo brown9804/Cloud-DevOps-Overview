@@ -84,13 +84,14 @@ April, 2022
 
 ## Reminder:
 
->> Later on, remember to do the destroy:
+> Later on, remember to do the destroy:
 
 `$ terraform destroy`
 
 > Enter a value: yes
 
->> Confirm that Terraform is no longer managing any resources: <br/>
+> Confirm that Terraform is no longer managing any resources: <br/>
+
 `terraform show`
 
 ## Reference:
