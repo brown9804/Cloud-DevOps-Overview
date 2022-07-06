@@ -54,7 +54,6 @@ April, 2022
 > View a list of the resources Terraform is managing: <br/>
 
 `terraform state list`
-> You should now see that Terraform is managing 1 resource: azurerm_virtual_network.vnet.
 
 ## Add a Subnet to the Configuration:
 1. Edit the file: <br/>
