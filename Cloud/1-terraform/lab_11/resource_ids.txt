@@ -1,0 +1,2 @@
+ami: ami-#######
+subnet_id: subnet-######
