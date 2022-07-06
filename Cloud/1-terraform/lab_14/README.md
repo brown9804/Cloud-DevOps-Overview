@@ -75,6 +75,7 @@ April, 2022
 > Enter a value: yes
 
 > View a simplified version of the output: <br/>
+
 `terraform output`
 
 > To confirm that our configuration was successful and view all the details of our infrastructure: <br/>
