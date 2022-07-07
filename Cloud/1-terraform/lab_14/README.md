@@ -16,10 +16,11 @@ April, 2022
 
 ----------
 
+This is a summary based on [References](#reference)
+
 ### _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
-
 
 ## Set Up the Environment:
 
@@ -35,7 +36,6 @@ April, 2022
 `vim main.tf`
 7. In the subnet_id = line, delete the "DUMMY_VALUE_SUBNET_ID" and paste in the subnet ID you copied from the resource_ids.txt file.
 8. Save and exit the file by pressing the Escape key and entering :wq!.
-
 
 ### _Initializes_:
 
