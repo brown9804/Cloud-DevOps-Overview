@@ -15,6 +15,7 @@ Belinda Brown, belindabrownr04@gmail.com
 April, 2022
 
 ----------
+This is a summary based on [References](#reference)
 
 ### _Connect to the server_:
 
@@ -105,7 +106,6 @@ April, 2022
 > View a list of the resources Terraform is managing: <br/>
 
 `terraform state list`
-
 
 ## Reference:
 
