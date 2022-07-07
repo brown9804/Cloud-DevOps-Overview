@@ -16,6 +16,8 @@ April, 2022
 
 ----------
 
+This is a summary based on [References](#reference)
+
 ### _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
@@ -126,7 +128,6 @@ selector {
 > Verify the cluster was deleted: <br/>
 
 `kind get clusters`
-
 
 ## Reference:
 
