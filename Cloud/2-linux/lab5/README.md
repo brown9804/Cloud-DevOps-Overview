@@ -30,7 +30,9 @@ This is a summary based on [References](#references)
 ### _The Fix_:
 1. Replace information
 > We're going to run a sed command. The -i means "do this in place," as in don't create another file. The capital I near the end stands for "case-insensitive" and means that whether cows has any capital letters in it or not, change it to Ants. The g means do it globally, throughout the whole file. <br/>
+
 `sed -i 's/cows/Ants/Ig' fable.txt`
+
 > Now if we run our cat command again, we'll see that all the cows are gone.
 
 ## Working with Basic Regular Expressions:
