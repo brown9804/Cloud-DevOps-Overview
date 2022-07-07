@@ -15,6 +15,8 @@ Jan, 2022
 
 ----------
 
+This is a summary based on [References](#references)
+
 ### _Initialize_:
 
 `$ terraform init`
