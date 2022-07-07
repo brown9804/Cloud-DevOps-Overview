@@ -17,6 +17,8 @@ April, 2022
 
 ----------
 
+This is a summary based on [References](#reference)
+
 ### _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
@@ -90,7 +92,6 @@ April, 2022
 > View a list of the resources Terraform is managing: <br/>
 
 `terraform state list`
-
 
 ## Reference:
 
