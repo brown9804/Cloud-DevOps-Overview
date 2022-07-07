@@ -27,5 +27,31 @@ This is a summary based on [References](#references)
 > By default, every process that you start runs in the foreground. It gets its input from the keyboard and sends its output to the screen. <br/>
 > While a program is running in the foreground and is time-consuming, no other commands can be run (start any other processes) because the prompt would not be available until the program finishes processing and comes out.
 
+### _Background Processes_:
+> A background process runs without being connected to your keyboard. If the background process requires any keyboard input, it waits. <br/>
+> The advantage of running a process in the background is that you can run other commands; you do not have to wait until it completes to start another! <br/>
+> The simplest way to start a background process is to add an ampersand (`&`) at the end of the command. <br/>
+
+## Listing Running Processes:
+> It is easy to see your own processes by running the `ps` (process status) command <br/>
+> One of the most commonly used flags for ps is the -f ( f for full) option, which provides more information as shown:
+
+`$ps -f`
+
+```
+UID PID PPID C STIME TTY TIME CMD
+```
+
+1. `UID`: User ID that this process belongs to (the person running it)
+2. `PID`: Process ID
+3. `PPID `: Parent process ID (the ID of the process that started it)
+4. `C`: CPU utilization of process
+5. `STIME`: Process start time
+6. `TTY`: Terminal type associated with the process
+7. `TIME`: CPU time taken by the process
+8. `CMD`: The command that started this process
+
+
+
 ## References:
 [1] From https://www.tutorialspoint.com/unix/unix-processes.htm <br/>
