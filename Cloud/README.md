@@ -68,3 +68,4 @@ March, 2022
 - [Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
 - [What is Azure Bastion?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
+- [SQL replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
