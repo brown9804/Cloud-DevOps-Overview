@@ -71,5 +71,5 @@ March, 2022
 - [SQL replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
 - [SQL - Difference between COMMIT and ROLLBACK](https://www.geeksforgeeks.org/difference-between-commit-and-rollback-in-sql/)
 - [SQL - GROUP BY Statement](https://www.w3schools.com/sql/sql_groupby.asp)
-
+- [SQL - join tables with group by and order by](https://www.w3resource.com/sql/joins/joining-with-group-by-and-order-by.php)
 
