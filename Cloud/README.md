@@ -69,3 +69,5 @@ March, 2022
 - [What is Azure Bastion?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
 - [SQL replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
+- [SQL - Difference between COMMIT and ROLLBACK](https://www.geeksforgeeks.org/difference-between-commit-and-rollback-in-sql/)
+
