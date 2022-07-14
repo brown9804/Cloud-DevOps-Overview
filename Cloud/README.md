@@ -68,12 +68,14 @@ March, 2022
 - [Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
 - [What is Azure Bastion?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
-- [SQL replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
+- [SQL - replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
 - [SQL - Difference between COMMIT and ROLLBACK](https://www.geeksforgeeks.org/difference-between-commit-and-rollback-in-sql/)
 - [SQL - GROUP BY Statement](https://www.w3schools.com/sql/sql_groupby.asp)
 - [SQL - join tables with group by and order by](https://www.w3resource.com/sql/joins/joining-with-group-by-and-order-by.php)
 - [SQL - How to Find Records with NULL in a Column](https://learnsql.com/cookbook/how-to-find-records-with-null-in-a-column/)
 - [Commenting and Uncommenting Code in SQL Server Management Studio](https://zarez.net/?p=1581#:~:text=SQL%20Server%20Startup-,Commenting%20and%20Uncommenting%20Code%20in%20SQL%20Server%20Management%20Studio,by%20'CTRL%2BC'.)
 - [SQL - Comparison Operators (Equal, Not Equal, Less than, Grater than)](https://www.tutlane.com/tutorial/sql-server/sql-comparison-operators)
+- [SQL - Delete](https://www.w3schools.com/sql/sql_delete.asp)
+- [SQL- INSERT INTO Syntax](https://www.w3schools.com/sql/sql_insert.asp)
 
 
