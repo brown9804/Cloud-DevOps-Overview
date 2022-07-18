@@ -78,5 +78,6 @@ March, 2022
 - [SQL - Delete](https://www.w3schools.com/sql/sql_delete.asp)
 - [SQL- INSERT INTO Syntax](https://www.w3schools.com/sql/sql_insert.asp)
 - [SQL - Writing Loops](https://www.wiseowl.co.uk/blog/s348/loops-in-sql.htm)
+- [SQL - Iterate Through Array Of Data In SQL Query](https://www.c-sharpcorner.com/article/iterate-through-array-of-data-in-sql-query/)
 
 
