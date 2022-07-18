@@ -77,5 +77,6 @@ March, 2022
 - [SQL - Comparison Operators (Equal, Not Equal, Less than, Grater than)](https://www.tutlane.com/tutorial/sql-server/sql-comparison-operators)
 - [SQL - Delete](https://www.w3schools.com/sql/sql_delete.asp)
 - [SQL- INSERT INTO Syntax](https://www.w3schools.com/sql/sql_insert.asp)
+- [SQL - Writing Loops](https://www.wiseowl.co.uk/blog/s348/loops-in-sql.htm)
 
 
