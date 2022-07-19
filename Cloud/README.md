@@ -79,5 +79,5 @@ March, 2022
 - [SQL- INSERT INTO Syntax](https://www.w3schools.com/sql/sql_insert.asp)
 - [SQL - Writing Loops](https://www.wiseowl.co.uk/blog/s348/loops-in-sql.htm)
 - [SQL - Iterate Through Array Of Data In SQL Query](https://www.c-sharpcorner.com/article/iterate-through-array-of-data-in-sql-query/)
-
+- [SQL - Getting the current system date and time](https://docs.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver16)
 
