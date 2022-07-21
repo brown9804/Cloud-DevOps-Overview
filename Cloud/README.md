@@ -80,4 +80,4 @@ March, 2022
 - [SQL - Writing Loops](https://www.wiseowl.co.uk/blog/s348/loops-in-sql.htm)
 - [SQL - Iterate Through Array Of Data In SQL Query](https://www.c-sharpcorner.com/article/iterate-through-array-of-data-in-sql-query/)
 - [SQL - Getting the current system date and time](https://docs.microsoft.com/en-us/sql/t-sql/functions/getdate-transact-sql?view=sql-server-ver16)
-
+- [SQL - Set Operators - EXCEPT and INTERSECT](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/set-operators-except-and-intersect-transact-sql?view=sql-server-ver16)
