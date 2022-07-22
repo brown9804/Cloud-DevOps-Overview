@@ -83,4 +83,5 @@ March, 2022
 - [SQL - Set Operators - EXCEPT and INTERSECT](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/set-operators-except-and-intersect-transact-sql?view=sql-server-ver16)
 - [SQL - COUNT() function with distinct clause](https://www.w3resource.com/sql/aggregate-functions/count-with-distinct.php)
 - [SQL - Server PRINT and SQL Server RAISERROR statements](https://www.sqlshack.com/sql-server-print-and-sql-server-raiserror-statements/)
+- [SQL- COUNT rows with user defined column heading](https://www.w3resource.com/sql/aggregate-functions/count-function.php)
 
