@@ -84,4 +84,5 @@ March, 2022
 - [SQL - COUNT() function with distinct clause](https://www.w3resource.com/sql/aggregate-functions/count-with-distinct.php)
 - [SQL - Server PRINT and SQL Server RAISERROR statements](https://www.sqlshack.com/sql-server-print-and-sql-server-raiserror-statements/)
 - [SQL- COUNT rows with user defined column heading](https://www.w3resource.com/sql/aggregate-functions/count-function.php)
+- [Python - Implementation HMAC-SHA1](https://stackoverflow.com/questions/8338661/implementation-hmac-sha1-in-python)
 
