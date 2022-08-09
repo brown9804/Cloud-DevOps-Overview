@@ -87,5 +87,5 @@ March, 2022
 - [Nodejs - Install Windows](https://www.guru99.com/download-install-node-js.html)
 - [Python - Implementation HMAC-SHA1](https://stackoverflow.com/questions/8338661/implementation-hmac-sha1-in-python)
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
-- [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp)
+- [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests)
 
