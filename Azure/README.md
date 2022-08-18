@@ -15,4 +15,5 @@ March, 2022
 ----------------------
 
 # Wiki:
-- [Function Apps Introduction](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+- [Function Apps - Introduction](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
+- [Logic Apps - Statefull vs Stateless](https://martink.me/articles/what-is-new-in-logic-apps-v2)
