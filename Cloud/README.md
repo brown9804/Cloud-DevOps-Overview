@@ -59,21 +59,22 @@ March, 2022
 </details>
 
 # Wiki:
-- [How to connect to Microsoft Azure Storage Explorer](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
 - [Terraform Environment Variables - export log files](https://www.terraform.io/cli/config/environment-variables)
-- [How to enable debug logging when using Terraform](https://www.suse.com/support/kb/doc/?id=000020022)
+- [Terraform - How to enable debug logging](https://www.suse.com/support/kb/doc/?id=000020022)
 - ['export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
-- [List Azure role assignments using the Azure portal](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal)
-- [How to solve the Filename too long error when using `git clone` in windows](https://www.bswen.com/2021/12/how-to-solve-filename-too-long-error-when-using-git-clone-in-windows.html). Solution 2.2.2 might be useful, if not go to [How to Make Windows 10 Accept File Paths Over 260 Characters](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/). And, if that does not fix this try using Git Bash, WSL, or the Command Prompt.
-- [Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
-- [What is Azure Bastion?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
+- [Azure Portal - List Azure role assignments](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-list-portal)
+- [GitHub - How to solve the Filename too long error when using `git clone` in windows](https://www.bswen.com/2021/12/how-to-solve-filename-too-long-error-when-using-git-clone-in-windows.html). Solution 2.2.2 might be useful, if not go to [How to Make Windows 10 Accept File Paths Over 260 Characters](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/). And, if that does not fix this try using Git Bash, WSL, or the Command Prompt.
+- [GitHub - Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
+- [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
+- [PuTTY (a free SSH and Telnet client) Donwload](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- [Microsoft Azure Storage Explorer - How to connect](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
-- [SQL - replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
+- [SQL - Replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
 - [SQL - Difference between COMMIT and ROLLBACK](https://www.geeksforgeeks.org/difference-between-commit-and-rollback-in-sql/)
 - [SQL - GROUP BY Statement](https://www.w3schools.com/sql/sql_groupby.asp)
 - [SQL - join tables with group by and order by](https://www.w3resource.com/sql/joins/joining-with-group-by-and-order-by.php)
 - [SQL - How to Find Records with NULL in a Column](https://learnsql.com/cookbook/how-to-find-records-with-null-in-a-column/)
-- [Commenting and Uncommenting Code in SQL Server Management Studio](https://zarez.net/?p=1581#:~:text=SQL%20Server%20Startup-,Commenting%20and%20Uncommenting%20Code%20in%20SQL%20Server%20Management%20Studio,by%20'CTRL%2BC'.)
+- [SQL - Commenting and Uncommenting Code](https://zarez.net/?p=1581#:~:text=SQL%20Server%20Startup-,Commenting%20and%20Uncommenting%20Code%20in%20SQL%20Server%20Management%20Studio,by%20'CTRL%2BC'.)
 - [SQL - Comparison Operators (Equal, Not Equal, Less than, Grater than)](https://www.tutlane.com/tutorial/sql-server/sql-comparison-operators)
 - [SQL - Delete](https://www.w3schools.com/sql/sql_delete.asp)
 - [SQL- INSERT INTO Syntax](https://www.w3schools.com/sql/sql_insert.asp)
