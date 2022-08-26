@@ -87,6 +87,7 @@ March, 2022
 - [SQL- COUNT rows with user defined column heading](https://www.w3resource.com/sql/aggregate-functions/count-function.php)
 - [SQL - Select Top N or Top N Random Rows](https://www.kodyaz.com/articles/sql-select-top-query.aspx)
 - [SQL - SSMS Database Diagram](https://www.mssqltips.com/sqlservertip/6269/sql-server-database-diagram-tool-in-management-studio/)
+- [SQL - SSMS Script objects](https://docs.microsoft.com/en-us/sql/ssms/tutorials/scripting-ssms?view=sql-server-ver16)
 - [Nodejs - Install Windows](https://www.guru99.com/download-install-node-js.html)
 - [Python - Implementation HMAC-SHA1](https://gist.github.com/heskyji/5167567b64cb92a910a3), you can find more functions definitions [here](https://gist.github.com/binaryatrocity/7079332cab038da1394d) or [Cryptographic signature and verification of messages](http://pymotw.com/2/hmac/)
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
