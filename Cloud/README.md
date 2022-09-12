@@ -88,6 +88,7 @@ March, 2022
 - [SQL - Server PRINT and SQL Server RAISERROR statements](https://www.sqlshack.com/sql-server-print-and-sql-server-raiserror-statements/)
 - [SQL- COUNT rows with user defined column heading](https://www.w3resource.com/sql/aggregate-functions/count-function.php)
 - [SQL - Select Top N or Top N Random Rows](https://www.kodyaz.com/articles/sql-select-top-query.aspx)
+- [SQL - How to Join 3 Tables (or More)](https://learnsql.com/blog/how-to-join-3-tables-or-more-in-sql/)
 - [SSMS - Database Diagram](https://www.mssqltips.com/sqlservertip/6269/sql-server-database-diagram-tool-in-management-studio/)
 - [SSMS - Script objects](https://docs.microsoft.com/en-us/sql/ssms/tutorials/scripting-ssms?view=sql-server-ver16)
 - [SSMS - How to Export Tables from a Database](https://documentation.alphasoftware.com/pages/HowTo/Databases/Export%20Tables%20from%20a%20Database.xml)
