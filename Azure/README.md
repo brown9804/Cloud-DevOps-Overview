@@ -21,3 +21,5 @@ March, 2022
 - [Postman - How to Install and use for API Testing](https://www.guru99.com/postman-tutorial.html)
 - [AZ Monitor - Monitor availability with URL ping tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - [AZ Monitor - Query Application Insights Telemetry Data using REST API](https://dailydotnettips.com/query-application-insights-telemetry-data-using-rest-api/)
+- [AZ Storage Account - What is Azure Table storage?](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview)
+- [AZ Storage Account - Understanding the Table service data model](https://docs.microsoft.com/en-us/rest/api/storageservices/Understanding-the-Table-Service-Data-Model)
