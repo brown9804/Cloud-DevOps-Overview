@@ -19,7 +19,7 @@ March, 2022
 - [App Service Plan - Introduction](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
 - [Logic Apps - Stateful vs Stateless](https://martink.me/articles/what-is-new-in-logic-apps-v2)
 - [Postman - How to Install and use for API Testing](https://www.guru99.com/postman-tutorial.html)
-- [AZ Monitor - Monitor availability with URL ping tests](htts://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
+- [AZ Monitor - Monitor availability with URL ping tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - [AZ Monitor - Query Application Insights Telemetry Data using REST API](https://dailydotnettips.com/query-application-insights-telemetry-data-using-rest-api/)
 - [Microsoft Azure Storage Explorer - How to connect](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
 - [AZ Storage Account - What is Azure Table storage?](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview)
