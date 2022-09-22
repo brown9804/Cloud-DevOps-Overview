@@ -22,6 +22,7 @@ March, 2022
 - [AZ Monitor - Monitor availability with URL ping tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - [AZ Monitor - Query Application Insights Telemetry Data using REST API](https://dailydotnettips.com/query-application-insights-telemetry-data-using-rest-api/)
 - [Microsoft Azure Storage Explorer - How to connect](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
+- [Microsoft Azure Storage Explorer - Not recognizing PartitionKey in CSV file](https://learn.microsoft.com/en-us/answers/questions/906432/azure-storage-explorer-not-recognizing-partitionke.html)
 - [AZ Storage Account - What is Azure Table storage?](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview)
 - [AZ Storage Account - Understanding the Table service data model](https://docs.microsoft.com/en-us/rest/api/storageservices/Understanding-the-Table-Service-Data-Model)
 - [Function Apps - Introduction](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
