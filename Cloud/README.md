@@ -64,6 +64,7 @@ March, 2022
 - [Terraform - Custom Condition Checks](https://www.terraform.io/language/expressions/custom-conditions#input-variable-validation)
 - ['export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
 - [Terraform - Add Disk Bursting for VM Scale Sets](https://github.com/hashicorp/terraform-provider-azurerm/issues/15392)
+- [Terraform - azurerm_managed_disk examples
 - [GitHub - How to solve the Filename too long error when using `git clone` in windows](https://www.bswen.com/2021/12/how-to-solve-filename-too-long-error-when-using-git-clone-in-windows.html). Solution 2.2.2 might be useful, if not go to [How to Make Windows 10 Accept File Paths Over 260 Characters](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/). And, if that does not fix this try using Git Bash, WSL, or the Command Prompt.
 - [GitHub - Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
 - [GitHub - REST API Search](https://docs.github.com/en/rest/search#text-match-metadata)
