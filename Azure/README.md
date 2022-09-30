@@ -30,5 +30,5 @@ March, 2022
 - [AZ Storage Account - Samples using v12 Python client libraries](https://learn.microsoft.com/en-us/azure/storage/common/storage-samples-python)
 - [Function Apps - Introduction](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
 - [Function Apps - Connect Azure Functions to Azure Storage using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code?tabs=in-process&pivots=programming-language-python)
-- [Function Apps - Local workspace setup] Azure Functions Core Tools is need, but if vscode automatic instalation fails go [here](https://github.com/Azure/azure-functions-core-tools#installing) to find more information.
+- [Function Apps - Local workspace setup](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=python), also  Azure Functions Core Tools is need, but if vscode automatic instalation fails go [here](https://github.com/Azure/azure-functions-core-tools#installing) to find more information.
 
