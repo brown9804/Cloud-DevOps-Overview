@@ -93,6 +93,7 @@ March, 2022
 - [SSMS - Script objects](https://docs.microsoft.com/en-us/sql/ssms/tutorials/scripting-ssms?view=sql-server-ver16)
 - [SSMS - How to Export Tables from a Database](https://documentation.alphasoftware.com/pages/HowTo/Databases/Export%20Tables%20from%20a%20Database.xml)
 - [Nodejs - Install Windows](https://www.guru99.com/download-install-node-js.html)
+- [Nodejs vs JavaScript](https://www.knowledgehut.com/blog/web-development/node-js-vs-javasript)
 - [Python - Implementation HMAC-SHA1](https://gist.github.com/heskyji/5167567b64cb92a910a3), you can find more functions definitions [here](https://gist.github.com/binaryatrocity/7079332cab038da1394d) or [Cryptographic signature and verification of messages](http://pymotw.com/2/hmac/)
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
