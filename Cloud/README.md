@@ -62,12 +62,13 @@ March, 2022
 - [Terraform Environment Variables - export log files](https://www.terraform.io/cli/config/environment-variables)
 - [Terraform - How to enable debug logging](https://www.suse.com/support/kb/doc/?id=000020022)
 - [Terraform - Custom Condition Checks](https://www.terraform.io/language/expressions/custom-conditions#input-variable-validation)
-- ['export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
 - [Terraform - Add Disk Bursting for VM Scale Sets](https://github.com/hashicorp/terraform-provider-azurerm/issues/15392)
 - [Terraform - Azure managed disks general information](https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview), see disk types, and disk redundancy options as well. The structure related to the [azurerm_managed_disk](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/managed_disk), and you can find more references of which VM are able to enable this property [here](https://github.com/hashicorp/terraform-provider-azurerm/pull/14137)
-- [GitHub - How to solve the Filename too long error when using `git clone` in windows](https://www.bswen.com/2021/12/how-to-solve-filename-too-long-error-when-using-git-clone-in-windows.html). Solution 2.2.2 might be us)eful, if not go to [How to Make Windows 10 Accept File Paths Over 260 Characters](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/). And, if that does not fix this try using Git Bash, WSL, or the Command Prompt.
+- [CMD - 'export' is not recognized as an internal or external command](https://stackoverflow.com/questions/26368306/export-is-not-recognized-as-an-internal-or-external-command)
+- [GitHub - How to solve the Filename too long error when using `git clone` in windows](https://www.bswen.com/2021/12/how-to-solve-filename-too-long-error-when-using-git-clone-in-windows.html). Solution 2.2.2 might be useful, if not go to [How to Make Windows 10 Accept File Paths Over 260 Characters](https://www.howtogeek.com/266621/how-to-make-windows-10-accept-file-paths-over-260-characters/). And, if that does not fix this try using Git Bash, WSL, or the Command Prompt.
 - [GitHub - Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
 - [GitHub - REST API Search](https://docs.github.com/en/rest/search#text-match-metadata)
+- [GitHub - Clone a single branch](https://stackoverflow.com/questions/1778088/how-do-i-clone-a-single-branch-in-git)
 - [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
 - [PuTTY (a free SSH and Telnet client) Donwload](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
