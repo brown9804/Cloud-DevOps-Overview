@@ -70,7 +70,7 @@ March, 2022
 - [GitHub - REST API Search](https://docs.github.com/en/rest/search#text-match-metadata)
 - [GitHub - Clone a single branch](https://stackoverflow.com/questions/1778088/how-do-i-clone-a-single-branch-in-git)
 - [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
-- [PuTTY (a free SSH and Telnet client) Donwload](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- [PuTTY (a free SSH and Telnet client) - Donwload on Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and on for macOS go [here](https://www.makeuseof.com/putty-for-mac/)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
 - [SQL - Replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
 - [SQL - Difference between COMMIT and ROLLBACK](https://www.geeksforgeeks.org/difference-between-commit-and-rollback-in-sql/)
