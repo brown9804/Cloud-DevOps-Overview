@@ -70,7 +70,7 @@ March, 2022
 - [GitHub - Useful Git Configuration Items, like better compression](https://wildlyinaccurate.com/useful-git-configuration-items/)
 - [GitHub - REST API Search](https://docs.github.com/en/rest/search#text-match-metadata)
 - [GitHub - Clone a single branch](https://stackoverflow.com/questions/1778088/how-do-i-clone-a-single-branch-in-git)
-- [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview)
+- [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview), to modify a SSH file on mac click [here](https://stackoverflow.com/questions/54133300/how-to-access-and-modify-a-ssh-file-on-mac)
 - [PuTTY (a free SSH and Telnet client) - Donwload on Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and on for macOS go [here](https://www.makeuseof.com/putty-for-mac/)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
 - [SQL - Replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
