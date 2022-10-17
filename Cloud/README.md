@@ -59,7 +59,7 @@ March, 2022
 </details>
 
 # Wiki:
-- [pip - How to install in macOS](https://www.geeksforgeeks.org/how-to-install-pip-in-macos/)
+- [pip - How to install in macOS](https://phoenixnap.com/kb/install-putty-on-mac)
 - [Terraform Environment Variables - export log files](https://www.terraform.io/cli/config/environment-variables)
 - [Terraform - How to enable debug logging](https://www.suse.com/support/kb/doc/?id=000020022)
 - [Terraform - Custom Condition Checks](https://www.terraform.io/language/expressions/custom-conditions#input-variable-validation)
