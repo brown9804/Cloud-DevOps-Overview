@@ -60,6 +60,7 @@ March, 2022
 
 # Wiki:
 - [pip - How to install in macOS](https://phoenixnap.com/kb/install-putty-on-mac)
+- [pip - sudo: npm: command not found](https://stackoverflow.com/questions/31472755/sudo-npm-command-not-found)
 - [Terraform Environment Variables - export log files](https://www.terraform.io/cli/config/environment-variables)
 - [Terraform - How to enable debug logging](https://www.suse.com/support/kb/doc/?id=000020022)
 - [Terraform - Custom Condition Checks](https://www.terraform.io/language/expressions/custom-conditions#input-variable-validation)
