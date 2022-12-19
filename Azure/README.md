@@ -27,7 +27,7 @@ March, 2022
 - [AZ Storage Account - Create a queue and add a message with the Azure portal](https://learn.microsoft.com/en-us/azure/storage/queues/storage-quickstart-queues-portal)
 - [AZ Storage Account - Samples using v12 Python client libraries](https://learn.microsoft.com/en-us/azure/storage/common/storage-samples-python)
 - [Microsoft Azure Storage Explorer - How to connect](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-manage-with-storage-explorer?tabs=windows)
-- [Microsoft Azure Storage Explorer - Not recognizing PartitionKey in CSV file](https://learn.microsoft.com/en-us/answers/questions/906432/azure-storage-explorer-not-recognizing-partitionke.html), if you are looking for a way to include commas in CSV columns without breaking the formatting click [here](https://stackoverflow.com/questions/4617935/is-there-a-way-to-include-commas-in-csv-columns-without-breaking-the-formatting)
+- [Microsoft Azure Storage Explorer - Not recognizing PartitionKey in CSV file](https://learn.microsoft.com/en-us/answers/questions/906432/azure-storage-explorer-not-recognizing-partitionke.html)
 - [Microsoft Azure Storage Explorer - Browse and manage storage resources](https://learn.microsoft.com/en-us/visualstudio/azure/vs-azure-tools-storage-resources-server-explorer-browse-manage?view=vs-2022)
 - [Function Apps - Introduction](https://docs.microsoft.com/en-us/azure/azure-functions/functions-overview)
 - [Function Apps - Connect Azure Functions to Azure Storage using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-add-output-binding-storage-queue-vs-code?tabs=in-process&pivots=programming-language-python)
