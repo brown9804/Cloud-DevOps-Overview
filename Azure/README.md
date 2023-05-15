@@ -22,7 +22,7 @@ March, 2022
 - [Postman - How to Install and use for API Testing](https://www.guru99.com/postman-tutorial.html)
 - [AZ Monitor - Monitor availability with URL ping tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - [AZ Monitor - Query Application Insights Telemetry Data using REST API](https://dailydotnettips.com/query-application-insights-telemetry-data-using-rest-api/)
-- [AZ Monitor -  Failures and Triggering an Alert from Application Insights](https://pmichaels.net/2022/04/23/azure-monitor-failures-and-triggering-an-alert-from-application-insights/),for MS guide [click here](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric)
+- [AZ Monitor -  Failures and Triggering an Alert from Application Insights](https://pmichaels.net/2022/04/23/azure-monitor-failures-and-triggering-an-alert-from-application-insights/), for MS guide [click here](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric)
 - [AZ Storage Account - What is Azure Table storage?](https://docs.microsoft.com/en-us/azure/storage/tables/table-storage-overview)
 - [AZ Storage Account - Understanding the Table service data model](https://docs.microsoft.com/en-us/rest/api/storageservices/Understanding-the-Table-Service-Data-Model)
 - [AZ Storage Account - Create a queue and add a message with the Azure portal](https://learn.microsoft.com/en-us/azure/storage/queues/storage-quickstart-queues-portal)
