@@ -41,3 +41,4 @@ March, 2022
 - [Data Factory - Creating a pipeline with UI](https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities?tabs=data-factory#creating-a-pipeline-with-ui)
 - [Data Factory - Need to Copy existing data factory pipelines to new data factory in new resource group](https://learn.microsoft.com/en-us/answers/questions/166820/need-to-copy-existing-data-factory-pipelines-to-ne)
 - [Data Factory - How to create and configure Azure Integration Runtime](https://learn.microsoft.com/en-us/azure/data-factory/create-azure-integration-runtime?tabs=data-factory#create-an-azure-ir-via-ui)
+- [Data Factory - How to get output parameter from Executed Pipeline in ADF](https://stackoverflow.com/questions/68252383/how-to-get-output-parameter-from-executed-pipeline-in-adf)
