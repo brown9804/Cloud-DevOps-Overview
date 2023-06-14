@@ -43,4 +43,6 @@ March, 2022
 - [Data Factory - How to create and configure Azure Integration Runtime](https://learn.microsoft.com/en-us/azure/data-factory/create-azure-integration-runtime?tabs=data-factory#create-an-azure-ir-via-ui)
 - [Data Factory - How to get output parameter from Executed Pipeline in ADF](https://stackoverflow.com/questions/68252383/how-to-get-output-parameter-from-executed-pipeline-in-adf)
 - [Data Factory - Roles and permissions for Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/concepts-roles-permissions)
+- [Data Factory - Assign a Key Vault access policy (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal)
+- [Data Factory - How to configure integrationRuntime (also for testing)](https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#create-a-self-hosted-ir-via-ui)
 
