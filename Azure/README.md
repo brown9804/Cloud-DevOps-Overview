@@ -46,5 +46,6 @@ March, 2022
 - [Data Factory - Assign a Key Vault access policy (legacy)](https://learn.microsoft.com/en-us/azure/key-vault/general/assign-access-policy?tabs=azure-portal)
 - [Data Factory - How to configure integrationRuntime (also for testing)](https://learn.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime?tabs=data-factory#create-a-self-hosted-ir-via-ui)
 - [Data Factory - Fix DataTypeNotSupported](https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-synapse-sql#error-code-sqlfailedtoconnect) try to activate runtime, and import schema on sink data for more details click [here](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-schema-and-type-mapping#tabular-source-to-tabular-sink)
+- [Data Factory - Managed Private EndPoints](https://blog.baeke.info/2021/06/24/approving-a-private-endpoint-connection-with-azure-cli/)
 - [SQL Server/Databases - Configure IP firewall rules](https://www.sqlshack.com/configure-ip-firewall-rules-for-azure-sql-databases/)
 
