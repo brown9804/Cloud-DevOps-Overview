@@ -19,6 +19,7 @@ March, 2022
 - [App Service Plan - Introduction](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
 - [Logic Apps - Stateful vs Stateless](https://martink.me/articles/what-is-new-in-logic-apps-v2)
 - [Logic Apps - Monitor run status, review trigger history, and set up alerts](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps?tabs=consumption)
+- [Logic Apps - Create a Standard logic app workflow in single-tenant Azure Logic Apps using Visual Studio Code](https://learn.microsoft.com/en-us/azure/logic-apps/create-single-tenant-workflows-visual-studio-code#set-up-visual-studio-code)
 - [Postman - How to Install and use for API Testing](https://www.guru99.com/postman-tutorial.html)
 - [AZ Monitor - Monitor availability with URL ping tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - [AZ Monitor - Query Application Insights Telemetry Data using REST API](https://dailydotnettips.com/query-application-insights-telemetry-data-using-rest-api/)
