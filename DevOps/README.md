@@ -18,3 +18,4 @@ July, 2020
 
 - [How to create a Azure Devops Story Template](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops&tabs=browser)
 - [How to leave from a Azure DevOps Organization](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops)
+- [Azure DevOps - Create Release Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops#continuous-deployment-triggers)
