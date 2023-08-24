@@ -40,7 +40,7 @@ March, 2022
 - [Function Apps/KeyVault - How to create a secure connection](https://levelup.gitconnected.com/a-secure-way-to-use-credentials-and-secrets-in-azure-functions-7ec91813c807)
 - [Function Apps/KeyVault - Troubleshooting Azure Key Vault References in Azure Function Apps](https://medium.com/geekculture/troubleshooting-azure-key-vault-references-in-azure-function-apps-b228c1216f63#:~:text=AccessToKeyVaultDenied%20error%20signifies%20that%20your,Vault's%20firewall%20(under%20Networking).)
 - [Function Apps - How to query Azure SQL DB](https://www.sqlshack.com/python-serverless-functions-to-query-azure-sql-db/)
-- [Function Apps - how to use SQL update query in azure functions SQL output binding in python](https://stackoverflow.com/questions/76637547/how-to-use-sql-update-query-in-azure-functions-sql-output-binding-in-python)
+- [Function Apps - how to use SQL update query in azure functions SQL output binding in python](https://stackoverflow.com/questions/76637547/how-to-use-sql-update-query-in-azure-functions-sql-output-binding-in-python), and understand how [commit()](https://www.tutorialspoint.com/what-is-python-commit-method-in-mysql) method works
 - [Data Factory - Creating a pipeline with UI](https://learn.microsoft.com/en-us/azure/data-factory/concepts-pipelines-activities?tabs=data-factory#creating-a-pipeline-with-ui)
 - [Data Factory - Need to Copy existing data factory pipelines to new data factory in new resource group](https://learn.microsoft.com/en-us/answers/questions/166820/need-to-copy-existing-data-factory-pipelines-to-ne)
 - [Data Factory - How to create and configure Azure Integration Runtime](https://learn.microsoft.com/en-us/azure/data-factory/create-azure-integration-runtime?tabs=data-factory#create-an-azure-ir-via-ui)
