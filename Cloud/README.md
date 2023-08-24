@@ -93,6 +93,7 @@ March, 2022
 - [SQL- COUNT rows with user defined column heading](https://www.w3resource.com/sql/aggregate-functions/count-function.php)
 - [SQL - Select Top N or Top N Random Rows](https://www.kodyaz.com/articles/sql-select-top-query.aspx)
 - [SQL - How to Join 3 Tables (or More)](https://learnsql.com/blog/how-to-join-3-tables-or-more-in-sql/)
+- [SQL - Create table with primary_key](https://learnsql.com/cookbook/how-to-create-a-primary-key-in-sql/)
 - [SSMS - How to install on Windows](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16#download-ssms), but if you need a tool that runs on operating systems other than Windows, we recommend [Azure Data Studio](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver16). Azure Data Studio is a cross-platform tool that runs on macOS, Linux, as well as Windows.
 - [SSMS - Database Diagram](https://www.mssqltips.com/sqlservertip/6269/sql-server-database-diagram-tool-in-management-studio/)
 - [SSMS - Script objects](https://docs.microsoft.com/en-us/sql/ssms/tutorials/scripting-ssms?view=sql-server-ver16)
