@@ -51,4 +51,5 @@ March, 2022
 - [Data Factory - Fix DataTypeNotSupported](https://learn.microsoft.com/en-us/azure/data-factory/connector-troubleshoot-synapse-sql#error-code-sqlfailedtoconnect) try to activate runtime, and import schema on sink data for more details click [here](https://learn.microsoft.com/en-us/azure/data-factory/copy-activity-schema-and-type-mapping#tabular-source-to-tabular-sink)
 - [Data Factory - Managed Private EndPoints](https://blog.baeke.info/2021/06/24/approving-a-private-endpoint-connection-with-azure-cli/)
 - [SQL Server/Databases - Configure IP firewall rules](https://www.sqlshack.com/configure-ip-firewall-rules-for-azure-sql-databases/)
+- [Data Lake - How To Create it In Azure](https://blog.openbridge.com/how-to-create-data-lake-in-azure-5bce1604c4c8)
 
