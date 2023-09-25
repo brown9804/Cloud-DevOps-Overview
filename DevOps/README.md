@@ -20,4 +20,4 @@ July, 2020
 - Azure DevOps - [How to leave from a Azure DevOps Organization](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops)
 - Azure DevOps - [Create Release Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops#continuous-deployment-triggers)
 - Project Management - [What are Functional and Non-Functional Requirements and How to Document These](https://enkonix.com/blog/functional-requirements-vs-non-functional/)
-- GitHub - [Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python)
+- GitHub - [Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python), for more information about how to run it on PR [click here](https://futurestud.io/tutorials/github-actions-run-on-pull-request#:~:text=but%20Not%20Both-,Run%20Actions%20on%20Pull%20Requests,%5D%20and%20you're%20done.)
