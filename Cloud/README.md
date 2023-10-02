@@ -74,6 +74,7 @@ March, 2022
 - [GitHub - Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 - [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview), to modify a SSH file on mac click [here](https://stackoverflow.com/questions/54133300/how-to-access-and-modify-a-ssh-file-on-mac)
 - [PuTTY (a free SSH and Telnet client) - Donwload on Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and on for macOS go [here](https://www.makeuseof.com/putty-for-mac/)
+- [SSH - Setting Up Keys](https://cs4118.github.io/dev-guides/vm-ssh.html#setting-up-ssh-keys)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
 - [SQL - Replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
 - [SQL - Difference between COMMIT and ROLLBACK](https://www.geeksforgeeks.org/difference-between-commit-and-rollback-in-sql/)
