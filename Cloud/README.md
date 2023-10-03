@@ -73,7 +73,7 @@ March, 2022
 - [GitHub - Clone a single branch](https://stackoverflow.com/questions/1778088/how-do-i-clone-a-single-branch-in-git)
 - [GitHub - Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 - [Azure Bastion - What is?](https://docs.microsoft.com/en-us/azure/bastion/bastion-overview), to modify a SSH file on mac click [here](https://stackoverflow.com/questions/54133300/how-to-access-and-modify-a-ssh-file-on-mac)
-- [PuTTY (a free SSH and Telnet client) - Donwload on Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and on for macOS go [here](https://www.makeuseof.com/putty-for-mac/)
+- [PuTTY (a free SSH and Telnet client) - Donwload on Windows](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), and on for macOS go [here](https://www.makeuseof.com/putty-for-mac/), or use the bastion which is easier, here you can find [3 Connecting to Windows VMs using Azure Bastion](https://harvestingclouds.com/post/simplifying-azure-bastion-3-connecting-to-windows-vms-using-azure-bastion/#:~:text=Connecting%20to%20the%20Windows%20VM,button%20on%20the%20next%20screen.)
 - [SSH - Setting Up Keys](https://cs4118.github.io/dev-guides/vm-ssh.html#setting-up-ssh-keys), [connect to Azure Virtual Desktop with the Remote Desktop client for macOS](https://learn.microsoft.com/en-us/azure/virtual-desktop/users/connect-macos)
 - [SQL Server Management Studio (SSMS) – how to save results with headers](https://solutioncenter.apexsql.com/sql-server-management-studio-ssms-how-to-save-results-with-headers/)
 - [SQL - Replacing one value with another](https://stackoverflow.com/questions/14212814/sql-replacing-one-value-with-another)
