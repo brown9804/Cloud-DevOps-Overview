@@ -108,3 +108,4 @@ March, 2022
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
 - [Docker - How do I start the docker daemon on macOS?](https://apple.stackexchange.com/questions/373888/how-do-i-start-the-docker-daemon-on-macos)
+- [VM - 3 Simple Ways to Transfer Files from a VM to a Host](https://www.nakivo.com/blog/3-simple-ways-to-transfer-files-from-a-vm-to-a-host/)
