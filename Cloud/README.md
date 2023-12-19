@@ -109,14 +109,24 @@ March, 2022
 - [Python - Implementation HMAC-SHA1](https://gist.github.com/heskyji/5167567b64cb92a910a3), you can find more functions definitions [here](https://gist.github.com/binaryatrocity/7079332cab038da1394d) or [Cryptographic signature and verification of messages](http://pymotw.com/2/hmac/)
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
-- [Cloud Computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
+- [Cloud computing - What is?](https://www.spiceworks.com/tech/cloud/articles/what-is-cloud-computing/)
+<img width="801" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/1b80fe83-6377-4c73-aea1-12b1575cacc8">
+
+<img width="692" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/bf849a7b-9cc7-494c-88e3-fedc39738a35">
+
+- [Cloud computing - Service Models: SAAS, PAAS, IAAS - Which Is Better For Business](https://dev.to/artemkobilinskiy/cloud-service-models-saas-paas-iaas-which-is-better-for-business-574k), more details [here](https://qualitapps.com/en/what-are-the-iaas-paas-and-saas-cloud-service-models/)
+<img width="709" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/7bc73a87-3b57-4f41-87de-5e72f3dfc6c7">
+
+<img width="642" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/9d9cb10d-c74f-49e9-9cbf-73e7fba68746">
+
+- [Cloud computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
 <img width="667" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/b3e11d52-47ef-4ff0-b230-031a912084a9">
 
-- [AKS - Understanding Multi-Cluster Kubernetes: Architecture, Benefits, and Challenges](https://traefik.io/glossary/understanding-multi-cluster-kubernetes/), Why would I want to use a multi-cluster architecture?, to understand that and difference between segmentation, and replication [click here](https://www.redhat.com/architect/multi-cluster-kubernetes-architecture)
+- [AKS - Understanding concepts and docker](https://geekflare.com/docker-vs-kubernetes/)
 
-<img width="1067" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/6b16a8d4-f3f9-4843-bce7-e421630e04f3">
+<img width="758" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/52bc950c-bce2-47cc-8b62-1ca7355ee616">
 
-<img width="1098" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/2a73bda1-4ea9-4d04-b3e7-99e9e8baee48">
+<img width="733" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/a4312875-2bcc-4b30-a02d-b603829849f8">
 
 - [AKS - Choosing the Right Kubernetes Cluster Approach: Multi-tenancy vs. Multi-cluster](https://www.linkedin.com/pulse/choosing-right-kubernetes-cluster-approach-vs-mina-gobrial?trk=public_post_main-feed-card_reshare_feed-article-content), Difference Between multi-cluster, multi-master, multi-tenant & federated Kubernetes [click here](https://platform9.com/blog/difference-between-multi-cluster-multi-master-multi-tenant-federated-kubernetes/)
 
@@ -126,6 +136,11 @@ March, 2022
 
 <img width="617" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/14367694-c2df-4eaf-ae41-68ee088d3fec">
 
+- [AKS - Understanding Multi-Cluster Kubernetes: Architecture, Benefits, and Challenges](https://traefik.io/glossary/understanding-multi-cluster-kubernetes/), Why would I want to use a multi-cluster architecture?, to understand that and difference between segmentation, and replication [click here](https://www.redhat.com/architect/multi-cluster-kubernetes-architecture)
+
+<img width="1067" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/6b16a8d4-f3f9-4843-bce7-e421630e04f3">
+
+<img width="1098" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/2a73bda1-4ea9-4d04-b3e7-99e9e8baee48">
 
 
 
