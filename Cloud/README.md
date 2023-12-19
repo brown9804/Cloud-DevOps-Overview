@@ -110,6 +110,24 @@ March, 2022
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
 - [Cloud Computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
-
 <img width="667" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/b3e11d52-47ef-4ff0-b230-031a912084a9">
+
+- [AKS - Understanding Multi-Cluster Kubernetes: Architecture, Benefits, and Challenges](https://traefik.io/glossary/understanding-multi-cluster-kubernetes/), Why would I want to use a multi-cluster architecture?, to understand that and difference between segmentation, and replication [click here](https://www.redhat.com/architect/multi-cluster-kubernetes-architecture)
+
+<img width="1067" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/6b16a8d4-f3f9-4843-bce7-e421630e04f3">
+
+<img width="1098" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/2a73bda1-4ea9-4d04-b3e7-99e9e8baee48">
+
+- [AKS - Choosing the Right Kubernetes Cluster Approach: Multi-tenancy vs. Multi-cluster](https://www.linkedin.com/pulse/choosing-right-kubernetes-cluster-approach-vs-mina-gobrial?trk=public_post_main-feed-card_reshare_feed-article-content), Difference Between multi-cluster, multi-master, multi-tenant & federated Kubernetes [click here](https://platform9.com/blog/difference-between-multi-cluster-multi-master-multi-tenant-federated-kubernetes/)
+
+<img width="958" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/7cc8c40f-3c47-4b98-85b4-378a35dac9af">
+
+<img width="906" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/62c06ee7-d682-4870-8727-edda6eabe18c">
+
+<img width="617" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/14367694-c2df-4eaf-ae41-68ee088d3fec">
+
+
+
+
+
 
