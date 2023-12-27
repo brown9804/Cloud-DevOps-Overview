@@ -109,7 +109,7 @@ March, 2022
 - [Python - Implementation HMAC-SHA1](https://gist.github.com/heskyji/5167567b64cb92a910a3), you can find more functions definitions [here](https://gist.github.com/binaryatrocity/7079332cab038da1394d) or [Cryptographic signature and verification of messages](http://pymotw.com/2/hmac/)
 - [Python - encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - [Python - Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
-- [Cloud computing - What is?](https://www.spiceworks.com/tech/cloud/articles/what-is-cloud-computing/)
+- [Cloud computing - What is?](https://www.spiceworks.com/tech/cloud/articles/what-is-cloud-computing/). [A Brief History of Cloud Computing](https://www.dataversity.net/brief-history-cloud-computing/). About what is [Project MAC](https://www.darpa.mil/about-us/timeline/project-mac)
 <img width="801" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/1b80fe83-6377-4c73-aea1-12b1575cacc8">
 
 <img width="692" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/bf849a7b-9cc7-494c-88e3-fedc39738a35">
