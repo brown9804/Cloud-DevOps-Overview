@@ -16,8 +16,6 @@ March, 2022
 
 # Content:
 
-<details>
-<summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
   
 - [Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform)
@@ -44,4 +42,3 @@ March, 2022
   - [Troubleshooting a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_20)
   
 <!-- /MarkdownTOC -->
-</details>
