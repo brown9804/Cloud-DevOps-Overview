@@ -16,8 +16,6 @@ March, 2022
 
 # Content
 
-<details>
-<summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
   
 - [Linux](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux)
@@ -33,5 +31,3 @@ March, 2022
   - [Processes Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab9)
   
 <!-- /MarkdownTOC -->
-</details>
-
