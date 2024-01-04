@@ -19,15 +19,15 @@ March, 2022
 <!-- MarkdownTOC -->
   
 - [Linux](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux)
-  - [Working with Users and Permissions](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab0)
-  - [System Service Management, Runlevels and Boot Targets](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab1)
-  - [Securely Accessing Your System](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab2)
-  - [Package Management and Troubleshooting](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab3)
-  - [File Management, Permissions and Backup](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab4)
-  - [Working with Text Files and Streams](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab5)
-  - [Linux Device Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab6)
-  - [The Linux Shell](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab7)
-  - [Networking](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab8)
-  - [Processes Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab9)
+  - Lab 0 - [Working with Users and Permissions](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab0)
+  - Lab 1 - [System Service Management, Runlevels and Boot Targets](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab1)
+  - Lab 2 - [Securely Accessing Your System](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab2)
+  - Lab 3- [Package Management and Troubleshooting](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab3)
+  - Lab 4 - [File Management, Permissions and Backup](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab4)
+  - Lab 5 - [Working with Text Files and Streams](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab5)
+  - Lab 6 - [Linux Device Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab6)
+  - Lab 7 - [The Linux Shell](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab7)
+  - Lab 8 - [Networking](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab8)
+  - Lab 9 - [Processes Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab9)
   
 <!-- /MarkdownTOC -->
