@@ -116,6 +116,7 @@ March, 2022
 - SQL - [Select Top N or Top N Random Rows](https://www.kodyaz.com/articles/sql-select-top-query.aspx)
 - SQL - [How to Join 3 Tables (or More)](https://learnsql.com/blog/how-to-join-3-tables-or-more-in-sql/)
 - SQL - [Create table with primary_key](https://learnsql.com/cookbook/how-to-create-a-primary-key-in-sql/)
+- SQL - [How to select multiple columns but only group by one?](https://dba.stackexchange.com/questions/71887/how-to-select-multiple-columns-but-only-group-by-one)
 - Nodejs - [Install Windows](https://www.guru99.com/download-install-node-js.html), if you want an specific version go [here](https://stackoverflow.com/questions/33849714/how-to-install-older-version-of-node-js-on-windows), and for mac go [here](https://medium.com/@georgeenathomas/3-step-process-to-downgrade-node-version-using-homebrew-bc0b0a72ae27) 
 - Nodejs vs [JavaScript](https://www.knowledgehut.com/blog/web-development/node-js-vs-javasript), if you have issues with npm SELF_SIGNED_CERT_IN_CHAIN on Azure go [here](https://stackoverflow.com/questions/22099098/npm-self-signed-cert-in-chain-on-azure)
 - JavaScript - [Remove Duplicates from json array](https://stackoverflow.com/questions/23507853/remove-duplicate-objects-from-json-array)
