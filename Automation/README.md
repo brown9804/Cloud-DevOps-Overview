@@ -21,5 +21,5 @@ March, 2022
 - StackStorm - [StackStorm: Why, What And How?](https://www.youtube.com/watch?v=WuV6d-mDRgk)
 - StackStorm  - [Alternatives](https://alternativeto.net/software/stackstorm/)
 
-![image](https://github.com/brown9804/DevOps-Agile-Cloud_Lpath/assets/24630902/0f4558e7-3089-4854-9ec7-b6709df0d899)
+![image](https://github.com/brown9804/DevOps-Agile-Cloud_Lpath/assets/24630902/541e1176-8075-4e5a-948e-45d2f15ddc61)
 
