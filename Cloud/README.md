@@ -14,7 +14,7 @@ March, 2022
 
 ----------------------
 
-# Content:
+## Content:
 
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
@@ -58,7 +58,22 @@ March, 2022
 <!-- /MarkdownTOC -->
 </details>
 
-# Wiki:
+
+- Cloud computing - [What is?](https://www.spiceworks.com/tech/cloud/articles/what-is-cloud-computing/). [A Brief History of Cloud Computing](https://www.dataversity.net/brief-history-cloud-computing/). About what is [Project MAC](https://www.darpa.mil/about-us/timeline/project-mac)
+<img width="801" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/1b80fe83-6377-4c73-aea1-12b1575cacc8">
+
+<img width="692" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/bf849a7b-9cc7-494c-88e3-fedc39738a35">
+
+- Cloud computing - Service Models: SAAS, PAAS, IAAS - Which Is Better For Business](https://dev.to/artemkobilinskiy/cloud-service-models-saas-paas-iaas-which-is-better-for-business-574k), more details [here](https://qualitapps.com/en/what-are-the-iaas-paas-and-saas-cloud-service-models/)
+<img width="709" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/7bc73a87-3b57-4f41-87de-5e72f3dfc6c7">
+
+<img width="642" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/9d9cb10d-c74f-49e9-9cbf-73e7fba68746">
+
+- Cloud computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
+<img width="667" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/b3e11d52-47ef-4ff0-b230-031a912084a9">
+
+
+## Wiki:
 - pip - [How to install in macOS](https://phoenixnap.com/kb/install-putty-on-mac)
 - pip - [sudo: npm: command not found](https://stackoverflow.com/questions/31472755/sudo-npm-command-not-found)
 - Terraform Environment Variables - [export log files](https://www.terraform.io/cli/config/environment-variables)
@@ -109,18 +124,6 @@ March, 2022
 - Python - [Implementation HMAC-SHA1](https://gist.github.com/heskyji/5167567b64cb92a910a3), you can find more functions definitions [here](https://gist.github.com/binaryatrocity/7079332cab038da1394d) or [Cryptographic signature and verification of messages](http://pymotw.com/2/hmac/)
 - Python - [encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - Python - [Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
-- Cloud computing - [What is?](https://www.spiceworks.com/tech/cloud/articles/what-is-cloud-computing/). [A Brief History of Cloud Computing](https://www.dataversity.net/brief-history-cloud-computing/). About what is [Project MAC](https://www.darpa.mil/about-us/timeline/project-mac)
-<img width="801" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/1b80fe83-6377-4c73-aea1-12b1575cacc8">
-
-<img width="692" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/bf849a7b-9cc7-494c-88e3-fedc39738a35">
-
-- Cloud computing - Service Models: SAAS, PAAS, IAAS - Which Is Better For Business](https://dev.to/artemkobilinskiy/cloud-service-models-saas-paas-iaas-which-is-better-for-business-574k), more details [here](https://qualitapps.com/en/what-are-the-iaas-paas-and-saas-cloud-service-models/)
-<img width="709" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/7bc73a87-3b57-4f41-87de-5e72f3dfc6c7">
-
-<img width="642" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/9d9cb10d-c74f-49e9-9cbf-73e7fba68746">
-
-- Cloud computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
-<img width="667" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/b3e11d52-47ef-4ff0-b230-031a912084a9">
 
 - AKS - [Understanding concepts and docker](https://geekflare.com/docker-vs-kubernetes/)
 
@@ -141,8 +144,3 @@ March, 2022
 <img width="1067" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/6b16a8d4-f3f9-4843-bce7-e421630e04f3">
 
 <img width="1098" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/2a73bda1-4ea9-4d04-b3e7-99e9e8baee48">
-
-- StackStorm - [Overview](https://www.youtube.com/watch?v=MtPw1WC9pxA)
-- StackStorm - [StackStorm: Why, What And How?](https://www.youtube.com/watch?v=WuV6d-mDRgk)
-- StackStorm  - [Alternatives](https://alternativeto.net/software/stackstorm/)
-
