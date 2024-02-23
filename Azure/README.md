@@ -21,6 +21,7 @@ March, 2022
 - Logic Apps - [Stateful vs Stateless](https://martink.me/articles/what-is-new-in-logic-apps-v2)
 - Logic Apps - [Monitor run status, review trigger history, and set up alerts](https://learn.microsoft.com/en-us/azure/logic-apps/monitor-logic-apps?tabs=consumption)
 - Logic Apps - [Create a Standard logic app workflow in single-tenant using VsCode](https://learn.microsoft.com/en-us/azure/logic-apps/create-single-tenant-workflows-visual-studio-code#set-up-visual-studio-code)
+- Logic Apps - [Configure Logic Apps (Standard) with VNet and Private Endpoint](https://paarhu.is/configure-logic-apps-standard-with-vnet-and-private-endpoint/)
 - AZ Monitor - [Monitor availability with URL ping tests](https://docs.microsoft.com/en-us/azure/azure-monitor/app/monitor-web-app-availability)
 - AZ Monitor - [Query Application Insights Telemetry Data using REST API](https://dailydotnettips.com/query-application-insights-telemetry-data-using-rest-api/)
 - AZ Monitor -  [Failures and Triggering an Alert from Application Insights](https://pmichaels.net/2022/04/23/azure-monitor-failures-and-triggering-an-alert-from-application-insights/), for MS guide [click here](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-new-alert-rule?tabs=metric)
