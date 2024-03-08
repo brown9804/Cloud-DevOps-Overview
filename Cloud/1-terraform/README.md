@@ -54,6 +54,7 @@ March, 2022
 | Terraform Open Source | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/1bed5e2d-1a16-477d-b9e7-e559f55b5bd0"> | 
 | Terraform Enterprise | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/da8bb7cd-86ae-4d37-9a88-116101124ae9"> |
 | Workspace Structure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/f98e4f59-bd6f-4d1e-82aa-f21dcc8bb32f"> | 
+| Using Modules for Self-Service Infrastructure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/29d6a8d9-d28d-41c8-991b-7eea23838c27"> |
 
 
   
