@@ -42,3 +42,15 @@ March, 2022
   - Lab 20 - [Troubleshooting a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_20)
   
 <!-- /MarkdownTOC -->
+
+## Wiki 
+
+- Terraform - [Terraform Enterprise related projects, tools, and resources](https://github.com/hashicorp/awesome-terraform-enterprise)
+- Terraform - [Operating Model](https://www.datocms-assets.com/2885/1560359028-terraformoperatingmodelwhitepaper.pdf)
+
+| Topic | Reference | 
+| --- | --- |
+| Multi-Cloud Infrastructure Provisioning | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/7bb94b76-7a4c-49a6-9160-95f44e95b249"> |
+
+
+  
