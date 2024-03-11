@@ -14,6 +14,12 @@ March, 2022
 
 ----------------------
 
+<img width="600" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/c2c2ed11-f818-46da-999c-9157e4642596">
+
+<img width="600" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/eeaca386-f715-4029-b92c-48c6232b3853">
+
+<img width="600" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/dd7f5c2d-d6a1-44d5-806a-05fa45e81d01">
+
 ## Wiki
 
 - Firewall rules - [What is inbound and outbound connection in terms of firewalls?](https://www.quora.com/What-is-inbound-and-outbound-connection-in-terms-of-firewalls#:~:text=Inbound%3A%20Internet%20requests%20initiated%20from,database%20or%20send%20SMTP%20mail.)
