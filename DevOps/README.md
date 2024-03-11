@@ -1,4 +1,4 @@
-# DevOps - Wiki
+# DevOps Learning Path
 
 ----------
 
