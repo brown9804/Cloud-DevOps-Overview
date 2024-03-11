@@ -1,4 +1,4 @@
-# Agile Methodology 
+# Agile Methodology Overview 
 ----------
 
 Costa Rica
