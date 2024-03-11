@@ -15,7 +15,7 @@ Aug, 2022
 
 > If you want to have a career in cloud-based programming, you should consider learning Go, because platforms such as Amazon Web Services, Kubernetes, and Google Cloud Platform (GCP) all support Go.
 
-<img width="600" alt="image" src="https://go.dev/images/gophers/ladder.svg">
+<img width="100" alt="image" src="https://go.dev/images/gophers/ladder.svg">
 
 ## Wiki 
 
