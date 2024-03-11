@@ -21,5 +21,4 @@ Aug, 2022
 
 - [What is Go? Golang Programming Language Meaning Explained](https://www.freecodecamp.org/news/what-is-go-programming-language/)
 - [The Go programming language](https://github.com/golang/go)
-- [Tutorial: Get started with Go](https://go.dev/doc/tutorial/getting-started)
-- [Golang Workshop](https://github.com/naqvijafar91/go-workshops)
+
