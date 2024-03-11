@@ -16,7 +16,20 @@ July, 2020
 
 ----------
 
-Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
+> Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
+
+## Content:
+
+<!-- MarkdownTOC -->
+
+- [Agile](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Agile)
+- [Automation](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation)
+- [Azure Cloud](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Azure)
+- [Cloud Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud)
+- [DevOps](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/DevOps)
+- [Network](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Network)
+
+<!-- /MarkdownTOC -->
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9)
 
