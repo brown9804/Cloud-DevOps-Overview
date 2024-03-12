@@ -40,8 +40,8 @@ def mapping_data(dataframe):
 def get_request(url, auth):
     # headers
     headers = {
-        'xapi-key': 'b26384901kjhs0adb05db794dbe8d996', # optional
-        'Ocp-Apim-Subscription-Key': 'b26384901kjhs0adb05db794dbe8d996', # optional
+        'xapi-key': '', # optional
+        'Ocp-Apim-Subscription-Key': '', # optional
         'Authorization': 'Bearer  '+auth # mandatory 
     }
 
@@ -60,7 +60,7 @@ def get_request(url, auth):
 ## -------------------------
 ##           MAIN
 ## Get request 
-auth = 'vis37405ns055eafadd1329acjsk76e3fj407jsg'
+auth = ''
 url = 'https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Automation/1_api_automations/0-api_curr_exchange_eg/main.py'
 get_request(url, auth)
 
