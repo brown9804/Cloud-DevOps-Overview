@@ -17,7 +17,6 @@ import hmac
 import base64
 import pandas as pd 
 import binascii
-from Crypto.Hash import HMAC, MD5
 
 ## Definitions 
 
@@ -71,3 +70,57 @@ def post_call_trigger_process_headers(secret_key):
     response = requests.post(url, data=json.dumps(payload), headers=headers)
     print(response.status_code)
     print(response.text)
+
+def sha1_sign(person_name, person_id, url, secret_key):
+    payload = {
+        'person_id': person_id,
+        'person_name': person_name
+    }
+    headers = {
+        'xapi-key': '', #
+
+        'Ocp-Apim-Subscription-Key': '',
+
+        'X-Hub-Signature': sig1hex,
+        'Authorization': 'Basic ', 
+        
+        'Content-Type': 'application/json'
+    }
+
+    message = json.dumps(payload)
+    print(message)
+    print(type(message)) 
+
+    message = bytes(message, 'UTF-8')
+    digester = hmac.new(secret_key, message, digestmod=hashlib.sha1)
+    sig1hex = digester.hexdigest()
+    print(sig1hex) 
+
+    response = requests.post(url, data=json.dumps(payload), headers=headers)
+    print(response.status_code)
+    print(response.text)
+
+    time.sleep(5)
+    
+    print("After 5 seconds\n")
+
+
+## -------------------------
+##           MAIN    
+
+## Post call in loop 
+with open('./input_file.json') as data_file:  
+    url = ''
+    secret_key = ''
+    person_name_df = pd.DataFrame(columns=['user_name'])
+    data = json.load(data_file)
+    for v in data:
+        array = [v['user_name']]
+        person_name_df.loc[len(person_name_df)] = array
+   # print(person_name_df) # array with all the names needed 
+
+for ind in person_name_df.index:
+    person_name = person_name_df['user_name'][ind]
+    person_id = person_name_df['person_id'][ind]
+    # print(person_name_df['user_name'][ind])
+    sha1_sign(person_name, person_id, url, secret_key)
