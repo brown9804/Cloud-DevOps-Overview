@@ -8,7 +8,11 @@ import tkinter as tk
 from tkinter import ttk
 from IPython.display import display
 import requests
-# python3 -m pip install requests
+import asyncio
+import json 
+import urllib.request
+
+# !python3 -m pip install requests 
 
 ## Definitions 
 def reading_csv_data(filename):
@@ -56,6 +60,12 @@ def get_request(url, auth):
     logs = pd.DataFrame()
     logs = logs[[response.text]]
 
+def get_url_open_request_loop(input_data):
+    url = input_data.loc[0]
+    contents = urllib.request.urlopen(url).read()
+
+    print(contents.status_code)
+    print(contents.text)
 
 ## -------------------------
 ##           MAIN
@@ -64,5 +74,8 @@ auth = ''
 url = 'https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Automation/1_api_automations/0-api_curr_exchange_eg/main.py'
 get_request(url, auth)
 
+## Get information from URL list
+input_data = pd.read_csv("./url_list.csv", header='infer')
+get_url_open_request_loop(input_data)
 
 
