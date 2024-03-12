@@ -1,3 +1,12 @@
+#Python3
+
+
+##--------------------------------Main file------------------------------------
+##                         Copyright (C) 2022 
+##                         Belinda Brown Ramírez 
+##                         belindabrownr04@gmail.com
+##--------------------------
+
 import pandas as pd 
 from multiprocessing.resource_sharer import stop
 import numpy as np
