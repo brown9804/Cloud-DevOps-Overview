@@ -19,8 +19,18 @@ March, 2022
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
 <!-- MarkdownTOC -->
-  
-- [0. API Currency Exchange Example](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-api_curr_exchange_eg)
+
+- [0. Linux](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux)
+  - [Working with Users and Permissions](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab0)
+  - [System Service Management, Runlevels and Boot Targets](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab1)
+  - [Securely Accessing Your System](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab2)
+  - [Package Management and Troubleshooting](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab3)
+  - [File Management, Permissions and Backup](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab4)
+  - [Working with Text Files and Streams](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab5)
+  - [Linux Device Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab6)
+  - [The Linux Shell](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab7)
+  - [Networking](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab8)
+  - [Processes Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab9)
 - [1. Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform)
   - [Installing Terraform and Working with Terraform Providers](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab0)
   - [Using Terraform CLI Commands (workspace and state) to Manipulate a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab1)
@@ -43,18 +53,7 @@ March, 2022
   - [Manage Kubernetes Resources with Terraform](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_18)
   - [Use Terraform to Create an EKS Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_19)
   - [Troubleshooting a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_20)
-- [2. Linux](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux)
-  - [Working with Users and Permissions](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab0)
-  - [System Service Management, Runlevels and Boot Targets](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab1)
-  - [Securely Accessing Your System](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab2)
-  - [Package Management and Troubleshooting](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab3)
-  - [File Management, Permissions and Backup](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab4)
-  - [Working with Text Files and Streams](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab5)
-  - [Linux Device Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab6)
-  - [The Linux Shell](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab7)
-  - [Networking](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab8)
-  - [Processes Management](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/2-linux/lab9)
-
+  
 <!-- /MarkdownTOC -->
 </details>
 

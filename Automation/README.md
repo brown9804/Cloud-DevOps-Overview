@@ -16,8 +16,10 @@ March, 2022
 
 ## Content 
 
-- [GoLang](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/0_golang)
-
+- [0. GoLang](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/0_golang)
+- [1. API Automations Scripts](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations)
+  - [API Currency Exchange Example](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-api_curr_exchange_eg)
+  
 <img width="600" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/5a0b44ee-ebc1-4566-ac2b-a9f9fe8b26b8">
 
 ## Wiki 
