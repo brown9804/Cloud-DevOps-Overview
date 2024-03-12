@@ -15,8 +15,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "web_app" {
-  ami                    = <DUMMY VALUE>
-  subnet_id              = <DUMMY VALUE>
+  ami                    = var.ami
+  subnet_id              = var.subnet_id
   instance_type          = "t3.micro"
   user_data              = <<-EOF
               #!/bin/bash
@@ -24,6 +24,6 @@ resource "aws_instance" "web_app" {
               nohup busybox httpd -f -p 8080 &
               EOF
   tags = {
-    Name = $var.name-learn
+    Name = var.name
   }
 }
