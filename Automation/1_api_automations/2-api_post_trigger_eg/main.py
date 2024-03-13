@@ -124,3 +124,8 @@ for ind in person_name_df.index:
     person_id = person_name_df['person_id'][ind]
     # print(person_name_df['user_name'][ind])
     sha1_sign(person_name, person_id, url, secret_key)
+
+## References 
+#[1] https://bobbyhadz.com/blog/python-no-module-named-requests
+#[2] https://www.geeksforgeeks.org/pandas-set_option-function-in-python/#:~:text=set_option()%20function%20in%20Python,-View%20Discussion&text=Pandas%20have%20an%20options%20system,value%20of%20a%20specified%20option.
+#[3] https://stackoverflow.com/questions/49328447/display-in-python
