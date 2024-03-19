@@ -11,9 +11,10 @@ import asyncio
 
 if __name__ == '__main__':
     with tracer.start_as_current_span("Country_Information_For_Travellers") as parent:
-
+        current_span = trace.get_current_span()
+        current_span.add_event("Input0 - Asking for Country Name ...")
         country_name = input("Which country would you like information about?\n")     #  user input
-
+    
         with tracer.start_as_current_span("Country_General_Inf") as child:
             print("\n************ Country - General Information ***********************\n")
             df_info = country_info(country_name)
@@ -34,9 +35,18 @@ if __name__ == '__main__':
         with tracer.start_as_current_span("Country_CurrencyConvert") as child:
             print("\n************ Country - Currency Convert ***********************\n")
             from_currency = df_info["Values"][6][0] # country inf currency 
+            current_span.add_event("Input1 - Asking for ToCurrency exchange ...")
             to_currency = input("Into which currency would you like to convert?\n") #  user input
+
+            current_span.add_event("Input2 - Asking for Amount of Money for exchange ...")
             amount = input("How much money would you like to convert?\n") # user input
-            year_asked = input("Considerintg which YEAR for the exchange?\n") # user input
-            month_asked = input("Considerintg which MONTH for the exchange?\n") # user input 
-            day_asked = input("Considerintg which DAY for the exchange?\n") # user input 
+
+            current_span.add_event("Input3 - Asking for YEAR of exchange ...")
+            year_asked = input("Considering which YEAR for the exchange?\n") # user input
+
+            current_span.add_event("Input4 - Asking for MONTH of exchange ...")
+            month_asked = input("Considering which MONTH for the exchange?\n") # user input 
+
+            current_span.add_event("Input5 - Asking for DAY of exchange ...")
+            day_asked = input("Considering which DAY for the exchange?\n") # user input 
             convert_currency(from_currency, to_currency, amount, year_asked, month_asked, day_asked)
