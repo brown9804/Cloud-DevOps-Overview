@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
         with tracer.start_as_current_span("Country_CurrencyConvert") as child:
             print("\n************ Country - Currency Convert ***********************\n")
-            from_currency = df_info["Values"][6][0]
+            from_currency = df_info["Values"][6][0] # country inf currency 
             to_currency = input("Into which currency would you like to convert?\n") #  user input
             amount = input("How much money would you like to convert?\n") # user input
             year_asked = input("Considerintg which YEAR for the exchange?\n") # user input
