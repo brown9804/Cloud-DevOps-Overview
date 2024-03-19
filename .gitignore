@@ -1,6 +1,9 @@
 ## Macbook files
 .DS_Store
 
+## Env 
+.cache.sqlite
+
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
