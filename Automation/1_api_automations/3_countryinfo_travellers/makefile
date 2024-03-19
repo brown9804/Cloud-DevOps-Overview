@@ -28,8 +28,8 @@ requirements: # install libs, packages
 	pip install chardet2 urllib3
 	pip install django-contrib-comments==1.5
 
-setupcountryinfo:
-	python3 src/countryinfo/setup.py install
+setupcountryinfo: 
+	./setup_config.sh
 
 run:
 	python3 $(SRC)main.py
