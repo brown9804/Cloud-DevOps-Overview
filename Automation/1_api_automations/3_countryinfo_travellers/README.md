@@ -18,6 +18,17 @@ Dec, 2022
 
 > This is designed to provide users with a comprehensive overview of the country, including general information, COVID-19 data, weather details based on latitude and longitude, and an overview of the country's currency exchange rates.
 
+### Wiki:
+- [Country Info](https://pypi.org/project/countryinfo/), and [repo](https://github.com/porimol/countryinfo.git)
+- [Countries flags API](https://www.countryflags.io)
+- [Covid information](https://www.worldometers.info/coronavirus/country/)
+- [Currency conversion](https://pypi.org/project/CurrencyConverter/)
+- [Weather API](https://open-meteo.com/)
+  - *https://openweathermap.org/api*
+  - *https://www.worldometers.info/*
+- [Open Telemetry for Python](https://opentelemetry.io/docs/languages/python/)
+- [Manual instrumentation for OpenTelemetry Python](https://opentelemetry.io/docs/languages/python/instrumentation/)
+
 ## Setup
 
 Please follow the makefile instructions at this location. And make sure countryinfo module is cloned before started.
@@ -29,16 +40,4 @@ make setupcountryinfo
 make run
 ~~~
 
-
 Example, using Spain data:
-
-### Wiki:
-- [Country Info](https://pypi.org/project/countryinfo/), and [repo](https://github.com/porimol/countryinfo.git)
-- [Countries flags API](https://www.countryflags.io)
-- [Covid information](https://www.worldometers.info/coronavirus/country/)
-- [Currency conversion](https://pypi.org/project/CurrencyConverter/)
-- [Weather API](https://open-meteo.com/)
-  - *https://openweathermap.org/api*
-  - *https://www.worldometers.info/*
-- [Open Telemetry for Python](https://opentelemetry.io/docs/languages/python/)
-- [Manual instrumentation for OpenTelemetry Python](https://opentelemetry.io/docs/languages/python/instrumentation/)
