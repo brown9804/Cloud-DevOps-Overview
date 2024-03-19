@@ -41,3 +41,11 @@ make run
 ~~~
 
 Example, using Spain data:
+
+| <!-- -->    |
+|-------------|
+| <img width="1000" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/3cbdc543-56dc-46e1-a63b-668b5c87e3b0" alt="country inf"/> |  
+| <img width="1000" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/ffa0287b-e5a2-4ad2-a397-7868bc3a7d10" alt="Currency  and Weather"/> | 
+
+
+
