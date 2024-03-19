@@ -27,6 +27,8 @@ requirements: # install libs, packages
 	pip install openmeteo-requests
 	pip install chardet2 urllib3
 	pip install django-contrib-comments==1.5
+	pip install opentelemetry-api
+	pip install opentelemetry-sdk
 
 setupcountryinfo: 
 	./setup_config.sh
