@@ -20,7 +20,7 @@ Dec, 2022
 
 ## Setup
 
-Please follow the makefile instructions at this location:
+Please follow the makefile instructions at this location. And make sure countryinfo module is cloned before started.
 
 ~~~
 make env
@@ -30,7 +30,7 @@ make run
 ~~~
 
 
-Example using Spain data:
+Example, using Spain data:
 
 ### Wiki:
 - [Country Info](https://pypi.org/project/countryinfo/), and [repo](https://github.com/porimol/countryinfo.git)
