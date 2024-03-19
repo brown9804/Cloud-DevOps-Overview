@@ -1,0 +1,35 @@
+#Python3
+
+##--------------------------------------------------------------------
+##                         Copyright (C) 2022
+##                         Belinda Brown Ramírez 
+##                         belindabrownr04@gmail.com
+##--------------------------
+
+# Frames result folder
+SRC = src/
+
+#******************************************************************************
+############ 						Create env/Run python script
+#******************************************************************************
+
+env: # create env 
+	python3 -m venv .venv
+
+activate: # activate env 
+	source .venv/bin/activate
+	
+requirements: # install libs, packages 
+	pip install -r ./requirements.txt
+	brew install tcl-tk
+	pip install countryinfo
+	pip install requests-cache retry-requests numpy pandas
+	pip install openmeteo-requests
+	pip install chardet2 urllib3
+	pip install django-contrib-comments==1.5
+
+setupcountryinfo:
+	python3 src/countryinfo/setup.py install
+
+run:
+	python3 $(SRC)main.py
