@@ -7,6 +7,7 @@
 ##--------------------------
 
 from shared import *
+import asyncio
 
 if __name__ == '__main__':
     country_name = input("Which country would you like information about?\n")     #  user input
