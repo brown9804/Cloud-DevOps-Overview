@@ -16,21 +16,38 @@ from opentelemetry.sdk.trace.export import (
     BatchSpanProcessor,
     ConsoleSpanExporter,
 )
+from opentelemetry import metrics
+from opentelemetry.sdk.metrics import MeterProvider
+from opentelemetry.sdk.metrics.export import (
+    ConsoleMetricExporter,
+    PeriodicExportingMetricReader,
+)
 
-### Instrumentation with OpenTelemetry 
+### Instrumentation with OpenTelemetry TRACES
 ## ref https://opentelemetry.io/docs/languages/python/instrumentation/
 provider = TracerProvider()
 processor = BatchSpanProcessor(ConsoleSpanExporter())
 provider.add_span_processor(processor)
-
 # Sets the global default tracer provider
 trace.set_tracer_provider(provider)
-
 # Creates a tracer from the global tracer provider
 tracer = trace.get_tracer("country_info_app_global_tracer") 
 
+### Instrumentation with OpenTelemetry METRICS
+metric_reader = PeriodicExportingMetricReader(ConsoleMetricExporter())
+provider = MeterProvider(metric_readers=[metric_reader])
+# Sets the global default meter provider
+metrics.set_meter_provider(provider)
+# Creates a meter from the global meter provider
+meter = metrics.get_meter("country_info_app_global_meterprovider")
+# Creating and using synchronous instrument
+work_counter = meter.create_counter(
+    "work.counter", unit="1", description="Counts the amount of work done"
+)
+
 ###    Return info of search country
 def country_info(country_name):
+    work_counter.add(1, {"work.type": "country_info"})
     with tracer.start_as_current_span("span_country_info") as span: # adding span for track 
         current_span = trace.get_current_span()
         country = CountryInfo(country_name)
@@ -60,6 +77,7 @@ def country_info(country_name):
 
 ###    Read covid data
 def covid_data(country_name):
+    work_counter.add(1, {"work.type": "covid_data"})
     with tracer.start_as_current_span("span_covid_data") as span: # adding span for track 
         current_span = trace.get_current_span()
         country_name = country_name.lower()
@@ -101,6 +119,7 @@ def covid_data(country_name):
    
 ###  Request capital weather 
 async def capital_weather(latitude, longitude):
+    work_counter.add(1, {"work.type": "capital_weather"})
     with tracer.start_as_current_span("span_capital_weather") as span: # adding span for track 
         current_span = trace.get_current_span()
 
@@ -150,17 +169,18 @@ async def capital_weather(latitude, longitude):
 
 ### Convert from currency to X 
 def convert_currency(from_currency, to_currency, amount, year_asked, month_asked, day_asked):
+    work_counter.add(1, {"work.type": "convert_currency"})
     with tracer.start_as_current_span("span_convert_currency") as span: # adding span for track 
         current_span = trace.get_current_span()
         c = CurrencyConverter(fallback_on_wrong_date=True)
-        current_span.set_attribute("operation0", "Ok - CurrencyConverter")
+        current_span.set_attribute("operation0", "Ok - Call CurrencyConverter")
 
         amount_converted = c.convert(int(amount), from_currency, to_currency, date=date(int(year_asked), 
                                                                                         int(month_asked), 
                                                                                         int(day_asked)))
         print(str(amount_converted) + " " + from_currency + " to " + to_currency + " is: " + str(amount_converted))
         print("At " + str(year_asked) + "/" + str(month_asked) + "/" + str(day_asked))
-        current_span.set_attribute("operation1", "Ok - Currency converted")
+        current_span.set_attribute("operation1", "Ok - Currency Exchanged")
 
         return amount_converted
 
