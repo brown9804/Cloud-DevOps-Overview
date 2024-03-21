@@ -47,6 +47,8 @@ March, 2022
 
 - Terraform - [Terraform Enterprise related projects, tools, and resources](https://github.com/hashicorp/awesome-terraform-enterprise)
 - Terraform - [Operating Model](https://www.datocms-assets.com/2885/1560359028-terraformoperatingmodelwhitepaper.pdf)
+- Terraform - [Using Terraform to Manage Applications and Infrastructure](https://www.pluralsight.com/cloud-guru/courses/using-terraform-to-manage-applications-and-infrastructure)
+- Terraform - [GitHub Reference on Using Terraform to Manage Applications and Infrastructure](https://github.com/Bes0n/Using-Terraform-to-Manage-Applications-and-Infrastructure)
 
 | Topic | Reference | 
 | --- | --- |
