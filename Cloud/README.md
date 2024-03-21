@@ -120,6 +120,7 @@ March, 2022
 - SQL - [How to Concatenate Multiple Rows into One Column in MySQL](https://ubiq.co/database-blog/concatenate-multiple-rows-one-column-mysql/#:~:text=In%20this%20case%2C%20we%20use,multiple%20rows%20into%20one%20column.&text=GROUP_CONCAT%20concatenates%20all%20non%2Dnull,add%20DISTINCT%20in%20your%20query.)
 - SQL - [SQL Group with Most Recent Record Each](https://travishorn.com/sql-group-with-most-recent-record-each)
 - SQL - [SQL Group By and Count on two columns](https://stackoverflow.com/questions/32901031/sql-group-by-and-count-on-two-columns)
+- SQL - [SQL Server CREATE TRIGGER](https://www.sqlservertutorial.net/sql-server-triggers/sql-server-create-trigger/)
 - Nodejs - [Install Windows](https://www.guru99.com/download-install-node-js.html), if you want an specific version go [here](https://stackoverflow.com/questions/33849714/how-to-install-older-version-of-node-js-on-windows), and for mac go [here](https://medium.com/@georgeenathomas/3-step-process-to-downgrade-node-version-using-homebrew-bc0b0a72ae27) 
 - Nodejs vs [JavaScript](https://www.knowledgehut.com/blog/web-development/node-js-vs-javasript), if you have issues with npm SELF_SIGNED_CERT_IN_CHAIN on Azure go [here](https://stackoverflow.com/questions/22099098/npm-self-signed-cert-in-chain-on-azure)
 - JavaScript - [Remove Duplicates from json array](https://stackoverflow.com/questions/23507853/remove-duplicate-objects-from-json-array)
