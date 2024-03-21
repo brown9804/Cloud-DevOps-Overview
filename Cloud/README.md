@@ -123,6 +123,7 @@ March, 2022
 - SQL - [SQL Server CREATE TRIGGER](https://www.sqlservertutorial.net/sql-server-triggers/sql-server-create-trigger/)
 - Nodejs - [Install Windows](https://www.guru99.com/download-install-node-js.html), if you want an specific version go [here](https://stackoverflow.com/questions/33849714/how-to-install-older-version-of-node-js-on-windows), and for mac go [here](https://medium.com/@georgeenathomas/3-step-process-to-downgrade-node-version-using-homebrew-bc0b0a72ae27) 
 - Nodejs vs [JavaScript](https://www.knowledgehut.com/blog/web-development/node-js-vs-javasript), if you have issues with npm SELF_SIGNED_CERT_IN_CHAIN on Azure go [here](https://stackoverflow.com/questions/22099098/npm-self-signed-cert-in-chain-on-azure)
+- Nodejs - [How to change to an older version of Node.js](https://stackoverflow.com/questions/7718313/how-to-change-to-an-older-version-of-node-js)
 - JavaScript - [Remove Duplicates from json array](https://stackoverflow.com/questions/23507853/remove-duplicate-objects-from-json-array)
 - JavaScript - [How to make POST Requests with Axios](https://rapidapi.com/guides/post-requests-axios)
 - JavaScript - [how to read local.settings.json configuration in index.js file](https://stackoverflow.com/questions/71127337/how-to-read-local-settings-json-configuration-in-index-js-file)
