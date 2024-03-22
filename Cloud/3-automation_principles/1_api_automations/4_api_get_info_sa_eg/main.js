@@ -1,5 +1,4 @@
 // Example on how to create a call to an storage account to get data from storage table 
-
 const storage_account_name = "storage-account-name";
 
 // Def - Get information from storage table
