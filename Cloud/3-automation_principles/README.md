@@ -18,11 +18,11 @@ March, 2022
 
 - [0. GoLang](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/0_golang)
 - [1. API Automations Scripts](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations)
-  - [API Currency Exchange Example](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations/0-api_curr_exchange_eg)
-  - [API Get information from GitHub](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations/1-api_get_info_github_eg)
-  - [API Post Call Triggers Process](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations/2-api_post_trigger_eg)
-  - [Country Information for Travellers (API integration)](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations/3_countryinfo_travellers)
-  - [API Get Information from Storage Account](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation/1_api_automations/4_api_get_info_sa_eg)
+  - [API Currency Exchange Example](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/0-api_curr_exchange_eg)
+  - [API Get information from GitHub](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/1-api_get_info_github_eg)
+  - [API Post Call Triggers Process](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/2-api_post_trigger_eg)
+  - [Country Information for Travellers (API integration)](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers)
+  - [API Get Information from Storage Account](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/4_api_get_info_sa_eg)
 
 <img width="600" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/5a0b44ee-ebc1-4566-ac2b-a9f9fe8b26b8">
 
