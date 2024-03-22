@@ -54,9 +54,9 @@ March, 2022
   - [Use Terraform to Create an EKS Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_19)
   - [Troubleshooting a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_20)
   
-- [Azure Cloud Principles](./Cloud/2-azure_principles)
-- [Automation Principles](./Cloud/3-automation_principles)
-- [Kubernetes Principles](./Cloud/4-kubernetes)
+- [Azure Cloud Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/2-azure_principles)
+- [Automation Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles)
+- [Kubernetes Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/4-kubernetes_principles)
 
 <!-- /MarkdownTOC -->
 </details>
