@@ -54,9 +54,14 @@ March, 2022
   - [Use Terraform to Create an EKS Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_19)
   - [Troubleshooting a Terraform Deployment](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_20)
   
+- [Azure Cloud Principles](./Cloud/2-azure_principles)
+- [Automation Principles](./Cloud/3-automation_principles)
+- [Kubernetes Principles](./Cloud/4-kubernetes)
+
 <!-- /MarkdownTOC -->
 </details>
 
+## Overview 
 
 - Cloud computing - [What is?](https://www.spiceworks.com/tech/cloud/articles/what-is-cloud-computing/). [A Brief History of Cloud Computing](https://www.dataversity.net/brief-history-cloud-computing/). About what is [Project MAC](https://www.darpa.mil/about-us/timeline/project-mac)
 <img width="801" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/1b80fe83-6377-4c73-aea1-12b1575cacc8">

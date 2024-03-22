@@ -23,8 +23,6 @@ July, 2020
 <!-- MarkdownTOC -->
 
 - [Agile](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Agile)
-- [Automation](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Automation)
-- [Azure Cloud](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Azure)
 - [Cloud Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud)
 - [DevOps](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/DevOps)
 - [Network](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Network)
