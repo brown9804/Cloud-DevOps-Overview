@@ -1,0 +1,66 @@
+## Template for Continuous integration trigger for github pushes
+
+# Python Function App to Linux on Azure
+# Build a Python function app and deploy it to Azure as a Linux function app.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+trigger: 
+  branches: 
+    include: 
+      - development
+      - production
+
+pr: # A pull request trigger determines the branches that initiate a pull request build.
+  branches:
+    exclude:
+    - '*'
+
+variables: #Use name/value pairs to define variables.
+  vmImageName: 'ubuntu-latest' # Name of the Agent VM image
+  workingDirectory: '$(System.DefaultWorkingDirectory)/'
+
+  ${{ if eq(variables['Build.SourceBranchName'], 'development') }}:  
+    functionAppName: 'functionappbrowndev'
+
+  ${{ if eq(variables['Build.SourceBranchName'], 'production') }}:
+    functionAppName: 'functionappbrownprod'
+
+stages:
+- stage: Build
+  displayName: Build stage
+
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: $(vmImageName)
+
+    steps:
+    - bash: |
+        if [ -f extensions.csproj ]
+        then
+            dotnet build extensions.csproj --runtime ubuntu.16.04-x64 --output ./bin
+        fi
+      workingDirectory: $(workingDirectory)
+      displayName: 'Build extensions'
+    - task: UsePythonVersion@0
+      displayName: 'Use Python 3.10'
+      inputs:
+        versionSpec: 3.10 
+
+    - bash: |
+        pip install --target="./.python_packages/lib/site-packages" -r ./requirements.txt
+      workingDirectory: $(workingDirectory)
+      displayName: 'Install application dependencies'
+    - task: ArchiveFiles@2
+      displayName: 'Archive files'
+      inputs:
+        rootFolderOrFile: '$(workingDirectory)'
+        includeRootFolder: false
+        archiveType: zip
+        archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+        replaceExistingArchive: true
+
+    - publish: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+      artifact: drop
