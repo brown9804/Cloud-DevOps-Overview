@@ -28,6 +28,8 @@ Dec, 2022
   - *https://www.worldometers.info/*
 - [Open Telemetry for Python](https://opentelemetry.io/docs/languages/python/)
 - [Manual instrumentation for OpenTelemetry Python](https://opentelemetry.io/docs/languages/python/instrumentation/)
+- [Guide on Develop Azure Functions by using Visual Studio Code](https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v4%2Cpython-v2%2Cisolated-process&pivots=programming-language-csharp#x86-emulation-on-arm64)
+
 
 ## Setup
 
