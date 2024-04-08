@@ -20,3 +20,27 @@ Jan, 2016
 - [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 - [Free Password Generator](https://www.lastpass.com/features/password-generator)
+- [Learn Git Branching](https://learngitbranching.js.org/)
+- [GitHub Commands Glossary](https://www.atlassian.com/git/glossary#commands)
+
+~~~
+git clone <repo>     or        git -c http.sslVerify=false clone <repository-name - ssh>
+
+cd <repo path>
+
+code . 
+
+git pull 
+
+git checkout -b feat_<user story #>
+
+git status 
+
+git add -A
+
+git commit -m "" 
+
+git push origin [branch]
+
+git pull origin [branch]
+~~~
