@@ -31,3 +31,5 @@ July, 2020
 - Azure DevOps - [Create Release Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops#continuous-deployment-triggers)
 - Project Management - [What are Functional and Non-Functional Requirements and How to Document These](https://enkonix.com/blog/functional-requirements-vs-non-functional/)
 - GitHub - [Building and testing Python](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python), for more information about how to run it on PR [click here](https://futurestud.io/tutorials/github-actions-run-on-pull-request#:~:text=but%20Not%20Both-,Run%20Actions%20on%20Pull%20Requests,%5D%20and%20you're%20done.)
+- For the CI part, it's related to the `yml` file, find an example [here](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml)
+- For the CD part, we can use Azure DevOps pipelines, find [here](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=java%2Cbrowser) a guide.
