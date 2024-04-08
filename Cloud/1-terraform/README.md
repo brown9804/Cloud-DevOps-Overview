@@ -59,6 +59,17 @@ March, 2022
 
 - Terraform - [Terraform Enterprise related projects, tools, and resources](https://github.com/hashicorp/awesome-terraform-enterprise)
 - Terraform - [Operating Model](https://www.datocms-assets.com/2885/1560359028-terraformoperatingmodelwhitepaper.pdf)
+
+```mermaid
+graph LR
+A[Clone the repo] -->B(Config the structure required - files/content)
+    B --> C(Provisioning Process)
+    C -->|Dev/Test| D[Provisioning via local]
+    C -->|Prod| E[Commit to repo on new branch]
+    D --> F(Delete resources after test it)
+    E --> G(PR/Merge branch) 
+```
+
 - Terraform - [Using Terraform to Manage Applications and Infrastructure](https://www.pluralsight.com/cloud-guru/courses/using-terraform-to-manage-applications-and-infrastructure)
 - Terraform - [GitHub Reference on Using Terraform to Manage Applications and Infrastructure](https://github.com/Bes0n/Using-Terraform-to-Manage-Applications-and-Infrastructure)
 
@@ -69,4 +80,5 @@ March, 2022
 | Terraform Enterprise | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/da8bb7cd-86ae-4d37-9a88-116101124ae9"> |
 | Workspace Structure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/f98e4f59-bd6f-4d1e-82aa-f21dcc8bb32f"> | 
 | Using Modules for Self-Service Infrastructure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/29d6a8d9-d28d-41c8-991b-7eea23838c27"> |
+
 
