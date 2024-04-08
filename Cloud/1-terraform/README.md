@@ -45,6 +45,18 @@ March, 2022
 
 ## Wiki 
 
+- Terraform - [Standard Module Structure](https://developer.hashicorp.com/terraform/language/modules/develop/structure)
+~~~
+.
+├── README.md
+├── main.tf
+├── variables.tf
+├── provider.tf
+├── terraform.tfvars
+├── remote-storage.tf
+├── outputs.tf
+~~~
+
 - Terraform - [Terraform Enterprise related projects, tools, and resources](https://github.com/hashicorp/awesome-terraform-enterprise)
 - Terraform - [Operating Model](https://www.datocms-assets.com/2885/1560359028-terraformoperatingmodelwhitepaper.pdf)
 - Terraform - [Using Terraform to Manage Applications and Infrastructure](https://www.pluralsight.com/cloud-guru/courses/using-terraform-to-manage-applications-and-infrastructure)
@@ -58,5 +70,3 @@ March, 2022
 | Workspace Structure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/f98e4f59-bd6f-4d1e-82aa-f21dcc8bb32f"> | 
 | Using Modules for Self-Service Infrastructure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/29d6a8d9-d28d-41c8-991b-7eea23838c27"> |
 
-
-  
