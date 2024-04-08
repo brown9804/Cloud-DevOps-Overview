@@ -19,3 +19,4 @@ Jan, 2016
 - [Deleting Your Commit History?](https://xebia.com/blog/deleting-your-commit-history/)
 - [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 - [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+- [Free Password Generator](https://www.lastpass.com/features/password-generator)
