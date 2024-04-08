@@ -71,6 +71,19 @@ A[Clone the repo] -->B(Config the structure required - files/content)
 ```
 
 - Terraform - [Using Terraform to Manage Applications and Infrastructure](https://www.pluralsight.com/cloud-guru/courses/using-terraform-to-manage-applications-and-infrastructure)
+- Terraform - [Terraform Cheat Sheet – 23 Terraform CLI Commands & Examples](https://spacelift.io/blog/terraform-commands-cheat-sheet)
+
+```mermaid
+graph TD;
+
+A[az login] -->B(terraform init)
+B --> C{Terraform provisioning stage}
+C -->|Review| D[terraform plan -var-file terraform.tfvars]
+C -->|Order Now| E[terraform apply -var-file terraform.tfvars]
+C -->|Remove| F[terraform destroy -var-file terraform.tfvars]
+
+```
+
 - Terraform - [GitHub Reference on Using Terraform to Manage Applications and Infrastructure](https://github.com/Bes0n/Using-Terraform-to-Manage-Applications-and-Infrastructure)
 
 | Topic | Reference | 
@@ -80,5 +93,3 @@ A[Clone the repo] -->B(Config the structure required - files/content)
 | Terraform Enterprise | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/da8bb7cd-86ae-4d37-9a88-116101124ae9"> |
 | Workspace Structure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/f98e4f59-bd6f-4d1e-82aa-f21dcc8bb32f"> | 
 | Using Modules for Self-Service Infrastructure | <img width="650" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/29d6a8d9-d28d-41c8-991b-7eea23838c27"> |
-
-
