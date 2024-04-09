@@ -143,3 +143,5 @@ March, 2022
 - Python - [Implementation HMAC-SHA1](https://gist.github.com/heskyji/5167567b64cb92a910a3), you can find more functions definitions [here](https://gist.github.com/binaryatrocity/7079332cab038da1394d) or [Cryptographic signature and verification of messages](http://pymotw.com/2/hmac/)
 - Python - [encode()](https://stackoverflow.com/questions/2340319/python-3-1-1-string-to-hex)
 - Python - [Asynchronous HTTP Requests](https://www.twilio.com/blog/asynchronous-http-requests-in-python-with-aiohttp), [example of post request](https://stackoverflow.com/questions/55250420/aiohttp-async-session-requests), [request Post with param data](https://stackoverflow.com/questions/15900338/python-request-post-with-param-data)
+- [Servidor web IIS en Windows 2016 con ASP.NET](https://www.jmsolanes.net/es/servidor-web-iis-windows-2016-asp-net/)
+- [Azure Storage Table Filter by RowKey and StartsWith Using Pythong SDK](https://stackoverflow.com/questions/38834919/filter-azure-table-storage-by-rowkey-and-startswith-using-the-python-sdk)
