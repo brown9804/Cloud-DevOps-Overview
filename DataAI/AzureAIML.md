@@ -13,8 +13,23 @@ Aug, 2022
 
 ----------
 
-All services as for now:
+All Azure services as for now:
 
 | Area | Category | Service | Overview |
 | ---- | ---- | ---- | ---- | 
-| Azure AI + ML | Platforms | Azure AI Studio | TBD |
+| Artifitial Intelligence | Platform | Azure AI Studio | TBD |
+| Machine Learning | Platform | Azure Machine Learning | TBD |
+| AI + APIs | Service | AI Search | TBD | 
+| AI + APIs | Service | AI Services | TBD | 
+| AI + APIs | Service | AI Services multi-service account | TBD | 
+| AI + APIs | Service | AI Video Indexer | TBD | 
+| AI + APIs | Service | Anomaly detectors | TBD | 
+| AI + APIs | Service | Bot Services | TBD | 
+| AI + APIs | Service | Computer Vision | TBD | 
+| AI + APIs | Service | Custom Vision | TBD | 
+| AI + APIs | Service | Content moderators | TBD | 
+| AI + APIs | Service | Document intelligences | TBD | 
+| AI + APIs | Service | Face APIs | TBD | 
+| AI + APIs | Service | Immersive readers | TBD | 
+| AI + APIs | Service | Language | TBD | 
+
