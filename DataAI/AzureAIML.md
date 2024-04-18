@@ -32,4 +32,7 @@ All Azure services as for now:
 | AI + APIs | Service | Face APIs | TBD | 
 | AI + APIs | Service | Immersive readers | TBD | 
 | AI + APIs | Service | Language | TBD | 
+| AI + APIs | Service | Metrics Advisors | TBD | 
+| AI + APIs | Service |  | TBD | 
+
 
