@@ -15,7 +15,7 @@ Aug, 2022
 
 ## Content 
 - [AI Search](#ai-search)
-  
+
 
 ## Wiki 
 
@@ -25,7 +25,7 @@ All Azure services as for now:
 | ---- | ---- | ---- | ---- | 
 | Artifitial Intelligence | Platform | Azure AI Studio | TBD |
 | Machine Learning | Platform | Azure Machine Learning | TBD |
-| AI + APIs | Service | [AI Search](#ai-search) (formerly known as "Azure AI Search ") | Azure AI Search, a powerful information retrieval platform by Microsoft, enables developers to create rich search experiences and generative AI applications. For more information click [here](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 
+| AI + APIs | Service | [AI Search](#ai-search) (formerly known as "Azure AI Search") | Azure AI Search, a powerful information retrieval platform by Microsoft, enables developers to create rich search experiences and generative AI applications. For more information click [here](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 
 | AI + APIs | Service | AI Services | TBD | 
 | AI + APIs | Service | AI Services multi-service account | TBD | 
 | AI + APIs | Service | AI Video Indexer | TBD | 
@@ -49,7 +49,7 @@ All Azure services as for now:
 
 ### Use Cases for Azure AI Search
 
-1. **E-commerce and Retail**:
+#### 1. E-commerce and Retail:
    - Enhance product search experiences on e-commerce websites by providing relevant results, filters, and facets.
    - Implement personalized recommendations based on user behavior and preferences.
    - Enable faceted navigation for efficient product discovery.
@@ -73,7 +73,7 @@ All Azure services as for now:
 > - **Azure AI Bot Service**: Provides tools to build, test, deploy, and manage intelligent bots. <br/>
 > - **Azure AI services**: Lets you use intelligent algorithms to see, hear, speak, understand, and interpret your user needs through natural methods of communication. <br/>
 
-2. **Content and Document Management**:
+####  2. Content and Document Management:
    - Index and search through large document repositories, intranets, and knowledge bases.
    - Implement full-text search, highlighting, and document previews.
    - Facilitate content discovery and retrieval for employees and customers.
@@ -93,7 +93,7 @@ All Azure services as for now:
 
 > This setup allows the company to facilitate content discovery and retrieval for its employees, enhancing productivity and efficiency. It's a great example of how Azure AI Search can be used in the context of content and document management. <br/>
 
-3. **Enterprise Search**:
+####  3. Enterprise Search:
    - Create a unified search experience across various enterprise data sources (files, databases, APIs).
    - Enable users to find information quickly within their organization.
    - Support natural language queries and relevance tuning.
@@ -135,7 +135,7 @@ results = client.search(search_text="example query")
 > 4. **User Interface**: Finally, you need a user interface for users to interact with. This could be a web application, a mobile app, or even a chatbot. The UI sends queries to Azure AI Search and displays the results. <br/> 
 > This is a simplified example, and a real-world implementation would likely involve additional considerations such as security, scalability, and performance optimization. 
 
-4. **Healthcare and Life Sciences**:
+####  4. Healthcare and Life Sciences:
    - Build medical knowledge bases for clinicians and researchers.
    - Enable semantic search for medical literature, clinical trials, and patient records.
    - Facilitate drug discovery and research.
@@ -174,17 +174,17 @@ results = client.search(search_text="example query")
 > Remember, Azure AI Search was formerly known as “Cognitive Search”, but the functionality remains the same, providing powerful search capabilities over your data using AI.
 
 
-5. **Media and Entertainment**:
+####  5. Media and Entertainment:
    - Enhance video and audio content discovery by indexing metadata and transcripts.
    - Implement search for news articles, blogs, podcasts, and multimedia content.
    - Enable personalized recommendations for movies, music, and TV shows.
 
-6. **Travel and Hospitality**:
+####  6. Travel and Hospitality:
    - Power hotel booking platforms with efficient search capabilities.
    - Enable location-based search for restaurants, attractions, and events.
    - Implement geospatial search for travel planning.
 
-7. **Financial Services**:
+####  7. Financial Services:
    - Create powerful search interfaces for financial data, stock market information, and investment research.
    - Enable users to find relevant financial documents, reports, and news articles.
    - Implement secure search for sensitive data.
