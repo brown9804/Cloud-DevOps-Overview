@@ -54,7 +54,7 @@ All Azure services as for now:
    - Implement personalized recommendations based on user behavior and preferences.
    - Enable faceted navigation for efficient product discovery.
 
-> [!NOTE]
+> [!IMPORTANT]
 > Azure AI Search is an AI-powered information retrieval platform that helps developers build rich search experiences and generative AI apps that combine large language models with enterprise data. It can implement search functionality for any mobile or search application within your organization or as part of software as a service (SaaS) apps. <br/>
 > 
 > Here's a general architecture of how Azure AI Search can be used in an e-commerce solution: <br/>
@@ -77,7 +77,7 @@ All Azure services as for now:
    - Implement full-text search, highlighting, and document previews.
    - Facilitate content discovery and retrieval for employees and customers.
 
-> [!NOTE]
+> [!IMPORTANT]
 > **Use Case: Employee Knowledge Base Search**  <br/>
 > 
 > **Scenario:** A multinational corporation has a vast internal knowledge base for its employees. This knowledge base includes a variety of documents such as policy documents, training materials, project reports, and more. The company wants to make it easier for employees to find relevant information quickly and efficiently. <br/>
