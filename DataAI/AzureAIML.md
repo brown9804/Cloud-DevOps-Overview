@@ -27,22 +27,22 @@ All Azure services as for now:
 | Machine Learning | Platform | Azure Machine Learning | TBD |
 | AI + APIs | Service | AI Services | Azure AI services are a collection of cloud-based services provided by Microsoft Azure to help developers build applications with artificial intelligence capabilities. <br/> <br/> Here’s an overview: <br/> 1. **Azure Machine Learning**: A cloud-based environment you can use to train, deploy, automate, manage, and track ML models. <br/> 2. **Azure Cognitive Services**: A collection of APIs, SDKs, and services available to help developers build intelligent applications without having direct AI or data science skills or knowledge. It includes services for vision, speech, language, decision, and web search. <br/> 3. **Azure Bot Service**: Enables developers to create conversational interfaces on multiple channels. <br/> 4. **Azure Databricks**: An Apache Spark-based analytics platform optimized for Azure. It's integrated with Azure to provide one-click setup, streamlined workflows, and an interactive workspace. <br/> 5. **Azure Search**: A search-as-a-service cloud solution that gives developers APIs and tools for adding a rich search experience over private, heterogeneous content in web, mobile, and enterprise applications. <br/> 6. **Azure Data Lake Analytics**: An on-demand analytics job service that simplifies big data. Instead of deploying, configuring, and tuning hardware, you write queries to transform your data and extract valuable insights. <br/> <br/> These services are designed to work together to help developers and data scientists build end-to-end AI applications. They can be used individually or in combination, depending on the specific application requirements. They are all built on the robust Azure cloud platform, ensuring scalability, reliability, and security. <br/> <br/> Remember, the use of these services requires an Azure subscription. If you don't have one, you can create a free account to get started. <br/> To see the list of Available Azure AI services, click [here](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services#available-azure-ai-services) | 
 | AI + APIs | Service | AI Services multi-service account | 1. **AI Services** offer prebuilt and customizable APIs and models for creating intelligent applications. [reference](https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services) <br/> 2. A **multi-service account** allows access to multiple Azure AI services with a single key and endpoint, consolidating billing. [reference](https://learn.microsoft.com/en-us/azure/ai-services/multi-service-resource?tabs=windows&pivots=azportal) and [here](https://stackoverflow.com/questions/77407269/how-to-create-azure-ai-services-multi-service-account-using-terraform) <br/> 3. In contrast, a **single-service account** provides access to a specific AI service with a unique key and endpoint. [refenrece](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/ai-services/multi-service-resource.md) | 
-| AI + APIs | Service | [AI Search](#ai-search) (formerly known as "Azure AI Search") | Azure AI Search, a powerful information retrieval platform by Microsoft, enables developers to create rich search experiences and generative AI applications. For more information click [here](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 
-| AI + APIs | Service | AI Video Indexer | TBD | 
-| AI + APIs | Service | Anomaly detectors | TBD | 
-| AI + APIs | Service | Bot Services | TBD | 
+| AI + APIs | AI Service | [AI Search](#ai-search) (formerly known as "Azure AI Search") | Azure AI Search, a powerful information retrieval platform by Microsoft, enables developers to create rich search experiences and generative AI applications. For more information click [here](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 
+| AI + APIs | AI Service | AI Video Indexer | TBD | 
+| AI + APIs | AI Service | Anomaly detectors | TBD | 
+| AI + APIs | AI Service | Bot Services | TBD | 
 | AI + APIs | Service | Computer Vision | TBD | 
-| AI + APIs | Service | Custom Vision | TBD | 
-| AI + APIs | Service | Content moderators | TBD | 
-| AI + APIs | Service | Document intelligences | TBD | 
-| AI + APIs | Service | Face APIs | TBD | 
-| AI + APIs | Service | Immersive readers | TBD | 
-| AI + APIs | Service | Language | TBD | 
-| AI + APIs | Service | Metrics Advisors | TBD | 
-| AI + APIs | Service | Azure OpenAI  | TBD | 
-| AI + APIs | Service | Personalizers  | TBD | 
-| AI + APIs | Service | Speech Services  | TBD | 
-| AI + APIs | Service | Translators  | TBD | 
+| AI + APIs | AI Service | Custom Vision | TBD | 
+| AI + APIs | AI Service | Content moderators | TBD | 
+| AI + APIs | AI Service | Document intelligences | TBD | 
+| AI + APIs | AI Service | Face APIs | TBD | 
+| AI + APIs | AI Service | Immersive readers | TBD | 
+| AI + APIs | AI Service | Language | TBD | 
+| AI + APIs | AI Service | Metrics Advisors | TBD | 
+| AI + APIs | AI Service | Azure OpenAI  | TBD | 
+| AI + APIs | AI Service | Personalizers  | TBD | 
+| AI + APIs | AI Service | Speech Services  | TBD | 
+| AI + APIs | AI Service | Translators  | TBD | 
 | Industry Machine Learning solutions | Solution | Intelligent Recommendations Accounts  | TBD | 
 | Industry Machine Learning solutions | Solution | Azure Synapse Analytics  | TBD | 
 
