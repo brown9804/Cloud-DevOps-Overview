@@ -54,6 +54,28 @@ All Azure services as for now:
    - Implement personalized recommendations based on user behavior and preferences.
    - Enable faceted navigation for efficient product discovery.
 
+> [!NOTE]
+> Azure AI Search is an AI-powered information retrieval platform that helps developers build rich search experiences and generative AI apps that combine large language models with enterprise data. It can implement search functionality for any mobile or search application within your organization or as part of software as a service (SaaS) apps. 
+
+> Here's a general architecture of how Azure AI Search can be used in an e-commerce solution:
+
+> 1. **Customers** go to the e-commerce web application from any device.
+> 2. The **product catalog** is maintained in an **Azure SQL database** for transactional processing.
+> 3. **Azure AI Search** uses a search indexer to automatically keep its search index up to date through integrated change tracking.
+> 4. Customer's search queries are offloaded to the AI Search service, which processes the query and returns the most relevant results.
+> 5. As an alternative to a web-based search experience, customers can also use a conversational bot in social media or straight from digital assistants to search for products and incrementally refine their search query and results.
+> 6. Optionally, customers can use the skillset feature to apply artificial intelligence for even smarter processing.
+
+> Key Azure services involved in this architecture include:
+
+> - **Azure App Service - Web Apps**: Hosts web applications allowing autoscale and high availability without having to manage infrastructure.
+> - **Azure SQL Database**: A general-purpose relational database-managed service in Microsoft Azure that supports structures such as relational data, JSON, spatial, and XML.
+> - **Azure AI Search**: A cloud solution that provides a rich search experience over private, heterogeneous content in web, mobile, and enterprise applications.
+> - **Azure AI Bot Service**: Provides tools to build, test, deploy, and manage intelligent bots.
+> - **Azure AI services**: Lets you use intelligent algorithms to see, hear, speak, understand, and interpret your user needs through natural methods of communication.
+
+
+
 2. **Content and Document Management**:
    - Index and search through large document repositories, intranets, and knowledge bases.
    - Implement full-text search, highlighting, and document previews.
