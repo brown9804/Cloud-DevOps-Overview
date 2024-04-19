@@ -13,6 +13,12 @@ Aug, 2022
 
 ----------
 
+## Content 
+- [AI Search](#ai-search)
+  
+
+## Wiki 
+
 All Azure services as for now:
 
 | Area | Category | Service | Overview |
