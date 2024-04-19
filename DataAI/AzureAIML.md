@@ -135,11 +135,44 @@ results = client.search(search_text="example query")
 > 4. **User Interface**: Finally, you need a user interface for users to interact with. This could be a web application, a mobile app, or even a chatbot. The UI sends queries to Azure AI Search and displays the results. <br/> 
 > This is a simplified example, and a real-world implementation would likely involve additional considerations such as security, scalability, and performance optimization. 
 
-
 4. **Healthcare and Life Sciences**:
    - Build medical knowledge bases for clinicians and researchers.
    - Enable semantic search for medical literature, clinical trials, and patient records.
    - Facilitate drug discovery and research.
+
+> [!IMPORTANT]
+> Here’s a general example of a high-level architecture for a solution in the Healthcare and Life Sciences domain using Azure resources, specifically Azure AI Search.
+
+> 1. Data Sources:
+>    - Medical Literature
+>    - Clinical Trials Data
+>    - Patient Records
+>    - Research Data
+> 
+> 2. Azure Data Lake Storage:
+>    - Store all the raw data in Azure Data Lake Storage which is a secure, scalable and cost-effective storage.
+> 
+> 3. Azure Databricks:
+>    - Use Azure Databricks for data preparation and transformation. It can handle large amounts of data and perform operations like cleaning, normalization, and aggregation.
+> 
+> 4. Azure AI Search:
+>    - Index the transformed data from Azure Databricks into Azure AI Search. Azure AI Search provides capabilities for advanced content understanding through AI that can help in semantic search.
+> 
+> 5. Azure Cognitive Services:
+>    - Use Azure Cognitive Services for additional AI capabilities like entity recognition, sentiment analysis, etc. This can enhance the search experience by providing more context.
+> 
+> 6. Azure Web Apps or Azure API Management:
+>    - Expose the search capabilities through a Web App or API for clinicians, researchers, and other users to use.
+> 
+> 7. Azure Active Directory:
+>    - Use Azure Active Directory for identity management and securing access to the data and services.
+> 
+> 8. Azure Monitor and Azure Log Analytics:
+>    - Use these services for monitoring the health of the system, diagnosing issues and understanding usage patterns.
+>
+> This architecture allows you to build a robust medical knowledge base and enables semantic search for medical literature, clinical trials, and patient records. It also facilitates drug discovery and research by providing easy access to relevant information. Please note that this is a high-level architecture and the actual implementation may require additional components or steps based on specific requirements. Always follow data privacy and compliance requirements when dealing with sensitive data like patient records. <br/>
+> Remember, Azure AI Search was formerly known as “Cognitive Search”, but the functionality remains the same, providing powerful search capabilities over your data using AI.
+
 
 5. **Media and Entertainment**:
    - Enhance video and audio content discovery by indexing metadata and transcripts.
