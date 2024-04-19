@@ -241,4 +241,25 @@ results = client.search(search_text="example query")
    - Implement secure search for sensitive data.
      
 > [!IMPORTANT]
+> An example of an architecture using Azure resources, specifically with Azure AI Search (formerly known as “Cognitive Search”) for the Financial Services industry. This architecture creates powerful search interfaces for financial data, stock market information, and investment research, enables users to find relevant financial documents, reports, and news articles, and implements secure search for sensitive data.
+
+> Azure Architecture for Financial Services
+>
+> Components:
+>
+> 1. **Azure AI Search**: This is the core component that powers the search capabilities. It indexes data from various sources and provides powerful search capabilities.
+> 2. **Azure Cosmos DB**: This is the globally distributed, multi-model database service used for managing data at scale.
+> 3. **Azure Functions**: This is used for running event-driven serverless compute that can scale on demand.
+> 4. **Azure Blob Storage**: This is used for storing unstructured data like financial documents, reports, etc.
+> 5. **Azure Key Vault**: This is used for safeguarding cryptographic keys and other secrets used by cloud apps and services.
+> 
+> Workflow:
+> 
+> 1. Data from various sources like financial data, stock market information, investment research, etc., are stored in Azure Blob Storage.
+> 2. Azure Functions are triggered whenever there is new data in Blob Storage. These functions process the data and store it in Cosmos DB.
+> 3. Azure AI Search indexes the data from Cosmos DB. It uses cognitive skills for extracting more information from the data.
+> 4. Users interact with a front-end application. Whenever they perform a search, the application queries Azure AI Search and presents the results to the user.
+> 5. If the user performs a search for sensitive data, the application uses Azure Key Vault to ensure the search is secure.
+>
+> This architecture provides a robust and scalable solution for financial services platforms.
 
