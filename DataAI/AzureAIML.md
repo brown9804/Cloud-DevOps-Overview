@@ -19,7 +19,7 @@ All Azure services as for now:
 | ---- | ---- | ---- | ---- | 
 | Artifitial Intelligence | Platform | Azure AI Studio | TBD |
 | Machine Learning | Platform | Azure Machine Learning | TBD |
-| AI + APIs | Service | [AI Search (formerly known as "Azure Cognitive Search")](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) |  | 
+| AI + APIs | Service | [AI Search](#ai-search) (formerly known as "Azure Cognitive Search") | Azure AI Search, a powerful information retrieval platform by Microsoft, enables developers to create rich search experiences and generative AI applications. For more information click [here](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search) | 
 | AI + APIs | Service | AI Services | TBD | 
 | AI + APIs | Service | AI Services multi-service account | TBD | 
 | AI + APIs | Service | AI Video Indexer | TBD | 
@@ -34,5 +34,9 @@ All Azure services as for now:
 | AI + APIs | Service | Language | TBD | 
 | AI + APIs | Service | Metrics Advisors | TBD | 
 | AI + APIs | Service |  | TBD | 
+
+## AI Search 
+
+![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/bdaebc61-162f-4c0f-855f-6dc74de38397)
 
 
