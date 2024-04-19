@@ -209,19 +209,36 @@ results = client.search(search_text="example query")
 >
 > Please note that this is a high-level architecture and the actual implementation may vary based on specific requirements and constraints. You might need to consider additional aspects such as security, scalability, and cost optimization when designing the solution.
 
-
-
-
-
-
-
 ####  6. Travel and Hospitality:
    - Power hotel booking platforms with efficient search capabilities.
    - Enable location-based search for restaurants, attractions, and events.
    - Implement geospatial search for travel planning.
 
+> [!IMPORTANT]
+> An example of an architecture using Azure resources, specifically with Azure AI Search (formerly known as “Cognitive Search”) for the Travel and Hospitality industry. This architecture powers hotel booking platforms with efficient search capabilities, enables location-based search for restaurants, attractions, and events, and implements geospatial search for travel planning.
+
+> Azure Architecture for Travel and Hospitality <br/>
+>
+> Components:
+> 1. **Azure AI Search**: This is the core component that powers the search capabilities. It indexes data from various sources and provides powerful search capabilities.
+> 2. **Azure Maps**: This service is used to implement geospatial search for travel planning. It provides location-based services like maps, search, routing, traffic, and time zones.
+> 3. **Azure Cosmos DB**: This is the globally distributed, multi-model database service used for managing data at scale.
+> 4. **Azure Functions**: This is used for running event-driven serverless compute that can scale on demand.
+> 5. **Azure Blob Storage**: This is used for storing unstructured data like images, videos, etc.
+> 
+> Workflow:
+> 1. Data from various sources like hotel details, restaurant details, event details, etc., are stored in Azure Blob Storage.
+> 2. Azure Functions are triggered whenever there is new data in Blob Storage. These functions process the data and store it in Cosmos DB.
+> 3. Azure AI Search indexes the data from Cosmos DB. It uses cognitive skills for extracting more information from the data.
+> 4. Users interact with a front-end application. Whenever they perform a search, the application queries Azure AI Search and presents the results to the user.
+> 5. If the user performs a location-based search, the application uses Azure Maps to provide geospatial search capabilities.
+> 
+> This architecture provides a robust and scalable solution for travel and hospitality platforms.
+
 ####  7. Financial Services:
    - Create powerful search interfaces for financial data, stock market information, and investment research.
    - Enable users to find relevant financial documents, reports, and news articles.
    - Implement secure search for sensitive data.
+     
+> [!IMPORTANT]
 
