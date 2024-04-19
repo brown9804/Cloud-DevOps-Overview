@@ -56,6 +56,7 @@ All Azure services as for now:
 
 > [!NOTE]
 > Azure AI Search is an AI-powered information retrieval platform that helps developers build rich search experiences and generative AI apps that combine large language models with enterprise data. It can implement search functionality for any mobile or search application within your organization or as part of software as a service (SaaS) apps. <br/>
+> 
 > Here's a general architecture of how Azure AI Search can be used in an e-commerce solution: <br/>
 > 1. **Customers** go to the e-commerce web application from any device. <br/>
 > 2. The **product catalog** is maintained in an **Azure SQL database** for transactional processing. <br/>
@@ -63,6 +64,7 @@ All Azure services as for now:
 > 4. Customer's search queries are offloaded to the AI Search service, which processes the query and returns the most relevant results. <br/>
 > 5. As an alternative to a web-based search experience, customers can also use a conversational bot in social media or straight from digital assistants to search for products and incrementally refine their search query and results. <br/>
 > 6. Optionally, customers can use the skillset feature to apply artificial intelligence for even smarter processing. <br/>
+>
 > Key Azure services involved in this architecture include: <br/>
 > - **Azure App Service - Web Apps**: Hosts web applications allowing autoscale and high availability without having to manage infrastructure. <br/>
 > - **Azure SQL Database**: A general-purpose relational database-managed service in Microsoft Azure that supports structures such as relational data, JSON, spatial, and XML. <br/>
@@ -77,7 +79,9 @@ All Azure services as for now:
 
 > [!NOTE]
 > **Use Case: Employee Knowledge Base Search**  <br/>
+> 
 > **Scenario:** A multinational corporation has a vast internal knowledge base for its employees. This knowledge base includes a variety of documents such as policy documents, training materials, project reports, and more. The company wants to make it easier for employees to find relevant information quickly and efficiently. <br/>
+>
 > **Solution with Azure AI Search:** <br/>
 > 1. **Azure Blob Storage:** All the documents are stored in Azure Blob Storage. This provides a scalable and secure place for storing all the company's documents. <br/>
 > 2. **Azure AI Search:** This is the core service that enables the search functionality. It creates an index of all the documents stored in the Blob Storage. <br/>
@@ -85,6 +89,7 @@ All Azure services as for now:
 > 4. **Search Application:** The company builds a search application that uses the Azure AI Search service. Employees can use this application to search the knowledge base. They can perform full-text search, get highlighted results, and even see document previews. <br/>
 > 5. **Azure Active Directory:** To ensure secure access to the documents, the search application integrates with Azure Active Directory. This way, only authorized employees can search and view the documents. <br/>
 > 6. **Azure Monitor and Azure Application Insights:** These services are used to monitor the performance of the search application and to get insights about its usage. This helps the company to continuously improve the search experience for its employees. <br/>
+>
 > This setup allows the company to facilitate content discovery and retrieval for its employees, enhancing productivity and efficiency. It's a great example of how Azure AI Search can be used in the context of content and document management. <br/>
 
 3. **Enterprise Search**:
