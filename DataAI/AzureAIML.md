@@ -39,7 +39,12 @@ All Azure services as for now:
 | AI + APIs | Service | Immersive readers | TBD | 
 | AI + APIs | Service | Language | TBD | 
 | AI + APIs | Service | Metrics Advisors | TBD | 
-| AI + APIs | Service |  | TBD | 
+| AI + APIs | Service | Azure OpenAI  | TBD | 
+| AI + APIs | Service | Personalizers  | TBD | 
+| AI + APIs | Service | Speech Services  | TBD | 
+| AI + APIs | Service | Translators  | TBD | 
+| Industry Machine Learning solutions | Solution | Intelligent Recommendations Accounts  | TBD | 
+| Industry Machine Learning solutions | Solution | Azure Synapse Analytics  | TBD | 
 
 ## AI Search 
 
