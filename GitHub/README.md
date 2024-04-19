@@ -22,6 +22,7 @@ Jan, 2016
 - [Free Password Generator](https://www.lastpass.com/features/password-generator)
 - [Learn Git Branching](https://learngitbranching.js.org/)
 - [GitHub Commands Glossary](https://www.atlassian.com/git/glossary#commands)
+- [MARKDOWN CHEAT SHEET](https://github.com/Kernix13/markdown-cheatsheet?tab=readme-ov-file#block-elements)
 
 ~~~
 git clone <repo>     or        git -c http.sslVerify=false clone <repository-name - ssh>
