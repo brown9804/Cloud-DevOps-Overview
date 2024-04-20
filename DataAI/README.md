@@ -15,6 +15,6 @@ Aug, 2022
 
 ## Content 
 
-
+- [Azure Artifitial Intelligence + ML Overview](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/DataAI/AzureAIML.md)
 
 
