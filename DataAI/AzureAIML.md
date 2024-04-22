@@ -66,7 +66,7 @@ All Azure services as for now:
 
 ### Use Cases for Azure AI Search
 
-#### 1. E-commerce and Retail:
+#### E-commerce and Retail
 [return to Content](#content)
 
    - Enhance product search experiences on e-commerce websites by providing relevant results, filters, and facets.
@@ -92,7 +92,7 @@ All Azure services as for now:
 > - **Azure AI Bot Service**: Provides tools to build, test, deploy, and manage intelligent bots. <br/>
 > - **Azure AI services**: Lets you use intelligent algorithms to see, hear, speak, understand, and interpret your user needs through natural methods of communication. <br/>
 
-####  2. Content and Document Management:
+#### Content and Document Management
 [return to Content](#content)
 
    - Index and search through large document repositories, intranets, and knowledge bases.
@@ -114,7 +114,7 @@ All Azure services as for now:
 
 > This setup allows the company to facilitate content discovery and retrieval for its employees, enhancing productivity and efficiency. It's a great example of how Azure AI Search can be used in the context of content and document management. <br/>
 
-####  3. Enterprise Search:
+#### Enterprise Search
 [return to Content](#content)
 
    - Create a unified search experience across various enterprise data sources (files, databases, APIs).
@@ -158,7 +158,7 @@ results = client.search(search_text="example query")
 > 4. **User Interface**: Finally, you need a user interface for users to interact with. This could be a web application, a mobile app, or even a chatbot. The UI sends queries to Azure AI Search and displays the results. <br/> 
 > This is a simplified example, and a real-world implementation would likely involve additional considerations such as security, scalability, and performance optimization. 
 
-####  4. Healthcare and Life Sciences:
+#### Healthcare and Life Sciences
 [return to Content](#content)
 
    - Build medical knowledge bases for clinicians and researchers.
@@ -198,7 +198,7 @@ results = client.search(search_text="example query")
 > This architecture allows you to build a robust medical knowledge base and enables semantic search for medical literature, clinical trials, and patient records. It also facilitates drug discovery and research by providing easy access to relevant information. Please note that this is a high-level architecture and the actual implementation may require additional components or steps based on specific requirements. Always follow data privacy and compliance requirements when dealing with sensitive data like patient records. <br/>
 > Remember, Azure AI Search was formerly known as “Cognitive Search”, but the functionality remains the same, providing powerful search capabilities over your data using AI.
 
-####  5. Media and Entertainment:
+#### Media and Entertainment
 [return to Content](#content)
 
    - Enhance video and audio content discovery by indexing metadata and transcripts.
@@ -231,7 +231,7 @@ results = client.search(search_text="example query")
 >
 > Please note that this is a high-level architecture and the actual implementation may vary based on specific requirements and constraints. You might need to consider additional aspects such as security, scalability, and cost optimization when designing the solution.
 
-####  6. Travel and Hospitality:
+#### Travel and Hospitality
 [return to Content](#content)
 
    - Power hotel booking platforms with efficient search capabilities.
@@ -259,7 +259,7 @@ results = client.search(search_text="example query")
 > 
 > This architecture provides a robust and scalable solution for travel and hospitality platforms.
 
-####  7. Financial Services:
+#### Financial Services
 [return to Content](#content)
 
    - Create powerful search interfaces for financial data, stock market information, and investment research.
