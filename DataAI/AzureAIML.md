@@ -15,25 +15,21 @@ April, 2024
 
 ## Content 
 
-<!-- TOC -->
-
 - [Azure Artifitial Intelligence + ML Overview](#azure-artifitial-intelligence--ml-overview)
     - [Content](#content)
     - [Wiki](#wiki)
     - [AI Search](#ai-search)
         - [Use Cases for Azure AI Search](#use-cases-for-azure-ai-search)
-            - [E-commerce and Retail:](#e-commerce-and-retail)
-            - [Content and Document Management::](#content-and-document-management)
-            - [Enterprise Search::](#enterprise-search)
-            - [Healthcare and Life Sciences::](#healthcare-and-life-sciences)
-            - [Media and Entertainment::](#media-and-entertainment)
-            - [Travel and Hospitality::](#travel-and-hospitality)
-            - [Financial Services::](#financial-services)
+            - [E-commerce and Retail](#e-commerce-and-retail)
+            - [Content and Document Management](#content-and-document-management)
+            - [Enterprise Search](#enterprise-search)
+            - [Healthcare and Life Sciences](#healthcare-and-life-sciences)
+            - [Media and Entertainment](#media-and-entertainment)
+            - [Travel and Hospitality](#travel-and-hospitality)
+            - [Financial Services](#financial-services)
     - [AI Video Indexer](#ai-video-indexer)
     - [AI Content Safety](#ai-content-safety)
     - [Retired](#retired)
-
-<!-- /TOC -->
 
 ## Wiki 
 [return to Content](#content)
