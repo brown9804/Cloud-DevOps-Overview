@@ -20,7 +20,7 @@ April, 2024
 
 
 ## Wiki 
-[return to Content](#rcontent)
+[return to Content](#content)
 
 All Azure services as for now:
 
@@ -46,7 +46,7 @@ All Azure services as for now:
 | Industry Machine Learning solutions | Solution | Azure Synapse Analytics  | Azure Synapse Analytics is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. It brings together the best of SQL technologies used in enterprise data warehousing, Apache Spark technologies for big data, and Azure Data Explorer for log and time series analytics. <br/> <br/> Key Features: <br/> - Accelerates time to insight across data warehouses and big data systems. <br/> - Offers limitless scale, security, privacy. <br/> - Provides a unified experience for data engineering, data science, and business analysis. <br/> - Enables data warehousing and data virtualization scenarios. <br/> - Extends T-SQL to address streaming and machine learning scenarios. <br/> - Integrates AI with SQL by using machine learning models to score data. <br/> - Allows data engineers to use a code-free visual environment for managing data pipelines. <br/> - Automates query optimization. <br/> - Seamlessly integrates with Power BI, CosmosDB, and AzureML. <br/> <br/> Creating a new Azure Synapse Analytics account: <br/> You can create and manage Azure resources for Azure Synapse Analytics via the Azure portal. <br/> <br/> For more information: <br/> [Azure Synapse Analytics Overview](https://azure.microsoft.com/en-us/products/synapse-analytics/) <br/> [What is Azure Synapse Analytics?](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) <br/> [Azure Synapse Analytics Learning documents](https://learn.microsoft.com/en-us/azure/synapse-analytics/). | 
 
 ## AI Search 
-[return to Content](#rcontent)
+[return to Content](#content)
 
 > Built-in indexers are available for `Azure Cosmos DB, Azure SQL Database, Azure Blob Storage, and Microsoft SQL Server hosted in Azure Virtual Machines`. Use Azure `Data Factory`, with more than 80 connectors, or `Azure Logic Apps` to connect to your data source. Alternatively, push data into an Azure AI Search index, which has no restrictions on data source type.
 
@@ -55,7 +55,7 @@ All Azure services as for now:
 ### Use Cases for Azure AI Search
 
 #### 1. E-commerce and Retail:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Enhance product search experiences on e-commerce websites by providing relevant results, filters, and facets.
    - Implement personalized recommendations based on user behavior and preferences.
@@ -81,7 +81,7 @@ All Azure services as for now:
 > - **Azure AI services**: Lets you use intelligent algorithms to see, hear, speak, understand, and interpret your user needs through natural methods of communication. <br/>
 
 ####  2. Content and Document Management:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Index and search through large document repositories, intranets, and knowledge bases.
    - Implement full-text search, highlighting, and document previews.
@@ -103,7 +103,7 @@ All Azure services as for now:
 > This setup allows the company to facilitate content discovery and retrieval for its employees, enhancing productivity and efficiency. It's a great example of how Azure AI Search can be used in the context of content and document management. <br/>
 
 ####  3. Enterprise Search:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Create a unified search experience across various enterprise data sources (files, databases, APIs).
    - Enable users to find information quickly within their organization.
@@ -147,7 +147,7 @@ results = client.search(search_text="example query")
 > This is a simplified example, and a real-world implementation would likely involve additional considerations such as security, scalability, and performance optimization. 
 
 ####  4. Healthcare and Life Sciences:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Build medical knowledge bases for clinicians and researchers.
    - Enable semantic search for medical literature, clinical trials, and patient records.
@@ -187,7 +187,7 @@ results = client.search(search_text="example query")
 > Remember, Azure AI Search was formerly known as “Cognitive Search”, but the functionality remains the same, providing powerful search capabilities over your data using AI.
 
 ####  5. Media and Entertainment:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Enhance video and audio content discovery by indexing metadata and transcripts.
    - Implement search for news articles, blogs, podcasts, and multimedia content.
@@ -220,7 +220,7 @@ results = client.search(search_text="example query")
 > Please note that this is a high-level architecture and the actual implementation may vary based on specific requirements and constraints. You might need to consider additional aspects such as security, scalability, and cost optimization when designing the solution.
 
 ####  6. Travel and Hospitality:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Power hotel booking platforms with efficient search capabilities.
    - Enable location-based search for restaurants, attractions, and events.
@@ -248,7 +248,7 @@ results = client.search(search_text="example query")
 > This architecture provides a robust and scalable solution for travel and hospitality platforms.
 
 ####  7. Financial Services:
-[return to Content](#rcontent)
+[return to Content](#content)
 
    - Create powerful search interfaces for financial data, stock market information, and investment research.
    - Enable users to find relevant financial documents, reports, and news articles.
@@ -278,11 +278,11 @@ results = client.search(search_text="example query")
 > This architecture provides a robust and scalable solution for financial services platforms.
 
 ## AI Video Indexer
-[return to Content](#rcontent)
+[return to Content](#content)
 
 
 ## AI Content Safety	
-[return to Content](#rcontent)
+[return to Content](#content)
 
 The service offered several APIs:  
 - Image Moderation API: This API scanned images and detected potential adult and racy content.
@@ -292,7 +292,7 @@ The service offered several APIs:
 
 
 ## Retired 
-[return to Content](#rcontent)
+[return to Content](#content)
 
 | Area | Category | Service | Overview |
 | ---- | ---- | ---- | ---- | 
