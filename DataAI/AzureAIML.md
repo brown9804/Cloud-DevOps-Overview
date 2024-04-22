@@ -14,7 +14,10 @@ April, 2024
 ----------
 
 ## Content 
+
+Services:
 - [AI Search](#ai-search)
+   - [Use Cases for Azure AI Search](#use-cases-for-azure-ai-search)
 - [AI Video Indexer](#ai-video-indexer)
 - [Retired](#retired)
 
