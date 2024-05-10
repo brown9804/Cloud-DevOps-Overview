@@ -24,6 +24,7 @@ Jan, 2016
 - [GitHub Commands Glossary](https://www.atlassian.com/git/glossary#commands)
 - [MARKDOWN CHEAT SHEET](https://github.com/Kernix13/markdown-cheatsheet?tab=readme-ov-file#block-elements)
 
+## How to Commit/Push to Github
 ~~~
 git clone <repo>     or        git -c http.sslVerify=false clone <repository-name - ssh>
 
@@ -45,3 +46,18 @@ git push origin [branch]
 
 git pull origin [branch]
 ~~~
+
+## Good Content List Format 
+
+```
+<details><summary> <a href=""> </a></summary><ul>
+        <li> <a href="">  </a> </li>
+        <li> <a href="">  </a> </li>
+        <li> <a href=""> </a> </li>
+        <li> <a href=""> </a> </li>
+        <li> <a href="" > </a> </li>
+        <li> <a href="" > </a> </li>
+        <li> <a href="" > </a> </li>
+</details></li> <!-- End  -->
+```
+
