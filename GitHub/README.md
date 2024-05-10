@@ -51,8 +51,8 @@ git pull origin [branch]
 
 ```
 <details><summary> <a href=""> </a></summary><ul>
-        <li> <a href="">  </a> </li>
-        <li> <a href="">  </a> </li>
+        <li> <a href=""> </a> </li>
+        <li> <a href=""> </a> </li>
         <li> <a href=""> </a> </li>
         <li> <a href=""> </a> </li>
         <li> <a href="" > </a> </li>
