@@ -12,8 +12,7 @@ Belinda Brown, belindabrownr04@gmail.com
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-July, 2020
-
+Last update: June, 2024 
 ----------
 
 > Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
