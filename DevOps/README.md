@@ -16,6 +16,12 @@ July, 2020
 
 ----------
 
+Has his roots in agile and iterative 
+
+`
+Code + systems 
+`
+
 ## Content 
 
 - [Example of CI](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml)
@@ -23,12 +29,6 @@ July, 2020
 - [Example of Integrated Testing](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/tests/shared_tests.py)
 
 <img width="800" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/4d320096-70de-4091-8505-281c19ff71eb">
-
-Has his roots in agile and iterative 
-
-`
-Code + systems 
-`
 
 ## Wiki 
 
