@@ -13,6 +13,7 @@ Belinda Brown, belindabrownr04@gmail.com
 [brown9804](https://github.com/brown9804)
 
 Last update: June, 2024 
+
 ----------
 
 > Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
