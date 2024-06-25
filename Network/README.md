@@ -33,3 +33,11 @@ March, 2022
 - [What is Azure VPN Gateway?](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 - [What is DNS (Domain Name System](https://learn.microsoft.com/en-us/azure/dns/dns-overview)
 - [What is Azure ExpressRoute?](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
+- [What is a subnet mask?](https://www.auvik.com/franklyit/blog/what-is-subnet-mask/)
+
+![image](https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/e2f91c02-3895-4c8b-ad08-cf5ab4eec45e)
+
+> A bitwise AND operation uses a bitwise AND operation. It combines the binary form of an IPv4 address and a subnet mask to get the network address. For example, this is how you find the network address for 192.0.2.11 (11000000000000000000001000001011) and 255.0.0.0 (11111111000000000000000000000000). See the graphic below
+
+![image](https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/937c5085-3fc7-437a-8be4-00d2da4a4bae)
+
