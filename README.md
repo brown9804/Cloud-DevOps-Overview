@@ -1,4 +1,4 @@
-# SDLC within Cloud Learning Path
+# Cloud DevOps - Learning Path
 
 ----------
 
