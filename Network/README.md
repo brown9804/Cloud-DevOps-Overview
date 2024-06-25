@@ -49,3 +49,8 @@ Belinda Brown, belindabrownr04@gmail.com
 
 <img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/937c5085-3fc7-437a-8be4-00d2da4a4bae">
 
+- [Virtual network peering](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)
+
+<img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/3b97d87f-8bd1-4778-8055-66aeb049039a">
+
+
