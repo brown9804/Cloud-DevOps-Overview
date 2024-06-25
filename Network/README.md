@@ -30,4 +30,6 @@ March, 2022
 
 ![image](https://github.com/brown9804/DevOps-Agile-Cloud_Lpath/assets/24630902/b409d19a-6394-4e4b-b9c7-adc067bbbb53)
 
-
+- [What is Azure VPN Gateway?](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+- [What is DNS (Domain Name System](https://learn.microsoft.com/en-us/azure/dns/dns-overview)
+- [What is Azure ExpressRoute?](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
