@@ -9,9 +9,6 @@ Belinda Brown, belindabrownr04@gmail.com
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
-
-March, 2022
-
 ----------------------
 
 <img width="600" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/c2c2ed11-f818-46da-999c-9157e4642596">
