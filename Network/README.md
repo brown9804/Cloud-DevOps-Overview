@@ -53,4 +53,11 @@ Belinda Brown, belindabrownr04@gmail.com
 
 <img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/3b97d87f-8bd1-4778-8055-66aeb049039a">
 
+- [Managed Virtual Network?](https://learn.microsoft.com/en-us/purview/catalog-managed-vnet#managed-virtual-network)
+
+<img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/cfd640af-c643-46cc-9fac-02df84a3a23e">
+
+- [What is a private endpoint?](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
+
+<img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/fc95db05-36a9-4b87-91fa-1ec46a7610f3">
 
