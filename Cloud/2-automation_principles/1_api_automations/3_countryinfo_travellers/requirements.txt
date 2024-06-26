@@ -156,3 +156,8 @@ widgetsnbextension==4.0.5
 xmltodict==0.13.0
 yarl==1.8.1
 zipp==3.18.1
+opentelemetry-api
+opentelemetry-sdk
+opentelemetry-proto
+opentelemetry-exporter-otlp
+opentelemetry-distro
