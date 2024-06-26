@@ -23,9 +23,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r ./Cloud/2-automation_principles/1_api_automations/3_countryinfo_travellers/requirements.txt
       # Running the integration tests 
       - name: Running Integration Tests
         run: |
           pip install pytest pytest-cov
-          python -m pytest ./Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/tests/shared_tests.py
+          python -m pytest ./Cloud/2-automation_principles/1_api_automations/3_countryinfo_travellers/tests/shared_tests.py
