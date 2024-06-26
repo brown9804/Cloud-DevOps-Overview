@@ -1,4 +1,7 @@
-from ..src.shared import *
+import sys
+sys.path.append(r"Cloud/2-automation_principles/1_api_automations/3_countryinfo_travellers")
+
+from src.shared import *
 
 country_name = "Spain"
 latitude = "40.416705"
