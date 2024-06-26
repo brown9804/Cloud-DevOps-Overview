@@ -1,4 +1,4 @@
-from src.shared import *
+from src import shared
 
 country_name = "Spain"
 latitude = "40.416705"
