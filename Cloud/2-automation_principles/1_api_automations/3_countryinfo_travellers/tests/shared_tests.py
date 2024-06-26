@@ -11,7 +11,7 @@ month_asked = "3"
 day_asked = "19"
 
 def country_info_test(country_name):
-    if country_name is not " ":
+    if country_name != " ":
         dataframe = country_info(country_name)
         country_info_result = "Completed"
     else:
@@ -19,7 +19,7 @@ def country_info_test(country_name):
     return country_info_result
 
 def covid_data_test(country_name):
-    if country_name is not " ":
+    if country_name != " ":
         ans = covid_data(country_name)
         covid_data_result = "Completed"
     else:
@@ -27,7 +27,7 @@ def covid_data_test(country_name):
     return covid_data_result
 
 def capital_weather_test(latitude, longitude):
-    if (latitude and longitude) is not " ":
+    if (latitude and longitude) != " ":
         capital_weather(latitude, longitude)
         weather_result = "Completed"
     else:
@@ -36,7 +36,7 @@ def capital_weather_test(latitude, longitude):
 
 
 def convert_currency_test(from_currency, to_currency, amount, year_asked, month_asked, day_asked):
-    if (from_currency and to_currency and amount and year_asked and month_asked and day_asked) is not " ":
+    if (from_currency and to_currency and amount and year_asked and month_asked and day_asked) != " ":
         amount_converted = convert_currency(from_currency, to_currency, amount, year_asked, month_asked, day_asked)
         currency_convert_result = "Completed"
     else:
