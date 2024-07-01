@@ -61,3 +61,10 @@ Belinda Brown, belindabrownr04@gmail.com
 
 <img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/fc95db05-36a9-4b87-91fa-1ec46a7610f3">
 
+- [What is Azure DDoS Protection?](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview)
+
+> Distributed denial of service (DDoS). A DDoS attack attempts to exhaust an application's resources, making the application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
+
+<img width="600" alt="image" src="https://github.com/brown9804/CloudDevOps_LPath/assets/24630902/a18c1207-25f2-41b8-9fb0-9b5463c23a5b">
+
+
