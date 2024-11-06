@@ -1,4 +1,4 @@
-# Country Information for Travellers (API integration)
+# Country Information for Travelers (API integration)
 
 ----------
 
