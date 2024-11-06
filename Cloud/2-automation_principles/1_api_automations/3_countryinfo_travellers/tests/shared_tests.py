@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r"Cloud/2-automation_principles/1_api_automations/3_countryinfo_travellers")
+sys.path.append(r"Cloud/2-automation_principles/1_api_automations/3_countryinfo_travelers")
 
 from src.shared import *
 
