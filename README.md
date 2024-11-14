@@ -4,8 +4,6 @@
 
 Costa Rica
 
-Belinda Brown, belindabrownr04@gmail.com
-
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
@@ -17,6 +15,11 @@ Last update: June, 2024
 ----------
 
 > Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
 
 ## Content:
 
