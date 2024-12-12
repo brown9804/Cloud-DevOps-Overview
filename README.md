@@ -1,16 +1,13 @@
 # Cloud DevOps - Learning Path
 
-----------
-
 Costa Rica
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last update: June, 2024 
+Last updated: 2024-12-12
 
 ----------
 
@@ -21,13 +18,15 @@ Last update: June, 2024
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
-## Content:
+## Content
 
-<!-- MarkdownTOC -->
+<details>
+<summary><b>Table of Contents</b> (Click to expand)</summary>
 
 - [Agile](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Agile)
 - [DevOps](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/DevOps)
 - [Network](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Network)
+- [GitHub](https://github.com/brown9804/CloudDevOps_LPath/tree/main/GitHub)
 - [Cloud Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud)
   - [0. Linux](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux)
     - [Working with Users and Permissions](https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab0)
@@ -65,9 +64,8 @@ Last update: June, 2024
     
   - [Automation Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/2-automation_principles)
   - [Kubernetes Principles](https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-kubernetes_principles)
-<!-- /MarkdownTOC -->
 
-![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9)
+</details>
 
 ## Wiki 
 
@@ -76,6 +74,8 @@ Last update: June, 2024
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/e809d790-87d4-41a1-b9ea-071327ab6ef2)
 
 ![Benefits](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/dc014629-a069-44f3-b657-7f8d39968272)
+
+![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9)
 
 - SDLC - [Methodologies](https://datarob.com/sdlc-methodologies/)
 
