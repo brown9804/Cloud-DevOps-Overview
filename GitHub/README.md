@@ -1,18 +1,18 @@
 # GitHub Overview
 
-----------------------
 Costa Rica
-
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
 
-Jan, 2016
+Last updated: 2024-11-19
 
 ----------------------
 
 ## Wiki 
+
+<details>
+<summary><b>Table of Wiki</b> (Click to expand)</summary>
 
 - [Deleting Your Commit History?](https://xebia.com/blog/deleting-your-commit-history/)
 - [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
@@ -23,7 +23,10 @@ Jan, 2016
 - [GitHub Commands Glossary](https://www.atlassian.com/git/glossary#commands)
 - [MARKDOWN CHEAT SHEET](https://github.com/Kernix13/markdown-cheatsheet?tab=readme-ov-file#block-elements)
 
+</details>
+
 ## How to Commit/Push to Github
+
 ~~~
 git clone <repo>     or        git -c http.sslVerify=false clone <repository-name - ssh>
 
