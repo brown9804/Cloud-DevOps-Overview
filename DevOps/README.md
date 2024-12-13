@@ -1,16 +1,11 @@
 # DevOps Overview
 
-----------
-
 Costa Rica
-
-Belinda Brown, belindabrownr04@gmail.com
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
+
+Last updated: 2024-12-13
 
 ----------
 
@@ -20,16 +15,16 @@ Has his roots in agile and iterative
 Code + systems 
 `
 
-## Content 
-
-- [Example of CI](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml)
-- [Example of Automated Testing](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/.github/workflows/automated_testing.yml)
-- [Example of Integrated Testing](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/tests/shared_tests.py)
-
-<img width="800" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/4d320096-70de-4091-8505-281c19ff71eb">
-
 ## Wiki 
 
+<details>
+<summary><b>Table of Wiki </b> (Click to expand)</summary>
+
+- [DevOps Foundations](https://www.linkedin.com/learning/devops-foundations/development-and-operations-2?u=2095204)
+- [Agile Software Development: Kanban for Developers](https://www.linkedin.com/learning/agile-software-development-kanban-for-developers/putting-kanban-to-work-in-your-development-team?u=2095204)
+- [DevOps Foundations: Lean and Agile](https://www.linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3?u=2095204)
+- [Agile Software Development: Scrum for Developers](https://www.linkedin.com/learning/agile-software-development-scrum-for-developers/scrum-for-agile-software-development?u=2095204)
+- [Transitioning from Waterfall to Agile Project Management](https://www.linkedin.com/learning/transitioning-from-waterfall-to-agile-project-management-2019/build-a-successful-transition-to-agile?u=2095204)
 - Azure DevOps - [How to create a Azure Devops Story Template](https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops&tabs=browser)
 - Azure DevOps - [How to leave from a Azure DevOps Organization](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops)
 - Azure DevOps - [Create Release Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops#continuous-deployment-triggers)
@@ -39,6 +34,15 @@ Code + systems
 - For the CD part, we can use Azure DevOps pipelines, find [here](https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&tabs=java%2Cbrowser) a guide.
 - [How to automate the testing](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#testing-your-code), and [Running python tests on GitHub](https://thiagolopessilva.medium.com/running-unit-testing-on-github-action-using-pytest-61653d993c9c) using github actions
 
+</details>
+
+## Content 
+
+- [Example of CI](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml)
+- [Example of Automated Testing](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/.github/workflows/automated_testing.yml)
+- [Example of Integrated Testing](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/tests/shared_tests.py)
+
+    <img width="800" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/4d320096-70de-4091-8505-281c19ff71eb">
 
 ## CAMS
 - Culture 
@@ -349,12 +353,7 @@ Software as a service monitoring:
 * SAAS providers 
  
 
-## References 
-
-[1] DevOps Foundations- From https://www.linkedin.com/learning/devops-foundations/development-and-operations-2?u=2095204 <br/>
-[2] Agile Software Development: Kanban for Developers - From https://www.linkedin.com/learning/agile-software-development-kanban-for-developers/putting-kanban-to-work-in-your-development-team?u=2095204  <br/>
-[3] DevOps Foundations: Lean and Agile - From https://www.linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3?u=2095204  <br/>
-[4] Agile Software Development: Scrum for Developers - From https://www.linkedin.com/learning/agile-software-development-scrum-for-developers/scrum-for-agile-software-development?u=2095204  <br/>
-[5] Transitioning from Waterfall to Agile Project Management - From https://www.linkedin.com/learning/transitioning-from-waterfall-to-agile-project-management-2019/build-a-successful-transition-to-agile?u=2095204  <br/>
-
-
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
