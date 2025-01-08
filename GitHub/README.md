@@ -36,7 +36,7 @@ code .
 
 git pull 
 
-git checkout -b feat_<user story #>
+git checkout -b <new branch_name>
 
 git status 
 
