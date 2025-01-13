@@ -234,6 +234,8 @@
 <li><a href="#github-pages--overview"
 id="toc-github-pages--overview">GitHub Pages -Overview</a>
 <ul>
+<li><a href="#last-updated-2025-01-13"
+id="toc-last-updated-2025-01-13">Last updated: 2025-01-13</a></li>
 <li><a href="#wiki" id="toc-wiki">Wiki</a></li>
 <li><a href="#content" id="toc-content">Content</a></li>
 <li><a href="#how-is-github-pages-used"
@@ -254,8 +256,7 @@ id="toc-setting-up-github-pages">Setting Up GitHub Pages</a></li>
 src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
 alt="GitHub" /></a> <a
 href="https://github.com/brown9804">brown9804</a></p>
-<p>Last updated: 2025-01-13</p>
-<hr />
+<h2 id="last-updated-2025-01-13">Last updated: 2025-01-13</h2>
 <blockquote>
 <p><strong>GitHub Pages</strong> is a feature provided by GitHub that
 allows you to
@@ -416,10 +417,16 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>          fi</span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>          # Add all changes, including untracked files</span>
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>          git add -A</span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>          # Commit the changes</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>          git commit -m &#39;Deploy static HTML files&#39;</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>          # Push the changes to the remote branch</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>          git push origin HEAD:${{ github.ref }}</span></code></pre></div></li>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>          # Check for changes before committing</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>          if git diff-index --quiet HEAD --; then</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>            echo &quot;No changes to commit&quot;</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>            exit 0</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>          else</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>            # Commit the changes</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>            git commit -m &#39;Deploy static HTML files&#39;</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>            # Push the changes to the remote branch</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>            git push origin HEAD:${{ github.ref }}</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>          fi</span></code></pre></div></li>
 </ol>
 <h2 id="setting-up-github-pages">Setting Up GitHub Pages</h2>
 <ol type="1">
