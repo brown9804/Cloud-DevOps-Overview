@@ -62,43 +62,70 @@ Last updated: 2025-01-13
       5. **Deploy to GitHub Pages**: This step commits the generated HTML files back to the `main` branch and pushes the changes. This ensures that your GitHub Pages site is updated with the latest HTML files.
       
       ```yaml
-      name: Convert Markdown to HTML and Deploy
+      name: Workflow to convert Markdown files to HTML and deploy to GitHub Pages
       
       on:
         push:
           branches:
             - main  # Trigger the workflow on push to the main branch
+            - dev   # Trigger the workflow on push to the dev branch
+            - feature/*  # Trigger the workflow on push to any feature branch
       
       jobs:
         build-and-deploy:
-          runs-on: ubuntu-latest
+          runs-on: ubuntu-latest  # Use the latest Ubuntu environment
       
           steps:
+            # Step 1: Checkout the repository
             - name: Checkout repository
               uses: actions/checkout@v2
       
+            # Step 2: Set up Node.js environment
             - name: Set up Node.js
               uses: actions/setup-node@v2
               with:
-                node-version: '14'
+                node-version: '14'  # Specify the Node.js version
       
+            # Step 3: Install npm dependencies
             - name: Install dependencies
               run: npm install
+              
+            # Step 4: Install pandoc for Markdown to HTML conversion
+            - name: Install pandoc
+              run: sudo apt-get install -y pandoc
       
+            # Step 5: Convert all Markdown files to HTML while preserving directory structure
             - name: Convert Markdown to HTML
               run: |
-                mkdir -p _site
-                for file in *.md; do
+                mkdir -p _site  # Create the _site directory if it doesn't exist
+                # Find all Markdown files and convert them to HTML, preserving directory structure
+                find . -name "*.md" -type f | while read file; do
+                  # Create the corresponding directory in _site
+                  mkdir -p "_site/$(dirname "$file")"
+                  # Convert the Markdown file to HTML and save it in the corresponding directory
                   pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
                 done
       
+            # Step 6: Deploy the generated HTML files to GitHub Pages
             - name: Deploy to GitHub Pages
               run: |
-                git config --global user.name 'github-actions[bot]'
-                git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-                git add _site
+                # Configure Git with a bot email and name
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                git config --global user.name "github-actions[bot]"
+                # Check for local changes and stash them if present
+                if [ -n "$(git status --porcelain)" ]; then
+                  git stash
+                  git pull origin ${{ github.ref }} --rebase
+                  git stash pop || true  # Ignore error if no stash entries to pop
+                else
+                  git pull origin ${{ github.ref }} --rebase
+                fi
+                # Add all changes, including untracked files
+                git add -A
+                # Commit the changes
                 git commit -m 'Deploy static HTML files'
-                git push origin main
+                # Push the changes to the remote branch
+                git push origin HEAD:${{ github.ref }}
       ```
 
 ## Setting Up GitHub Pages
