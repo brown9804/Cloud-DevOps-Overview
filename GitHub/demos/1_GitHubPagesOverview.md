@@ -62,12 +62,12 @@ Last updated: 2025-01-13
       5. **Deploy to GitHub Pages**: This step commits the generated HTML files back to the `main` branch and pushes the changes. This ensures that your GitHub Pages site is updated with the latest HTML files.
       
       ```yaml
+      name: Convert Markdown to HTML and Deploy
+      
       on:
         push:
           branches:
             - main  # Trigger the workflow on push to the main branch
-            - dev
-            - feature/*
       
       jobs:
         build-and-deploy:
@@ -84,9 +84,6 @@ Last updated: 2025-01-13
       
             - name: Install dependencies
               run: npm install
-              
-            - name: Install pandoc
-              run: sudo apt-get install -y pandoc
       
             - name: Convert Markdown to HTML
               run: |
@@ -97,21 +94,20 @@ Last updated: 2025-01-13
       
             - name: Deploy to GitHub Pages
               run: |
-                git config --global user.email "github-actions[bot]@users.noreply.github.com"
-                git config --global user.name "github-actions[bot]"
-                git pull origin ${{ github.ref }} --rebase
-                git add -A  # Add all changes, including untracked files
+                git config --global user.name 'github-actions[bot]'
+                git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+                git add _site
                 git commit -m 'Deploy static HTML files'
-                git push origin HEAD:${{ github.ref }}
+                git push origin main
       ```
 
 ## Setting Up GitHub Pages
 1. **Create a Repository**: Create a new repository on GitHub or use an existing one.
 2. **Enable GitHub Pages**:
    - Go to the repository settings on GitHub.
-   - Under the `GitHub Pages` section, select the `GitHub Actions`, and `Static HTML` as the source.
+   - Under the `GitHub Pages` section, select the `main` branch as the source.
   
-     <img width="550" alt="image" src="https://github.com/user-attachments/assets/0cd35974-0274-4317-ade0-97a1387175e8" />
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/6143fc94-5e77-45c5-8680-4f269b0dc242" />
 
     > Static HTML refers to web pages that are delivered to the user's browser exactly as stored, without any server-side processing. Static sites are fast, secure, and easy to deploy, making them ideal for simple websites, portfolios, blogs, and documentation.
 3. Push Your Code: Commit and push your code to the main branch. The GitHub Actions workflow will automatically run and deploy your site to GitHub Pages.
