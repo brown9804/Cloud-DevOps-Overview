@@ -122,10 +122,16 @@ Last updated: 2025-01-13
                 fi
                 # Add all changes, including untracked files
                 git add -A
-                # Commit the changes
-                git commit -m 'Deploy static HTML files'
-                # Push the changes to the remote branch
-                git push origin HEAD:${{ github.ref }}
+                # Check for changes before committing
+                if git diff-index --quiet HEAD --; then
+                  echo "No changes to commit"
+                  exit 0
+                else
+                  # Commit the changes
+                  git commit -m 'Deploy static HTML files'
+                  # Push the changes to the remote branch
+                  git push origin HEAD:${{ github.ref }}
+                fi
       ```
 
 ## Setting Up GitHub Pages
