@@ -188,7 +188,6 @@ Last updated: 2024-12-13
 | **Integrate Responses** | - Use the responses from the AI model in your application. <br> - For example, display the generated text in a web app or use it to automate a task.                                                            |
 | **Optimize and Iterate**| - Continuously optimize your prompts and code based on the responses. <br> - Iterate to improve the performance and relevance of the AI model.                                                                  |
 
-
 ### Transition to Production
 
 | **Step**                  | **Description**                                                                                                                                                                                                 |
@@ -198,3 +197,7 @@ Last updated: 2024-12-13
 | **Monitor and Scale** | Monitor your usage and scale your application as needed using Azure’s infrastructure |
 
 
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
