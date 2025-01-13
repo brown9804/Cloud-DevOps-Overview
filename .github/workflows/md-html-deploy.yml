@@ -30,13 +30,16 @@ jobs:
       - name: Install pandoc
         run: sudo apt-get install -y pandoc
 
-      # Step 5: Convert all Markdown files to HTML
+      # Step 5: Convert all Markdown files to HTML while preserving directory structure
       - name: Convert Markdown to HTML
         run: |
           mkdir -p _site  # Create the _site directory if it doesn't exist
-          # Find all Markdown files and convert them to HTML
+          # Find all Markdown files and convert them to HTML, preserving directory structure
           find . -name "*.md" -type f | while read file; do
-            pandoc "$file" --standalone --toc -o "_site/$(basename "${file%.md}.html")"
+            # Create the corresponding directory in _site
+            mkdir -p "_site/$(dirname "$file")"
+            # Convert the Markdown file to HTML and save it in the corresponding directory
+            pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
           done
 
       # Step 6: Deploy the generated HTML files to GitHub Pages
