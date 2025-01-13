@@ -68,6 +68,8 @@ Last updated: 2025-01-13
         push:
           branches:
             - main  # Trigger the workflow on push to the main branch
+            - dev
+            - feature/*
       
       jobs:
         build-and-deploy:
@@ -84,6 +86,9 @@ Last updated: 2025-01-13
       
             - name: Install dependencies
               run: npm install
+              
+            - name: Install pandoc
+              run: sudo apt-get install -y pandoc
       
             - name: Convert Markdown to HTML
               run: |
@@ -94,11 +99,11 @@ Last updated: 2025-01-13
       
             - name: Deploy to GitHub Pages
               run: |
-                git config --global user.name 'github-actions[bot]'
-                git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+                git config --global user.email "belindabrownr04@gmail.com"
+                git config --global user.name "brown9804"
                 git add _site
                 git commit -m 'Deploy static HTML files'
-                git push origin main
+                git push origin HEAD:${{ github.ref }}
       ```
 
 ## Setting Up GitHub Pages
