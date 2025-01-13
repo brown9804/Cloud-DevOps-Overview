@@ -89,7 +89,7 @@ Last updated: 2025-01-13
               run: |
                 mkdir -p _site
                 for file in *.md; do
-                  pandoc "$file" -o "_site/${file%.md}.html"
+                  pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
                 done
       
             - name: Deploy to GitHub Pages
