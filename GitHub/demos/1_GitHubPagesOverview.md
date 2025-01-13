@@ -89,7 +89,7 @@ Last updated: 2025-01-13
               run: |
                 mkdir -p _site
                 for file in *.md; do
-                  pandoc "$file" -o "_site/${file%.md}.html"
+                  pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
                 done
       
             - name: Deploy to GitHub Pages
@@ -105,9 +105,9 @@ Last updated: 2025-01-13
 1. **Create a Repository**: Create a new repository on GitHub or use an existing one.
 2. **Enable GitHub Pages**:
    - Go to the repository settings on GitHub.
-   - Under the `GitHub Pages` section, select the `GitHub Actions`, and `Static HTML` as the source.
+   - Under the `GitHub Pages` section, select the `main` branch as the source.
   
-     <img width="550" alt="image" src="https://github.com/user-attachments/assets/0cd35974-0274-4317-ade0-97a1387175e8" />
+     <img width="550" alt="image" src="https://github.com/user-attachments/assets/6143fc94-5e77-45c5-8680-4f269b0dc242" />
 
     > Static HTML refers to web pages that are delivered to the user's browser exactly as stored, without any server-side processing. Static sites are fast, secure, and easy to deploy, making them ideal for simple websites, portfolios, blogs, and documentation.
 3. Push Your Code: Commit and push your code to the main branch. The GitHub Actions workflow will automatically run and deploy your site to GitHub Pages.
