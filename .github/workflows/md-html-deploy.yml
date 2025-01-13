@@ -52,7 +52,7 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git stash
             git pull origin ${{ github.ref }} --rebase
-            git stash pop
+            git stash pop || true  # Ignore error if no stash entries to pop
           else
             git pull origin ${{ github.ref }} --rebase
           fi
