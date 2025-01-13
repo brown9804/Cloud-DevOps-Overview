@@ -100,7 +100,7 @@ Last updated: 2025-01-13
                 git config --global user.email "github-actions[bot]@users.noreply.github.com"
                 git config --global user.name "github-actions[bot]"
                 git pull origin ${{ github.ref }} --rebase
-                git add _site
+                git add -A  # Add all changes, including untracked files
                 git commit -m 'Deploy static HTML files'
                 git push origin HEAD:${{ github.ref }}
       ```
