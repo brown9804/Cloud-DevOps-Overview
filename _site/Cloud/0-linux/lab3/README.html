@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#package-management-and-troubleshooting"
+id="toc-package-management-and-troubleshooting">Package Management and
+Troubleshooting</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#installing-and-managing-packages-on-debianubuntu-systems"
+id="toc-installing-and-managing-packages-on-debianubuntu-systems">Installing
+and Managing Packages on Debian/Ubuntu Systems</a>
+<ul>
+<li><a href="#install-the-apache-web-server-package"
+id="toc-install-the-apache-web-server-package"><em>Install the Apache
+Web Server Package</em>:</a></li>
+<li><a href="#update-package" id="toc-update-package"><em>Update
+package</em>:</a></li>
+<li><a href="#install-the-packages"
+id="toc-install-the-packages"><em>Install the packages</em>:</a></li>
+<li><a href="#verify-the-server-is-running-and-capture-the-result"
+id="toc-verify-the-server-is-running-and-capture-the-result"><em>Verify
+the Server is Running and Capture the Result</em>:</a></li>
+</ul></li>
+<li><a href="#installing-and-managing-packages-on-red-hatcentos-systems"
+id="toc-installing-and-managing-packages-on-red-hatcentos-systems">Installing
+and Managing Packages on Red Hat/CentOS Systems</a></li>
+<li><a href="#troubleshooting-rpm-issues"
+id="toc-troubleshooting-rpm-issues">Troubleshooting RPM Issues:</a>
+<ul>
+<li><a href="#telnet-installation"
+id="toc-telnet-installation"><em>Telnet Installation</em>:</a></li>
+<li><a href="#update-apache" id="toc-update-apache"><em>Update
+Apache</em>:</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="package-management-and-troubleshooting">Package Management and
+Troubleshooting</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2
+id="installing-and-managing-packages-on-debianubuntu-systems">Installing
+and Managing Packages on Debian/Ubuntu Systems</h2>
+<p>Understanding how to use package manager and installation utility apt
+to manage packages on Ubuntu/Debian Linux distributions.</p>
+<h3 id="install-the-apache-web-server-package"><em>Install the Apache
+Web Server Package</em>:</h3>
+<blockquote>
+<p>Note: Ubuntu/Debian systems will usually start a service
+automatically, once its package is installed. You may need to update the
+package manager.</p>
+</blockquote>
+<h3 id="update-package"><em>Update package</em>:</h3>
+<p><code>sudo apt update</code></p>
+<h3 id="install-the-packages"><em>Install the packages</em>:</h3>
+<p><code>sudo apt install apache2 wget</code></p>
+<h3 id="verify-the-server-is-running-and-capture-the-result"><em>Verify
+the Server is Running and Capture the Result</em>:</h3>
+<ol type="1">
+<li>Checking Apache server: <br/>
+<code>curl http://localhost</code></li>
+<li>If that’s working, we use the wget package to capture the output of
+an http request. We’ll point the output to a file in our home directory
+called local_index.response <br/>
+<code>wget --output-document=local_index.response http://localhost</code></li>
+</ol>
+<h2
+id="installing-and-managing-packages-on-red-hatcentos-systems">Installing
+and Managing Packages on Red Hat/CentOS Systems</h2>
+<ol type="1">
+<li>Attempt to install the RPM to determine what dependencies are
+required: <br/></li>
+</ol>
+<pre><code>cd Downloads
+sudo rpm -i elinks-0.12-0.37.pre6.el7.0.1.x86_64.rpm</code></pre>
+<blockquote>
+<p>We’ll get some dependency errors (version numbers may vary). 2. Use
+the package manager to determine which packages provide the
+dependencies: <br/> <code>sudo yum provides libmozjs185*</code> <br/>
+The output shows that the js package provides libmozjs185. 3. Install
+the packages that provide those dependencies: <br/>
+<code>sudo yum install js</code> 4. All of our dependencies were not
+resolved with that one package installation. Attempt to install the RPM
+again. If any other dependencies are needed, repeat steps 3 and 4
+(substituting libmozjs185 with whatever dependency is still missing) to
+resolve that issue: <br/>
+<code>sudo rpm -i elinks-0.12-0.37.pre6.el7.0.1.x86_64.rpm</code> 5.
+Once the RPM is installed successfully, run elinks to ensure the
+application is working properly: <br/> <code>elinks</code> 6. Attempt to
+open a website by providing a URL: <br/>
+<code>http://www.amazon.com</code></p>
+</blockquote>
+<h2 id="troubleshooting-rpm-issues">Troubleshooting RPM Issues:</h2>
+<p>Understand how to install telnet and install Apache.</p>
+<ol type="1">
+<li>Become the root user: <br/> <code>sudo -i</code></li>
+</ol>
+<h3 id="telnet-installation"><em>Telnet Installation</em>:</h3>
+<ol type="1">
+<li>Install the telnet package: <br/>
+<code>yum install -y telnet</code></li>
+<li>Verify the integrity of the RPM database: <br/></li>
+</ol>
+<pre><code>cd /var/lib/rpm/
+/usr/lib/rpm/rpmdb_verify Packages</code></pre>
+<ol start="3" type="1">
+<li>Move Packages to Packages.bad and create a new RPM database from
+Packages.bad: <br/></li>
+</ol>
+<pre><code>mv Packages Packages.bad
+/usr/lib/rpm/rpmdb_dump Packages.bad | /usr/lib/rpm/rpmdb_load Packages</code></pre>
+<ol start="4" type="1">
+<li>Verify the integrity of the new RPM database: <br/>
+<code>/usr/lib/rpm/rpmdb_verify Packages</code></li>
+<li>Query installed packages for errors: <br/>
+<code>rpm -qa &gt; /dev/null</code></li>
+<li>Rebuild the RPM database: <br/>
+<code>rpm -vv --rebuilddb</code></li>
+<li>Install telnet: <br/> <code>yum install -y telnet</code></li>
+</ol>
+<h3 id="update-apache"><em>Update Apache</em>:</h3>
+<ol type="1">
+<li>Attempt to install Apache: <br/>
+<code>yum install -y httpd</code></li>
+<li>Edit /etc/yum.conf: <br/> <code>vim /etc/yum.conf</code></li>
+<li>Remove the exclusion for httpd: <br/>
+<code>exclude=httpd</code></li>
+<li>Save and close the file: <br/> <code>:wq</code></li>
+<li>Install Apache: <br/> <code>yum install -y httpd</code></li>
+</ol>
+<h3 id="references">References</h3>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>

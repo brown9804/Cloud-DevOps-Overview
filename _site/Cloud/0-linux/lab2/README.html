@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#securely-accessing-your-system"
+id="toc-securely-accessing-your-system">Securely Accessing Your
+System</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#generating-and-exchanging-ssh-keys-for-secure-access"
+id="toc-generating-and-exchanging-ssh-keys-for-secure-access">Generating
+and Exchanging SSH Keys for Secure Access</a>
+<ul>
+<li><a href="#create-the-key-on-server-1"
+id="toc-create-the-key-on-server-1"><em>Create the Key on Server
+1</em>:</a></li>
+<li><a href="#create-the-key-on-server-2"
+id="toc-create-the-key-on-server-2"><em>Create the Key on Server
+2</em>:</a></li>
+<li><a href="#exchange-the-ssh-keys-between-server-1-and-server-2"
+id="toc-exchange-the-ssh-keys-between-server-1-and-server-2"><em>Exchange
+the SSH Keys between Server 1 and Server 2</em>:</a></li>
+<li><a href="#test-the-configuration"
+id="toc-test-the-configuration"><em>Test the
+Configuration</em>:</a></li>
+</ul></li>
+<li><a href="#create-and-use-an-ssh-tunnel-for-network-traffic"
+id="toc-create-and-use-an-ssh-tunnel-for-network-traffic">Create and Use
+an SSH Tunnel for Network Traffic:</a>
+<ul>
+<li><a href="#generating-ssh-key"
+id="toc-generating-ssh-key"><em>Generating ssh key</em>:</a></li>
+<li><a href="#copying-the-key" id="toc-copying-the-key"><em>Copying the
+key</em>:</a></li>
+<li><a href="#login-the-key" id="toc-login-the-key"><em>Login the
+key</em>:</a></li>
+<li><a href="#creating-the-tunnel"
+id="toc-creating-the-tunnel"><em>Creating the tunnel</em>:</a></li>
+<li><a href="#testing" id="toc-testing"><em>Testing</em>:</a></li>
+</ul></li>
+<li><a href="#configure-sshd-to-use-sockets"
+id="toc-configure-sshd-to-use-sockets">Configure sshd to use
+Sockets:</a></li>
+<li><a href="#set-up-tcp-wrappers-to-only-allow-ssh"
+id="toc-set-up-tcp-wrappers-to-only-allow-ssh">Set Up TCP Wrappers to
+Only Allow SSH</a>
+<ul>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="securely-accessing-your-system">Securely Accessing Your
+System</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="generating-and-exchanging-ssh-keys-for-secure-access">Generating
+and Exchanging SSH Keys for Secure Access</h2>
+<p>Understand how to create secure keys for remote access, how to
+exchange them, and where to store them on each system involved in the
+chain.</p>
+<h3 id="create-the-key-on-server-1"><em>Create the Key on Server
+1</em>:</h3>
+<ol type="1">
+<li>In your terminal, log in to Server 1: <br/>
+<code>ssh cloud_user@&amp;lt;SERVER1_PUBLIC_IP&amp;gt;</code></li>
+<li>List the contents of the current directory: <br/>
+<code>ls -la</code></li>
+<li>Change to the .ssh directory: <br/> <code>cd .ssh</code></li>
+<li>List the contents of the .ssh directory: <br/>
+<code>ls -la</code></li>
+<li>Generate a key for Server 1: <br/> <code>ssh-keygen</code></li>
+<li>Press <code>Enter</code> at the next three prompts.</li>
+<li>List the contents of the .ssh directory again: <br/>
+<code>ls -la</code></li>
+<li>List the contents of the id_rsa.pub file: <br/>
+<code>cat id_rsa.pub</code></li>
+<li>Copy the output of this command to your clipboard.</li>
+</ol>
+<h3 id="create-the-key-on-server-2"><em>Create the Key on Server
+2</em>:</h3>
+<ol type="1">
+<li>Log in to Server 2: <br/>
+<code>ssh cloud_user@&amp;lt;SERVER2_PUBLIC_IP&amp;gt;</code></li>
+<li>Change to the .ssh directory.</li>
+<li>List the contents of the .ssh directory: <br/>
+<code>ls -la</code></li>
+<li>Install the nano text editor:
+<code>sudo yum install nano</code></li>
+<li>Enter your password at the prompt.</li>
+<li>Open the authorized_keys file in nano:
+<code>nano authorized_keys</code></li>
+<li>Add the key we just generated to the file.</li>
+<li>Press <code>Ctrl + X</code>.</li>
+<li>Press <code>Y</code> then Enter to save the changes.</li>
+</ol>
+<h3
+id="exchange-the-ssh-keys-between-server-1-and-server-2"><em>Exchange
+the SSH Keys between Server 1 and Server 2</em>:</h3>
+<ol type="1">
+<li>In your Server 2 terminal window, create a new key: <br/>
+<code>ssh-keygen</code></li>
+<li>Press Enter for the next three prompts.</li>
+<li>List the contents of the current directory: <br/>
+<code>ls -la</code></li>
+<li>List the contents of the id_rsa.pub file:
+<code>cat id_rsa.pub</code></li>
+<li>Copy the output of this command to your clipboard.</li>
+<li>Type <code>exit</code> to log out of Server 2.</li>
+<li>Install nano: <br/> <code>sudo yum install nano</code></li>
+<li>Type <code>y</code> to continue.</li>
+<li>List the contents of the current directory: <code>ls -la</code></li>
+<li>Open the authorized_keys file in nano:
+<code>nano authorized_keys</code></li>
+<li>Add the key we just generated to the file.</li>
+<li>Press <code>Ctrl + X</code>.</li>
+<li>Press <code>Y</code> then Enter to save the changes.</li>
+</ol>
+<h3 id="test-the-configuration"><em>Test the Configuration</em>:</h3>
+<ol type="1">
+<li>Attempt to log in to Server 2 from Server 1 without a password:
+<code>ssh cloud_user@&amp;lt;SERVER2PUBLIC_IP&amp;gt;</code></li>
+<li>Attempt to log in to Server 1 from Server 2 without a password:
+<code>ssh cloud_user@&amp;lt;SERVER1PUBLIC_IP&amp;gt;</code></li>
+</ol>
+<h2 id="create-and-use-an-ssh-tunnel-for-network-traffic">Create and Use
+an SSH Tunnel for Network Traffic:</h2>
+<h3 id="generating-ssh-key"><em>Generating ssh key</em>:</h3>
+<p><code>ssh-keygen</code> <br/> Enter the following parameters</p>
+<h3 id="copying-the-key"><em>Copying the key</em>:</h3>
+<p><code>ssh-copy-id &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h3 id="login-the-key"><em>Login the key</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h3 id="creating-the-tunnel"><em>Creating the tunnel</em>:</h3>
+<p><code>ssh -f &lt;user_name&gt;@&lt;IPadress&gt; -L port:&lt;IPadress&gt; -N</code></p>
+<h3 id="testing"><em>Testing</em>:</h3>
+<p><code>curl localhost:2000</code> <br/> Output: <br/>
+<code>Webpage worked</code></p>
+<h2 id="configure-sshd-to-use-sockets">Configure sshd to use
+Sockets:</h2>
+<ol type="1">
+<li>Verify that the sshd.socket unit is not active:
+<code>systemctl status sshd.socket</code></li>
+<li>Set up an at job that stops the sshd.service unit and starts
+sshd.socket: <code>sudo at now + 3 minutes</code></li>
+<li>Enter your password at the prompt.</li>
+<li>Add the following:</li>
+</ol>
+<pre><code>at&gt; systemctl stop sshd.service
+at&gt; systemctl start sshd.socket</code></pre>
+<ol start="5" type="1">
+<li>Press <code>Ctrl + D</code> to end the at job configuration.</li>
+<li>Verify that the sshd.socket unit is active and running. <br/>
+<code>systemctl status sshd.socket</code></li>
+<li>Enable the socket for SSH and disable the service for SSH:
+<br/></li>
+</ol>
+<pre><code>sudo systemctl enable sshd.socket
+sudo systemctl disable sshd.service</code></pre>
+<h2 id="set-up-tcp-wrappers-to-only-allow-ssh">Set Up TCP Wrappers to
+Only Allow SSH</h2>
+<ol type="1">
+<li>Verify that the sshd server has been compiled to use TCP wrappers:
+<br/> <code>ldd /usr/sbin/sshd | grep libwrap</code></li>
+<li>Edit the /etc/hosts.allow file: <br/>
+<code>sudo vim /etc/hosts.allow</code></li>
+<li>Add the following line to the file: <br/>
+<code>sshd2 sshd : ALL</code></li>
+<li>Edit the /etc/hosts.deny file: <br/>
+<code>sudo vim /etc/hosts.deny</code></li>
+<li>Add the following line to the file: <br/>
+<code>ALL : ALL</code></li>
+<li>Exit the SSH session: <br/> <code>exit</code></li>
+<li>Reconnect to the secure shell session: <br/>
+<code>ssh cloud_user@&amp;lt;PUBLIC_IP&amp;gt;</code> <br/> Enter your
+password at the prompt.</li>
+</ol>
+<h3 id="references">References</h3>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>

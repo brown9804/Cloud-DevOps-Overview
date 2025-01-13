@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#working-with-users-and-permissions"
+id="toc-working-with-users-and-permissions">Working with Users and
+Permissions</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#become-root" id="toc-become-root"><em>Become
+root</em>:</a></li>
+<li><a href="#add-the-users-to-the-server"
+id="toc-add-the-users-to-the-server"><em>Add the Users to the
+Server</em>:</a></li>
+<li><a href="#create-the-new-group"
+id="toc-create-the-new-group"><em>Create the new group</em>:</a></li>
+<li><a href="#supplementary-group-on-all-three-users"
+id="toc-supplementary-group-on-all-three-users"><em>Supplementary Group
+on All Three Users</em>:</a></li>
+<li><a href="#lock-a-specific-account"
+id="toc-lock-a-specific-account"><em>Lock a specific
+Account</em>:</a></li>
+<li><a href="#create-new-users" id="toc-create-new-users"><em>Create New
+Users</em>:</a></li>
+<li><a href="#verify-the-etcsudoers-file-and-test-access"
+id="toc-verify-the-etcsudoers-file-and-test-access"><em>Verify the
+/etc/sudoers File and Test Access</em>:</a></li>
+<li><a href="#set-up-the-web-administrator"
+id="toc-set-up-the-web-administrator"><em>Set Up the Web
+Administrator</em>:</a></li>
+<li><a
+href="#enable-ssh-to-connect-without-a-password-from-the-dev-user-on-server1-to-the-dev-user-on-server2"
+id="toc-enable-ssh-to-connect-without-a-password-from-the-dev-user-on-server1-to-the-dev-user-on-server2"><em>Enable
+SSH to Connect Without a Password from the dev User on server1 to the
+dev User on server2</em>:</a></li>
+<li><a
+href="#copy-all-tar-files-from-homedev-on-server1-to-homedev-on-server2"
+id="toc-copy-all-tar-files-from-homedev-on-server1-to-homedev-on-server2"><em>Copy
+All tar Files from /home/dev/ on server1 to /home/dev/ on
+server2</em>:</a></li>
+<li><a href="#extract-the-files-making-sure-the-output-is-redirected"
+id="toc-extract-the-files-making-sure-the-output-is-redirected"><em>Extract
+the Files, Making Sure the Output is Redirected</em>:</a></li>
+<li><a
+href="#set-the-umask-so-new-files-are-only-readable-and-writeable-by-the-owner"
+id="toc-set-the-umask-so-new-files-are-only-readable-and-writeable-by-the-owner"><em>Set
+the Umask So New Files Are Only Readable and Writeable by the
+Owner</em>:</a></li>
+<li><a
+href="#verify-the-homedevdeploy.sh-script-is-executable-and-run-it"
+id="toc-verify-the-homedevdeploy.sh-script-is-executable-and-run-it"><em>Verify
+the /home/dev/deploy.sh Script Is Executable and Run It</em>:</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="working-with-users-and-permissions">Working with Users and
+Permissions</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h3 id="become-root"><em>Become root</em>:</h3>
+<p><code>sudo -i</code> <br/> Enter the cloud_user password at the
+prompt.</p>
+<h3 id="add-the-users-to-the-server"><em>Add the Users to the
+Server</em>:</h3>
+<pre><code>useradd tstark 
+useradd cdanvers
+useradd dprince</code></pre>
+<h3 id="create-the-new-group"><em>Create the new group</em>:</h3>
+<p><code>groupadd superhero</code> <br/> Set wheel Group as the the
+tstark Account’s Primary Group. The usermod command will change which
+group a user is in. Change tstark: <code>usermod -g wheel tstark</code>
+<br/> Make sure it worked: <br/> <code>id tstark</code> <br/> The
+command’s output should show his primary group is now wheel.</p>
+<h3 id="supplementary-group-on-all-three-users"><em>Supplementary Group
+on All Three Users</em>:</h3>
+<p>Run the usermod command for each user:</p>
+<pre><code>usermod -aG superhero tstark
+usermod -aG superhero dprince
+usermod -aG superhero cdanvers</code></pre>
+<p>Check with any of the users to make sure it worked: <br/>
+<code>id &lt;USERNAME&gt;</code></p>
+<h3 id="lock-a-specific-account"><em>Lock a specific Account</em>:</h3>
+<p><code>usermod -L dprince</code></p>
+<h3 id="create-new-users"><em>Create New Users</em>:</h3>
+<p>Create a gfreeman user on the system: <br/>
+<code>sudo useradd -m gfreeman</code></p>
+<p>Create an avance user, and assign it to the wheel supplemental group:
+<br/> <code>sudo useradd -G wheel -m avance</code></p>
+<p>Set the password for both accounts to LASudo321:</p>
+<pre><code>sudo passwd gfreeman
+sudo passwd avance</code></pre>
+<h3 id="verify-the-etcsudoers-file-and-test-access"><em>Verify the
+/etc/sudoers File and Test Access</em>:</h3>
+<ol type="1">
+<li>Verify that the /etc/sudoers file will allow the wheel group access
+to run all commands with sudo: <br/> <code>sudo visudo</code> <br/></li>
+<li>Note that there should not be a comment (#) on this line of the
+file: <br/> <code>%wheel  ALL=(ALL)       ALL</code> <br/></li>
+<li>Switch to the avance account, and use the dash (-) to utilize a
+login shell: <br/> <code>sudo su - avance</code> <br/></li>
+<li>Attempt to read the /etc/shadow file at the console: <br/>
+<code>cat /etc/shadow</code> <br/></li>
+<li>Rerun the command with the sudo command: <br/>
+<code>sudo cat /etc/shadow</code> <br/></li>
+<li>After you have verified avance can read the /etc/shadow file, log
+out of that account: <br/> <code>exit</code></li>
+</ol>
+<h3 id="set-up-the-web-administrator"><em>Set Up the Web
+Administrator</em>:</h3>
+<ol type="1">
+<li>Create a new sudoers file in the /etc/sudoers.d directory that will
+contain a standalone entry for webmasters: <br/>
+<code>sudo visudo -f /etc/sudoers.d/web_admin</code></li>
+<li>Enter in the following at the top of the file: <br/>
+<code>Cmnd_Alias  WEB = /bin/systemctl restart httpd.service, /bin/systemctl reload httpd.service</code></li>
+<li>Add another line in the file for gfreeman to be able to use the sudo
+command in conjunction with any commands listed in the WEB alias:
+<code>gfreeman ALL=WEB</code></li>
+<li>Save and close the file with <code>:wq!</code>.</li>
+<li>Next, log in to the gfreeman account: <br/>
+<code>sudo su - gfreeman</code></li>
+<li>Attempt to restart the web service: <br/>
+<code>sudo systemctl restart httpd.service</code></li>
+<li>Try to read the new web_admin sudoers file: <br/>
+<code>sudo cat /etc/sudoers.d/web_admin</code> <br/> Since the cat
+command is not listed in the command alias group for WEB, gfreeman
+cannot use sudo to read this file.</li>
+</ol>
+<h3
+id="enable-ssh-to-connect-without-a-password-from-the-dev-user-on-server1-to-the-dev-user-on-server2"><em>Enable
+SSH to Connect Without a Password from the dev User on server1 to the
+dev User on server2</em>:</h3>
+<ol type="1">
+<li>Generate an SSH key: <br/>
+<code>[dev@server1]$ ssh-keygen</code></li>
+<li>Press Enter three times to accept the defaults.</li>
+<li>Then copy it over to the private IP of the other server: <br/>
+<code>[dev@server1]$ ssh-copy-id &lt;server2_PRIVATE_IP&gt;</code></li>
+<li>Now if we try to log into server2 without a password, it should
+work. Try it: <br/>
+<code>[dev@server1]$ ssh &lt;server2_PRIVATE_IP&gt;</code></li>
+<li>Log out to get back to server1: <br/>
+<code>[dev@server2]$ logout</code></li>
+</ol>
+<h3
+id="copy-all-tar-files-from-homedev-on-server1-to-homedev-on-server2"><em>Copy
+All tar Files from /home/dev/ on server1 to /home/dev/ on
+server2</em>:</h3>
+<ol type="1">
+<li>Copy the files: <br/>
+<code>[dev@server1]$ scp *.gz &lt;server2_PRIVATE_IP&gt;:~/</code></li>
+<li>Connect to server2 again: <br/>
+<code>[dev@server1]$ ssh &lt;server2_PRIVATE_IP&gt;</code></li>
+<li>Make sure they’re there: <br/> <code>[dev@server2]$ ll</code> <br/>
+It should show the two files.</li>
+</ol>
+<h3
+id="extract-the-files-making-sure-the-output-is-redirected"><em>Extract
+the Files, Making Sure the Output is Redirected</em>:</h3>
+<ol type="1">
+<li>Extract the files: <br/></li>
+</ol>
+<pre><code>[dev@server2]$ tar -xvf deploy_content.tar.gz &gt;&gt; tar-output.log
+[dev@server2]$ tar -xvf deploy_script.tar.gz &gt;&gt; tar-output.log</code></pre>
+<p>2.Take a look at what’s in the directory now: <br/> <code>ll</code>
+<br/> We’ll see the new files and their permissions.</p>
+<h3
+id="set-the-umask-so-new-files-are-only-readable-and-writeable-by-the-owner"><em>Set
+the Umask So New Files Are Only Readable and Writeable by the
+Owner</em>:</h3>
+<ol type="1">
+<li>We need to make new files with 0600 (<code>-rw-------</code>)
+permissions. Since the default is 0666, and we want it to be 0600, run
+the following: <br/> <code>[dev@server2]$ umask 0066</code></li>
+</ol>
+<h3
+id="verify-the-homedevdeploy.sh-script-is-executable-and-run-it"><em>Verify
+the /home/dev/deploy.sh Script Is Executable and Run It</em>:</h3>
+<ol type="1">
+<li>Check permissions on deploy.sh: <br/>
+<code>[dev@server2]$ ls -l deploy.sh</code></li>
+<li>Make the script executable: <br/>
+<code>[dev@server2]$ chmod +x deploy.sh</code></li>
+<li>Run it: <br/> <code>[dev@server2]$ ./deploy.sh</code></li>
+</ol>
+<h3 id="references">References</h3>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>

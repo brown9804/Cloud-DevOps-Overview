@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#devops-overview" id="toc-devops-overview">DevOps
+Overview</a>
+<ul>
+<li><a href="#wiki" id="toc-wiki">Wiki</a></li>
+<li><a href="#content" id="toc-content">Content</a></li>
+<li><a href="#cams" id="toc-cams">CAMS</a></li>
+<li><a href="#practices" id="toc-practices">Practices</a></li>
+<li><a href="#example" id="toc-example">Example</a></li>
+<li><a href="#communication-on-devops"
+id="toc-communication-on-devops">Communication on DevOps</a></li>
+<li><a href="#agile-lean-and-itope" id="toc-agile-lean-and-itope">Agile,
+Lean and Itope</a>
+<ul>
+<li><a href="#itil-itsm-sdlc" id="toc-itil-itsm-sdlc">Itil, Itsm,
+Sdlc</a></li>
+</ul></li>
+<li><a href="#calms" id="toc-calms">CALMS</a></li>
+<li><a href="#prod-stage" id="toc-prod-stage">Prod &amp; Stage</a></li>
+<li><a href="#containers" id="toc-containers">Containers</a></li>
+<li><a href="#cdci" id="toc-cdci">CD/CI</a></li>
+<li><a href="#cycle-and-overall-cycle-time"
+id="toc-cycle-and-overall-cycle-time">Cycle and Overall Cycle Time</a>
+<ul>
+<li><a href="#integration-testing"
+id="toc-integration-testing">Integration testing</a></li>
+</ul></li>
+<li><a href="#desing-for-operation-theory"
+id="toc-desing-for-operation-theory">Desing for operation
+theory</a></li>
+<li><a href="#metrics-and-monitoring"
+id="toc-metrics-and-monitoring">Metrics and monitoring</a></li>
+<li><a href="#ws-of-logging" id="toc-ws-of-logging">5 ws of
+logging</a></li>
+<li><a href="#sre-tool-chain" id="toc-sre-tool-chain">SRE tool
+chain</a></li>
+<li><a href="#open-source-monitoring"
+id="toc-open-source-monitoring">Open source monitoring</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="devops-overview">DevOps Overview</h1>
+<p>Costa Rica</p>
+<p><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></p>
+<p>Last updated: 2024-12-13</p>
+<hr />
+<p>Has his roots in agile and iterative</p>
+<p><code>Code + systems</code></p>
+<h2 id="wiki">Wiki</h2>
+<details>
+<summary>
+<b>Table of Wiki </b> (Click to expand)
+</summary>
+<ul>
+<li><a
+href="https://www.linkedin.com/learning/devops-foundations/development-and-operations-2?u=2095204">DevOps
+Foundations</a></li>
+<li><a
+href="https://www.linkedin.com/learning/agile-software-development-kanban-for-developers/putting-kanban-to-work-in-your-development-team?u=2095204">Agile
+Software Development: Kanban for Developers</a></li>
+<li><a
+href="https://www.linkedin.com/learning/devops-foundations-lean-and-agile/lean-and-agile-in-devops-3?u=2095204">DevOps
+Foundations: Lean and Agile</a></li>
+<li><a
+href="https://www.linkedin.com/learning/agile-software-development-scrum-for-developers/scrum-for-agile-software-development?u=2095204">Agile
+Software Development: Scrum for Developers</a></li>
+<li><a
+href="https://www.linkedin.com/learning/transitioning-from-waterfall-to-agile-project-management-2019/build-a-successful-transition-to-agile?u=2095204">Transitioning
+from Waterfall to Agile Project Management</a></li>
+<li>Azure DevOps - <a
+href="https://docs.microsoft.com/en-us/azure/devops/boards/backlogs/work-item-template?view=azure-devops&amp;tabs=browser">How
+to create a Azure Devops Story Template</a></li>
+<li>Azure DevOps - <a
+href="https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/faq-user-and-permissions-management?view=azure-devops">How
+to leave from a Azure DevOps Organization</a></li>
+<li>Azure DevOps - <a
+href="https://learn.microsoft.com/en-us/azure/devops/pipelines/release/triggers?view=azure-devops#continuous-deployment-triggers">Create
+Release Pipelines</a></li>
+<li>Project Management - <a
+href="https://enkonix.com/blog/functional-requirements-vs-non-functional/">What
+are Functional and Non-Functional Requirements and How to Document
+These</a></li>
+<li>GitHub - <a
+href="https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python">Building
+and testing Python</a>, for more information about how to run it on PR
+<a
+href="https://futurestud.io/tutorials/github-actions-run-on-pull-request#:~:text=but%20Not%20Both-,Run%20Actions%20on%20Pull%20Requests,%5D%20and%20you&#39;re%20done.">click
+here</a></li>
+<li>For the CI part, it’s related to the <code>yml</code> file, find an
+example <a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml">here</a></li>
+<li>For the CD part, we can use Azure DevOps pipelines, find <a
+href="https://learn.microsoft.com/en-us/azure/devops/pipelines/create-first-pipeline?view=azure-devops&amp;tabs=java%2Cbrowser">here</a>
+a guide.</li>
+<li><a
+href="https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#testing-your-code">How
+to automate the testing</a>, and <a
+href="https://thiagolopessilva.medium.com/running-unit-testing-on-github-action-using-pytest-61653d993c9c">Running
+python tests on GitHub</a> using github actions</li>
+</ul>
+</details>
+<h2 id="content">Content</h2>
+<ul>
+<li><p><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml">Example
+of CI</a></p></li>
+<li><p><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/.github/workflows/automated_testing.yml">Example
+of Automated Testing</a></p></li>
+<li><p><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/tests/shared_tests.py">Example
+of Integrated Testing</a></p>
+<p><img width="800" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/4d320096-70de-4091-8505-281c19ff71eb"></p></li>
+</ul>
+<h2 id="cams">CAMS</h2>
+<ul>
+<li>Culture</li>
+<li>Automation</li>
+<li>Measurement</li>
+<li>Sharing</li>
+</ul>
+<p>*More feedback loops</p>
+<p>Considering: 1. People, process, tools 2. Continuous delivery coding,
+testing small parts 3. Lean management feedback loops, visualization 4.
+Change control 5. infrastructure code - checked into source control</p>
+<h2 id="practices">Practices</h2>
+<ol type="1">
+<li>Uncident command system</li>
+<li>Developers on call</li>
+<li>Public status pages</li>
+<li>Blameless postmortems</li>
+<li>Embedded teams</li>
+<li>Cloud - control infrastructure</li>
+<li>Andon Cords - someone stops the production because catch
+something</li>
+<li>Dependency injection</li>
+<li>Blue/ Green Deployment load balancer one is live, set - system</li>
+<li>Chaos Monkey - high reliable - making caos for testing</li>
+</ol>
+<h2 id="example">Example</h2>
+<p>The car or the horse?</p>
+<p>Series of tools to address out needs like pipeline Reviewing logistic
+tail which is related to a cost</p>
+<p>A tool criteria is: 1. programmable 2. Verifiable -&gt; exposes what
+is doing 3. Well behaved operation point of view and deploy view</p>
+<h2 id="communication-on-devops">Communication on DevOps</h2>
+<ol type="1">
+<li>Blameless postmortems <code>48 hours</code> everything in time
+line</li>
+<li>Transparent uptime:
+<code>admit failure, sound like a human, communication channel, authentic</code>.</li>
+</ol>
+<p>### The westrum model 1. Pathological (power oriented) 2.
+Bereaucratic (rule-oriented) 2. Generative (performance oriented)</p>
+<p>### Kaizen Change for the better.</p>
+<p><code>gemba</code> (locus the real place) Going to the code to see
+<code>gemba</code></p>
+<p>Focus on symptoms: <code>causes - effects</code>. People don’t fail,
+processes do. Don’t blame.</p>
+<h2 id="agile-lean-and-itope">Agile, Lean and Itope</h2>
+<p>### Agile infrastructure: - Requirements - Design - Implementation -
+Verification - Maintenance</p>
+<p><code>--&gt; Sprint 1, 2, 3 (plan, desing, buil, test, review, launch)</code></p>
+<p>A sample value stream map:</p>
+<figure>
+<img
+src="https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/DevOps/img/DevOps/%5Bimg%5D_DevOps_sample_value_steam_map.png"
+title="A sample value stream map" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<p>And the Scrum life cycle:</p>
+<figure>
+<img
+src="https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/DevOps/img/DevOps/%5Bimg%5D_DevOps_scrum_life_cycle.png"
+title="A sample value stream map" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<p><code>Collaborations - Increase productivity and more ideas</code></p>
+<p>### Lean</p>
+<p>Systematic software: - Eliminate waste - <code>muda</code> Work that
+absorb resources add no value - <code>muri</code> Unreasonable work
+imposed on worker and machines - <code>mura</code> Work coming in
+unevenly instead of the constant or regular flow -
+<code>Value stream</code> Value information flows with the costumers</p>
+<p>Important to consider lean principles:</p>
+<figure>
+<img
+src="https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/DevOps/img/DevOps/%5Bimg%5D_DevOps_lean_principles.png"
+title="Lean Principles" alt="Alt text" />
+<figcaption aria-hidden="true">Alt text</figcaption>
+</figure>
+<h3 id="itil-itsm-sdlc">Itil, Itsm, Sdlc</h3>
+<ul>
+<li><p><code>itsm</code>— IT service management</p></li>
+<li><p><code>itil</code> — IT infrastructure library</p></li>
+<li><p>Information Technology Infrastructure Library (ITIL): Provides a
+comprehensive process model based the approach of designing, managing
+and controlling</p></li>
+<li><p>IT processes. Government standard <code>ITIL.11</code></p></li>
+</ul>
+<ol type="1">
+<li>Service strategy</li>
+<li>Service design</li>
+<li>Service transition</li>
+<li>Service operation</li>
+</ol>
+<p><code>2000 pages or more :)</code></p>
+<h2 id="calms">CALMS</h2>
+<p>And know … calms with L of leans - Lean management - Amplify learning
+- Decide as late as possible - Decide as fast as possible - Empower the
+team - Build-in integrity - See the whole</p>
+<h2 id="prod-stage">Prod &amp; Stage</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Important for Prod and Stage</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Continuous delivery pipeline</td>
+<td>Version control</td>
+<td>Application code</td>
+<td>Infrastructure code</td>
+</tr>
+</tbody>
+</table>
+<p>Amazon has cloud formation and azure has azure resource manager
+templates and so on one model for my systems, another for os system and
+other applications</p>
+<h2 id="containers">Containers</h2>
+<p>Efficiency reasons: - nodes 1000 - OS dependecies - Docker - Maven
+deb file and Docker containers</p>
+<p><code>CMDB - Configuration Management Data Base</code></p>
+<p>Zookeeper service as a central coordinated. Combining actions like
+Kubernetes and Mesos. The container is basically the app configuration
+management: - Chef - Puppet - Ansible - Salt - Cfengine - Services
+directory tools - Etcd - Zookeeper - Consul</p>
+<p><code>Docker - kubernetes - mesos</code></p>
+<p>Private container services - Rancher - Google Cloud Platform - Amazon
+web services ecs * Blue live * Green IDLE</p>
+<h2 id="cdci">CD/CI</h2>
+<p><code>Continuos Deploy</code> <code>Continous Delivery</code>
+<code>Continuos Integration</code></p>
+<ol type="1">
+<li>Time to market goes down</li>
+<li>Quality increases</li>
+<li>Continuous Delivery limits your work in progress</li>
+<li>Shortens lead times for changes</li>
+<li>Improves mean time to recover</li>
+</ol>
+<p>Annotations: - Builds should pass the coffee test &lt;5 minutes -
+Commit small bits - Don’t leave the build broken - Use a trunk - bases
+development flow - No flaky tests - The build should return a status, a
+log, and an artifact</p>
+<p>Important: 1. Only build artifacts once 2. Should be immutable 3.
+Deployment should go to a copy of the production 4. Stop deploys if a
+previous step fails 5. Deployments should be idempotent</p>
+<h2 id="cycle-and-overall-cycle-time">Cycle and Overall Cycle Time</h2>
+<p>Types of testing 1. Unit testing 2. Code hygiene * Liting * Code
+formatting * Banned function checks 3. Integration testing 4. Security
+testing * Given I have a website * When I try to attack it with XSS *
+Then it should not be vulnerable<br />
+5. TDD Test Driven Development * State desired outcome as a test * Write
+code to pass the test * Repeat 6. BDD Behavior Driven Development * Work
+with stakeholders * Describe business functionality * Test is based on
+natural language 7. ATDD Acceptance Test Driven Development * End user
+perpective * Use case automated testing * Testing is continuous during
+development 8. Infrastructure testing 9. Performance testing - types of
+performance</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Annotations</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Version control <code>GitHub</code></td>
+<td>CI systems <code>jenkins</code> <code>bamboo</code></td>
+<td>Build <code>make/rake</code>, <code>maven</code>, <code>gulp</code>,
+<code>packer</code></td>
+<td>Test <code>j unit</code>, <code>golint / gofmt / rubocop</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="integration-testing">Integration testing</h3>
+<ul>
+<li>Robot</li>
+<li>Protractor</li>
+<li>Cucumber</li>
+<li>Selenium</li>
+<li>Artifact repository</li>
+<li>Kitchen ci</li>
+</ul>
+<p><code>Performace testing apachebench, meter</code>
+<code>Security testing brakeman, veracode</code></p>
+<p>Where? - Artifactory - Nexus - Docker hub - AWS s3</p>
+<p>Deployment: - Rundeck - Urbancode - Thoughtworks - Deployinator</p>
+<h2 id="desing-for-operation-theory">Desing for operation theory</h2>
+<ul>
+<li>Circuit breaker functionality <code>dm_control</code> if inside</li>
+<li>Design for operation practice</li>
+<li>Chaos monkey — avoid failure by making fail it</li>
+<li>Cassandra 3 replicas</li>
+</ul>
+<h2 id="metrics-and-monitoring">Metrics and monitoring</h2>
+<p>How complex systems fail? * Change introduces new forms of failure *
+Complex system contain changing mixtures of failures latent within them
+* All complex system is always running in degraded mode</p>
+<p>Lean approach: 1. Build 2. Measure 3. Learn 4. Repeat</p>
+<p>So: * Service performance and uptime * Software component metrics *
+System metrics<br />
+* App metrics * Performance: Linting, code formatting, banned function
+checks * Security systems</p>
+<h2 id="ws-of-logging">5 ws of logging</h2>
+<ol type="1">
+<li>What happend?</li>
+<li>When</li>
+<li>Where</li>
+<li>Who</li>
+<li>Where did that ebtuty come from?</li>
+</ol>
+<p>Remainders: - Do not collect log data if you never plan to use it -
+Retain log data for as long as it is conceivable that it can be used -
+Log all you can but alert only what you must respond to - Don’t try to
+make your logging more available or more secure than your production
+stack - Logs change</p>
+<h2 id="sre-tool-chain">SRE tool chain</h2>
+<p>Software as a service monitoring: - <code>Pingdom</code> -
+<code>Datadog</code> - <code>Netuitive</code> - <code>Ruxit</code> -
+<code>Librato</code> - <code>New relic</code> -
+<code>App dynamics</code></p>
+<h2 id="open-source-monitoring">Open source monitoring</h2>
+<ul>
+<li>Graphite</li>
+<li>Grafana</li>
+<li>Statsd</li>
+<li>Ganglia</li>
+<li>InfluxDB</li>
+<li>OpenTSDB
+<ul>
+<li><code>prometeus</code></li>
+<li><code>paperduty</code></li>
+<li><code>flapjack</code></li>
+</ul></li>
+<li>SAAS providers</li>
+</ul>
+<div data-align="center">
+<h3 style="color: #4CAF50;">
+Total Visitors
+</h3>
+<p><img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/></p>
+</div>
+</body>
+</html>

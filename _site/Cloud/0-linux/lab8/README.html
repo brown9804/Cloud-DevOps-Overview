@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#networking" id="toc-networking">Networking</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#testing-dns-resolution"
+id="toc-testing-dns-resolution">Testing DNS Resolution</a>
+<ul>
+<li><a href="#review-current-dns-configuration"
+id="toc-review-current-dns-configuration"><em>Review Current DNS
+Configuration</em>:</a></li>
+<li><a href="#configure-your-system-to-use-your-networks-dns"
+id="toc-configure-your-system-to-use-your-networks-dns"><em>Configure
+Your System to Use Your Network’s DNS</em>:</a></li>
+</ul></li>
+<li><a href="#monitoring-network-access"
+id="toc-monitoring-network-access">Monitoring Network Access:</a>
+<ul>
+<li><a href="#install-client-utilities"
+id="toc-install-client-utilities"><em>Install Client
+Utilities</em>:</a></li>
+<li><a href="#create-the-traffic-log-file"
+id="toc-create-the-traffic-log-file"><em>Create the Traffic Log
+File</em>:</a></li>
+<li><a href="#listen-for-traffic" id="toc-listen-for-traffic"><em>Listen
+for Traffic</em>:</a></li>
+<li><a href="#send-some-traffic" id="toc-send-some-traffic"><em>Send
+Some Traffic</em>:</a></li>
+<li><a href="#examine-the-log" id="toc-examine-the-log"><em>Examine the
+Log</em>:</a></li>
+</ul></li>
+<li><a href="#network-filesystems" id="toc-network-filesystems">Network
+Filesystems:</a>
+<ul>
+<li><a href="#set-up-the-samba-server"
+id="toc-set-up-the-samba-server"><em>Set Up the Samba
+Server</em>:</a></li>
+<li><a href="#samba-share-user" id="toc-samba-share-user"><em>Samba
+Share User</em>:</a></li>
+<li><a href="#start-it-up" id="toc-start-it-up"><em>Start It
+Up</em>:</a></li>
+<li><a href="#set-up-the-samba-client"
+id="toc-set-up-the-samba-client"><em>Set Up the Samba
+Client</em>:</a></li>
+<li><a href="#make-a-mount-point" id="toc-make-a-mount-point"><em>Make a
+Mount Point</em>:</a></li>
+<li><a href="#the-mount" id="toc-the-mount"><em>The Mount</em>:</a></li>
+<li><a href="#set-up-the-nfs-share"
+id="toc-set-up-the-nfs-share"><em>Set Up the NFS Share</em>:</a></li>
+<li><a href="#set-up-the-nfs-client"
+id="toc-set-up-the-nfs-client"><em>Set Up the NFS Client</em>:</a></li>
+<li><a href="#mount-the-nfs-share"
+id="toc-mount-the-nfs-share"><em>Mount the NFS Share</em>:</a></li>
+</ul></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="networking">Networking</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="testing-dns-resolution">Testing DNS Resolution</h2>
+<p>Understand how to utilize the nmcli utility to configure our DNS
+resolution.</p>
+<h3 id="review-current-dns-configuration"><em>Review Current DNS
+Configuration</em>:</h3>
+<ol type="1">
+<li>See if the system can resolve hostnames to IP addresses: <br/>
+<code>host www.google.com</code> &gt; Note that the command times
+out.</li>
+<li>Check to see what DNS server entries we have in the /etc/resolv.conf
+file: <br/> <code>cat /etc/resolv.conf</code> &gt; Note that we do not
+have any DNS entries listed.</li>
+<li>Review our network connections: <br/> <code>nmcli con show</code>
+&gt; Our default connection name should be System ens5.</li>
+<li>Review our DNS IP settings:
+<code>nmcli -f ipv4.dns con show "System ens5"</code> &gt; This system
+obviously does not have any DNS servers configured for use.</li>
+</ol>
+<h3 id="configure-your-system-to-use-your-networks-dns"><em>Configure
+Your System to Use Your Network’s DNS</em>:</h3>
+<ol type="1">
+<li>Modify the system’s default connection to use the network’s DNS
+server <br/>
+<code>sudo nmcli con mod "System ens5" ipv4.dns "10.0.0.2"</code></li>
+<li>Verify the settings using the nmcli command and then checking the
+/etc/resolv.conf file: <br/></li>
+</ol>
+<pre><code>nmcli -f ipv4.dns con show &quot;System ens5&quot;
+cat /etc/resolv.conf</code></pre>
+<ol start="3" type="1">
+<li>We need to reactivate the system’s network connection for the change
+to take effect: <br/> <code>sudo nmcli con up "System ens5"</code></li>
+<li>Verify our settings once more: <br/>
+<code>cat /etc/resolv.conf</code></li>
+<li>Now, attempt to resolve a hostname to an IP address: <br/>
+<code>host www.google.com</code> &gt; Our system should be able to
+resolve an IP address for the domain name.</li>
+</ol>
+<h2 id="monitoring-network-access">Monitoring Network Access:</h2>
+<p>Understand how use the netcat (nc) utility to generate network
+traffic between two servers and view that traffic’s appearance in a tool
+called iptraf-ng.</p>
+<blockquote>
+<blockquote>
+<p><em>The Scenario</em></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>During the development of a new Web-based API our team is working on,
+they have discovered that they are receiving intermittent network
+disconnects from clients, even when they are local to the network of the
+server itself. We have been provided credentials and access information
+for two CentOS 7 systems in their environment. They have asked for us to
+install tools that they can use to monitor network traffic between the
+two systems. We’ll have to install the tools we need and create traffic
+on port 2525 from server2 to server1. We want to get all network traffic
+sent to /home/cloud_user/traffic_log.txt.</p>
+</blockquote>
+<h3 id="install-client-utilities"><em>Install Client
+Utilities</em>:</h3>
+<ol type="1">
+<li>We’ve got to install the two packages that the team will use to
+generate and monitor traffic. Let’s use YUM to get it done: <br/>
+<code>[root@server1]# yum install iptraf-ng nc</code></li>
+<li>Repeat this on the other server: <br/>
+<code>[root@server2]# yum install iptraf-ng nc</code></li>
+</ol>
+<h3 id="create-the-traffic-log-file"><em>Create the Traffic Log
+File</em>:</h3>
+<ol type="1">
+<li>On the first server, let’s run iptraf-ng.</li>
+<li>Go under Configure… &gt; In the menu, don’t forget this isn’t a menu
+we control with a mouse – it’s all keyboard.</li>
+<li>Make sure Logging is toggled to On. Set the log file path to:
+/home/cloud_user/traffic_log.txt.</li>
+<li>Then go into IP traffic monitor.</li>
+<li>In the next menu, select eth0.</li>
+<li>Once we press Enter the logging will start.</li>
+</ol>
+<h3 id="listen-for-traffic"><em>Listen for Traffic</em>:</h3>
+<ol type="1">
+<li>Let’s open a second terminal into server1 and run sudo su right
+off.</li>
+<li>Once we’re there, we’re going to start netcat listening on post 2525
+with this: <br/> <code>[root@server1]# nc -l 2525</code></li>
+</ol>
+<h3 id="send-some-traffic"><em>Send Some Traffic</em>:</h3>
+<ol type="1">
+<li>Now, let’s start talking. Back in the server2 window we’ve got open,
+send netcat traffic to server1 with this (where x.x.x.x is the internal
+IP of server1 that we’ll see on the hands-on lab overview page): <br/>
+<code>[root@server2]# nc x.x.x.x 2525</code></li>
+<li>We’ll just land at a blinking cursor below the prompt, but we can
+type a message there and press Enter. Once we do, it will show up back
+in the window we’re listening in on server1. A bunch of messages sent
+from server2 would look like this: <br/>
+<code>[root@server2]# nc x.x.x.x 2525</code></li>
+</ol>
+<pre><code>test
+test
+testing
+This is a test</code></pre>
+<ol start="3" type="1">
+<li>On server1, they would look like this when they arrive: <br/>
+<code>[root@server1]# nc -l 2525</code></li>
+</ol>
+<pre><code>test
+test
+testing
+This is a test</code></pre>
+<ol start="4" type="1">
+<li>That should be enough traffic for what we’re doing.</li>
+<li>On server2, press Ctrl + C to kill the nc command we’ve got running
+and flip back over to the terminal we were running iptraf-ng in.</li>
+<li>Press x to stop the monitoring and get out, then choose Exit from
+the main menu.</li>
+</ol>
+<h3 id="examine-the-log"><em>Examine the Log</em>:</h3>
+<ol type="1">
+<li>On server1, if we run ls /home/cloud_user we should see
+traffic_log.txt listed in the output.</li>
+<li>Read that to see if it was capturing what we need:
+<code>[root@server1]# less /home/cloud_user/traffic_log.txt</code> &gt;
+We should see some log entries showing traffic going from server2 to
+server1 on port 2525.</li>
+</ol>
+<h2 id="network-filesystems">Network Filesystems:</h2>
+<p>Understand how to configure network filesystems, how to set up both a
+Linux Samba fileshare and an NFS fileshare that can then be used by a
+remote client to store files.</p>
+<h3 id="set-up-the-samba-server"><em>Set Up the Samba Server</em>:</h3>
+<ol type="1">
+<li>Become root: <br/>
+<code>[cloud_user@samba-server]$ sudo -i</code></li>
+<li>Create the /smb path: <br/>
+<code>[root@samba-server]# mkdir /smb</code></li>
+<li>Make sure the client can write to the path: <br/>
+<code>[root@samba-server]# chmod 777 /smb</code></li>
+<li>Install the Samba packages: <br/>
+<code>[root@samba-server]# yum install samba -y</code></li>
+<li>Open /etc/samba/smb.conf: <br/>
+<code>[root@samba-server]# vim /etc/samba/smb.conf</code></li>
+<li>Add the following section at the bottom: <br/></li>
+</ol>
+<pre><code>[share]
+        browsable = yes
+        path = /smb
+        writable = yes</code></pre>
+<ol start="7" type="1">
+<li>Save and exit the file by pressing Escape followed by :wq.</li>
+<li>Check that our changes saved correctly:
+<code>[root@samba-server]# testparm</code></li>
+</ol>
+<h3 id="samba-share-user"><em>Samba Share User</em>:</h3>
+<ol type="1">
+<li>Create the user on the server: <br/>
+<code>[root@samba-server]# useradd shareuser</code></li>
+<li>Give it a password: <br/>
+<code>[root@samba-server]# smbpasswd -a shareuser</code> &gt; Enter and
+confirm a password you’ll easily remember (e.g., 123456), as we’ll need
+to reenter it later.</li>
+</ol>
+<h3 id="start-it-up"><em>Start It Up</em>:</h3>
+<ol type="1">
+<li>Start the Samba daemon: <br/>
+<code>[root@samba-server]# systemctl start smb</code></li>
+</ol>
+<h3 id="set-up-the-samba-client"><em>Set Up the Samba Client</em>:</h3>
+<ol type="1">
+<li>Open up a new terminal.</li>
+<li>Log in to the NFS server</li>
+<li>Become root: <br/>
+<code>[cloud_user@nfs-server]$ sudo -i</code></li>
+<li>Install software: <br/>
+<code>[root@nfs-server]# yum install cifs-utils -y</code></li>
+</ol>
+<h3 id="make-a-mount-point"><em>Make a Mount Point</em>:</h3>
+<p>Create a place for mounting the share:
+<code>[root@nfs-server]# mkdir /mnt/smb</code></p>
+<h3 id="the-mount"><em>The Mount</em>:</h3>
+<ol type="1">
+<li>In the Samba server terminal, get its IP address: <br/>
+<code>[root@samba-server]# ip a s</code></li>
+<li>Copy the private inet address on eth0, and paste it into a text
+file, as we’ll need it next.</li>
+<li>In the NFS terminal, run the following command, replacing
+<SERVER_IP> with the IP you just copied and <SMBPASSWD_PASS> with the
+password you created earlier:
+<code>[root@nfs-server]# mount -t cifs //&lt;SERVER_IP&gt;/share /mnt/smb -o username=shareuser,password=&lt;SMBPASSWD_PASS&gt;</code></li>
+<li>Make sure you see it listed when you run: <br/>
+<code>[root@nfs-server]# mount</code></li>
+<li>Change directory: <br/>
+<code>[root@nfs-server]# cd /mnt/smb</code></li>
+<li>Create a file: <br/>
+<code>[root@nfs-server smb]# touch file</code></li>
+<li>List the contents: <br/> <code>[root@nfs-server smb]# ls</code> &gt;
+We should see the new file called file.</li>
+</ol>
+<h3 id="set-up-the-nfs-share"><em>Set Up the NFS Share</em>:</h3>
+<ol type="1">
+<li>Install software: <br/>
+<code>[root@nfs-server smb]# yum install nfs-utils -y</code></li>
+<li>Create the directory that will be shared out: <br/>
+<code>[root@nfs-server smb]# mkdir /nfs</code></li>
+<li>Open /etc/exports: <br/>
+<code>[root@nfs-server smb]# vim /etc/exports</code></li>
+<li>Add the following line: <br/> <code>/nfs *(rw)</code></li>
+<li>Save and exit the file by pressing Escape followed by :wq.
+<br/></li>
+<li>Edit permissions, to make sure it’s going to be writable, on the
+shared directory: <br/>
+<code>[root@nfs-server smb]# chmod 777 /nfs</code></li>
+<li>Implement what we’ve configured in /etc/exports: <br/>
+<code>[root@nfs-server smb]# exportfs -a</code></li>
+<li>Start the required services: <br/>
+<code>[root@nfs-server smb]# systemctl start {rpcbind,nfs-server,rpc-statd,nfs-idmapd}</code></li>
+<li>Verify it: <br/>
+<code>[root@nfs-server smb]# showmount -e localhost</code></li>
+<li>Run the following to get the NFS server’s IP: <br/>
+<code>[root@nfs-server smb]# ip a s</code></li>
+<li>Copy the inet address on eth0 and paste it into a text file, as
+we’ll need it shortly.</li>
+</ol>
+<h3 id="set-up-the-nfs-client"><em>Set Up the NFS Client</em>:</h3>
+<ol type="1">
+<li>In the Samba server terminal, install software: <br/>
+<code>[root@samba-server]# yum install nfs-utils -y</code></li>
+<li>Create a mount point: <br/>
+<code>[root@samba-server]# mkdir /mnt/nfs</code></li>
+<li>Check to see what’s being shared out on the NFS server, replacing
+<NFS_SERVER_IP> with the IP you copied earlier: <br/>
+<code>[root@samba-server]# showmount -e &lt;NFS_SERVER_IP&gt;</code></li>
+<li>To be able to mount NFS shares, we need start a daemon: <br/>
+<code>[root@samba-server]# systemctl start rpcbind</code></li>
+</ol>
+<h3 id="mount-the-nfs-share"><em>Mount the NFS Share</em>:</h3>
+<ol type="1">
+<li>Mount it, replacing <NFS_SERVER_IP> with the IP you copied earlier:
+<br/>
+<code>[root@samba-server]# mount -t nfs &lt;NFS_SERVER_IP&gt;:/nfs /mnt/nfs</code></li>
+<li>Make sure you see it listed after running: <br/>
+<code>[root@samba-server]# mount</code></li>
+<li>Change directory: <br/>
+<code>[root@samba-server]# cd /mnt/nfs</code></li>
+<li>Create a file: <br/>
+<code>[root@samba-server nfs]# touch file</code></li>
+<li>List the contents: <br/> <code>[root@samba-server nfs]# ls</code>
+&gt; We should see the new file, called file.</li>
+</ol>
+<h2 id="references">References</h2>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>
