@@ -62,8 +62,6 @@ Last updated: 2025-01-13
       5. **Deploy to GitHub Pages**: This step commits the generated HTML files back to the `main` branch and pushes the changes. This ensures that your GitHub Pages site is updated with the latest HTML files.
       
       ```yaml
-      name: Convert Markdown to HTML and Deploy
-      
       on:
         push:
           branches:
@@ -99,8 +97,9 @@ Last updated: 2025-01-13
       
             - name: Deploy to GitHub Pages
               run: |
-                git config --global user.email "belindabrownr04@gmail.com"
-                git config --global user.name "brown9804"
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                git config --global user.name "github-actions[bot]"
+                git pull origin ${{ github.ref }} --rebase
                 git add _site
                 git commit -m 'Deploy static HTML files'
                 git push origin HEAD:${{ github.ref }}
