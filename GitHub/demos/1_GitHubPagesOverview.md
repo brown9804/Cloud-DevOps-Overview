@@ -53,8 +53,8 @@ Last updated: 2025-01-13
       - Commit and push the changes to GitHub.
 3. Create a GitHub Actions Workflow
       - In your repository, create a `.github/workflows` directory.
-      - Inside this directory, create a file named `deploy.yml`.
-4. Define the Workflow: Add the following content to the `deploy.yml` file to set up a workflow that converts Markdown to HTML and deploys it to the `main` branch:
+      - Inside this directory, create a file named `md-html-deploy.yml`.
+4. Define the Workflow: Add the following content to the `md-html-deploy.yml` file to set up a workflow that converts Markdown to HTML and deploys it to the `main` branch:
       1. **Checkout Repository**: This step checks out your repository so that the workflow can access the files.
       2. **Set up Node.js**: This step sets up Node.js, which is required for some Markdown converters.
       3. **Install Dependencies**: This step installs the necessary dependencies for your project.
