@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-linux-shell" id="toc-the-linux-shell">The Linux
+Shell</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#modifying-the-bash-shell"
+id="toc-modifying-the-bash-shell">Modifying the Bash Shell</a>
+<ul>
+<li><a href="#create-the-alias" id="toc-create-the-alias"><em>Create the
+alias</em>:</a></li>
+<li><a href="#load-and-test-the-alias"
+id="toc-load-and-test-the-alias"><em>Load and test the
+alias</em>:</a></li>
+<li><a href="#create-your-function"
+id="toc-create-your-function"><em>Create your function</em>:</a></li>
+<li><a href="#use-the-webspace-function"
+id="toc-use-the-webspace-function"><em>Use the webspace
+function</em>:</a></li>
+</ul></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-linux-shell">The Linux Shell</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="modifying-the-bash-shell">Modifying the Bash Shell</h2>
+<p>Understand how to create our own alias for a command and then create
+a new command that will take a positional argument.</p>
+<blockquote>
+<blockquote>
+<p>Scenario</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>You have just started a new job managing a web server for a small
+company. To make your job a bit easier, you have decided to create some
+shorthand commands that will help you in your daily tasks. <br/> <em>.
+First, you will create an alias to view the status of the HTTP service
+that is running on the company’s small web server. <br/> </em>. Next,
+you will create a function that allows you to monitor the disk usage of
+a couple of web content directories.</p>
+</blockquote>
+<h3 id="create-the-alias"><em>Create the alias</em>:</h3>
+<ol type="1">
+<li>The first step is to create an alias for the Bash shell that will
+allow you to view the service status of the web server itself. You will
+name this alias webstat. When you type the command webstat at the
+prompt, you will see the output of the command systemctl status
+httpd.service. User-created aliases and functions should go in your
+local ~/.bashrc file. Using the commands listed, append the following
+alias to your ~/.bashrc file: <br/>
+<code>echo 'alias webstat="systemctl status httpd.service"' &gt;&gt; /home/cloud_user/.bashrc</code></li>
+</ol>
+<h3 id="load-and-test-the-alias"><em>Load and test the alias</em>:</h3>
+<ol type="1">
+<li>Now that we have created an alias that displays the status of the
+web server, we need to tell Bash that we want to use it in our current
+session. First, we need to source our .bashrc file using the “dot” (.)
+command: <br/> <code>. ~/.bashrc</code></li>
+<li>Now that the Bash environment has been refreshed with the new alias
+from our ~/.bashrc file, we can use our new alias: <br/>
+<code>webstat</code> &gt; We should be able to see the output of our
+service’s status command.</li>
+</ol>
+<h3 id="create-your-function"><em>Create your function</em>:</h3>
+<ol type="1">
+<li>The next step is to create a function that will take the name of a
+directory as a parameter and print out how much disk space that
+directory is using. Using the vi text editor, open up the ~/.bashrc file
+and add the following function to the bottom, beneath the alias that you
+created earlier: <br/> <code>vim ~/.bashrc</code></li>
+</ol>
+<pre><code>function webspace()
+{
+    du -h /var/www/html/$1;
+}</code></pre>
+<ol start="2" type="1">
+<li>Save and close your file.</li>
+<li>Then source the .bashrc file again: <br/>
+<code>. .bashrc</code></li>
+</ol>
+<h3 id="use-the-webspace-function"><em>Use the webspace
+function</em>:</h3>
+<ol type="1">
+<li>Since the /var/www/html directory is the root location for all of
+the individual site locations for this web server, all you need to do is
+provide the name of the folder that contains a particular part of the
+site to the webspace function. To view the size and contents of the main
+public web page, enter this command: <br/> <code>webspace main</code>
+&gt; This will print out the contents of the /var/www/html/main
+directory and how much disk space this directory uses. The $1 used in
+your function is a positional argument. When you type webspace main at
+the prompt, the word main is replaced by the $1 argument, thus providing
+the output of the command for the /var/www/html/main directory.</li>
+<li>Try the same command again, this time for the customer directory on
+the web server: <br/> <code>webspace customer</code> &gt; You should see
+more directories in the output, plus a 5 MB client binary file.</li>
+</ol>
+<h2 id="references">References</h2>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#linux-device-management"
+id="toc-linux-device-management">Linux Device Management</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#adding-a-new-hard-disk-to-a-linux-system"
+id="toc-adding-a-new-hard-disk-to-a-linux-system">Adding a New Hard Disk
+to a Linux System:</a>
+<ul>
+<li><a href="#create-a-new-partition"
+id="toc-create-a-new-partition"><em>Create a New
+Partition</em>:</a></li>
+<li><a href="#create-the-filesystem"
+id="toc-create-the-filesystem"><em>Create the Filesystem</em>:</a></li>
+<li><a href="#mount-the-new-filesystem-and-make-it-permanent"
+id="toc-mount-the-new-filesystem-and-make-it-permanent"><em>Mount the
+New Filesystem and Make It Permanent</em>:</a></li>
+</ul></li>
+<li><a href="#working-with-the-cups-print-server"
+id="toc-working-with-the-cups-print-server">Working with the CUPS Print
+Server:</a>
+<ul>
+<li><a href="#install-a-pdf-printer"
+id="toc-install-a-pdf-printer"><em>Install a PDF Printer</em>:</a></li>
+<li><a href="#print-a-test-page" id="toc-print-a-test-page"><em>Print a
+Test Page</em>:</a></li>
+<li><a href="#modify-the-printer-and-work-with-the-print-queue"
+id="toc-modify-the-printer-and-work-with-the-print-queue"><em>Modify the
+Printer and Work with the Print Queue</em>:</a></li>
+</ul></li>
+<li><a href="#storage-management" id="toc-storage-management">Storage
+Management:</a>
+<ul>
+<li><a href="#create-a-2-gb-gpt-partition-on-devnvme1n1"
+id="toc-create-a-2-gb-gpt-partition-on-devnvme1n1"><em>Create a 2 GB GPT
+Partition on /dev/nvme1n1</em>:</a></li>
+<li><a href="#create-a-2-gb-mbr-partition-on-devnvme2n1"
+id="toc-create-a-2-gb-mbr-partition-on-devnvme2n1"><em>Create a 2 GB MBR
+Partition on /dev/nvme2n1</em>:</a></li>
+<li><a
+href="#format-the-gpt-partition-with-xfs-and-mount-the-device-on-mntgptxfs-persistently"
+id="toc-format-the-gpt-partition-with-xfs-and-mount-the-device-on-mntgptxfs-persistently"><em>Format
+the GPT Partition with XFS and Mount the Device on /mnt/gptxfs
+Persistently</em>:</a></li>
+<li><a
+href="#format-the-mbr-partition-with-ext4-and-mount-the-device-on-mntmbrext4"
+id="toc-format-the-mbr-partition-with-ext4-and-mount-the-device-on-mntmbrext4"><em>Format
+the MBR Partition with ext4 and Mount the Device on
+/mnt/mbrext4</em>:</a></li>
+<li><a href="#working-with-lvm-storage"
+id="toc-working-with-lvm-storage"><em>Working with LVM
+Storage</em>:</a></li>
+<li><a href="#create-a-physical-device"
+id="toc-create-a-physical-device"><em>Create a Physical
+Device</em>:</a></li>
+<li><a href="#create-a-volume-group"
+id="toc-create-a-volume-group"><em>Create a Volume Group</em>:</a></li>
+<li><a href="#create-a-logical-volume"
+id="toc-create-a-logical-volume"><em>Create a Logical
+Volume</em>:</a></li>
+<li><a href="#format-the-lv-as-xfs-and-mount-it-persistently-at-mntlvol"
+id="toc-format-the-lv-as-xfs-and-mount-it-persistently-at-mntlvol"><em>Format
+the LV as XFS and Mount It Persistently at /mnt/lvol</em>:</a></li>
+<li><a href="#grow-the-mount-point-by-200-mb"
+id="toc-grow-the-mount-point-by-200-mb"><em>Grow the Mount Point by 200
+MB</em>:</a></li>
+</ul></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="linux-device-management">Linux Device Management</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="adding-a-new-hard-disk-to-a-linux-system">Adding a New Hard Disk
+to a Linux System:</h2>
+<p>Understand how to create a new filesystem, mounting the filesystem to
+a directory, and then configuring the system so the mount persists
+across reboots.</p>
+<h3 id="create-a-new-partition"><em>Create a New Partition</em>:</h3>
+<blockquote>
+<p>Before we go mounting any new partition up, we’ve got to create that
+partition. 1. Open up a terminal window and log in using the credentials
+provided on the lab page, replacing x.x.x.x with the public IP address
+listed: <br/> <code>ssh cloud_user@x.x.x.x</code> Enter the provided
+password when prompted. 2. Next, let’s run the lsblk command to verify
+we have a /dev/nvme1n1 device available. Once we’ve confirmed that,
+we’ll create a partition on the /dev/nvme1n1 disk using fdisk. Note that
+we’ll need to preface these commands with sudo for these commands. This
+partition we create will span the entire disk: <br/></p>
+</blockquote>
+<pre><code>[cloud_user@host]$ lsblk
+[cloud_user@host]$ sudo fdisk /dev/nvme1n1</code></pre>
+<ol start="3" type="1">
+<li>After running fdisk, we’ll have to perform a few tasks. At the
+Command (m for help): command, type n to make a new partition, then hit
+Enter. Our Partition type will be p, primary.</li>
+<li>Press Enter for Partition number, the First sector, and the Last
+sector options. This will make fdisk ready to create the partition. Type
+p at the Command (m for help): to print out what the disk will look like
+after we commit our changes.</li>
+<li>If that all looks good, type w and press Enter to write our changes
+to disk.</li>
+</ol>
+<h3 id="create-the-filesystem"><em>Create the Filesystem</em>:</h3>
+<ol type="1">
+<li>Next, we’ve got to create a filesystem, so we can read and write
+data. We’ll format the partition to the XFS file system with the
+mkfs.xfs command. Once that is complete, we’ll run blkid on the newly
+created partition to obtain the UUID. We’ll have to make a note of this
+UUID, since we’re going to need it later: <br/></li>
+</ol>
+<pre><code>[cloud_user@host]$ sudo mkfs.xfs /dev/nvme1n1p1
+[cloud_user@host]$ sudo blkid /dev/nvme1n1p1</code></pre>
+<h3 id="mount-the-new-filesystem-and-make-it-permanent"><em>Mount the
+New Filesystem and Make It Permanent</em>:</h3>
+<ol type="1">
+<li>We can mount this partition up manually with the mount command, but
+it won’t be a persistent mount; it won’t get mounted after something
+like a reboot.We’re going to edit /etc/fstab and create a new entry for
+the new disk at the bottom: <br/> <code>sudo vi /etc/fstab</code></li>
+<li>When you want to add text: hit the esc key and then i to go into
+insert mode type as normal.</li>
+<li>When you want to save: hit the esc key and then :wq!</li>
+<li>You may find the following vim cheat sheet helpful as well:
+https://linuxacademy.com/site-content/uploads/2019/05/vim-1.png</li>
+<li>The format should follow the following (be sure to use your disk’s
+UUID from the previous step): <br/>
+<code>UUID=YOURUUID /opt xfs defaults 0 0</code></li>
+<li>We can save the file (:wq!), Then run: <br/>
+<code>[cloud_user@host]$ sudo mount -a</code></li>
+<li>This will mount everything that’s listed in fstab, including our new
+partition.</li>
+<li>And running a quick df -h /opt should show us roughly 5GB available
+for the /opt directory.</li>
+</ol>
+<h2 id="working-with-the-cups-print-server">Working with the CUPS Print
+Server:</h2>
+<p>Understand how to work with print server that will send jobs to PDF
+files. We will use the lpd (line print daemon) toolset provided by a
+CUPS installation.</p>
+<h3 id="install-a-pdf-printer"><em>Install a PDF Printer</em>:</h3>
+<ol type="1">
+<li>Open your terminal application.</li>
+<li>Check to see which printers are installed: <br/>
+<code>lpstat -s</code></li>
+<li>Check to see what types of printer connections are available: <br/>
+<code>sudo lpinfo -v</code></li>
+<li>Install a PDF printer to use with CUPS: <br/>
+<code>sudo lpadmin -p CUPS-PDF -v cups-pdf:/</code></li>
+<li>Determine which driver files we can use with our printer by querying
+the CUPS database for files that contain “PDF”: <br/>
+<code>lpinfo --make-and-model "PDF" -m</code></li>
+<li>Use CUPS-PDF.ppd as the driver file: <br/>
+<code>sudo lpadmin -p CUPS-PDF -m "CUPS-PDF.ppd"</code></li>
+<li>Run the lpstat command again: <br/> <code>lpstat -s</code></li>
+<li>Check the status of the printer we just installed: <br/>
+<code>lpc status</code></li>
+<li>Enable the printer to accept jobs, and set it up as the default
+printer:</li>
+</ol>
+<pre><code>sudo lpadmin -d CUPS-PDF -E
+sudo cupsenable CUPS-PDF
+sudo cupsaccept CUPS-PDF</code></pre>
+<ol start="10" type="1">
+<li>Run the lpc status command again: <code>lpc status</code> &gt; The
+printer should now be ready.</li>
+</ol>
+<h3 id="print-a-test-page"><em>Print a Test Page</em>:</h3>
+<ol type="1">
+<li>Print a copy of the /etc/passwd file to a PDF file in our home
+directory: <br/> <code>lpr /etc/passwd</code></li>
+<li>Verify that there is a copy of the /etc/passwd file in the home
+directory: <br/> <code>ls</code></li>
+</ol>
+<h3 id="modify-the-printer-and-work-with-the-print-queue"><em>Modify the
+Printer and Work with the Print Queue</em>:</h3>
+<ol type="1">
+<li>Configure the printer so that it will not accept any new jobs: <br/>
+<code>sudo cupsreject CUPS-PDF</code></li>
+<li>Verify the status of the printer: <br/> <code>lpc status</code></li>
+<li>Attempt to print the /etc/group file to the printer: <br/>
+<code>lpr /etc/group</code></li>
+<li>You should receive a message that says the printer is not currently
+accepting jobs.</li>
+<li>Reconfigure the printer to once again accept incoming jobs:
+<code>sudo cupsaccept CUPS-PDF</code></li>
+<li>Check the status of the printer: <code>lpc status</code></li>
+<li>Configure the printer so that it accepts jobs to its queue but will
+not print them: <code>sudo cupsdisable CUPS-PDF</code></li>
+<li>Check the status of the printer: <code>lpc status</code></li>
+<li>Attempt to print the /etc/group file again:
+<code>lpr /etc/group</code></li>
+<li>List the contents of the /home directory: <code>ls</code></li>
+<li>Check the printer’s queue: <code>lpq</code></li>
+<li>Remove the job from the printer’s queue (remember to substitute the
+job ID from your command’s output):
+<code>lprm &lt;JOB_ID&gt;</code></li>
+<li>Verify that the job was successfully removed from the printer’s
+queue: <code>lpq</code></li>
+<li>Re-enable the printer’s ability to print new jobs:
+<code>sudo cupsenable CUPS-PDF</code></li>
+<li>Verify that the CUPS-PDF printer is once again ready to accept new
+jobs: <code>lpq</code></li>
+</ol>
+<h2 id="storage-management">Storage Management:</h2>
+<p>Understanding of how to use these tools is a fundamental component of
+a Linux sysadmin career.</p>
+<blockquote>
+<p>Then, become root: <br/> <code>sudo -i</code></p>
+</blockquote>
+<h3 id="create-a-2-gb-gpt-partition-on-devnvme1n1"><em>Create a 2 GB GPT
+Partition on /dev/nvme1n1</em>:</h3>
+<ol type="1">
+<li>Create the partition: <br/> <code>gdisk /dev/nvme1n1</code></li>
+<li>Enter n to create a new partition.</li>
+<li>Accept the default for the partition number.</li>
+<li>Accept the default for the starting sector.</li>
+<li>For the ending sector, enter +2G to create a 2 GB partition.</li>
+<li>Accept the default partition type.</li>
+<li>Enter w to write the partition information.</li>
+<li>Enter y to proceed.</li>
+<li>Finalize the settings: <br/> <code>partprobe</code></li>
+</ol>
+<h3 id="create-a-2-gb-mbr-partition-on-devnvme2n1"><em>Create a 2 GB MBR
+Partition on /dev/nvme2n1</em>:</h3>
+<ol type="1">
+<li>Create the partition: <br/> <code>fdisk /dev/nvme2n1</code></li>
+<li>Enter n to create a new partition.</li>
+<li>Accept the default partition type.</li>
+<li>Accept the default for the partition number.</li>
+<li>Accept the default for the starting sector.</li>
+<li>For the ending sector, type +2G to create a 2 GB partition.</li>
+<li>Enter w to write the partition information.</li>
+<li>Finalize the settings: <br/> <code>partprobe</code></li>
+</ol>
+<h3
+id="format-the-gpt-partition-with-xfs-and-mount-the-device-on-mntgptxfs-persistently"><em>Format
+the GPT Partition with XFS and Mount the Device on /mnt/gptxfs
+Persistently</em>:</h3>
+<ol type="1">
+<li>Format the partition: <br/> <code>mkfs.xfs /dev/nvme1n1p1</code>
+&gt; Getting It Ready for Mounting</li>
+<li>Run the following: <br/> <code>blkid</code></li>
+<li>Copy the UUID of the partition at /dev/nvme1n1p1.</li>
+<li>Open the /etc/fstab file: <br/> <code>vim /etc/fstab</code></li>
+<li>Add the following, replacing <UUID> with the UUID you just copied:
+<br/> <code>UUID="&lt;UUID&gt;" /mnt/gptxfs xfs defaults 0 0</code></li>
+<li>Save and exit the file by pressing Escape followed by :wq.</li>
+</ol>
+<blockquote>
+<p>Create a Mount Point 1. Create the mount point we specified in fstab:
+<br/> <code>mkdir /mnt/gptxfs</code> 2. Mount everything that’s
+described in fstab: <br/> <code>mount -a</code> 3. Check that it’s
+mounted: <br/> <code>mount</code> The partition should be listed in the
+output.</p>
+</blockquote>
+<h3
+id="format-the-mbr-partition-with-ext4-and-mount-the-device-on-mntmbrext4"><em>Format
+the MBR Partition with ext4 and Mount the Device on
+/mnt/mbrext4</em>:</h3>
+<ol type="1">
+<li>Format the partition: <br/>
+<code>mkfs.ext4 /dev/nvme2n1p1</code></li>
+<li>Create the mount point: <br/> <code>mkdir /mnt/mbrext4</code></li>
+<li>Mount it: <br/> <code>mount /dev/nvme2n1p1 /mnt/mbrext4</code></li>
+<li>Check that it’s mounted: <br/> <code>mount</code> &gt; The partition
+should be listed in the output.</li>
+</ol>
+<h3 id="working-with-lvm-storage"><em>Working with LVM
+Storage</em>:</h3>
+<p>Understanding of how to use LVM managent tool</p>
+<blockquote>
+<blockquote>
+<p><em>Scenario</em></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>We’ve been tasked with creating a large logical volume out of the two
+disks attached to this server. The volume group name should be RHCSA.
+The Logical Volume name should be pinehead and should be 3 GB in size.
+Make sure that the resulting logical volume is formatted as XFS, and
+persistently mounted at /mnt/lvol. After that is complete, we should
+grow the logical volume and the filesystem by 200 MB.</p>
+</blockquote>
+<h3 id="create-a-physical-device"><em>Create a Physical
+Device</em>:</h3>
+<ol type="1">
+<li>To see the names of our disks, we need to run fdisk -l.</li>
+<li>Then we run pvcreate /dev/xvdg /dev/xvdf to create the physical
+devices.</li>
+<li>To check how it went, we can do a quick pvs or pvdisplay, and we’ll
+see that they’ve been created.</li>
+</ol>
+<h3 id="create-a-volume-group"><em>Create a Volume Group</em>:</h3>
+<ol type="1">
+<li>All we need to do is run vgcreate RHCSA /dev/xvdg /dev/xvdf. &gt;
+RHCSA is going to be the name of our volume group, and those physical
+devices we created in the last step is where this volume group will
+go.</li>
+</ol>
+<h3 id="create-a-logical-volume"><em>Create a Logical Volume</em>:</h3>
+<ol type="1">
+<li>Now we can create the our logical volume using the lvcreate command:
+<br/> <code>[root@host]# lvcreate -n pinehead -L 3G RHCSA</code> &gt; -n
+denotes the name of the LV <br/> &gt; -L denotes the size of the LV
+<br/> &gt; RHCSA is the name of the Volume Group we’re creating this LV
+in</li>
+</ol>
+<h3
+id="format-the-lv-as-xfs-and-mount-it-persistently-at-mntlvol"><em>Format
+the LV as XFS and Mount It Persistently at /mnt/lvol</em>:</h3>
+<ol type="1">
+<li>Now we can format the disk like any other device. To format it as
+XFS, we’ll run: <br/>
+<code>[root@host]# mkfs.xfs /dev/mapper/RHCSA-pinehead</code></li>
+<li>We’ve got to create a mount point: <br/>
+<code>mkdir /mnt/lvol</code></li>
+<li>Before we can get it mounting persistently (after reboots), we need
+the UUID. Run blkid to get it, then copy it. We’ll need it in a
+second.</li>
+<li>Edit /etc/fstab (with whichever text editor you prefer) and create a
+new line that looks like this:
+<code>UUID="&amp;ltTHE_UUID_WE_COPIED&gt;" /mnt/lvol xfs defaults 0 0</code></li>
+<li>Now, to mount everything listed in fstab (including this new mount
+we just created), let’s run mount -a.</li>
+</ol>
+<h3 id="grow-the-mount-point-by-200-mb"><em>Grow the Mount Point by 200
+MB</em>:</h3>
+<ol type="1">
+<li>To grow an LV, we can run: <br/>
+<code>[root@host]# lvextend -L+200M /dev/RHCSA/pinehead</code></li>
+<li>We can let the LVM tools automatically resize the filesystem as well
+by passing the -r or –resizefs flags.</li>
+<li>Optionally, we could have run a growfs command to resize the
+filesystem: <br/> <code>[root@host]# xfs_growfs /mnt/lvol</code></li>
+</ol>
+<h2 id="references">References</h2>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>

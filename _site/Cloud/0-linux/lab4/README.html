@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#file-management-permissions-and-backup"
+id="toc-file-management-permissions-and-backup">File Management,
+Permissions and Backup</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#creating-a-directory-structure-in-linux"
+id="toc-creating-a-directory-structure-in-linux">Creating a Directory
+Structure in Linux:</a>
+<ul>
+<li><a href="#create-the-parent-directories"
+id="toc-create-the-parent-directories"><em>Create the Parent
+Directories</em>:</a></li>
+<li><a href="#create-the-subdirectories"
+id="toc-create-the-subdirectories"><em>Create the
+Subdirectories</em>:</a></li>
+<li><a href="#create-some-empty-files"
+id="toc-create-some-empty-files"><em>Create Some Empty
+Files</em>:</a></li>
+<li><a href="#rename-a-subdirectory"
+id="toc-rename-a-subdirectory"><em>Rename a Subdirectory</em>:</a></li>
+</ul></li>
+<li><a href="#working-with-compressed-files-in-linux"
+id="toc-working-with-compressed-files-in-linux">Working with Compressed
+Files in Linux:</a>
+<ul>
+<li><a href="#get-the-original-file-size"
+id="toc-get-the-original-file-size"><em>Get the Original File Size</em>:
+<br/></a></li>
+<li><a href="#creating-zip-files"
+id="toc-creating-zip-files"><em>Creating zip Files</em>:</a></li>
+<li><a href="#creating-tar-files"
+id="toc-creating-tar-files"><em>Creating tar Files</em>:</a></li>
+<li><a href="#practice-reading-compressed-text-files"
+id="toc-practice-reading-compressed-text-files"><em>Practice Reading
+Compressed Text Files</em>:</a></li>
+</ul></li>
+<li><a href="#managing-file-attributes-and-permissions"
+id="toc-managing-file-attributes-and-permissions">Managing File
+Attributes and Permissions:</a>
+<ul>
+<li><a href="#objectives"
+id="toc-objectives"><em>Objectives</em>:</a></li>
+<li><a href="#grant-access-to-the-directory"
+id="toc-grant-access-to-the-directory"><em>Grant Access to the
+Directory</em>:</a></li>
+<li><a href="#change-the-directory-permissions"
+id="toc-change-the-directory-permissions"><em>Change the Directory
+Permissions</em>:</a></li>
+<li><a href="#create-a-symbolic-soft-link"
+id="toc-create-a-symbolic-soft-link"><em>Create a Symbolic (Soft)
+Link</em>:</a></li>
+<li><a href="#check-the-inode-numbers-for-the-link"
+id="toc-check-the-inode-numbers-for-the-link"><em>Check the Inode
+Numbers for the Link</em>:</a></li>
+<li><a href="#create-a-hard-link" id="toc-create-a-hard-link"><em>Create
+a Hard Link</em>:</a></li>
+<li><a href="#attempt-to-create-a-hard-link-across-filesystems"
+id="toc-attempt-to-create-a-hard-link-across-filesystems"><em>Attempt to
+Create a Hard Link Across Filesystems</em>:</a></li>
+<li><a href="#attempt-to-create-a-soft-link-across-filesystems"
+id="toc-attempt-to-create-a-soft-link-across-filesystems"><em>Attempt to
+Create a Soft Link Across Filesystems</em>:</a></li>
+</ul></li>
+<li><a href="#encrypt-a-file-using-gpg"
+id="toc-encrypt-a-file-using-gpg">Encrypt a File Using GPG:</a>
+<ul>
+<li><a href="#create-a-gpg-key-for-cloud-user"
+id="toc-create-a-gpg-key-for-cloud-user"><em>Create a GPG Key for cloud
+user</em>:</a></li>
+<li><a href="#configure-gpg-for-gordon"
+id="toc-configure-gpg-for-gordon"><em>Configure GPG for
+Gordon</em>:</a></li>
+<li><a href="#generate-a-signed-document-and-send-it-to-gordon"
+id="toc-generate-a-signed-document-and-send-it-to-gordon"><em>Generate a
+Signed Document and Send It to Gordon</em>:</a></li>
+<li><a href="#verify-the-signature-of-the-emailed-document"
+id="toc-verify-the-signature-of-the-emailed-document"><em>Verify the
+Signature of the Emailed Document</em>:</a></li>
+<li><a href="#decrypt-the-attached-file"
+id="toc-decrypt-the-attached-file"><em>Decrypt the Attached
+File</em>:</a></li>
+</ul></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="file-management-permissions-and-backup">File Management,
+Permissions and Backup</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="creating-a-directory-structure-in-linux">Creating a Directory
+Structure in Linux:</h2>
+<p>Understanding how to create a certain directory and subdirectory
+structure, plus a couple of empty text files.</p>
+<h3 id="create-the-parent-directories"><em>Create the Parent
+Directories</em>:</h3>
+<blockquote>
+<p>By Hand:</p>
+</blockquote>
+<pre><code>[cloud_user@host]$ mkdir -p Projects/ancient
+[cloud_user@host]$ mkdir Projects/classical
+[cloud_user@host]$ mkdir Projects/medieval</code></pre>
+<blockquote>
+<p>With Bash Expansion:</p>
+</blockquote>
+<p><code>[cloud_user@host]$ mkdir -p Projects/{ancient,classical,medieval}</code></p>
+<h3 id="create-the-subdirectories"><em>Create the
+Subdirectories</em>:</h3>
+<blockquote>
+<p>By Hand:</p>
+</blockquote>
+<pre><code>[cloud_user@host]$ mkdir Projects/ancient/egyptian
+[cloud_user@host]$ mkdir Projects/ancient/nubian
+[cloud_user@host]$ mkdir Projects/classical/greek
+[cloud_user@host]$ mkdir Projects/medieval/britain
+[cloud_user@host]$ mkdir Projects/medieval/japan</code></pre>
+<blockquote>
+<p>With Bash Expansion:</p>
+</blockquote>
+<pre><code>[cloud_user@host]$ mkdir Projects/ancient/{egyptian,nubian}
+[cloud_user@host]$ mkdir Projects/classical/greek
+[cloud_user@host]$ mkdir Projects/medieval/{britain,japan}</code></pre>
+<h3 id="create-some-empty-files"><em>Create Some Empty Files</em>:</h3>
+<pre><code>[cloud_user@host]$ touch Projects/ancient/nubian/further_research.txt
+[cloud_user@host]$ touch Projects/classical/greek/further_research.txt</code></pre>
+<h3 id="rename-a-subdirectory"><em>Rename a Subdirectory</em>:</h3>
+<p><code>[cloud_user@host]$ mv Projects/classical Projects/greco-roman</code></p>
+<h2 id="working-with-compressed-files-in-linux">Working with Compressed
+Files in Linux:</h2>
+<h3 id="get-the-original-file-size"><em>Get the Original File Size</em>:
+<br/></h3>
+<p><code>[cloud_user@host]$ ls -lh junk.txt</code></p>
+<h3 id="creating-zip-files"><em>Creating zip Files</em>:</h3>
+<blockquote>
+<p>Gzip 1. Compressing data: <br/>
+<code>[cloud_user@host]$ gzip junk.txt</code> 2. Run ls to view the size
+of the file: <br/> <code>[cloud_user@host]$ ls -lh</code> 3. Unzip:
+<br/> <code>[cloud_user@host]$ gunzip junk.txt.gz</code></p>
+</blockquote>
+<blockquote>
+<p>bzip 1. Compression method instead: <br/>
+<code>[cloud_user@host]$ bzip2 junk.txt</code> 2. Run ls to view the
+size of the file: <br/>
+<code>[cloud_user@host]$ ls -lh junk.txt.bz2</code> 3. Unzip: <br/>
+<code>[cloud_user@host]$ bunzip2 junk.txt.bz2</code></p>
+</blockquote>
+<blockquote>
+<p>XZ 1. Compression method instead: <br/>
+<code>[cloud_user@host]$ xz junk.txt</code> 2. Run ls to view the size
+of the file: <br/> <code>[cloud_user@host]$ ls -lh</code> 3. Unzip:
+<br/> <code>[cloud_user@host]$ unxz junk.txt.xz</code></p>
+</blockquote>
+<h3 id="creating-tar-files"><em>Creating tar Files</em>:</h3>
+<ol type="1">
+<li>Compression method instead: <br/>
+<code>[cloud_user@host]$ tar -cvzf gztar.tar.gz junk.txt</code></li>
+<li>Then, let’s make one using bzip2: <br/>
+<code>[cloud_user@host]$ tar -cvjf bztar.tar.bz2 junk.txt</code></li>
+<li>Finally, we’ll use XZ to make one: <br/>
+<code>[cloud_user@host]$ tar -cvJf xztar.tar.xz junk.txt</code></li>
+<li>Run the ls command again to compare the file sizes: <br/>
+<code>[cloud_user@host]$ ls -lh</code></li>
+</ol>
+<h3 id="practice-reading-compressed-text-files"><em>Practice Reading
+Compressed Text Files</em>:</h3>
+<p>How to read the contents of compressed files without having to
+actually decompress them? There is a way! Let’s do that now. First,
+let’s copy over the /etc/passwd file to your home directory:
+<code>[cloud_user@host]$ cp /etc/passwd /home/cloud_user/</code></p>
+<blockquote>
+<p>Gzip 1. Compression method instead: <br/>
+<code>[cloud_user@host]$ tar -cvzf passwd.tar.gz passwd</code> 2. And we
+can use the zcat command to read this compressed file: <br/>
+<code>[cloud_user@host]$ zcat passwd.tar.gz</code></p>
+</blockquote>
+<blockquote>
+<p>bzip2 1. Now let’s compress the file, using bzip2, into a tarball:
+<br/> <code>[cloud_user@host]$ tar -cvjf passwd.tar.bz2 passwd</code> 2.
+We can use the bzcat command to read the compressed file: <br/>
+<code>[cloud_user@host]$ bzcat passwd.tar.bz2</code></p>
+</blockquote>
+<blockquote>
+<p>XZ 1. Finally, let’s create an xz tar file: <br/>
+<code>[cloud_user@host]$ tar -cvJf passwd.tar.xz passwd</code> 2. And we
+can use the xzcat command to read its contents: <br/>
+<code>[cloud_user@host]$ xzcat passwd.tar.xz</code></p>
+</blockquote>
+<h2 id="managing-file-attributes-and-permissions">Managing File
+Attributes and Permissions:</h2>
+<h3 id="objectives"><em>Objectives</em>:</h3>
+<ol type="1">
+<li>Reset a directory’s permissions to the following:</li>
+</ol>
+<ul>
+<li>Everyone can access the directory</li>
+<li>Everyone can read the files in the directory</li>
+<li>No one can execute files in the directory</li>
+</ul>
+<ol start="2" type="1">
+<li>Apply all of these permissions to all subdirectories
+recursively</li>
+</ol>
+<h3 id="grant-access-to-the-directory"><em>Grant Access to the
+Directory</em>:</h3>
+<ol type="1">
+<li>Change to the opt directory: <br/> <code>cd /opt</code></li>
+<li>Next, open all of the directory’s files and permissions with the
+following command: <br/> <code>ls -la</code></li>
+<li>Let’s try to access the myapp directory. Run the following command:
+<br/> <code>cd myapp/</code></li>
+<li>How to fix “Permission denied”:
+<code>sudo chmod 777 myapp</code></li>
+<li>Reopen the directory files and permissions using the ls -la command.
+Now let’s try to open the directory again: <code>cd myapp</code></li>
+</ol>
+<h3 id="change-the-directory-permissions"><em>Change the Directory
+Permissions</em>:</h3>
+<ol type="1">
+<li>Give all users read and write permissions for this directory: <br/>
+<code>sudo chmod -f -x -R *</code> &gt; Just everyone read and write
+permissions <code>sudo chmod 666 -f -R *</code></li>
+<li>List the directory files and permissions again: <br/>
+<code>ls -la</code></li>
+<li>How to set the directories as executable: <br/>
+<code>sudo find /opt/myapp -type d -exec chmod o+x {} \;</code></li>
+</ol>
+<h3 id="create-a-symbolic-soft-link"><em>Create a Symbolic (Soft)
+Link</em>:</h3>
+<ol type="1">
+<li>Creating a symbolic (or soft) link from the /etc/redhat-release file
+to a new link file named release in the home directory: <br/>
+<code>ln -s /etc/redhat-release release</code></li>
+<li>Verify if the link is valid: <br/> <code>ls -l</code></li>
+<li>Check if you can read the file’s contents: <br/>
+<code>cat release</code></li>
+<li>Check the link’s contents: <br />
+<code>cat /etc/redhat-release</code> &gt; Should be the same</li>
+</ol>
+<h3 id="check-the-inode-numbers-for-the-link"><em>Check the Inode
+Numbers for the Link</em>:</h3>
+<ol type="1">
+<li>Look at the inode number of /home/cloud_user/release: <br/>
+<code>ls -i release</code></li>
+<li>Check the inode number for /etc/redhat-release: <br/>
+<code>ls -i /etc/redhat-release</code> &gt; They should be different, as
+the symbolic link is just a new filesystem entry that references the
+original file.</li>
+</ol>
+<h3 id="create-a-hard-link"><em>Create a Hard Link</em>:</h3>
+<ol type="1">
+<li>Create docs directory: <br/> <code>mkdir docs</code></li>
+<li>Copy /etc/services into the docs directory: <br/>
+<code>cp /etc/services docs/</code></li>
+<li>Create a hard link from the /home/cloud_user/docs/services file to a
+new link location named /home/cloud_user/services: <br/>
+<code>ln docs/services services</code></li>
+<li>Check the link’s inode number as well as the inode number for the
+original /etc/services: <br/> <code>ls -l</code></li>
+<li>View the contents of the inodes: <br/> &gt; This should verify for
+us that this is a hard link, not a soft link. It won’t have an arrow
+pointing to the actual file it’s linked to, like a soft link does. Just
+to verify, check these two with cat and make sure they’re the same:</li>
+</ol>
+<pre><code>ls -i services
+ls -i docs/services</code></pre>
+<blockquote>
+<p>You should see they the same inode number, meaning they’re
+essentially the same file.</p>
+</blockquote>
+<h3 id="attempt-to-create-a-hard-link-across-filesystems"><em>Attempt to
+Create a Hard Link Across Filesystems</em>:</h3>
+<ol type="1">
+<li>View the individual block devices: <br/> <code>lsblk</code> &gt;
+Each partition has its own set of inodes, hard links across partitions
+don’t work. Soft links should.</li>
+<li>Trying to make a hard link from /home/cloud_user/docs/services to
+/opt/services: <br/>
+<code>ln /home/cloud_user/docs/services /opt/services</code> &gt; Should
+get a failed to create hard link error</li>
+</ol>
+<h3 id="attempt-to-create-a-soft-link-across-filesystems"><em>Attempt to
+Create a Soft Link Across Filesystems</em>:</h3>
+<ol type="1">
+<li>Trying to make the same sort of cross-partition link, using the -s
+flag to make it a soft link: <br/>
+<code>sudo ln -s /etc/redhat-release /opt/release</code> &gt; There
+shouldn’t be any output, meaning it was successful.</li>
+<li>View the contents of the inodes again: <br/></li>
+</ol>
+<pre><code>ls -i /etc/redhat-release
+ls -i /opt/release</code></pre>
+<blockquote>
+<p>You should see they have different inodes, but the linking will
+work.</p>
+</blockquote>
+<h2 id="encrypt-a-file-using-gpg">Encrypt a File Using GPG:</h2>
+<p>Understand how to new public GPG key, encrypt a file and sign it, and
+send that file to another user to decrypt with “A Cloud Guru” public
+key.</p>
+<h3 id="create-a-gpg-key-for-cloud-user"><em>Create a GPG Key for cloud
+user</em>:</h3>
+<ol type="1">
+<li>Generate a new GPG key: <br/>
+<code>[cloud_user@host]$ gpg --gen-key</code></li>
+<li>Credentials: &gt; Accept the defaults for each prompt. For the user
+ID, enter cloud_user, and use cloud_user@localhost for the email
+address. We can leave the comment field blank by just pressing Enter,
+and press o at the end for OK. &gt; We’ll use password321 when we’re
+prompted for a passphrase, and when we’re prompted to confirm it.</li>
+<li>Now that the key has been created, we need to export it so that
+Gordon Freeman can decrypt files he gets from us. We’ll do that like
+this: <br/>
+<code>[cloud_user@host]$ gpg -a -o gfreeman.key --export &amp;lt;KEY_ID&gt;</code></li>
+<li>In that command, use the public key reference ID from the output of
+the key generation. It will be a random string, and the line it’s
+sitting on (in the key generation output) looks like this: <br/>
+<code>gpg: key XXXXXXXX marked as ultimately trusted</code></li>
+<li>Now, we’ll use the mail command to send an email to Gordon Freeman
+containing the cloud_user public key as an attachment: <br/></li>
+</ol>
+<pre><code>[cloud_user@host]$ mail -s &quot;here is your key&quot; -a gfreeman.key gfreeman@localhost`
+Don&#39;t lose this!  I&#39;ll call you with the passphrase.
+.</code></pre>
+<blockquote>
+<p>Include that final period (on the line by itself) and then press
+Enter to send the message.</p>
+</blockquote>
+<h3 id="configure-gpg-for-gordon"><em>Configure GPG for
+Gordon</em>:</h3>
+<ol type="1">
+<li>Just as we did with the cloud_user account, we’ll generate a GPG key
+for Mr. Freeman, accepting the defaults for each prompt. The only
+difference will be having a user ID of gfreeman and an email address of
+gfreeman@localhost: <br/>
+<code>[gfreeman@host]$ gpg --gen-key</code></li>
+<li>Once we’ve created the key for Mr. Freeman, we can open up the mutt
+email client, and save the public key sent over by the cloud_user
+account: <br/> <code>[gfreeman@host]$ mutt</code> &gt; Arrow up and down
+to highlight the cloud_user message, then press Enter. Press v to view
+the attachment, and press s to save it to Mr. Freeman’s home directory.
+Finally, press q to quit Mutt.</li>
+<li>Now, to import the public key from cloud_user into Mr. Freeman’s
+keyring, run the following command: <br/>
+<code>[gfreeman@host]$ gpg --import gfreeman.key</code></li>
+<li>We can run this to view the contents of Mr. Freeman’s keyring: <br/>
+<code>[gfreeman@host]$ gpg --list-keys</code></li>
+<li>Let’s log out of gfreeman’s account: <br/>
+<code>[gfreeman@host]$ exit</code></li>
+</ol>
+<h3 id="generate-a-signed-document-and-send-it-to-gordon"><em>Generate a
+Signed Document and Send It to Gordon</em>:</h3>
+<ol type="1">
+<li>When we digitally sign a file, we are using our private GPG key to
+guarantee that this file came from us. The user that receives the file
+will use their copy of the public key from us to verify that we signed
+the file. Let’s generate a test document: <br/>
+<code>[cloud_user@host]$ echo "Just need you to verify this file." &gt; note.txt</code></li>
+<li>Now we’ll use cloud_user’s private key to sign the file: <br/>
+<code>[cloud_user@host]$ gpg --clearsign note.txt</code> &gt; Remember
+that we need to use the passphrase we created earlier (password321).
+&gt; Now there should now be a note.txt.asc file in cloud_user’s home
+directory. We can run a quick ls to make sure.</li>
+<li>Now that we’ve made the file, let’s email it to gfreeman@localhost:
+<br/></li>
+</ol>
+<pre><code>[cloud_user@host]$ mail -s &quot;check this out&quot; -a note.txt.asc gfreeman@localhost
+Could you verify this file for me?
+.</code></pre>
+<h3 id="verify-the-signature-of-the-emailed-document"><em>Verify the
+Signature of the Emailed Document</em>:</h3>
+<blockquote>
+<p>Use the mutt email client, and just as before, view and save the new
+email message’s attachment. 1. Now, verify the note.txt.asc file that
+was emailed: <br/>
+<code>[gfreeman@host]$ gpg --verify note.txt.asc</code> 2. We’ll get a
+warning about the signature not being verified by a third party, and
+that’s ok. What is important is the following line from the output:
+<br/>
+<code>gpg: Good signature from "cloud_user &lt;cloud_user@localhost&gt;"</code>
+This is what a verified file displays. 3. Next, encrypt a copy of the
+/etc/fstab file like this: <br/></p>
+</blockquote>
+<pre><code>[gfreeman@host]$ cp /etc/fstab ~
+[gfreeman@host]$ gpg -a -r cloud_user -e ~/fstab</code></pre>
+<blockquote>
+<p>You will see a general warning displayed about the key possibly not
+belonging to the named person. We already know that this key is from
+cloud_user, so just press y at the prompt. 4. Verify that there is a
+file called fstab.asc in the gfreeman home directory (by running ls).
+Create a new email to cloud_user and attach this file: <br/></p>
+</blockquote>
+<pre><code>[gfreeman@host]$ mail -s &quot;looks good&quot; -a fstab.asc cloud_user@localhost
+Can you decrypt this?
+.</code></pre>
+<ol start="5" type="1">
+<li>Log out: <br/> <code>[gfreeman@host]$ exit</code></li>
+</ol>
+<h3 id="decrypt-the-attached-file"><em>Decrypt the Attached
+File</em>:</h3>
+<blockquote>
+<p>Now, as cloud_user, open up the mutt email client and save the
+fstab.asc attachment from the new email. 1. Decrypt the saved fstab.asc
+file with the gpg command, and enter the passphrase for cloud_user’s key
+when prompted: <br/> <code>[cloud_user@host]$ gpg fstab.asc</code> 2.
+Now let’s verify that we can read the contents of the decrypted file:
+<br/> <code>[cloud_user@host]$ cat fstab</code></p>
+</blockquote>
+<h2 id="references">References</h2>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>
