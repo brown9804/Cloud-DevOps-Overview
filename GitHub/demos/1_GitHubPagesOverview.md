@@ -62,12 +62,12 @@ Last updated: 2025-01-13
       5. **Deploy to GitHub Pages**: This step commits the generated HTML files back to the `main` branch and pushes the changes. This ensures that your GitHub Pages site is updated with the latest HTML files.
       
       ```yaml
-      name: Convert Markdown to HTML and Deploy
-      
       on:
         push:
           branches:
             - main  # Trigger the workflow on push to the main branch
+            - dev
+            - feature/*
       
       jobs:
         build-and-deploy:
@@ -84,6 +84,9 @@ Last updated: 2025-01-13
       
             - name: Install dependencies
               run: npm install
+              
+            - name: Install pandoc
+              run: sudo apt-get install -y pandoc
       
             - name: Convert Markdown to HTML
               run: |
@@ -94,11 +97,12 @@ Last updated: 2025-01-13
       
             - name: Deploy to GitHub Pages
               run: |
-                git config --global user.name 'github-actions[bot]'
-                git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+                git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                git config --global user.name "github-actions[bot]"
+                git pull origin ${{ github.ref }} --rebase
                 git add _site
                 git commit -m 'Deploy static HTML files'
-                git push origin main
+                git push origin HEAD:${{ github.ref }}
       ```
 
 ## Setting Up GitHub Pages
