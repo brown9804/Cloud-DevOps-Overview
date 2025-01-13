@@ -78,4 +78,3 @@ Last updated: 2024-12-13
 - SDLC - [Methodologies](https://datarob.com/sdlc-methodologies/)
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/5ba714af-4238-48d3-9043-cbcd64a590f1)
-
