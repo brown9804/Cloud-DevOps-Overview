@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#country-information-for-travelers-api-integration"
+id="toc-country-information-for-travelers-api-integration">Country
+Information for Travelers (API integration)</a>
+<ul>
+<li><a href="#wiki" id="toc-wiki">Wiki:</a></li>
+<li><a href="#setup" id="toc-setup">Setup</a></li>
+<li><a href="#with-opentelemetry-instrumentation"
+id="toc-with-opentelemetry-instrumentation">With OpenTelemetry
+Instrumentation</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="country-information-for-travelers-api-integration">Country
+Information for Travelers (API integration)</h1>
+<hr />
+<p>Costa Rica</p>
+<p>Belinda Brown, belindabrownr04@gmail.com</p>
+<p><a href="https://www.gnu.org/licenses/gpl-3.0"><img
+src="https://img.shields.io/badge/License-GPLv3-blue.svg"
+alt="License: GPL v3" /></a> <a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></p>
+<p><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></p>
+<p>Dec, 2022</p>
+<hr />
+<blockquote>
+<p>This is designed to provide users with a comprehensive overview of
+the country, including general information, COVID-19 data, weather
+details based on latitude and longitude, and an overview of the
+country’s currency exchange rates.</p>
+</blockquote>
+<h3 id="wiki">Wiki:</h3>
+<ul>
+<li><a href="https://pypi.org/project/countryinfo/">Country Info</a>,
+and <a href="https://github.com/porimol/countryinfo.git">repo</a></li>
+<li><a href="https://www.countryflags.io">Countries flags API</a></li>
+<li><a href="https://www.worldometers.info/coronavirus/country/">Covid
+information</a></li>
+<li><a href="https://pypi.org/project/CurrencyConverter/">Currency
+conversion</a></li>
+<li><a href="https://open-meteo.com/">Weather API</a>
+<ul>
+<li><em>https://openweathermap.org/api</em></li>
+<li><em>https://www.worldometers.info/</em></li>
+</ul></li>
+<li><a href="https://opentelemetry.io/docs/languages/python/">Open
+Telemetry for Python</a></li>
+<li><a
+href="https://opentelemetry-python.readthedocs.io/en/latest/api/trace.html">opentelemetry.trace
+package</a></li>
+<li><a
+href="https://opentelemetry.io/docs/languages/python/instrumentation/">Manual
+instrumentation for OpenTelemetry Python</a></li>
+<li><a
+href="https://learn.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=node-v4%2Cpython-v2%2Cisolated-process&amp;pivots=programming-language-csharp#x86-emulation-on-arm64">Guide
+on Develop Azure Functions by using Visual Studio Code</a></li>
+</ul>
+<h2 id="setup">Setup</h2>
+<p>Please follow the makefile instructions at this location. And make
+sure countryinfo module is cloned before started.</p>
+<pre><code>make env
+make activate
+make setupcountryinfo
+make run</code></pre>
+<p>Example, using Spain data:</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img width="700" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/3cbdc543-56dc-46e1-a63b-668b5c87e3b0" alt="country inf"/></td>
+</tr>
+<tr class="even">
+<td><img width="700" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/ffa0287b-e5a2-4ad2-a397-7868bc3a7d10" alt="Currency  and Weather"/></td>
+</tr>
+</tbody>
+</table>
+<h2 id="with-opentelemetry-instrumentation">With OpenTelemetry
+Instrumentation</h2>
+<pre><code>Which country would you like information about?
+Spain
+
+************ Country - General Information ***********************
+
+                    Information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Values
+                   Country Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Spain
+Other spelling for country name                                                                                                                                                                                                                                                                                                                                                                                                                                                           [ES, Kingdom of Spain, Reino de España]
+                        Capital                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Madrid
+                      Provinces [A Coruña, Álava, Albacete, Alicante, Almería, Asturias, Ávila, Badajoz, Balearic Islands, Barcelona, Biscay, Burgos, Cáceres, Cádiz, Cantabria, Castellón, Ciudad Real, Córdoba, Cuenca, Gipuzkoa, Girona, Granada, Guadalajara, Huelva, Huesca, Jaén, La Rioja, Las Palmas, León, Lleida, Lugo, Madrid, Málaga, Murcia, Navarre, Ourense, Palencia, Pontevedra, Salamanca, Santa Cruz de Tenerife, Segovia, Seville, Soria, Tarragona, Teruel, Toledo,  Valencia, Valladolid, Zamora, Zaragoza]
+                         Region                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            Europe
+                      Subregion                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   Southern europe
+                       Currency                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             [EUR]
+                      Languages                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              [es]
+                        Borders                                                                                                                                                                                                                                                                                                                                                                                                                                                                         [AND, FRA, GIB, PRT, MAR]
+                   Calling Code                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              [34]
+                           Area                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            505992
+                     Population                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          46507760
+                       Lat/Long                                                                                                                                                                                                                                                                                                                                                                                                                                                                            [40.416705, -3.703582]
+                           Code                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ES
+
+************ Country - Covid Data ***********************
+
+{&#39;Total Cases&#39;: &#39;13,914,811       &#39;, &#39;Recovered Cases&#39;: &#39;13,762,417&#39;, &#39;Total Deaths&#39;: &#39;121,760&#39;}
+
+************ Country - Weather Information ***********************
+
+Coordinates 40.41999816894531°N -3.6999998092651367°E
+Elevation 666.0 m asl
+Timezone None None
+Timezone difference to GMT+0 0 s
+                       date  temperature_2m
+0 2024-03-19 00:00:00+00:00       17.115000
+1 2024-03-19 01:00:00+00:00       16.565001
+2 2024-03-19 02:00:00+00:00       15.764999
+3 2024-03-19 03:00:00+00:00       16.014999
+4 2024-03-19 04:00:00+00:00       15.264999
+
+************ Country - Currency Convert ***********************
+
+Into which currency would you like to convert?
+{
+    &quot;name&quot;: &quot;span_country_info&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0x29f451e7453417d0&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0x83505264fb5e3fc1&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:00.984521Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:01.038606Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {
+        &quot;operation0&quot;: &quot;Ok - Get information from CountryInfo&quot;,
+        &quot;operation1&quot;: &quot;Ok - Append country information to list&quot;,
+        &quot;operation2&quot;: &quot;Ok - Store information into dataframe&quot;
+    },
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;Country_General_Inf&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0x83505264fb5e3fc1&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0xa9fe995e56a5ea60&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:00.984195Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:01.041551Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {},
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;span_covid_data&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0x7302896895fcd04c&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0x4144afc784ce1630&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:01.041681Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:02.088010Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {
+        &quot;operation0&quot;: &quot;Ok - Cast country name to lowerCase&quot;,
+        &quot;operation1&quot;: &quot;Ok - No need to replace empty space for - &quot;,
+        &quot;operation2&quot;: &quot;Ok - get worldometers country&#39;s covid data&quot;,
+        &quot;operation3&quot;: &quot;Ok - converting the text&quot;,
+        &quot;operation4&quot;: &quot;Ok - finding meta info for cases&quot;,
+        &quot;operation5&quot;: &quot;Ok - getting total cases number&quot;,
+        &quot;operation6&quot;: &quot;Ok - getting recovered cases number&quot;,
+        &quot;operation7&quot;: &quot;Ok - getting deaths cases number&quot;,
+        &quot;operation8&quot;: &quot;Ok - whole data in place&quot;
+    },
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;Country_CovidData&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0x4144afc784ce1630&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0xa9fe995e56a5ea60&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:01.041627Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:02.088952Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {},
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;span_capital_weather&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0x422fae027683a48e&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0xccd32033def63dab&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:02.089397Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:02.958786Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {
+        &quot;operation0&quot;: &quot;Ok - Setup the Open-Meteo API client with cache and retry on error&quot;,
+        &quot;operation1&quot;: &quot;Ok - Call Open-Meteo API&quot;,
+        &quot;operation2&quot;: &quot;Ok - Process first location. Add a for-loop for multiple locations or weather models&quot;,
+        &quot;operation3&quot;: &quot;Ok - Process hourly data&quot;,
+        &quot;operation4&quot;: &quot;Ok - Store data into Dataframe&quot;
+    },
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;Country_WeatherInformation&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0xccd32033def63dab&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0xa9fe995e56a5ea60&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:02.089031Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:02.961826Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {},
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+USD
+How much money would you like to convert?
+100
+Considering which YEAR for the exchange?
+2024
+Considering which MONTH for the exchange?
+2
+Considering which DAY for the exchange?
+12
+107.72999999999999 EUR to USD is: 107.72999999999999
+At 2024/2/12
+{
+    &quot;resource_metrics&quot;: [
+        {
+            &quot;resource&quot;: {
+                &quot;attributes&quot;: {
+                    &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+                    &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+                    &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+                    &quot;service.name&quot;: &quot;unknown_service&quot;
+                },
+                &quot;schema_url&quot;: &quot;&quot;
+            },
+            &quot;scope_metrics&quot;: [
+                {
+                    &quot;scope&quot;: {
+                        &quot;name&quot;: &quot;country_info_app_global_meterprovider&quot;,
+                        &quot;version&quot;: &quot;&quot;,
+                        &quot;schema_url&quot;: &quot;&quot;
+                    },
+                    &quot;metrics&quot;: [
+                        {
+                            &quot;name&quot;: &quot;work.counter&quot;,
+                            &quot;description&quot;: &quot;Counts the amount of work done&quot;,
+                            &quot;unit&quot;: &quot;1&quot;,
+                            &quot;data&quot;: {
+                                &quot;data_points&quot;: [
+                                    {
+                                        &quot;attributes&quot;: {
+                                            &quot;work.type&quot;: &quot;country_info&quot;
+                                        },
+                                        &quot;start_time_unix_nano&quot;: 1710882000984390000,
+                                        &quot;time_unix_nano&quot;: 1710882010506357000,
+                                        &quot;value&quot;: 1
+                                    },
+                                    {
+                                        &quot;attributes&quot;: {
+                                            &quot;work.type&quot;: &quot;covid_data&quot;
+                                        },
+                                        &quot;start_time_unix_nano&quot;: 1710882000984390000,
+                                        &quot;time_unix_nano&quot;: 1710882010506357000,
+                                        &quot;value&quot;: 1
+                                    },
+                                    {
+                                        &quot;attributes&quot;: {
+                                            &quot;work.type&quot;: &quot;capital_weather&quot;
+                                        },
+                                        &quot;start_time_unix_nano&quot;: 1710882000984390000,
+                                        &quot;time_unix_nano&quot;: 1710882010506357000,
+                                        &quot;value&quot;: 1
+                                    },
+                                    {
+                                        &quot;attributes&quot;: {
+                                            &quot;work.type&quot;: &quot;convert_currency&quot;
+                                        },
+                                        &quot;start_time_unix_nano&quot;: 1710882000984390000,
+                                        &quot;time_unix_nano&quot;: 1710882010506357000,
+                                        &quot;value&quot;: 1
+                                    }
+                                ],
+                                &quot;aggregation_temporality&quot;: 2,
+                                &quot;is_monotonic&quot;: true
+                            }
+                        }
+                    ],
+                    &quot;schema_url&quot;: &quot;&quot;
+                }
+            ],
+            &quot;schema_url&quot;: &quot;&quot;
+        }
+    ]
+}
+{
+    &quot;name&quot;: &quot;span_convert_currency&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0x0101e8a0eff5e1be&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0xdd82d47940f359ab&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:10.362301Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:10.504280Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {
+        &quot;operation0&quot;: &quot;Ok - Call CurrencyConverter&quot;,
+        &quot;operation1&quot;: &quot;Ok - Currency Exchanged&quot;
+    },
+    &quot;events&quot;: [],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;Country_CurrencyConvert&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0xdd82d47940f359ab&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: &quot;0xa9fe995e56a5ea60&quot;,
+    &quot;start_time&quot;: &quot;2024-03-19T21:00:02.961950Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:10.506232Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {},
+    &quot;events&quot;: [
+        {
+            &quot;name&quot;: &quot;Input1 - Asking for ToCurrency exchange ...&quot;,
+            &quot;timestamp&quot;: &quot;2024-03-19T21:00:02.962060Z&quot;,
+            &quot;attributes&quot;: {}
+        },
+        {
+            &quot;name&quot;: &quot;Input2 - Asking for Amount of Money for exchange ...&quot;,
+            &quot;timestamp&quot;: &quot;2024-03-19T21:00:05.465606Z&quot;,
+            &quot;attributes&quot;: {}
+        },
+        {
+            &quot;name&quot;: &quot;Input3 - Asking for YEAR of exchange ...&quot;,
+            &quot;timestamp&quot;: &quot;2024-03-19T21:00:06.620951Z&quot;,
+            &quot;attributes&quot;: {}
+        },
+        {
+            &quot;name&quot;: &quot;Input4 - Asking for MONTH of exchange ...&quot;,
+            &quot;timestamp&quot;: &quot;2024-03-19T21:00:08.236853Z&quot;,
+            &quot;attributes&quot;: {}
+        },
+        {
+            &quot;name&quot;: &quot;Input5 - Asking for DAY of exchange ...&quot;,
+            &quot;timestamp&quot;: &quot;2024-03-19T21:00:09.467426Z&quot;,
+            &quot;attributes&quot;: {}
+        }
+    ],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}
+{
+    &quot;name&quot;: &quot;Country_Information_For_Travellers&quot;,
+    &quot;context&quot;: {
+        &quot;trace_id&quot;: &quot;0x6908e6615ea20ccb8349158a18b7a428&quot;,
+        &quot;span_id&quot;: &quot;0xa9fe995e56a5ea60&quot;,
+        &quot;trace_state&quot;: &quot;[]&quot;
+    },
+    &quot;kind&quot;: &quot;SpanKind.INTERNAL&quot;,
+    &quot;parent_id&quot;: null,
+    &quot;start_time&quot;: &quot;2024-03-19T20:59:59.611590Z&quot;,
+    &quot;end_time&quot;: &quot;2024-03-19T21:00:10.506248Z&quot;,
+    &quot;status&quot;: {
+        &quot;status_code&quot;: &quot;UNSET&quot;
+    },
+    &quot;attributes&quot;: {},
+    &quot;events&quot;: [
+        {
+            &quot;name&quot;: &quot;Input0 - Asking for Country Name ...&quot;,
+            &quot;timestamp&quot;: &quot;2024-03-19T20:59:59.611606Z&quot;,
+            &quot;attributes&quot;: {}
+        }
+    ],
+    &quot;links&quot;: [],
+    &quot;resource&quot;: {
+        &quot;attributes&quot;: {
+            &quot;telemetry.sdk.language&quot;: &quot;python&quot;,
+            &quot;telemetry.sdk.name&quot;: &quot;opentelemetry&quot;,
+            &quot;telemetry.sdk.version&quot;: &quot;1.23.0&quot;,
+            &quot;service.name&quot;: &quot;unknown_service&quot;
+        },
+        &quot;schema_url&quot;: &quot;&quot;
+    }
+}</code></pre>
+</body>
+</html>

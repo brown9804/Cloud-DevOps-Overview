@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#system-service-management-runlevels-and-boot-targets"
+id="toc-system-service-management-runlevels-and-boot-targets">System
+Service Management, Runlevels and Boot Targets</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#configuring-a-default-boot-target"
+id="toc-configuring-a-default-boot-target">Configuring a Default Boot
+Target:</a>
+<ul>
+<li><a href="#check-the-default-target"
+id="toc-check-the-default-target"><em>Check the Default
+Target</em>:</a></li>
+<li><a href="#change-the-default-target"
+id="toc-change-the-default-target"><em>Change the Default
+Target</em>:</a></li>
+<li><a href="#check-the-default-target-again"
+id="toc-check-the-default-target-again"><em>Check the Default Target
+again</em>:</a></li>
+</ul></li>
+<li><a href="#scheduling-a-systemd-service-job-with-timer-units"
+id="toc-scheduling-a-systemd-service-job-with-timer-units">Scheduling a
+Systemd Service Job With Timer Units:</a>
+<ul>
+<li><a href="#sign-in-root" id="toc-sign-in-root"><em>Sign in
+root</em>:</a></li>
+<li><a href="#checking-path" id="toc-checking-path"><em>Checking
+path</em>:</a></li>
+<li><a href="#checking-content" id="toc-checking-content"><em>Checking
+content</em>:</a></li>
+<li><a href="#create-a-timer-unit-file"
+id="toc-create-a-timer-unit-file"><em>Create a Timer Unit
+File</em>:</a></li>
+<li><a href="#putting-files-where-they-belong"
+id="toc-putting-files-where-they-belong"><em>Putting Files Where They
+Belong</em>:</a></li>
+<li><a href="#tell-systemd-to-run-the-files"
+id="toc-tell-systemd-to-run-the-files"><em>Tell systemd to Run The
+Files</em>:</a></li>
+</ul></li>
+<li><a
+href="#working-with-system-service-log-files-using-the-journal-control"
+id="toc-working-with-system-service-log-files-using-the-journal-control">Working
+with System Service Log Files Using the Journal Control:</a>
+<ul>
+<li><a href="#check-the-web-server-configuration-file"
+id="toc-check-the-web-server-configuration-file"><em>Check the Web
+Server Configuration File</em>:</a></li>
+<li><a href="#verify-that-the-web-server-service-is-running"
+id="toc-verify-that-the-web-server-service-is-running"><em>Verify That
+the Web Server Service Is Running</em>:</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="system-service-management-runlevels-and-boot-targets">System
+Service Management, Runlevels and Boot Targets</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="configuring-a-default-boot-target">Configuring a Default Boot
+Target:</h2>
+<p>The LPIC-1 exam expects the candidate to know how to change a default
+target for a Linux computer using systemd. This exercise will assist you
+in your practice of determining what the default target is, and changing
+it to a new one.</p>
+<h3 id="check-the-default-target"><em>Check the Default
+Target</em>:</h3>
+<p>The current default target is set to multi-user.target. Use the
+appropriate command to verify this: <br/>
+<code>systemctl get-default</code></p>
+<h3 id="change-the-default-target"><em>Change the Default
+Target</em>:</h3>
+<p>The administrator will need to change the default target so that the
+computer boots into a graphical desktop: <br/>
+<code>sudo systemctl set-default graphical.target</code></p>
+<h3 id="check-the-default-target-again"><em>Check the Default Target
+again</em>:</h3>
+<p>Now verify that the system is set for a graphical boot: <br/>
+<code>systemctl get-default</code></p>
+<h2 id="scheduling-a-systemd-service-job-with-timer-units">Scheduling a
+Systemd Service Job With Timer Units:</h2>
+<p>During the time that our development team has spent working on the
+new Web-based API for our organization, there have been several
+instances of mistaken keystrokes or processes that have necessitated the
+restoration of the site directory from backup. <br/> We have been asked
+to run periodic backups of the website directory and, given that the
+development environment does not have access to the backup network, we
+have decided to write a custom service that will do so. <br/> Previously
+we wrote systemd unit files to back up the site and have been provided a
+file called web-backup.sh in our /root directory. Using that file and
+the associated web-backup.service, we will create a systemd timer unit
+file that will control the schedule of our service. <br/> After we have
+all three components ready, we’ll stage the files in their appropriate
+locations and start the service for our team and turn it back over for
+their use. <br/></p>
+<h3 id="sign-in-root"><em>Sign in root</em>:</h3>
+<p><code>[user@$host ~]$ sudo su -</code> When prompted, enter the
+provided lab credentials to finish logging in.</p>
+<p>Considerations: Part of this job is already done. In a previous lab
+(lab0), we wrote the systemd unit file, web-backup.service in the /root
+directory, which we will use alongside the web-backup.sh file that the
+Dev team gave us. To use it, we need to make sure we are in /root and
+that the file is there.</p>
+<h3 id="checking-path"><em>Checking path</em>:</h3>
+<p><code>[root@$host ~]# pwd</code> <br/></p>
+<h3 id="checking-content"><em>Checking content</em>:</h3>
+<p><code>[root@$host ~]# ls</code> Output: <br/></p>
+<pre><code>web-backup.sh   web-backup.service</code></pre>
+<h3 id="create-a-timer-unit-file"><em>Create a Timer Unit
+File</em>:</h3>
+<ol type="1">
+<li>With our items sourced, we are ready to create the timer unit file.
+To do so, use the vi command along with web-backup.timer:
+<code>[root@$host ~]# vi web-backup.timer</code> <br/></li>
+<li>Fill out the information as follows:</li>
+</ol>
+<pre><code>[Unit]
+Description=Fire off the backup
+
+[Timer]
+OnCalendar=*-*-* 23:00:00
+Persistent=true
+Unit=web-backup.service
+
+[Install]
+WantedBy=multi-user.target</code></pre>
+<p>Note that 23:00:00 can be set to anything. We’re just picking 11:00
+PM here as an example. <br/> When the file is correct, remember to write
+and quit properly from vi using the Esc key, : (the colon), then w, then
+q.</p>
+<h3 id="putting-files-where-they-belong"><em>Putting Files Where They
+Belong</em>:</h3>
+<ol type="1">
+<li>With everything ready, we now need to make sure our files are in the
+correct locations. The shell script needs to be copied into
+/usr/local/sbin with the cp command: <br/>
+<code>[root@$host ~]# cp web-backup.sh /usr/local/sbin/</code></li>
+<li>Then, using the cp command again, copy both the service and timer
+files into /etc/systemd/: <br/>
+<code>[root@$host ~]# cp web-backup.{service,timer} /etc/systemd/system/</code></li>
+</ol>
+<h3 id="tell-systemd-to-run-the-files"><em>Tell systemd to Run The
+Files</em>:</h3>
+<ol type="1">
+<li>With our files in place, we need to reload the systemd daemon so
+that it can calculate the service dependencies: <br/>
+<code>[root@$host ~]# systemctl daemon-reload</code></li>
+<li>Now enable the services to run at boot: <br/></li>
+</ol>
+<pre><code>[root@$host ~]# systemctl enable web-backup.service
+    
+[root@$host ~]# systemctl enable web-backup.timer</code></pre>
+<ol start="3" type="1">
+<li>Set the permissions for the file to be executable. <br/>
+<code>[root@$host ~]# chmod +x /usr/local/sbin/web-backup.sh</code></li>
+<li>Once the symlinks are created, go ahead and start the services
+manually: <br/>
+<code>[root@$host ~]# systemctl start web-backup.timer web-backup.service</code></li>
+<li>Then check on the statuses of both the timer and the service:
+<br/></li>
+</ol>
+<pre><code>[root@$host ~]# systemctl status web-backup.timer
+ 
+[root@$host ~]# systemctl status web-backup.service</code></pre>
+<p>They both show as running, meaning this server is ready to go back to
+the Dev team.</p>
+<h2
+id="working-with-system-service-log-files-using-the-journal-control">Working
+with System Service Log Files Using the Journal Control:</h2>
+<p>This is to understand how to use the built-in journalctl utility to
+view and troubleshoot system services.</p>
+<h3 id="check-the-web-server-configuration-file"><em>Check the Web
+Server Configuration File</em>:</h3>
+<ol type="1">
+<li>Change to the root account: <br/> <code>sudo su -</code></li>
+<li>Check the status of the web service: <br/>
+<code>systemctl status httpd.service</code> 3.Attempt to start the web
+service: <br/> <code>systemctl start httpd.service</code></li>
+<li>After the service fails to start, check the journal: <br/>
+<code>journalctl -u httpd.service</code></li>
+<li>Check the directory where the httpd configuration file should be:
+<br/> <code>ls /etc/httpd/conf</code></li>
+<li>Restore the original httpd configuration file: <br/>
+<code>mv /etc/httpd/conf/httpd.conf.bkup /etc/httpd/conf/httpd.conf</code></li>
+<li>Restart the service: <br/>
+<code>systemctl restart httpd.service</code></li>
+</ol>
+<h3 id="verify-that-the-web-server-service-is-running"><em>Verify That
+the Web Server Service Is Running</em>:</h3>
+<ol type="1">
+<li>Check the status of the service: <br/>
+<code>systemctl status httpd.service</code></li>
+<li>Navigate to the local web page: <br/>
+<code>elinks http://localhost</code></li>
+</ol>
+<h3 id="references">References</h3>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>

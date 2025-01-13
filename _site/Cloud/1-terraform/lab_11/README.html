@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#migrating-terraform-state-to-terraform-cloud"
+id="toc-migrating-terraform-state-to-terraform-cloud">Migrating
+Terraform State to Terraform Cloud</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#set-up-the-environment"
+id="toc-set-up-the-environment">Set Up the Environment:</a>
+<ul>
+<li><a href="#set-up-and-apply-your-terraform-configuration"
+id="toc-set-up-and-apply-your-terraform-configuration"><em>Set Up and
+Apply Your Terraform Configuration</em>:</a></li>
+<li><a href="#initializes"
+id="toc-initializes"><em>Initializes</em>:</a></li>
+<li><a href="#generate-your-access-key-in-the-aws-management-console"
+id="toc-generate-your-access-key-in-the-aws-management-console"><em>Generate
+Your Access Key in the AWS Management Console</em>:</a></li>
+</ul></li>
+<li><a href="#set-up-your-terraform-cloud-workspace"
+id="toc-set-up-your-terraform-cloud-workspace">Set Up Your Terraform
+Cloud Workspace:</a>
+<ul>
+<li><a
+href="#create-the-workspace-and-configure-your-environment-variables"
+id="toc-create-the-workspace-and-configure-your-environment-variables"><em>Create
+the Workspace and Configure Your Environment Variables</em>:</a></li>
+<li><a href="#create-your-api-token-for-terraform-cli-login"
+id="toc-create-your-api-token-for-terraform-cli-login"><em>Create Your
+API Token for Terraform CLI Login</em>:</a></li>
+</ul></li>
+<li><a href="#adding-the-backend-configuration"
+id="toc-adding-the-backend-configuration">Adding the Backend
+Configuration:</a></li>
+<li><a
+href="#apply-the-updated-configuration-and-confirm-the-state-was-saved-to-terraform-cloud"
+id="toc-apply-the-updated-configuration-and-confirm-the-state-was-saved-to-terraform-cloud">Apply
+the Updated Configuration and Confirm the State Was Saved to Terraform
+Cloud:</a></li>
+<li><a href="#reminder" id="toc-reminder">Reminder:</a></li>
+<li><a href="#reference" id="toc-reference">Reference:</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="migrating-terraform-state-to-terraform-cloud">Migrating
+Terraform State to Terraform Cloud</h1>
+<hr />
+<p>Costa Rica</p>
+<p>Belinda Brown, belindabrownr04@gmail.com</p>
+<p><a href="https://www.gnu.org/licenses/gpl-3.0"><img
+src="https://img.shields.io/badge/License-GPLv3-blue.svg"
+alt="License: GPL v3" /></a> <a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></p>
+<p><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></p>
+<p>Jan, 2022</p>
+<hr />
+<p>This is a summary based on <a href="#reference">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="set-up-the-environment">Set Up the Environment:</h2>
+<h3 id="set-up-and-apply-your-terraform-configuration"><em>Set Up and
+Apply Your Terraform Configuration</em>:</h3>
+<ol type="1">
+<li>In the ami = line, delete the “DUMMY_VALUE_AMI_ID” value and paste
+in the AMI you copied from the resource_ids.txt file.</li>
+<li>Save and exit the file by pressing the Escape key and entering
+:wq!.</li>
+<li>Open the resource_ids.txt file again: <br/>
+<code>vim ../resource_ids.txt</code></li>
+<li>Copy the subnet _id value.</li>
+<li>Exit the file by pressing Escape and entering :q!.</li>
+<li>Open the main.tf file for editing: <br/>
+<code>vim main.tf</code></li>
+<li>In the subnet_id = line, delete the “DUMMY_VALUE_SUBNET_ID” and
+paste in the subnet ID you copied from the resource_ids.txt file.</li>
+<li>Save and exit the file by pressing the Escape key and entering
+:wq!.</li>
+</ol>
+<h3 id="initializes"><em>Initializes</em>:</h3>
+<p><code>export TF_LOG=TRACE</code></p>
+<p><code>export TF_LOG_PATH=./terraform.log</code></p>
+<p><code>$ terraform init</code></p>
+<p><code>$ ls -a</code></p>
+<p><code>$ terraform fmt</code></p>
+<p><code>$ terraform validate</code></p>
+<p><code>$ terraform plan</code></p>
+<p><code>$ terraform apply</code></p>
+<blockquote>
+<p>Enter a value: yes</p>
+</blockquote>
+<h3
+id="generate-your-access-key-in-the-aws-management-console"><em>Generate
+Your Access Key in the AWS Management Console</em>:</h3>
+<ol type="1">
+<li>In a browser window, navigate to the AWS Management Console and log
+in with the credentials provided.</li>
+<li>Under AWS services, click IAM.</li>
+<li>On the IAM dashboard, under IAM resources, click Users.</li>
+<li>In the list of users, click cloud_user.</li>
+<li>Click the Security credentials tab.</li>
+<li>Click the Create access key button.</li>
+<li>In the Create access key pop-up, click the Download .csv file button
+to download the access key in a file. &gt; Note: You could also choose
+to copy and paste the Access key ID and Secret access key values
+directly from the Create access key pop-up in the next objective.</li>
+</ol>
+<h2 id="set-up-your-terraform-cloud-workspace">Set Up Your Terraform
+Cloud Workspace:</h2>
+<h3
+id="create-the-workspace-and-configure-your-environment-variables"><em>Create
+the Workspace and Configure Your Environment Variables</em>:</h3>
+<ol type="1">
+<li>In a new browser tab, navigate to
+https://app.terraform.io/session.</li>
+<li>Click Create account and follow the prompts to create a new free
+account or click Sign in to log in with an existing account.</li>
+<li>Once logged in, select the Start from scratch setup workflow
+option.</li>
+<li>In the Organization name field, enter “ACG-Terraform-Labs”. &gt;
+NOTE: If this name is already taken you can make your own name up for
+your organisation.</li>
+<li>In the Email address field, enter your email address.</li>
+<li>Click Create organization.</li>
+<li>Select the CLI-driven workflow option.</li>
+<li>In the Workspace Name field, enter “lab-migrate-state”.</li>
+<li>Click Create workspace.</li>
+<li>In the workspace, click on the Variables tab.</li>
+<li>Scroll down to the Environment Variables section, and click the +
+Add variable button.</li>
+<li>In the Key field, type “AWS_ACCESS_KEY_ID”.</li>
+<li>In the Value field, copy and paste the Access key ID value from the
+Create access key pop-up in the AWS Management Console or from the CSV
+file you downloaded.</li>
+<li>Select the Sensitive checkbox, and click Save variable.</li>
+<li>Click the + Add variable button.</li>
+<li>In the Key field, type “AWS_SECRET_ACCESS_KEY”.</li>
+<li>In the Value field, copy and paste the Secret access key value from
+the Create access key pop-up in the AWS Management Console or from the
+CSV file you downloaded.</li>
+<li>Select the Sensitive checkbox, and click Save variable.</li>
+</ol>
+<h3 id="create-your-api-token-for-terraform-cli-login"><em>Create Your
+API Token for Terraform CLI Login</em>:</h3>
+<ol type="1">
+<li>At the top-right of the Terraform Cloud window, click your user
+avatar and select User settings.</li>
+<li>In the menu on the left, click Tokens.</li>
+<li>Click Create an API token.</li>
+<li>In the Description field, type “terraform_login”.</li>
+<li>Click Create API token.</li>
+<li>Copy the API token that is displayed in the Create API token pop-up
+and click Done. &gt; Note: Be sure that you have copied the API token,
+as it will not be displayed again. You may want to paste it in an
+accessible location, just in case.</li>
+<li>At the top-left of the Terraform Cloud window, click the Choose an
+organization drop-down and select ACG-Terraform-Labs.</li>
+<li>In the list of workspaces, click lab-migrate-state.</li>
+</ol>
+<h2 id="adding-the-backend-configuration">Adding the Backend
+Configuration:</h2>
+<ol type="1">
+<li>Back in the terminal, log in to Terraform Cloud from the CLI: <br/>
+<code>terraform login</code></li>
+<li>Uncomment the backend config within the main.tf</li>
+<li>Save it.</li>
+<li>Check that the configuration file has been formatted properly: <br/>
+<code>terraform fmt</code></li>
+<li>Initialize the working directory: <br/>
+<code>terraform init</code></li>
+<li>When prompted to copy the existing Terraform state to the new
+backend, type “yes” and hit Enter. Terraform will notify you when this
+has completed successfully.</li>
+<li>Verify that the terraform.tfstate.backup file has been added to the
+directory: <br/> `ls</li>
+<li>Delete the terraform.tfstate file: <br/>
+<code>rm -rf terraform.tfstate</code></li>
+</ol>
+<h2
+id="apply-the-updated-configuration-and-confirm-the-state-was-saved-to-terraform-cloud">Apply
+the Updated Configuration and Confirm the State Was Saved to Terraform
+Cloud:</h2>
+<ol type="1">
+<li>Apply the updated configuration: <br/>
+<code>terraform apply</code></li>
+<li>Once the terraform apply has finished, navigate back to Terraform
+Cloud in the browser.</li>
+<li>On the Overview tab for the workspace, verify that the last run
+appears as a new event in the Latest Run section and that 1 resource was
+applied under Resources.</li>
+<li>Click on the States tab and verify that the state file appears. You
+can click on the file to view it.</li>
+<li>Click on the Runs tab and view the latest runs that have
+completed.</li>
+<li>To view more information about the run, click on the Overview tab
+and click the See details button for the run.</li>
+</ol>
+<h2 id="reminder">Reminder:</h2>
+<blockquote>
+<blockquote>
+<p>Later on, remember to do the destroy:</p>
+</blockquote>
+</blockquote>
+<p><code>$ terraform destroy</code></p>
+<blockquote>
+<p>Enter a value: yes</p>
+</blockquote>
+<h2 id="reference">Reference:</h2>
+<p>[1] From
+https://learn.acloud.guru/course/bd8060c6-e408-4801-a4a3-8317c45319bf/dashboard
+<br/></p>
+</body>
+</html>

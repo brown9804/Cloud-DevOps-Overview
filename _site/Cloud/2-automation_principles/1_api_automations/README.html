@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#api-principles-overview"
+id="toc-api-principles-overview">API Principles overview</a>
+<ul>
+<li><a href="#content" id="toc-content">Content</a></li>
+<li><a href="#overview" id="toc-overview">Overview</a></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="api-principles-overview">API Principles overview</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://www.python.org/"><img
+src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg"
+alt="made-with-python" /></a> <a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content">Content</h2>
+<ul>
+<li><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/0-api_curr_exchange_eg">API
+Currency Exchange Example</a></li>
+<li><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/1-api_get_info_github_eg">API
+Get information from GitHub</a></li>
+<li><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/2-api_post_trigger_eg">API
+Post Call Triggers Process</a></li>
+<li><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers">Country
+Information for Travellers (API integration)</a></li>
+<li><a
+href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-automation_principles/1_api_automations/4_api_get_info_sa_eg">API
+Get Information from Storage Account</a></li>
+</ul>
+<h2 id="overview">Overview</h2>
+<figure>
+<img
+src="https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/webservice_SaaS.png"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<figure>
+<img
+src="https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/process_api_database.png"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>REST (<strong>Representational State Transfer</strong>) is an
+architecture that is based on web standards. It defines a <strong>set of
+constraints and protocols</strong> which need to be followed
+<strong>while creating web services</strong>. <br/></p>
+<figure>
+<img
+src="https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/webservice_vs_apis.png"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<ul>
+<li>It follows the <strong>HTTP protocol</strong> and considers every
+<strong>component as a resource</strong>. These components can be
+accessed with the help of <strong>HTTP standard methods</strong>.
+<br/></li>
+<li>REST architecture includes the <strong>REST server and
+client</strong>.
+<ul>
+<li>REST <strong>server</strong> provides <strong>access to the
+resources</strong>.</li>
+<li>REST <strong>clients</strong> <strong>modify</strong> the
+<strong>resources</strong> on the REST <strong>server</strong>.</li>
+</ul></li>
+<li>The <strong>unique address</strong> of the <strong>resource</strong>
+can be located with the help of <strong>URI (Uniform Resource
+Locator)</strong>. REST represents the <strong>resource</strong> in
+various <strong>representations such as JSON, XML, text</strong>.</li>
+</ul>
+<blockquote>
+<blockquote>
+<p>– <cite> Qa Tech Hub From [2] </cite></p>
+</blockquote>
+</blockquote>
+<figure>
+<img
+src="https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/REST_architecture_works.png"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<p>REST is not a specification but a set of guidelines on how to
+architect a network-connected software system. <br/> A REST web service
+is any web service that adheres to REST architecture constraints. <br/>
+These web services expose their data to the outside world through an
+API. REST APIs provide access to web service data through public web
+URLs.</p>
+<blockquote>
+<blockquote>
+<p>– <cite> Real Python From [1] </cite></p>
+</blockquote>
+</blockquote>
+<figure>
+<img
+src="https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/api_vs_endpoint_table.png"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<figure>
+<img
+src="https://github.com/brown9804/DevOps-Agile-Cloud_path/blob/main/Cloud/_docs/img/api_endpoint_dgm.png"
+alt="image" />
+<figcaption aria-hidden="true">image</figcaption>
+</figure>
+<h2 id="references">References</h2>
+<p>[1] From
+https://realpython.com/api-integration-in-python/#rest-architecture
+<br/> [2] From https://qatechhub.com/rest-api-introduction/ <br/> [3]
+From https://stevenpcurtis.medium.com/endpoint-vs-api-ee96a91e88ca <br/>
+[4] From
+https://towardsdatascience.com/using-github-pages-for-creating-global-api-76b296c4b3b5
+<br/> [5] From https://blog.hubspot.com/website/api-endpoint <br/> [6]
+From
+https://github.com/brown9804/SAP_initial_path/tree/main/Pre-Requisites/REST%20APIs
+<br/> [7] From
+https://www.guru99.com/api-vs-web-service-difference.html#:~:text=Web%20service%20is%20used%20for,APIs%20are%20not%20web%20services
+<br/> [8] From
+https://site.financialmodelingprep.com/education/api-endpoint <br/></p>
+</body>
+</html>

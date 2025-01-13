@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#working-with-text-files-and-streams"
+id="toc-working-with-text-files-and-streams">Working with Text Files and
+Streams</a>
+<ul>
+<li><a href="#connect-to-the-server"
+id="toc-connect-to-the-server"><em>Connect to the server</em>:</a></li>
+<li><a href="#modify-a-text-file-using-sed"
+id="toc-modify-a-text-file-using-sed">Modify a Text File Using sed:</a>
+<ul>
+<li><a href="#the-fix" id="toc-the-fix"><em>The Fix</em>:</a></li>
+</ul></li>
+<li><a href="#working-with-basic-regular-expressions"
+id="toc-working-with-basic-regular-expressions">Working with Basic
+Regular Expressions:</a>
+<ul>
+<li><a href="#locate-http-services"
+id="toc-locate-http-services"><em>Locate HTTP Services</em>:</a></li>
+<li><a href="#locate-a-specific-services"
+id="toc-locate-a-specific-services"><em>Locate a Specific
+Services</em>:</a></li>
+<li><a href="#refine-the-http-results"
+id="toc-refine-the-http-results"><em>Refine the HTTP
+Results</em>:</a></li>
+</ul></li>
+<li><a href="#creating-and-modifying-a-file-with-vim"
+id="toc-creating-and-modifying-a-file-with-vim">Creating and Modifying a
+File with Vim:</a>
+<ul>
+<li><a href="#create-a-new-file" id="toc-create-a-new-file"><em>Create a
+New File</em>:</a></li>
+<li><a href="#send-data-to-notes.txt"
+id="toc-send-data-to-notes.txt"><em>Send Data to
+notes.txt</em>:</a></li>
+<li><a href="#modify-notes.txt" id="toc-modify-notes.txt"><em>Modify
+notes.txt</em>:</a></li>
+<li><a href="#send-more-data-to-the-file-and-modify-its-contents"
+id="toc-send-more-data-to-the-file-and-modify-its-contents"><em>Send
+More Data to the File, and Modify Its Contents</em>:</a></li>
+<li><a href="#finalize-the-notes-file"
+id="toc-finalize-the-notes-file">Finalize the Notes File:</a></li>
+</ul></li>
+<li><a href="#references" id="toc-references">References</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="working-with-text-files-and-streams">Working with Text Files and
+Streams</h1>
+<table style="width:32%;">
+<colgroup>
+<col style="width: 31%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Costa Rica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Belinda Brown,
+belindabrownr04@gmail.com</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/Naereen/badges/"><img
+src="https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github"
+alt="Open Source? Yes!" /></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://github.com/"><img
+src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
+alt="GitHub" /></a> <a
+href="https://github.com/brown9804">brown9804</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">March, 2022</td>
+</tr>
+</tbody>
+</table>
+<p>This is a summary based on <a href="#references">References</a></p>
+<h3 id="connect-to-the-server"><em>Connect to the server</em>:</h3>
+<p><code>ssh &lt;user_name&gt;@&lt;IPadress&gt;</code></p>
+<h2 id="modify-a-text-file-using-sed">Modify a Text File Using sed:</h2>
+<blockquote>
+<p>Someone got confused and wrote about cows instead of ants in a text
+file. We’ve got to replace all instances of cows and with Ants,
+regardless of whether or not cows contains any capital letters. ###
+<em>See File Content</em>: 1. Let’s look at the file we’re dealing with:
+<br/> <code>cat fable.txt</code></p>
+</blockquote>
+<h3 id="the-fix"><em>The Fix</em>:</h3>
+<ol type="1">
+<li>Replace information &gt; We’re going to run a sed command. The -i
+means “do this in place,” as in don’t create another file. The capital I
+near the end stands for “case-insensitive” and means that whether cows
+has any capital letters in it or not, change it to Ants. The g means do
+it globally, throughout the whole file. <br/></li>
+</ol>
+<p><code>sed -i 's/cows/Ants/Ig' fable.txt</code></p>
+<blockquote>
+<p>Now if we run our cat command again, we’ll see that all the cows are
+gone.</p>
+</blockquote>
+<h2 id="working-with-basic-regular-expressions">Working with Basic
+Regular Expressions:</h2>
+<p>Understand how to read some text files and redirecting some output
+(output that we’ll decide on using regular expressions) to other text
+files.</p>
+<h3 id="locate-http-services"><em>Locate HTTP Services</em>:</h3>
+<ol type="1">
+<li>Read information: &gt; We want to read all of the lines in
+/etc/services that start with http (but not any that start with httpx)
+and send them to ~/http-services.txt <br/>
+<code>grep ^http[^x] /etc/services &gt; ~/http-services.txt</code></li>
+<li>To check if we have what we want in the new file, run: <br/>
+<code>cat ~/http-services.txt</code></li>
+</ol>
+<h3 id="locate-a-specific-services"><em>Locate a Specific
+Services</em>:</h3>
+<ol type="1">
+<li>Search lines: <br/> &gt; This one is a little trickier. We want to
+find all of the lines in /etc/services that start with ldap. The fifth
+character can be any alphanumeric character, but the sixth character can
+not be an a. We’ll dump the output into ~/lpic1-ldap.txt <br/>
+<code>grep ^ldap.[^a] /etc/services &gt; ~/lpic1-ldap.txt</code></li>
+<li>To check if we have what we want in the new file, run: <br/>
+<code>cat ~/lpic1-ldap.txt</code></li>
+</ol>
+<h3 id="refine-the-http-results"><em>Refine the HTTP Results</em>:</h3>
+<ol type="1">
+<li>Search lines: <br/> &gt; We want to read the ~/http-services.txt
+file that we created earlier, and just look at lines that don’t end with
+the word service. This grep command will do it: <br/>
+<code>grep -v service$ ~/http-services.txt &gt; ~/http-updated.txt</code></li>
+<li>To check if we have what we want in the new file, run: <br/>
+<code>cat ~/http-updated.txt</code></li>
+</ol>
+<h2 id="creating-and-modifying-a-file-with-vim">Creating and Modifying a
+File with Vim:</h2>
+<p>Understand how to create a text file with Vim, and edit it.</p>
+<h3 id="create-a-new-file"><em>Create a New File</em>:</h3>
+<p>1.We’re going to create a new file called notes.txt in
+/home/cloud_user: <br/></p>
+<pre><code>cd
+vim notes.txt</code></pre>
+<blockquote>
+<p>Now, to add the text Beginning of Notes File, we need to get into
+insert mode, by pressing i. We can start typing now once we’re in insert
+mode. 2. Leave two blank lines after Beginning of Notes File. Now, to
+save the file and quit Vim, we have to first hit Esc (to get out of
+insert mode), type :wq! (write and quit).</p>
+</blockquote>
+<h3 id="send-data-to-notes.txt"><em>Send Data to notes.txt</em>:</h3>
+<ol type="1">
+<li>Appends content: <br/> &gt; Using the cat command and output
+redirection, send the contents of the /etc/redhat-release file to the
+end of the notes.txt file, taking care to append the contents so as to
+not overwrite the file (using &gt;&gt;, not &gt;) &gt; Run this to
+append notes.txt with the contents of /etc/redhat-release: <br/>
+<code>cat /etc/redhat-release &gt;&gt; notes.txt</code></li>
+</ol>
+<h3 id="modify-notes.txt"><em>Modify notes.txt</em>:</h3>
+<blockquote>
+<p>Let’s open notes.txt again for editing. We’ll place the cursor before
+the opening parenthesis around the word Core and use a keyboard shortcut
+to delete the text from there to the end of the line. We’ll leave two
+more blank lines at the end of the file and then save and quit again.
+Here are all of the steps to do that: 1. Open the file: <br/>
+<code>vim notes.txt</code> 2. Use the arrow keys to move to the
+beginning parentheses before Core <br/> 3. Remove text from the cursor’s
+position to end of line: <br/> <code>SHIFT D (or d$)</code> 4. Create a
+blank line under where the cursor is: <br/>
+<code>o 5. Hit Enter to create the second blank line 6. Hit Esc to leave insert mode 7. Hitting o added a blank line, but also put us in insert mode 8. Write and quit: &lt;br/&gt;</code>:wq!`</p>
+</blockquote>
+<h3 id="send-more-data-to-the-file-and-modify-its-contents"><em>Send
+More Data to the File, and Modify Its Contents</em>:</h3>
+<blockquote>
+<p>Now we’re going to send free -m output to the end of notes.txt, edit
+notes.txt again, delete the last line of the file, and add two more
+blank lines to the end of the file. Then, we’re going to jump to the
+third line of the file, enter some text, and make another blank line
+afterward. Here are all of the steps to do that: 1. Append the
+notes.txt: <br/> <code>free -m &gt;&gt; notes.txt</code> 2. Edit
+notes.txt: <br/> <code>vim notes.txt</code> 3. Navigate to the Swap line
+with arrow keys. 4. Delete the line: <br/> <code>dd</code> 5. Create a
+blank line under where the cursor is (and put us in insert mode): <br/>
+<code>o</code> 6. Hit Enter to create the second blank line. 7. Hit Esc
+to get out of insert mode. 8. Get to the 3rd line of file: <br/>
+<code>:3</code> 9. Get back into insert mode: <br/> <code>i</code> 10.
+Type This is a practice system. 11. Hit Enter to make another blank
+line. 12. Hit Esc to leave insert mode. 13. Write and quit: <br/>
+<code>:wq!</code></p>
+</blockquote>
+<h3 id="finalize-the-notes-file">Finalize the Notes File:</h3>
+<blockquote>
+<p>We’re going to dump one last bit of text into the file, then edit it
+again. We’ll take the output from dbus-uuidgen –get, append it to
+notes.txt then edit notes.txt so that the text Dbus ID = is in the
+beginning of the new appended line. We’ll do it like this: 1. Append the
+notes.txt: <br/> <code>dbus-uuidgen --get &gt;&gt; notes.txt</code> 2.
+Edit notes.txt: <br/> <code>vim notes.txt</code> 3. Get right to the end
+of the file: <br/> <code>G (Capital G)</code> 4. Get into insert mode:
+<br/> <code>i</code> 5. Type “Dbus ID =” (with a space between the
+equals sign and the dbus-uuidgen –get command’s output). Only type the
+text within the quotation marks. 6. Write and quit:
+<code>:wq!</code></p>
+</blockquote>
+<h2 id="references">References</h2>
+<p>https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard</p>
+</body>
+</html>
