@@ -29,8 +29,8 @@ jobs:
       - name: Convert Markdown to HTML
         run: |
           mkdir -p _site
-          for file in *.md; do
-            pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
+          find . -name "*.md" -type f | while read file; do
+            pandoc "$file" --standalone --toc -o "_site/$(basename "${file%.md}.html")"
           done
 
       - name: Deploy to GitHub Pages
