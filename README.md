@@ -16,8 +16,6 @@ Last updated: 2024-12-13
   <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
 </div>
 
-## Content
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
@@ -65,7 +63,7 @@ Last updated: 2024-12-13
 
 </details>
 
-## Wiki 
+## Overview
 
 - SDLC - [What is and how it works](https://agilie.com/blog/what-is-the-software-development-life-cycle-sdlc-and-how-does-it-work)
 
