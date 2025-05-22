@@ -11,11 +11,6 @@ Last updated: 2024-12-13
 
 > Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
 
-<div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
-</div>
-
 <details>
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
@@ -76,3 +71,9 @@ Last updated: 2024-12-13
 - SDLC - [Methodologies](https://datarob.com/sdlc-methodologies/)
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/5ba714af-4238-48d3-9043-cbcd64a590f1)
+
+
+<div align="center">
+  <h3 style="color: #4CAF50;">Total Visitors</h3>
+  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+</div>
