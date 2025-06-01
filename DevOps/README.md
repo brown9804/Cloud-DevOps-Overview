@@ -9,16 +9,14 @@ Last updated: 2024-12-13
 
 ----------
 
-Has his roots in agile and iterative 
+> Has his roots in agile and iterative 
 
 `
 Code + systems 
 `
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [DevOps Foundations](https://www.linkedin.com/learning/devops-foundations/development-and-operations-2?u=2095204)
 - [Agile Software Development: Kanban for Developers](https://www.linkedin.com/learning/agile-software-development-kanban-for-developers/putting-kanban-to-work-in-your-development-team?u=2095204)
@@ -36,7 +34,7 @@ Code + systems
 
 </details>
 
-## Content 
+## Overview 
 
 - [Example of CI](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/Cloud/3-automation_principles/1_api_automations/3_countryinfo_travellers/azure-pipelines.yml)
 - [Example of Automated Testing](https://github.com/brown9804/SDLC-Cloud_Lpath/blob/main/.github/workflows/automated_testing.yml)
