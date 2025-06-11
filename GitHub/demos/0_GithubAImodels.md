@@ -10,10 +10,8 @@ Last updated: 2025-01-13
 
 > GitHub provides a platform for developers to `prototype, experiment with, and integrate AI models into their projects`. This process involves several key steps and tools that facilitate the development and deployment of AI-powered applications.
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Prototyping with AI models](https://docs.github.com/en/github-models/prototyping-with-ai-models)
 - [GitHub Models](https://docs.github.com/en/github-models)
@@ -21,13 +19,10 @@ Last updated: 2025-01-13
 
 </details>
 
-## Content 
 
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
 
-- [Wiki](#wiki)
-- [Content](#content)
 - [Overview](#overview)
 - [Demo](#demo)
     - [Set Up Your Environment](#set-up-your-environment)
