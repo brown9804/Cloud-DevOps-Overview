@@ -9,17 +9,13 @@ Last updated: 2025-01-13
 
 > **GitHub Pages** is a feature provided by GitHub that allows you to `host static websites directly from a GitHub repository`. It's a great way to showcase your projects, create personal websites, or host documentation for your repositories. 
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [Websites for you and your projects](https://pages.github.com/)
 - [Essentials of automated application deployment with GitHub Actions and GitHub Pages](https://resources.github.com/learn/pathways/automation/essentials/automated-application-deployment-with-github-actions-and-pages/)
 
 </details>
-
-## Content 
 
 <details>
 <summary><b>Table of Content</b> (Click to expand)</summary>
