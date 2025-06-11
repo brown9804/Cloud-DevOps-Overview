@@ -9,10 +9,8 @@ Last updated: 2024-12-13
 
 ----------------------
 
-## Wiki 
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - [Deleting Your Commit History?](https://xebia.com/blog/deleting-your-commit-history/)
 - [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
