@@ -56,7 +56,7 @@ Last updated: 2025-01-13
       4. **Convert Markdown to HTML**: This step uses `pandoc` to convert Markdown files to HTML and places them in the `_site` directory.
       5. **Deploy to GitHub Pages**: This step commits the generated HTML files back to the `main` branch and pushes the changes. This ensures that your GitHub Pages site is updated with the latest HTML files.
       
-      > Click [here to see an example of the pipeline](./markdown-to-html-deploy-gitpages.yml)
+      > Click [here to see an example of the pipeline](./pipelines/markdown-to-html-deploy-gitpages.yml)
 
 ## Setting Up GitHub Pages
 1. **Create a Repository**: Create a new repository on GitHub or use an existing one.
