@@ -1,11 +1,14 @@
 name: Workflow to convert Markdown files to HTML and deploy to GitHub Pages
 
 on:
-  push:
+  pull_request:
     branches:
-      - main  # Trigger the workflow on push to the main branch
-      - dev   # Trigger the workflow on push to the dev branch
-      - feature/*  # Trigger the workflow on push to any feature branch
+      - main
+  # push:
+  #   branches:
+  #     - main  # Trigger the workflow on push to the main branch
+  #     - dev   # Trigger the workflow on push to the dev branch
+  #     - feature/*  # Trigger the workflow on push to any feature branch
 
 jobs:
   build-and-deploy:
