@@ -27,6 +27,24 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Create package.json if it doesn't exist
+        run: |
+          if [ ! -f package.json ]; then
+            echo '{
+              "name": "cloud-devops-overview",
+              "version": "1.0.0",
+              "description": "Repository for Cloud DevOps Overview with visitor counter logic.",
+              "main": "index.js",
+              "scripts": {
+                "start": "node update_repo_views_counter.js"
+              },
+              "dependencies": {
+                "node-fetch": "^2.6.7"
+              },
+              "license": "MIT"
+            }' > package.json
+          fi
+
       - name: Install dependencies
         run: npm install
 
