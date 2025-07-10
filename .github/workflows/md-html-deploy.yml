@@ -4,15 +4,10 @@ on:
   pull_request:
     branches:
       - main
-  # push:
-  #   branches:
-  #     - main  # Trigger the workflow on push to the main branch
-  #     - dev   # Trigger the workflow on push to the dev branch
-  #     - feature/*  # Trigger the workflow on push to any feature branch
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest  # Use the latest Ubuntu environment
+    runs-on: ubuntu-latest
 
     steps:
       # Step 1: Checkout the repository
@@ -23,12 +18,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Specify the Node.js version
+          node-version: '14'
 
       # Step 3: Install npm dependencies
       - name: Install dependencies
         run: npm install
-        
+
       # Step 4: Install pandoc for Markdown to HTML conversion
       - name: Install pandoc
         run: sudo apt-get install -y pandoc
@@ -36,38 +31,30 @@ jobs:
       # Step 5: Convert all Markdown files to HTML while preserving directory structure
       - name: Convert Markdown to HTML
         run: |
-          mkdir -p _site  # Create the _site directory if it doesn't exist
-          # Find all Markdown files and convert them to HTML, preserving directory structure
+          mkdir -p _site
           find . -name "*.md" -type f | while read file; do
-            # Create the corresponding directory in _site
             mkdir -p "_site/$(dirname "$file")"
-            # Convert the Markdown file to HTML and save it in the corresponding directory
             pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
           done
 
       # Step 6: Deploy the generated HTML files to GitHub Pages
       - name: Deploy to GitHub Pages
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # Configure Git with a bot email and name
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          # Check for local changes and stash them if present
-          if [ -n "$(git status --porcelain)" ]; then
-            git stash
-            git pull origin ${{ github.ref }} --rebase
-            git stash pop || true  # Ignore error if no stash entries to pop
+          git fetch origin
+          # Push changes to the pull request branch if triggered by a pull request
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            git checkout -b ${{ github.event.pull_request.head.ref }} origin/${{ github.event.pull_request.head.ref }}
+            git add -A
+            git commit -m 'Deploy static HTML files' || echo "No changes to commit"
+            git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+            git push origin HEAD:${{ github.event.pull_request.head.ref }}
           else
-            git pull origin ${{ github.ref }} --rebase
-          fi
-          # Add all changes, including untracked files
-          git add -A
-          # Check for changes before committing
-          if git diff-index --quiet HEAD --; then
-            echo "No changes to commit"
-            exit 0
-          else
-            # Commit the changes
-            git commit -m 'Deploy static HTML files'
-            # Push the changes to the remote branch
-            git push origin HEAD:${{ github.ref }}
-          fi
+            # Handle non-pull-request scenarios (e.g., direct pushes to main)
+            git add -A
+            git commit -m 'Deploy static HTML files' || echo "No changes to commit"
+            git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+            git push origin HEAD:main
