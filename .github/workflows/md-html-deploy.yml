@@ -45,15 +45,13 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git fetch origin
-          # Push changes to the pull request branch if triggered by a pull request
-          if [ "${{ github.event_name }}" == "pull_request" ]; then
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
             git checkout -b ${{ github.event.pull_request.head.ref }} origin/${{ github.event.pull_request.head.ref }}
             git add -A
             git commit -m 'Deploy static HTML files' || echo "No changes to commit"
             git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
             git push origin HEAD:${{ github.event.pull_request.head.ref }}
           else
-            # Handle non-pull-request scenarios (e.g., direct pushes to main)
             git add -A
             git commit -m 'Deploy static HTML files' || echo "No changes to commit"
             git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
