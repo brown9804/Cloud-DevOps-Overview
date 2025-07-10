@@ -1,11 +1,6 @@
 name: Use Visitor Counter Logic
 
 on:
-  workflow_run:
-    workflows:
-      - Workflow to convert Markdown files to HTML and deploy to GitHub Pages
-    types:
-      - completed
   pull_request:
     branches:
       - main
