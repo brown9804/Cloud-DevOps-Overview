@@ -18,36 +18,57 @@ jobs:
 
     steps:
       - name: Checkout current repository
-        uses: actions/checkout@v3
-
-      - name: Clone github-visitor-counter repository temporarily
-        run: git clone https://github.com/brown9804/github-visitor-counter.git
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      - name: Install dependencies for github-visitor-counter
-        run: |
-          cd github-visitor-counter
-          npm install
+      - name: Install dependencies
+        run: npm install
 
-      - name: Run visitor counter logic
-        run: |
-          cd github-visitor-counter
-          node update_repo_views_counter.js
+      - name: Update visitor count
+        run: node update_repo_views_counter.js
         env:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
 
-      - name: Clean up temporary files
-        run: rm -rf github-visitor-counter
-
-      - name: Commit and push changes to current
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push to PR branch
+        if: github.event_name == 'pull_request'
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch origin
+          git checkout -b ${{ github.event.pull_request.head.ref }} origin/${{ github.event.pull_request.head.ref }}
           git add README.md metrics.json
-          git commit -m "Update visitor count"
-          git push
+          git commit -m "Update visitor count" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
+
+      - name: Commit and push to new branch (non-PR)
+        if: github.event_name != 'pull_request'
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add README.md metrics.json
+          git commit -m "Update visitor count" || echo "No changes to commit"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:main
+
+      - name: Create Pull Request (non-PR)
+        if: github.event_name != 'pull_request'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: update-visitor-count
+          title: "Update visitor count"
+          body: "Automated update of visitor count"
+          base: main
