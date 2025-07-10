@@ -162,201 +162,218 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
 </head>
 <body>
 <nav id="TOC" role="doc-toc">
 <ul>
-<li><a href="#cloud-devops---learning-path"
-id="toc-cloud-devops---learning-path">Cloud DevOps - Learning Path</a>
+<li><a href="#open-source-visitor-counter"
+id="toc-open-source-visitor-counter">Open Source Visitor Counter</a>
 <ul>
-<li><a href="#content" id="toc-content">Content</a></li>
-<li><a href="#wiki" id="toc-wiki">Wiki</a></li>
+<li><a href="#features" id="toc-features">Features</a></li>
+<li><a href="#how-it-works" id="toc-how-it-works">How it works</a></li>
+<li><a href="#how-to-use-it" id="toc-how-to-use-it">How to use
+it</a></li>
+<li><a href="#files-structure" id="toc-files-structure">Files
+structure</a></li>
 </ul></li>
 </ul>
 </nav>
-<h1 id="cloud-devops---learning-path">Cloud DevOps - Learning Path</h1>
+<h1 id="open-source-visitor-counter">Open Source Visitor Counter</h1>
 <p>Costa Rica</p>
-<p><a href="https://github.com/"><img
+<p><a href="https://github.com"><img
+src="https://badgen.net/badge/icon/github?icon=github&amp;label"
+alt="GitHub" /></a> <a href="https://github.com/"><img
 src="https://img.shields.io/badge/--181717?logo=github&amp;logoColor=ffffff"
 alt="GitHub" /></a> <a
 href="https://github.com/brown9804">brown9804</a></p>
-<p>Last updated: 2024-12-13</p>
+<p>Last updated: 2025-07-10</p>
 <hr />
 <blockquote>
-<p>Provides the essential knowledge required to work effectively within
-Azure and embrace DevOps/Agile methodologies. Additionally, it offers
-insights into fundamental cloud concepts.</p>
+<p>This repository provides a customizable GitHub visitor counter that
+tracks and displays the number of visits to your GitHub profile or
+repository. The counter updates daily using the GitHub Traffic API and
+writes the total views directly into the README file.</p>
 </blockquote>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Daily-updated visitor counting</strong>: Fetches real
+visitor data from the GitHub Traffic API.</li>
+<li><strong>Markdown-based display</strong>: Updates the README file
+with the total visitor count.</li>
+<li><strong>Open source and customizable</strong>.</li>
+</ul>
+<h2 id="how-it-works">How it works</h2>
+<blockquote>
+<p>[!IMPORTANT] This counter is updated once per day (not real-time) and
+shows the total number of visits (including repeat visits) as reported
+by GitHub.</p>
+</blockquote>
+<ul>
+<li>A GitHub Action workflow runs daily to fetch visitor data from the
+GitHub Traffic API.</li>
+<li>The action updates the <code>README.md</code> file with the total
+visitor count and the refresh timestamp.</li>
+</ul>
+<h2 id="how-to-use-it">How to use it</h2>
+<ol type="1">
+<li><strong>Add the Badge to Your Repository</strong>: Include the
+following markdown in your <code>README.md</code> file, between the
+<code>START BADGE</code> and <code>END BADGE</code> (included), as shown
+in the bottom.</li>
+<li><strong>Create a Personal Access Token</strong>:
+<ul>
+<li>Go to <strong>GitHub Settings</strong> &gt; <strong>Developer
+Settings</strong> &gt; <strong>Personal Access Tokens</strong>.</li>
+<li>Generate a new token with <code>repo</code> access.</li>
+</ul></li>
+<li><strong>Save the Token as a Secret</strong>:
+<ul>
+<li>In your repository, navigate to <strong>Settings</strong> &gt;
+<strong>Secrets and Variables</strong> &gt;
+<strong>Actions</strong>.</li>
+<li>Add a new secret named <code>TRAFFIC_TOKEN</code> and paste the
+generated token.</li>
+</ul></li>
+<li><strong>Add the Pipeline</strong>: This single pipeline will fetch
+the visitor count, update the badge in the <code>README.md</code> file,
+and push the changes back to the repository.
+<ul>
+<li>Create a GitHub Actions workflow (<code>update-metrics.yml</code>)
+in your repository to handle the visitor counter logic.</li>
+<li>Use the following content for the workflow:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Update Visitor Counter</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">schedule</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="fu">cron</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;0 0 * * *&#39;</span><span class="co"> # Runs daily at midnight</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span><span class="co"> # Allows manual triggering</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">update-counter</span><span class="kw">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout repository</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v3</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Set up Node.js</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/setup-node@v3</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">node-version</span><span class="kw">:</span><span class="at"> </span><span class="st">&#39;16&#39;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install dependencies</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> npm install @brown9804/github-visitor-counter</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Run visitor counter script</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">run</span><span class="kw">:</span><span class="at"> node node_modules/@brown9804/github-visitor-counter/update_repo_views_counter.js</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">TRAFFIC_TOKEN</span><span class="kw">:</span><span class="at"> ${{ secrets.TRAFFIC_TOKEN }}</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">REPO</span><span class="kw">:</span><span class="at"> ${{ github.repository }}</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Commit and push changes</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>          git config --global user.name &quot;github-actions[bot]&quot;</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>          git config --global user.email &quot;github-actions[bot]@users.noreply.github.com&quot;</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>          git add README.md metrics.json</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>          git commit -m &quot;Update visitor count&quot;</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>          git push</span></code></pre></div></li>
+</ol>
+<h2 id="files-structure">Files structure</h2>
+<ul>
+<li><code>README.md</code>: Contains instructions and displays the
+visitor count badge.</li>
+<li><code>update_repo_views_counter.js</code>: Script to fetch visitor
+count data from the GitHub Traffic API and update the
+<code>README.md</code> file.</li>
+<li><code>package.json</code>: Defines dependencies and scripts for the
+project.</li>
+<li><code>LICENSE</code>: Specifies the license for the project.</li>
+</ul>
+<blockquote>
+<p>[!IMPORTANT]</p>
+<ul>
+<li>Replace <code>&lt;main-repo-owner&gt;</code> and
+<code>&lt;main-repo-name&gt;</code> with your actual values.</li>
+<li>Use a Personal Access Token (PAT) with <code>repo</code> access as
+<code>TRAFFIC_TOKEN</code> secret in each target repository.</li>
+<li>The action will trigger the visitor counter logic in the main
+repository and update the badge dynamically.</li>
+</ul>
+</blockquote>
+<!-- START BADGE -->
 <div data-align="center">
-<h3 style="color: #4CAF50;">
-Total Visitors
-</h3>
-<p><img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/></p>
+<img src="https://img.shields.io/badge/Total%20views-72-limegreen" alt="Total views">
+<p>
+Refresh Date: 2025-07-10
+</p>
 </div>
-<h2 id="content">Content</h2>
-<details>
-<summary>
-<b>Table of Contents</b> (Click to expand)
-</summary>
-<ul>
-<li><a
-href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Agile">Agile</a></li>
-<li><a
-href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/DevOps">DevOps</a></li>
-<li><a
-href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Network">Network</a></li>
-<li><a
-href="https://github.com/brown9804/CloudDevOps_LPath/tree/main/GitHub">GitHub</a></li>
-<li><a
-href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud">Cloud
-Principles</a>
-<ul>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux">0.
-Linux</a>
-<ul>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab0">Working
-with Users and Permissions</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab1">System
-Service Management, Runlevels and Boot Targets</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab2">Securely
-Accessing Your System</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab3">Package
-Management and Troubleshooting</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab4">File
-Management, Permissions and Backup</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab5">Working
-with Text Files and Streams</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab6">Linux
-Device Management</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab7">The
-Linux Shell</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab8">Networking</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/0-linux/lab9">Processes
-Management</a></li>
-</ul></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform">1.
-Terraform</a>
-<ul>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab0">Installing
-Terraform and Working with Terraform Providers</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab1">Using
-Terraform CLI Commands (workspace and state) to Manipulate a Terraform
-Deployment</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab2">Building
-and Testing a Basic Terraform Module</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab3">Exploring
-Terraform State Functionality</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab4">Deploy
-an Azure Storage Account with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab5">Deploy
-an Azure File Share and Blob Storage with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab6">Deploy
-Azure VNETs and Subnets with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab7">Create
-Azure NSGs with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab8">Deploying
-an Azure VM with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab9">Deploy
-a Web Application with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_10">Deploy
-a MySQL Database with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_11">Migrating
-Terraform State to Terraform Cloud</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_12">Using
-Terraform Provisioners to Set Up an Apache Web Server on AWS</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_13">Make
-Changes to AWS Infrastructure Using Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_14">Use
-Output Variables to Query Data in AWS Using Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_15">Make
-Changes to Azure Infrastructure Using Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_16">Use
-Output Variables to Query Data in Azure Using Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_17">Use
-Terraform to Create a Kubernetes Deployment</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_18">Manage
-Kubernetes Resources with Terraform</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_19">Use
-Terraform to Create an EKS Deployment</a></li>
-<li><a
-href="https://github.com/brown9804/DevOps-Agile-Cloud_path/tree/main/Cloud/1-terraform/lab_20">Troubleshooting
-a Terraform Deployment</a></li>
-</ul></li>
-<li><a
-href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/2-automation_principles">Automation
-Principles</a></li>
-<li><a
-href="https://github.com/brown9804/SDLC-Cloud_Lpath/tree/main/Cloud/3-kubernetes_principles">Kubernetes
-Principles</a></li>
-</ul></li>
-</ul>
-</details>
-<h2 id="wiki">Wiki</h2>
-<ul>
-<li>SDLC - <a
-href="https://agilie.com/blog/what-is-the-software-development-life-cycle-sdlc-and-how-does-it-work">What
-is and how it works</a></li>
-</ul>
-<figure>
-<img
-src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/e809d790-87d4-41a1-b9ea-071327ab6ef2"
-alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
-<figure>
-<img
-src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/dc014629-a069-44f3-b657-7f8d39968272"
-alt="Benefits" />
-<figcaption aria-hidden="true">Benefits</figcaption>
-</figure>
-<figure>
-<img
-src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9"
-alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
-<ul>
-<li>SDLC - <a
-href="https://datarob.com/sdlc-methodologies/">Methodologies</a></li>
-</ul>
-<figure>
-<img
-src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/5ba714af-4238-48d3-9043-cbcd64a590f1"
-alt="image" />
-<figcaption aria-hidden="true">image</figcaption>
-</figure>
+<!-- END BADGE -->
 </body>
 </html>

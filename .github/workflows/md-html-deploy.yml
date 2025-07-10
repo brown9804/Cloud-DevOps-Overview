@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - main
+
   # push:
   #   branches:
   #     - main  # Trigger the workflow on push to the main branch
@@ -19,21 +20,30 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      # Step 2: Set up Node.js environment
+      # Step 2: Check for lock file
+      - name: Check for lock file
+        run: |
+          if [ -f .lock ]; then
+            echo "Another workflow is running. Exiting."
+            exit 1
+          fi
+          touch .lock
+
+      # Step 3: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: '14'  # Specify the Node.js version
 
-      # Step 3: Install npm dependencies
+      # Step 4: Install npm dependencies
       - name: Install dependencies
         run: npm install
         
-      # Step 4: Install pandoc for Markdown to HTML conversion
+      # Step 5: Install pandoc for Markdown to HTML conversion
       - name: Install pandoc
         run: sudo apt-get install -y pandoc
 
-      # Step 5: Convert all Markdown files to HTML while preserving directory structure
+      # Step 6: Convert all Markdown files to HTML while preserving directory structure
       - name: Convert Markdown to HTML
         run: |
           mkdir -p _site  # Create the _site directory if it doesn't exist
@@ -45,29 +55,27 @@ jobs:
             pandoc "$file" --standalone --toc -o "_site/${file%.md}.html"
           done
 
-      # Step 6: Deploy the generated HTML files to GitHub Pages
+      # Step 7: Deploy the generated HTML files to GitHub Pages
       - name: Deploy to GitHub Pages
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Configure Git with a bot email and name
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          # Check for local changes and stash them if present
-          if [ -n "$(git status --porcelain)" ]; then
-            git stash
-            git pull origin ${{ github.ref }} --rebase
-            git stash pop || true  # Ignore error if no stash entries to pop
-          else
-            git pull origin ${{ github.ref }} --rebase
-          fi
-          # Add all changes, including untracked files
+          # Ensure all changes are staged
           git add -A
-          # Check for changes before committing
+          # Commit changes if there are any
           if git diff-index --quiet HEAD --; then
             echo "No changes to commit"
-            exit 0
           else
-            # Commit the changes
             git commit -m 'Deploy static HTML files'
-            # Push the changes to the remote branch
-            git push origin HEAD:${{ github.ref }}
           fi
+          # Push changes to the pull request branch
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin HEAD:${{ github.event.pull_request.head.ref }} || echo "Push failed due to conflicts"
+
+      # Step 8: Remove lock file
+      - name: Remove lock file
+        if: always()
+        run: rm -f .lock
