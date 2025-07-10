@@ -47,15 +47,14 @@ jobs:
           git fetch origin
           if [[ -n "$(git status --porcelain)" ]]; then
             git stash
-            git pull origin ${{ github.ref }} --rebase
+            git pull origin ${{ github.ref }} --rebase || git rebase --abort
             git stash pop || true
           else
-            git pull origin ${{ github.ref }} --rebase
+            git pull origin ${{ github.ref }} --rebase || git rebase --abort
           fi
           git add -A
           if git diff-index --quiet HEAD --; then
             echo "No changes to commit"
           else
             git commit -m 'Deploy static HTML files'
-            git push origin HEAD:${{ github.event.pull_request.head.ref }}
-          fi
+            git push origin HEAD:${{ github.event.pull_request.head.ref }} || echo "Push failed due to conflicts"
