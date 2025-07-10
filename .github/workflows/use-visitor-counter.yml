@@ -1,0 +1,46 @@
+name: Use Visitor Counter Logic
+
+on:
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 0 * * *' # Runs daily at midnight
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  use-counter-logic:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout from current repository
+        uses: actions/checkout@v3
+
+      - name: Clone github-visitor-counter repository
+        run: git clone https://github.com/brown9804/github-visitor-counter.git
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies for github-visitor-counter
+        run: |
+          cd github-visitor-counter
+          npm install
+
+      - name: Run visitor counter logic
+        run: |
+          cd github-visitor-counter
+          node update_repo_views_counter.js
+        env:
+          TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPO: ${{ github.repository }}
+
+      - name: Commit and push changes to current repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md metrics.json
+          git commit -m "Update visitor count"
+          git push
