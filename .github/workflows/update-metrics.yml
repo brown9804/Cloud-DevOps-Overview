@@ -22,10 +22,10 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install @brown9804/github-visitor-counter
+        run: npm install git+https://github.com/brown9804/github-visitor-counter.git
 
       - name: Run visitor counter script
-        run: node node_modules/@brown9804/github-visitor-counter/update_repo_views_counter.js
+        run: node node_modules/github-visitor-counter/update_repo_views_counter.js
         env:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
