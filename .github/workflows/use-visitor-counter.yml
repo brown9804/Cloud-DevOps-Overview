@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout from current repository
+      - name: Checkout current  repository
         uses: actions/checkout@v3
 
       - name: Clone github-visitor-counter repository
@@ -37,10 +37,17 @@ jobs:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
 
-      - name: Commit and push changes to current repo
+      - name: Verify metrics.json file creation
+        run: |
+          if [ ! -f github-visitor-counter/metrics.json ]; then
+            echo "metrics.json file not found!"
+            exit 1
+          fi
+
+      - name: Commit and push changes to current 
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md metrics.json
+          git add README.md github-visitor-counter/metrics.json
           git commit -m "Update visitor count"
           git push
