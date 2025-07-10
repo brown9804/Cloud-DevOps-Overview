@@ -47,10 +47,10 @@ jobs:
           git fetch origin
           if [[ -n "$(git status --porcelain)" ]]; then
             git stash
-            git pull origin ${{ github.ref }} --rebase || git rebase --skip
+            git pull origin ${{ github.ref }} --rebase || git rebase --abort
             git stash pop || true
           else
-            git pull origin ${{ github.ref }} --rebase || git rebase --skip
+            git pull origin ${{ github.ref }} --rebase || git rebase --abort
           fi
           git add -A
           if git diff-index --quiet HEAD --; then
