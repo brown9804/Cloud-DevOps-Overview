@@ -22,37 +22,34 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Clone github-visitor-counter repository temporarily
+        run: git clone https://github.com/brown9804/github-visitor-counter.git
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '20'
 
-      - name: Create package.json if it doesn't exist
+      - name: Install dependencies for github-visitor-counter
         run: |
-          if [ ! -f package.json ]; then
-            echo '{
-              "name": "cloud-devops-overview",
-              "version": "1.0.0",
-              "description": "Repository for Cloud DevOps Overview with visitor counter logic.",
-              "main": "index.js",
-              "scripts": {
-                "start": "node update_repo_views_counter.js"
-              },
-              "dependencies": {
-                "node-fetch": "^2.6.7"
-              },
-              "license": "MIT"
-            }' > package.json
-          fi
+          cd github-visitor-counter
+          npm install
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Update visitor count
-        run: node update_repo_views_counter.js
+      - name: Run visitor counter logic
+        run: |
+          cd github-visitor-counter
+          node update_repo_views_counter.js
         env:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
+
+      - name: Move generated files to current repository
+        run: |
+          mv github-visitor-counter/metrics.json .
+          mv github-visitor-counter/README.md .
+
+      - name: Clean up temporary files
+        run: rm -rf github-visitor-counter
 
       - name: Configure Git
         run: |
