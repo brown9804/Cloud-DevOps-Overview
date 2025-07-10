@@ -9,7 +9,7 @@ on:
   #     - main  # Trigger the workflow on push to the main branch
   #     - dev   # Trigger the workflow on push to the dev branch
   #     - feature/*  # Trigger the workflow on push to any feature branch
-
+ 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest  # Use the latest Ubuntu environment
@@ -56,18 +56,17 @@ jobs:
 
       # Step 7: Deploy the generated HTML files to GitHub Pages
       - name: Deploy to GitHub Pages
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Configure Git with a bot email and name
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          # Check for local changes and stash them if present
-          if [ -n "$(git status --porcelain)" ]; then
-            git stash
-            git pull origin ${{ github.ref }} --rebase
-            git stash pop || true  # Ignore error if no stash entries to pop
-          else
-            git pull origin ${{ github.ref }} --rebase
-          fi
+          git fetch origin
+          # Attempt to pull changes and resolve conflicts automatically
+          git pull origin ${{ github.ref }} --rebase || git checkout --ours metrics.json
+          git add metrics.json
+          git commit -m "Resolve conflicts automatically" || echo "No changes to commit"
           # Add all changes, including untracked files
           git add -A
           # Check for changes before committing
