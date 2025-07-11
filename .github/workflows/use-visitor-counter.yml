@@ -36,9 +36,7 @@ jobs:
           npm ci
 
       - name: Run visitor counter logic (updates markdown badges and metrics.json)
-        run: |
-          cd github-visitor-counter
-          node update_repo_views_counter.js ../
+        run: node github-visitor-counter/update_repo_views_counter.js
         env:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
