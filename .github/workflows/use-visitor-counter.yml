@@ -47,7 +47,7 @@ jobs:
         run: mv github-visitor-counter/metrics.json .
 
       # Optional: Debug step to verify scripts and files
-      - name: Debug: List files in workspace
+      - name: Debug List files in workspace
         run: |
           ls -l
           ls -l github-visitor-counter
