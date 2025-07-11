@@ -46,7 +46,7 @@ jobs:
       - name: Move generated files to current repository
         run: |
           mv github-visitor-counter/metrics.json .
-          mv github-visitor-counter/README.md .
+          echo "Skipping README.md replacement"
 
       - name: Clean up temporary files
         run: rm -rf github-visitor-counter
