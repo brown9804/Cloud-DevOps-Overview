@@ -1,10 +1,6 @@
 # Make Changes to AWS Infrastructure Using Terraform
 
-----------
-
 Costa Rica
-
-Belinda Brown, belindabrownr04@gmail.com
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
@@ -18,7 +14,7 @@ April, 2022
 
 This is a summary based on [References](#reference)
 
-### _Connect to the server_:
+## _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
 
@@ -99,3 +95,10 @@ This is a summary based on [References](#reference)
 ## Reference:
 
 [1] From https://learn.acloud.guru/course/bd8060c6-e408-4801-a4a3-8317c45319bf/dashboard <br/>
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->

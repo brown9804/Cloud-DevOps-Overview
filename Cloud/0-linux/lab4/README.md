@@ -1,9 +1,6 @@
 # File Management, Permissions and Backup
 
-----------------------
 Costa Rica
-
-Belinda Brown, belindabrownr04@gmail.com
 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
@@ -16,7 +13,7 @@ March, 2022
 
 This is a summary based on [References](#references)
 
-### _Connect to the server_:
+## _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
 
@@ -24,7 +21,7 @@ This is a summary based on [References](#references)
 ## Creating a Directory Structure in Linux:
 Understanding how to create a certain directory and subdirectory structure, plus a couple of empty text files.
 
-### _Create the Parent Directories_:
+## _Create the Parent Directories_:
 > By Hand:
 
 ```
@@ -36,7 +33,7 @@ Understanding how to create a certain directory and subdirectory structure, plus
 
 `[cloud_user@host]$ mkdir -p Projects/{ancient,classical,medieval}`
 
-### _Create the Subdirectories_:
+## _Create the Subdirectories_:
 > By Hand:
 ```
 [cloud_user@host]$ mkdir Projects/ancient/egyptian
@@ -51,19 +48,19 @@ Understanding how to create a certain directory and subdirectory structure, plus
 [cloud_user@host]$ mkdir Projects/classical/greek
 [cloud_user@host]$ mkdir Projects/medieval/{britain,japan}
 ```
-### _Create Some Empty Files_:
+## _Create Some Empty Files_:
 ```
 [cloud_user@host]$ touch Projects/ancient/nubian/further_research.txt
 [cloud_user@host]$ touch Projects/classical/greek/further_research.txt
 ```
-### _Rename a Subdirectory_:
+## _Rename a Subdirectory_:
 `[cloud_user@host]$ mv Projects/classical Projects/greco-roman`
 
 ## Working with Compressed Files in Linux:
-### _Get the Original File Size_: <br/>
+## _Get the Original File Size_: <br/>
 `[cloud_user@host]$ ls -lh junk.txt`
 
-### _Creating zip Files_:
+## _Creating zip Files_:
 > Gzip
 1. Compressing data: <br/>
 `[cloud_user@host]$ gzip junk.txt`
@@ -88,7 +85,7 @@ Understanding how to create a certain directory and subdirectory structure, plus
 3. Unzip: <br/>
 `[cloud_user@host]$ unxz junk.txt.xz`
 
-### _Creating tar Files_:
+## _Creating tar Files_:
 1. Compression method instead: <br/>
 `[cloud_user@host]$ tar -cvzf gztar.tar.gz junk.txt`
 2. Then, let's make one using bzip2: <br/>
@@ -98,7 +95,7 @@ Understanding how to create a certain directory and subdirectory structure, plus
 4. Run the ls command again to compare the file sizes: <br/>
 `[cloud_user@host]$ ls -lh`
 
-### _Practice Reading Compressed Text Files_:
+## _Practice Reading Compressed Text Files_:
 How to read the contents of compressed files without having to actually decompress them? There is a way! Let's do that now. First, let's copy over the /etc/passwd file to your home directory:
 `[cloud_user@host]$ cp /etc/passwd /home/cloud_user/`
 
@@ -121,14 +118,14 @@ How to read the contents of compressed files without having to actually decompre
 `[cloud_user@host]$ xzcat passwd.tar.xz`
 
 ## Managing File Attributes and Permissions:
-### _Objectives_:
+## _Objectives_:
 1. Reset a directory's permissions to the following:
   - Everyone can access the directory
   - Everyone can read the files in the directory
   - No one can execute files in the directory
 2. Apply all of these permissions to all subdirectories recursively
 
-### _Grant Access to the Directory_:
+## _Grant Access to the Directory_:
 1. Change to the opt directory: <br/>
 `cd /opt`
 2. Next, open all of the directory's files and permissions with the following command:  <br/>
@@ -140,7 +137,7 @@ How to read the contents of compressed files without having to actually decompre
 5. Reopen the directory files and permissions using the ls -la command. Now let's try to open the directory again:
 `cd myapp`
 
-### _Change the Directory Permissions_:
+## _Change the Directory Permissions_:
 1. Give all users read and write permissions for this directory: <br/>
 `sudo chmod -f -x -R *`
 > Just everyone read and write permissions 
@@ -150,7 +147,7 @@ How to read the contents of compressed files without having to actually decompre
 3. How to set the directories as executable: <br/>
 `sudo find /opt/myapp -type d -exec chmod o+x {} \;`
 
-### _Create a Symbolic (Soft) Link_:
+## _Create a Symbolic (Soft) Link_:
 1. Creating a symbolic (or soft) link from the /etc/redhat-release file to a new link file named release in the home directory: <br/>
 `ln -s /etc/redhat-release release`
 2. Verify if the link is valid: <br/>
@@ -161,14 +158,14 @@ How to read the contents of compressed files without having to actually decompre
 `cat /etc/redhat-release`
 > Should be the same
 
-### _Check the Inode Numbers for the Link_:
+## _Check the Inode Numbers for the Link_:
 1. Look at the inode number of /home/cloud_user/release: <br/>
 `ls -i release`
 2. Check the inode number for /etc/redhat-release: <br/>
 `ls -i /etc/redhat-release`
 > They should be different, as the symbolic link is just a new filesystem entry that references the original file.
 
-### _Create a Hard Link_:
+## _Create a Hard Link_:
 1. Create docs directory: <br/>
 `mkdir docs`
 2. Copy /etc/services into the docs directory: <br/>
@@ -185,7 +182,7 @@ ls -i docs/services
 ```
 > You should see they the same inode number, meaning they're essentially the same file.
 
-### _Attempt to Create a Hard Link Across Filesystems_:
+## _Attempt to Create a Hard Link Across Filesystems_:
 1. View the individual block devices: <br/>
 `lsblk`
 > Each partition has its own set of inodes, hard links across partitions don't work. Soft links should.
@@ -193,7 +190,7 @@ ls -i docs/services
 `ln /home/cloud_user/docs/services /opt/services`
 > Should get a failed to create hard link error
 
-### _Attempt to Create a Soft Link Across Filesystems_:
+## _Attempt to Create a Soft Link Across Filesystems_:
 1. Trying to make the same sort of cross-partition link, using the -s flag to make it a soft link: <br/>
 `sudo ln -s /etc/redhat-release /opt/release`
 > There shouldn't be any output, meaning it was successful.
@@ -207,7 +204,7 @@ ls -i /opt/release
 ## Encrypt a File Using GPG:
 Understand how to new public GPG key, encrypt a file and sign it, and send that file to another user to decrypt with "A Cloud Guru" public key.
 
-### _Create a GPG Key for cloud user_:
+## _Create a GPG Key for cloud user_:
 1. Generate a new GPG key: <br/>
 `[cloud_user@host]$ gpg --gen-key`
 2. Credentials:
@@ -225,7 +222,7 @@ Don't lose this!  I'll call you with the passphrase.
 ```
 > Include that final period (on the line by itself) and then press Enter to send the message.
 
-### _Configure GPG for Gordon_:
+## _Configure GPG for Gordon_:
 1. Just as we did with the cloud_user account, we'll generate a GPG key for Mr. Freeman, accepting the defaults for each prompt. The only difference will be having a user ID of gfreeman and an email address of gfreeman@localhost: <br/>
 `[gfreeman@host]$ gpg --gen-key`
 2. Once we've created the key for Mr. Freeman, we can open up the mutt email client, and save the public key sent over by the cloud_user account: <br/>
@@ -238,7 +235,7 @@ Don't lose this!  I'll call you with the passphrase.
 5. Let's log out of gfreeman's account: <br/>
 `[gfreeman@host]$ exit`
 
-### _Generate a Signed Document and Send It to Gordon_:
+## _Generate a Signed Document and Send It to Gordon_:
 1. When we digitally sign a file, we are using our private GPG key to guarantee that this file came from us. The user that receives the file will use their copy of the public key from us to verify that we signed the file. Let's generate a test document: <br/>
 `[cloud_user@host]$ echo "Just need you to verify this file." > note.txt`
 2. Now we'll use cloud_user's private key to sign the file:  <br/>
@@ -252,7 +249,7 @@ Could you verify this file for me?
 .
 ```
 
-### _Verify the Signature of the Emailed Document_:
+## _Verify the Signature of the Emailed Document_:
 > Use the mutt email client, and just as before, view and save the new email message's attachment.
 1. Now, verify the note.txt.asc file that was emailed: <br/>
 `[gfreeman@host]$ gpg --verify note.txt.asc`
@@ -274,7 +271,7 @@ Can you decrypt this?
 5. Log out:  <br/>
 `[gfreeman@host]$ exit`
 
-### _Decrypt the Attached File_:
+## _Decrypt the Attached File_:
 > Now, as cloud_user, open up the mutt email client and save the fstab.asc attachment from the new email.
 1. Decrypt the saved fstab.asc file with the gpg command, and enter the passphrase for cloud_user's key when prompted: <br/>
 `[cloud_user@host]$ gpg fstab.asc` 
@@ -285,3 +282,10 @@ Can you decrypt this?
 ## References
 
 https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->
