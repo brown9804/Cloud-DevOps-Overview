@@ -17,7 +17,7 @@ Last updated: 2025-07-11
 - [Agile](./Agile)
 - [DevOps](./DevOps)
 - [Network](./Network)
-- [GitHub](https://github.com/brown9804/CloudDevOps_LPath/tree/main/GitHub)
+- [GitHub](./GitHub)
 - [Cloud Principles](./Cloud)
   - [0. Linux](./Cloud/0-linux)
     - [Working with Users and Permissions](./Cloud/0-linux/lab0)
@@ -75,7 +75,7 @@ Last updated: 2025-07-11
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-734-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-10</p>
+  <img src="https://img.shields.io/badge/Total%20views-456-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-11</p>
 </div>
 <!-- END BADGE -->

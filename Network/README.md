@@ -22,7 +22,7 @@ Last updated: 2025-07-11
   - `Inbound`: Internet requests initiated from an outside network to your server or service. Like if you run a web server. 
   - `Outbound`: Connections initiated from your app to other services, like if you connect to a remote database or send SMTP mail.
 - NSG - [Overview](https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview)    
-- NSG (Network Security Groups) in Azure — [The Fundamentals , Which Direction to Apply Rules](https://adityagarg94.medium.com/network-security-groups-in-azure-the-fundamentals-which-direction-to-apply-rules-what-would-176419dc088c)
+- NSG (Network Security Groups) in Azure: [The Fundamentals , Which Direction to Apply Rules](https://adityagarg94.medium.com/network-security-groups-in-azure-the-fundamentals-which-direction-to-apply-rules-what-would-176419dc088c)
 
     <img width="600" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_Lpath/assets/24630902/b409d19a-6394-4e4b-b9c7-adc067bbbb53">
 
@@ -69,7 +69,7 @@ Last updated: 2025-07-11
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-10</p>
+  <img src="https://img.shields.io/badge/Total%20views-456-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-11</p>
 </div>
 <!-- END BADGE -->

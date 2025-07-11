@@ -5,14 +5,12 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2024-12-13
+Last updated: 2025-07-11
 
 ----------
 
-## Wiki  
-
 <details>
-<summary><b>Table of Wiki</b> (Click to expand)</summary>
+<summary><b>List of References</b> (Click to expand)</summary>
 
 - [The Basics](https://www.linkedin.com/learning/scrum-the-basics/practicing-scrum-in-your-work-environment?u=2095204)
 - [Agile Methodology](https://medium.com/@abeythilakeudara3/agile-methodology-106270809c99)
@@ -24,7 +22,9 @@ Last updated: 2024-12-13
 
 <img width="800" alt="image" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GtEtKSrRQtLhx_gffxFhSA.png">
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-456-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-11</p>
 </div>
+<!-- END BADGE -->
