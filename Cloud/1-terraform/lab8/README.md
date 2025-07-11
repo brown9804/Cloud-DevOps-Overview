@@ -1,7 +1,5 @@
 # Deploying an Azure VM with Terraform
 
-----------
-
 Costa Rica
 
 Belinda Brown, belindabrownr04@gmail.com
@@ -12,17 +10,17 @@ Belinda Brown, belindabrownr04@gmail.com
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Jan, 2022
+Last updated: 2025-07-10
 
 ----------
 
 This is a summary based on [References](#reference)
 
-### _Connect to the server_:
+## _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
 
-### _Initializes_:
+## _Initializes_:
 
 `export TF_LOG=TRACE`
 
@@ -47,3 +45,11 @@ This is a summary based on [References](#reference)
 ## Reference:
 
 [1] From https://learn.acloud.guru/course/bd8060c6-e408-4801-a4a3-8317c45319bf/dashboard <br/>
+
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->

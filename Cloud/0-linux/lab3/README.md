@@ -1,38 +1,35 @@
 # Package Management and Troubleshooting
 
-----------------------
 Costa Rica
-
-Belinda Brown, belindabrownr04@gmail.com
 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
 
-March, 2022
+Last updated: 2025-07-10
 
 ----------------------
 
 This is a summary based on [References](#references)
 
-### _Connect to the server_:
+## _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
 
 ## Installing and Managing Packages on Debian/Ubuntu Systems
 Understanding how to use package manager and installation utility apt to manage packages on Ubuntu/Debian Linux distributions.
 
-### _Install the Apache Web Server Package_:
+## _Install the Apache Web Server Package_:
 > Note: Ubuntu/Debian systems will usually start a service automatically, once its package is installed. You may need to update the package manager.
 
-### _Update package_:
+## _Update package_:
 `sudo apt update`
 
-### _Install the packages_:
+## _Install the packages_:
 `sudo apt install apache2 wget`
 
-### _Verify the Server is Running and Capture the Result_:
+## _Verify the Server is Running and Capture the Result_:
 1. Checking Apache server: <br/>
 `curl http://localhost`
 2. If that's working, we use the wget package to capture the output of an http request. We'll point the output to a file in our home directory called local_index.response <br/>
@@ -64,7 +61,7 @@ Understand how to install telnet and install Apache.
 1. Become the root user: <br/>
 `sudo -i`
 
-### _Telnet Installation_:
+## _Telnet Installation_:
 1. Install the telnet package: <br/>
 `yum install -y telnet`
 2. Verify the integrity of the RPM database: <br/>
@@ -86,7 +83,7 @@ mv Packages Packages.bad
 7. Install telnet: <br/>
 `yum install -y telnet`
 
-### _Update Apache_:
+## _Update Apache_:
 1. Attempt to install Apache: <br/>
 `yum install -y httpd`
 2. Edit /etc/yum.conf: <br/>
@@ -98,6 +95,13 @@ mv Packages Packages.bad
 5. Install Apache: <br/>
 `yum install -y httpd`
 
-### References
+## References
 
 https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->

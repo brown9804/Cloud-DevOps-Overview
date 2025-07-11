@@ -69,7 +69,9 @@ Last updated: 2025-01-13
     > Static HTML refers to web pages that are delivered to the user's browser exactly as stored, without any server-side processing. Static sites are fast, secure, and easy to deploy, making them ideal for simple websites, portfolios, blogs, and documentation.
 3. Push Your Code: Commit and push your code to the main branch. The GitHub Actions workflow will automatically run and deploy your site to GitHub Pages.
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
 </div>
+<!-- END BADGE -->

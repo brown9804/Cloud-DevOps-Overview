@@ -1,16 +1,14 @@
 # API Principles overview
 
-----------------------
 Costa Rica
 
-Belinda Brown, belindabrownr04@gmail.com
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
 
-March, 2022
+Last updated: 2025-07-10
 
 ----------------------
 
@@ -65,3 +63,9 @@ These web services expose their data to the outside world through an API. REST A
 [7] From https://www.guru99.com/api-vs-web-service-difference.html#:~:text=Web%20service%20is%20used%20for,APIs%20are%20not%20web%20services <br/>
 [8] From https://site.financialmodelingprep.com/education/api-endpoint <br/>
 
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->

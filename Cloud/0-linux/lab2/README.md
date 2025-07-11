@@ -1,29 +1,26 @@
 # Securely Accessing Your System
 
-----------------------
 Costa Rica
-
-Belinda Brown, belindabrownr04@gmail.com
 
 [![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
 
-March, 2022
+Last updated: 2025-07-10
 
 ----------------------
 
 This is a summary based on [References](#references)
 
-### _Connect to the server_:
+## _Connect to the server_:
 
 `ssh <user_name>@<IPadress>`
 
 ## Generating and Exchanging SSH Keys for Secure Access
 Understand how to create secure keys for remote access, how to exchange them, and where to store them on each system involved in the chain.
 
-### _Create the Key on Server 1_:
+## _Create the Key on Server 1_:
 1. In your terminal, log in to Server 1: <br/>
 `ssh cloud_user@&lt;SERVER1_PUBLIC_IP&gt;`
 2. List the contents of the current directory: <br/>
@@ -41,7 +38,7 @@ Understand how to create secure keys for remote access, how to exchange them, an
 `cat id_rsa.pub`
 9. Copy the output of this command to your clipboard.
 
-### _Create the Key on Server 2_:
+## _Create the Key on Server 2_:
 1. Log in to Server 2: <br/>
 `ssh cloud_user@&lt;SERVER2_PUBLIC_IP&gt;`
 2. Change to the .ssh directory.
@@ -56,7 +53,7 @@ Understand how to create secure keys for remote access, how to exchange them, an
 8. Press `Ctrl + X`.
 9. Press `Y` then Enter to save the changes.
 
-### _Exchange the SSH Keys between Server 1 and Server 2_:
+## _Exchange the SSH Keys between Server 1 and Server 2_:
 1. In your Server 2 terminal window, create a new key: <br/>
 `ssh-keygen`
 2. Press Enter for the next three prompts.
@@ -77,7 +74,7 @@ Understand how to create secure keys for remote access, how to exchange them, an
 12. Press `Ctrl + X`.
 13. Press `Y` then Enter to save the changes.
 
-### _Test the Configuration_:
+## _Test the Configuration_:
 1. Attempt to log in to Server 2 from Server 1 without a password:
 `ssh cloud_user@&lt;SERVER2PUBLIC_IP&gt;`
 2. Attempt to log in to Server 1 from Server 2 without a password:
@@ -85,20 +82,20 @@ Understand how to create secure keys for remote access, how to exchange them, an
 
 ## Create and Use an SSH Tunnel for Network Traffic:
 
-### _Generating ssh key_:
+## _Generating ssh key_:
 `ssh-keygen` <br/>
 Enter the following parameters 
 
-### _Copying the key_:
+## _Copying the key_:
 `ssh-copy-id <user_name>@<IPadress>`
 
-### _Login the key_:
+## _Login the key_:
 `ssh <user_name>@<IPadress>`
 
-### _Creating the tunnel_:
+## _Creating the tunnel_:
 `ssh -f <user_name>@<IPadress> -L port:<IPadress> -N`
 
-### _Testing_:
+## _Testing_:
 `curl localhost:2000` <br/>
 Output: <br/>
 `Webpage worked`
@@ -140,6 +137,13 @@ sudo systemctl disable sshd.service
 `ssh cloud_user@&lt;PUBLIC_IP&gt;` <br/>
 Enter your password at the prompt.
 
-### References
+## References
 
 https://learn.acloud.guru/course/cad92c58-0fd2-4657-98f7-79268b4ff2db/dashboard
+
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->

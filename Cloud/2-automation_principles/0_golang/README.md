@@ -1,15 +1,12 @@
 # GoLang Learning Path
 
-----------
-
 Costa Rica
 
-Belinda Brown, belindabrownr04@gmail.com
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Aug, 2022
+Last updated: 2025-07-10
 
 ----------
 
@@ -22,3 +19,9 @@ Aug, 2022
 - [What is Go? Golang Programming Language Meaning Explained](https://www.freecodecamp.org/news/what-is-go-programming-language/)
 - [The Go programming language](https://github.com/golang/go)
 
+<!-- START BADGE -->
+<div align="center">
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
+</div>
+<!-- END BADGE -->

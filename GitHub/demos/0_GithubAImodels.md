@@ -192,7 +192,10 @@ Last updated: 2025-01-13
 | **Monitor and Scale** | Monitor your usage and scale your application as needed using Azure’s infrastructure |
 
 
+<!-- START BADGE -->
 <div align="center">
-  <h3 style="color: #4CAF50;">Total Visitors</h3>
-  <img src="https://profile-counter.glitch.me/brown9804/count.svg" alt="Visitor Count" style="border: 2px solid #4CAF50; border-radius: 5px; padding: 5px;"/>
+  <img src="https://img.shields.io/badge/Total%20views-195-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-10</p>
 </div>
+<!-- END BADGE -->
+
