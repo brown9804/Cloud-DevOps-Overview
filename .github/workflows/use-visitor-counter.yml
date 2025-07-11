@@ -13,7 +13,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  use-counter-logic:
+  update-visitor-count:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,20 +22,23 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Clone github-visitor-counter repository temporarily
-        run: git clone https://github.com/brown9804/github-visitor-counter.git
+      - name: Shallow clone visitor counter logic (no markdown files)
+        run: |
+          git clone --depth=1 --filter=blob:none --sparse https://github.com/brown9804/github-visitor-counter.git
+          cd github-visitor-counter
+          git sparse-checkout set update_repo_views_counter.js package.json package-lock.json
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install dependencies for github-visitor-counter
         run: |
           cd github-visitor-counter
-          npm install
+          npm ci
 
-      - name: Run visitor counter logic
+      - name: Run visitor counter logic (updates markdown badges and metrics.json)
         run: |
           cd github-visitor-counter
           node update_repo_views_counter.js
@@ -43,24 +46,23 @@ jobs:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
 
-      - name: Move generated metrics.json to current repository
+      - name: Move generated metrics.json to root
         run: mv github-visitor-counter/metrics.json .
 
-      # Optional: Debug step to verify scripts and files
-      - name: Debug List files in workspace
+      - name: List files for debugging
         run: |
           ls -l
           ls -l github-visitor-counter
 
-      - name: Clean up temporary files
+      - name: Clean up visitor counter logic
         run: rm -rf github-visitor-counter
 
-      - name: Configure Git
+      - name: Configure Git author
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit and push to PR branch
+      - name: Commit and push changes (PR)
         if: github.event_name == 'pull_request'
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -73,7 +75,7 @@ jobs:
           git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
           git push origin HEAD:${{ github.event.pull_request.head.ref }}
 
-      - name: Commit and push to new branch (non-PR)
+      - name: Commit and push changes (non-PR)
         if: github.event_name != 'pull_request'
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
