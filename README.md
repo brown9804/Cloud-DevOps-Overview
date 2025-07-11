@@ -1,99 +1,81 @@
-# Open Source Visitor Counter
+# Cloud DevOps: <br> Learning Path - Overview
 
 Costa Rica
 
-[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com)
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-07-10
+Last updated: 2025-07-11
 
 ----------
 
-> This repository provides a customizable GitHub visitor counter that tracks and displays the number of visits to your GitHub profile or repository. The counter updates daily using the GitHub Traffic API and writes the total views directly into the README file.
+> Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
 
-## Features
+<details>
+<summary><b>Table of Contents</b> (Click to expand)</summary>
 
-- **Daily-updated visitor counting**: Fetches real visitor data from the GitHub Traffic API.
-- **Markdown-based display**: Updates the README file with the total visitor count.
-- **Open source and customizable**.
+- [Agile](./Agile)
+- [DevOps](./DevOps)
+- [Network](./Network)
+- [GitHub](https://github.com/brown9804/CloudDevOps_LPath/tree/main/GitHub)
+- [Cloud Principles](./Cloud)
+  - [0. Linux](./Cloud/0-linux)
+    - [Working with Users and Permissions](./Cloud/0-linux/lab0)
+    - [System Service Management, Runlevels and Boot Targets](./Cloud/0-linux/lab1)
+    - [Securely Accessing Your System](./Cloud/0-linux/lab2)
+    - [Package Management and Troubleshooting](./Cloud/0-linux/lab3)
+    - [File Management, Permissions and Backup](./Cloud/0-linux/lab4)
+    - [Working with Text Files and Streams](./Cloud/0-linux/lab5)
+    - [Linux Device Management](./Cloud/0-linux/lab6)
+    - [The Linux Shell](./Cloud/0-linux/lab7)
+    - [Networking](./Cloud/0-linux/lab8)
+    - [Processes Management](./Cloud/0-linux/lab9)
+  - [1. Terraform](./Cloud/1-terraform)
+    - [Installing Terraform and Working with Terraform Providers](./Cloud/1-terraform/lab0)
+    - [Using Terraform CLI Commands (workspace and state) to Manipulate a Terraform Deployment](./Cloud/1-terraform/lab1)
+    - [Building and Testing a Basic Terraform Module](./Cloud/1-terraform/lab2)
+    - [Exploring Terraform State Functionality](./Cloud/1-terraform/lab3)
+    - [Deploy an Azure Storage Account with Terraform](./Cloud/1-terraform/lab4)
+    - [Deploy an Azure File Share and Blob Storage with Terraform](./Cloud/1-terraform/lab5)
+    - [Deploy Azure VNETs and Subnets with Terraform](./Cloud/1-terraform/lab6)
+    - [Create Azure NSGs with Terraform](./Cloud/1-terraform/lab7)
+    - [Deploying an Azure VM with Terraform](./Cloud/1-terraform/lab8)
+    - [Deploy a Web Application with Terraform](./Cloud/1-terraform/lab9)
+    - [Deploy a MySQL Database with Terraform](./Cloud/1-terraform/lab_10)
+    - [Migrating Terraform State to Terraform Cloud](./Cloud/1-terraform/lab_11)
+    - [Using Terraform Provisioners to Set Up an Apache Web Server on AWS](./Cloud/1-terraform/lab_12)
+    - [Make Changes to AWS Infrastructure Using Terraform](./Cloud/1-terraform/lab_13)
+    - [Use Output Variables to Query Data in AWS Using Terraform](./Cloud/1-terraform/lab_14)
+    - [Make Changes to Azure Infrastructure Using Terraform](./Cloud/1-terraform/lab_15)
+    - [Use Output Variables to Query Data in Azure Using Terraform](./Cloud/1-terraform/lab_16)
+    - [Use Terraform to Create a Kubernetes Deployment](./Cloud/1-terraform/lab_17)
+    - [Manage Kubernetes Resources with Terraform](./Cloud/1-terraform/lab_18)
+    - [Use Terraform to Create an EKS Deployment](./Cloud/1-terraform/lab_19)
+    - [Troubleshooting a Terraform Deployment](./Cloud/1-terraform/lab_20)
+    
+  - [Automation Principles](./Cloud/2-automation_principles)
+  - [Kubernetes Principles](./Cloud/3-kubernetes_principles)
 
-## How it works
+</details>
 
-> [!IMPORTANT]
-> This counter is updated once per day (not real-time) and shows the total number of visits (including repeat visits) as reported by GitHub.
+## Overview
 
-- A GitHub Action workflow runs daily to fetch visitor data from the GitHub Traffic API.
-- The action updates the `README.md` file with the total visitor count and the refresh timestamp.
+- SDLC - [What is and how it works](https://agilie.com/blog/what-is-the-software-development-life-cycle-sdlc-and-how-does-it-work)
 
-## How to use it
+![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/e809d790-87d4-41a1-b9ea-071327ab6ef2)
 
-1. **Add the Badge to Your Repository**: Include the following markdown in your `README.md` file, between the `START BADGE` and `END BADGE` (included), as shown in the bottom.
-2. **Create a Personal Access Token**:
-   - Go to **GitHub Settings** > **Developer Settings** > **Personal Access Tokens**.
-   - Generate a new token with `repo` access.
-3. **Save the Token as a Secret**:
-   - In your repository, navigate to **Settings** > **Secrets and Variables** > **Actions**.
-   - Add a new secret named `TRAFFIC_TOKEN` and paste the generated token.
-4. **Add the Pipeline**: This single pipeline will fetch the visitor count, update the badge in the `README.md` file, and push the changes back to the repository.
-   - Create a GitHub Actions workflow (`update-metrics.yml`) in your repository to handle the visitor counter logic.
-   - Use the following content for the workflow:
+![Benefits](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/dc014629-a069-44f3-b657-7f8d39968272)
 
-   ```yaml
-   name: Update Visitor Counter
-   
-   on:
-     schedule:
-       - cron: '0 0 * * *' # Runs daily at midnight
-     workflow_dispatch: # Allows manual triggering
-   
-   jobs:
-     update-counter:
-       runs-on: ubuntu-latest
-   
-       steps:
-         - name: Checkout repository
-           uses: actions/checkout@v3
-   
-         - name: Set up Node.js
-           uses: actions/setup-node@v3
-           with:
-             node-version: '16'
-   
-         - name: Install dependencies
-           run: npm install @brown9804/github-visitor-counter
-   
-         - name: Run visitor counter script
-           run: node node_modules/@brown9804/github-visitor-counter/update_repo_views_counter.js
-           env:
-             TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
-             REPO: ${{ github.repository }}
-   
-         - name: Commit and push changes
-           run: |
-             git config --global user.name "github-actions[bot]"
-             git config --global user.email "github-actions[bot]@users.noreply.github.com"
-             git add README.md metrics.json
-             git commit -m "Update visitor count"
-             git push
-   ```
+![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9)
 
-## Files structure
+- SDLC - [Methodologies](https://datarob.com/sdlc-methodologies/)
 
-- `README.md`: Contains instructions and displays the visitor count badge.
-- `update_repo_views_counter.js`: Script to fetch visitor count data from the GitHub Traffic API and update the `README.md` file.
-- `package.json`: Defines dependencies and scripts for the project.
-- `LICENSE`: Specifies the license for the project.
+![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/5ba714af-4238-48d3-9043-cbcd64a590f1)
 
-> [!IMPORTANT]
->
-> - Replace `<main-repo-owner>` and `<main-repo-name>` with your actual values.
-> - Use a Personal Access Token (PAT) with `repo` access as `TRAFFIC_TOKEN` secret in each target repository.
-> - The action will trigger the visitor counter logic in the main repository and update the badge dynamically.
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-254-limegreen" alt="Total views">
+  <img src="https://img.shields.io/badge/Total%20views-734-limegreen" alt="Total views">
   <p>Refresh Date: 2025-07-10</p>
 </div>
 <!-- END BADGE -->
