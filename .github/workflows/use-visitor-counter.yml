@@ -43,10 +43,17 @@ jobs:
           TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPO: ${{ github.repository }}
 
-      - name: Move generated files to current repository
+      - name: Move generated metrics.json to current repository
         run: |
           mv github-visitor-counter/metrics.json .
-          echo "Skipping README.md replacement"
+
+      - name: Update badge number in markdowns using metrics.json
+        run: |
+          node github-visitor-counter/update_markdown_badge.js
+        # Assumes update_markdown_badge.js will:
+        #   - Read metrics.json from repo root
+        #   - Update badge/counter in README.md (or all markdowns)
+        #   - Not overwrite unrelated content
 
       - name: Clean up temporary files
         run: rm -rf github-visitor-counter
@@ -63,7 +70,7 @@ jobs:
         run: |
           git fetch origin
           git checkout -b ${{ github.event.pull_request.head.ref }} origin/${{ github.event.pull_request.head.ref }}
-          git add README.md metrics.json
+          git add "*.md" metrics.json
           git commit -m "Update visitor count" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
           git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
@@ -76,7 +83,7 @@ jobs:
         run: |
           git fetch origin
           git checkout ${{ github.event.pull_request.head.ref }} || git checkout -b ${{ github.event.pull_request.head.ref }} origin/${{ github.event.pull_request.head.ref }}
-          git add README.md metrics.json
+          git add "*.md" metrics.json
           git commit -m "Update visitor count" || echo "No changes to commit"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
           git pull --rebase origin ${{ github.event.pull_request.head.ref }} || echo "No rebase needed"
