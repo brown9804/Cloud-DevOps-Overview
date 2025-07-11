@@ -52,13 +52,6 @@ jobs:
           ls -l
           ls -l github-visitor-counter
 
-      - name: Update badge number in markdowns using metrics.json
-        run: node github-visitor-counter/update_markdown_badge.js
-        # Assumes update_markdown_badge.js will:
-        #   - Read metrics.json from repo root
-        #   - Update badge/counter in README.md (or all markdowns)
-        #   - Not overwrite unrelated content
-
       - name: Clean up temporary files
         run: rm -rf github-visitor-counter
 
