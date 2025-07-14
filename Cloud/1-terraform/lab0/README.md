@@ -89,7 +89,7 @@ Recommended: https://releases.hashicorp.com/terraform/0.13.4/
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-456-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-11</p>
+  <img src="https://img.shields.io/badge/Total%20views-673-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-14</p>
 </div>
 <!-- END BADGE -->
