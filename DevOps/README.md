@@ -9,11 +9,10 @@ Last updated: 2025-07-11
 
 ----------
 
-> Has his roots in agile and iterative 
+> DevOps is rooted in agile and iterative methodologies, bridging the gap between development (code) and operations (systems). It emphasizes collaboration, automation, and continuous improvement to deliver value quickly and reliably.
 
-`
-Code + systems 
-`
+`DevOps = Code + Systems + Culture`
+
 
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
@@ -43,19 +42,23 @@ Code + systems
     <img width="800" alt="image" src="https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/4d320096-70de-4091-8505-281c19ff71eb">
 
 ## CAMS
-- Culture 
-- Automation
-- Measurement
-- Sharing
 
-*More feedback loops
+> The CAMS framework underpins DevOps culture:
+
+- Culture: Fosters trust, collaboration, and shared responsibility.
+- Automation: Eliminates manual and repetitive tasks, increasing speed and reliability. (e.g., Azure Pipelines, GitHub Actions)
+- Measurement: Data-driven decision-making through monitoring and KPIs. (e.g., Azure Monitor, Application Insights)
+- Sharing: Open communication and knowledge transfer.
+
+> Feedback loops are essential at every stage.
 
 Considering:
+
 1. People, process, tools
-2. Continuous delivery coding, testing small parts
-3. Lean management feedback loops, visualization
-4. Change control 
-5. infrastructure code - checked into source control 
+2. Continuous delivery: frequent coding, testing, and deployment of small changes
+3. Lean management: visualizing and optimizing feedback loops
+4. Change control
+5. Infrastructure as code (IaC): All infra (e.g., ARM Templates, Bicep, Terraform for Azure) tracked in source control
 
 ## Practices
 1. Uncident command system 
