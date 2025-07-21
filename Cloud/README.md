@@ -8,10 +8,8 @@ Last updated: 2025-07-11
 
 ----------------------
 
-## Wiki
-
 <details>
-<summary><b>Table of Wiki </b> (Click to expand)</summary>
+<summary><b>List of References </b> (Click to expand)</summary>
 
 - pip - [How to install in macOS](https://phoenixnap.com/kb/install-putty-on-mac)
 - pip - [sudo: npm: command not found](https://stackoverflow.com/questions/31472755/sudo-npm-command-not-found)
@@ -82,8 +80,6 @@ Last updated: 2025-07-11
 - [Azure Storage Table Filter by RowKey and StartsWith Using Pythong SDK](https://stackoverflow.com/questions/38834919/filter-azure-table-storage-by-rowkey-and-startswith-using-the-python-sdk)
 
 </details>
-
-## Content
 
 <details>
 <summary><b>Table of Contents</b> (click to open)</summary>
