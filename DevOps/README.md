@@ -45,314 +45,245 @@ Last updated: 2025-07-11
 
 > The CAMS framework underpins DevOps culture:
 
-- Culture: Fosters trust, collaboration, and shared responsibility.
-- Automation: Eliminates manual and repetitive tasks, increasing speed and reliability. (e.g., Azure Pipelines, GitHub Actions)
-- Measurement: Data-driven decision-making through monitoring and KPIs. (e.g., Azure Monitor, Application Insights)
-- Sharing: Open communication and knowledge transfer.
+- **Culture:** Fosters trust, collaboration, and shared responsibility across development and operations. Azure Boards and Azure DevOps Teams help build this culture by enabling transparent work tracking, communication, and shared goals.
+- **Automation:** Eliminates manual and repetitive tasks, increasing speed and reliability. Azure Pipelines automates build, test, and deployment processes for almost any platform or language, integrating seamlessly with GitHub, Azure Repos, and external systems.
+- **Measurement:** Data-driven decision-making through monitoring and KPIs. Azure Monitor and Application Insights provide full-stack observability, helping teams make informed decisions, detect regressions, and optimize performance.
+- **Sharing:** Open communication and knowledge transfer is critical for continuous improvement. Azure DevOps Wikis, dashboards, and integrated documentation ensure knowledge is captured and shared.
 
-> Feedback loops are essential at every stage.
+> Feedback loops are essential at every stage, ensuring rapid learning and improvement.
 
-Considering:
+Consider:
 
-1. People, process, tools
-2. Continuous delivery: frequent coding, testing, and deployment of small changes
-3. Lean management: visualizing and optimizing feedback loops
-4. Change control
-5. Infrastructure as code (IaC): All infra (e.g., ARM Templates, Bicep, Terraform for Azure) tracked in source control
-
+1. **People, process, tools:** Align all three for success.
+2. **Continuous delivery:** Frequently code, test, and deploy small changes. Azure DevOps supports this with pipelines, environments, and approvals.
+3. **Lean management:** Use Azure Boards for visualizing and optimizing feedback loops (Kanban, Scrum).
+4. **Change control:** Azure DevOps tracks every change, from code to infrastructure, with audit trails and permissions.
+5. **Infrastructure as Code (IaC):** Use ARM Templates, Bicep, or Terraform (with Azure provider) to manage all infrastructure as version-controlled code.
+   
 ## Practices
-1. Uncident command system 
-2. Developers on call 
-3. Public status pages 
-4. Blameless postmortems 
-5. Embedded teams 
-6. Cloud - control infrastructure 
-7. Andon Cords - someone stops the production because catch something
-8. Dependency injection 
-9. Blue/ Green Deployment load balancer one is live, set - system 
-10. Chaos Monkey - high reliable - making caos for testing 
 
+1. **Incident Command System:** Clear escalation processes and command structures. Azure Monitor can automate incident creation and notifications.
+2. **Developers On Call:** Developers participate in on-call rotations to increase ownership and system reliability. Azure Alerts can route issues to the right engineer.
+3. **Public Status Pages:** Use Azure Service Health and/or third-party integrations for transparency on outages and maintenance.
+4. **Blameless Postmortems:** Review incidents to learn and improve, not to blame. Document lessons and action items in Azure Boards.
+5. **Embedded Teams:** Cross-functional teams own products end-to-end, reducing silos.
+6. **Cloud Infrastructure Control:** Use Azure Resource Manager (ARM) for fine-grained, auditable control.
+7. **Andon Cords:** Any team member can stop a deployment to fix critical issues, using pipeline approvals or manual interventions in Azure Pipelines.
+8. **Dependency Injection:** Design applications for loose coupling and testability, supported by Azure Functions and microservices patterns.
+9. **Blue/Green Deployments:** Use Azure Traffic Manager or Azure Front Door to route traffic between live and staging environments for safe rollouts.
+10. **Chaos Engineering:** Use Azure Chaos Studio to deliberately inject failures and validate system resilience.
 
 ## Example
-The car or the horse? 
 
-Series of tools to address out needs like pipeline 
-Reviewing logistic tail which is related to a cost 
+> The car or the horse?  
+- Tooling should fit the problem and context, whether it's a simple script or an advanced Azure DevOps pipeline.  
+- Reviewing the logistics tail (cost, complexity) is critical when choosing DevOps tools.
 
-A tool criteria is:
-1. programmable 
-2. Verifiable -> exposes what is doing 
-3. Well behaved operation point of view and deploy view 
+**Tool Criteria:**
+
+1. **Programmable:** Can it be automated through APIs or scripts? Azure offers comprehensive REST APIs and CLI tools.
+2. **Verifiable:** Does it expose logs, events, and metrics for audit and troubleshooting? Azure Activity Log and Monitor support this.
+3. **Well-behaved (Ops and Deploy View):** Is it reliable, observable, and easy to deploy/manage at scale? Azure services are designed with these principles by default.
+
 
 ## Communication on DevOps 
-1. Blameless postmortems `48 hours` everything in time line 
-2. Transparent uptime: `admit failure, sound like a human, communication channel, authentic`.
 
-  ### The westrum model 
-  1. Pathological (power oriented)
-  2. Bereaucratic (rule-oriented)
-  2. Generative (performance oriented)
+1. **Blameless Postmortems:** Conduct within 48 hours, use clear timelines, and focus on processes. Azure Boards can be used to track actions and share outcomes.
+2. **Transparent Uptime:** Admit failure, communicate in human language, and use authentic channels (e.g., Azure Service Health, Teams integration).
 
-  ### Kaizen
-  Change for the better.
+### The Westrum Model 
 
-  `gemba` (locus the real place)
-  Going to the code to see `gemba`
+1. **Pathological:** Power-oriented, suppresses information.
+2. **Bureaucratic:** Rule-oriented, risk-averse.
+3. **Generative:** Performance-oriented, values learning and innovation. This is the DevOps target culture.
 
-  Focus on symptoms: `causes - effects `. People don't fail, processes do. Don't blame.
+### Kaizen
 
+> Continuous improvement—make small, regular changes for the better.
 
-## Agile, Lean and Itope 
-  ### Agile infrastructure:
-  - Requirements 
-  - Design
-  - Implementation 
-  - Verification 
-  - Maintenance
+**Gemba:** "Go to the real place"—visit the code, the infrastructure, and observe reality directly to find root causes.
 
-  `--> Sprint 1, 2, 3 (plan, desing, buil, test, review, launch)`
+**Focus on symptoms:** Address process failures, not personal blame.
 
-A sample value stream map:
+## Agile, Lean and IT Operations
+
+### Agile Infrastructure
+
+> Agile sprints (plan, design, build, test, review, launch) can be applied to infrastructure as well as code, using Azure Boards for agile tracking and Azure Pipelines for automation.
+
+- Requirements
+- Design
+- Implementation
+- Verification
+- Maintenance
+
+> A sample value stream map:
 
 ![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/DevOps/img/DevOps/%5Bimg%5D_DevOps_sample_value_steam_map.png "A sample value stream map ")
 
-And the Scrum life cycle:
-
+> And the Scrum life cycle:
 
 ![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/DevOps/img/DevOps/%5Bimg%5D_DevOps_scrum_life_cycle.png "A sample value stream map ")
 
+> **Collaboration** increases productivity and brings more innovation.
 
+### Lean 
 
-  `Collaborations - Increase productivity and more ideas `
+> Lean software delivery emphasizes:
 
-  ### Lean 
-  
-  Systematic software:
-  - Eliminate waste 
-  - `muda` Work that absorb resources add no value 
-  - `muri` Unreasonable work imposed on worker and machines
-  - `mura` Work coming in unevenly instead of the constant or regular flow 
-  - `Value stream` Value information flows with the costumers 
+- **Eliminate Waste:** Remove non-value-adding activities.
+- **Muda:** Wasteful work that absorbs resources but adds no value.
+- **Muri:** Overburdening people or systems.
+- **Mura:** Uneven workloads, causing bottlenecks.
+- **Value Stream:** Optimize the flow of value to the customer. Azure DevOps value stream mapping helps visualize this.
 
-
-Important to consider lean principles:
+Lean principles diagram:
 
 ![Alt text](https://github.com/brown9804/Azure-DevOps_initial_path/blob/main/DevOps/img/DevOps/%5Bimg%5D_DevOps_lean_principles.png "Lean Principles ")
 
-### Itil, Itsm, Sdlc
-- `itsm `--- IT service management 
-- `itil ` --- IT infrastructure library 
 
-* Information Technology Infrastructure Library (ITIL):
-Provides a comprehensive process model based
-the approach of designing, managing and controlling 
+### ITIL, ITSM, SDLC
 
-* IT processes. 
-Government standard `ITIL.11 ` 
-1. Service strategy 
-2. Service design 
-3. Service transition 
-4. Service operation 
-
-`2000 pages or more :)`
+- **ITSM:** IT Service Management—delivering value through managed IT services. Azure integrates with ITSM tools for service desk automation and incident management.
+- **ITIL:** A framework for IT service delivery, including service strategy, design, transition, and operation. Azure Blueprints and Policy help enforce ITIL-aligned governance across cloud resources.
+- **SDLC:** Software Development Lifecycle—the process of planning, creating, testing, and deploying information systems.
 
 ## CALMS
-And know ...  calms with L of leans 
-- Lean management 
-- Amplify learning 
-- Decide as late as possible 
-- Decide as fast as possible 
-- Empower the team 
-- Build-in integrity 
-- See the whole
+
+> CALMS builds on CAMS with a focus on Lean management:
+
+- **Lean management:** Optimize every process, minimize waste, and maximize value.
+- **Amplify Learning:** Encourage experimentation and knowledge sharing.
+- **Decide as Late as Possible:** Keep options open and avoid premature decisions.
+- **Decide as Fast as Possible:** Use automation and feedback to accelerate decisions.
+- **Empower the Team:** Give teams autonomy and the tools to act.
+- **Build-in Integrity:** Embed quality and security controls throughout.
+- **See the Whole:** Understand and optimize the entire system, not just parts.
 
 ## Prod & Stage 
-| |  Important for Prod and Stage    ||  |
-|---|---|---|---|
-|Continuous delivery pipeline |  Version control  | Application code  | Infrastructure code |
 
+| Continuous delivery pipeline | Version control | Application code | Infrastructure code |
+|-----------------------------|----------------|------------------|---------------------|
 
-Amazon has cloud formation and azure has azure resource manager templates and so on one model for my systems, another for os system and other applications
+> Azure leverages Resource Groups, dedicated environments, and automated pipelines for strict separation and governance between production and staging.  
+Amazon uses CloudFormation, Azure uses ARM Templates/Bicep for IaC, ensuring consistent cloud environments.
 
+## Containers
 
-##  Containers 
-Efficiency reasons:
-- nodes 1000
-- OS dependecies 
-- Docker 
-- Maven deb file and Docker containers 
+> Containers provide efficiency, scalability, and portability for cloud-native workloads.
 
-`CMDB - Configuration Management Data Base`
+- Azure Kubernetes Service (AKS) provides managed Kubernetes clusters for orchestrating containers at scale.
+- Azure Container Registry stores container images securely.
+- Use Docker for local development and to package applications for cloud deployment.
+- Azure supports all major configuration management and orchestration tools: Chef, Puppet, Ansible, Salt, etc.
+- Service discovery in AKS is handled via built-in Kubernetes DNS or Azure DNS.
 
-Zookeeper service as a central coordinated. Combining actions like Kubernetes and Mesos. The container is basically the app configuration management:
-- Chef 
-- Puppet 
-- Ansible 
-- Salt 
-- Cfengine 
-- Services directory tools 
-- Etcd 
-- Zookeeper
-- Consul
-
-
-`Docker - kubernetes - mesos` 
-
-Private container services 
-- Rancher 
-- Google Cloud Platform 
-- Amazon web services ecs 
-* Blue live 
-* Green IDLE 
-
-
+> **Private container services:** Azure Container Instances, Azure Container Apps, and private registries.
 
 ## CD/CI
 
-`Continuos Deploy `  `Continous Delivery` `Continuos Integration`
+**Continuous Deployment (CD), Continuous Delivery (CD), and Continuous Integration (CI):**
 
-1. Time to market goes down 
-2. Quality increases 
-3. Continuous Delivery limits your work in progress 
-4. Shortens lead times for changes 
-5. Improves mean time to recover
+- Reduce time to market, improve quality, and limit work-in-progress.
+- Azure Pipelines supports automated build, test, and deploy for any application or platform.
+- Key principles:
+    - Build processes should be fast (<5 min)
+    - Commit and test small batches
+    - Keep main branch always deployable
+    - Use trunk-based development
+    - Eliminate flaky tests
+    - Build once, deploy immutably to all environments
 
-
-Annotations:
-- Builds should pass the coffee test <5 minutes 
-- Commit small bits 
-- Don't leave the build broken 
-- Use a trunk - bases development flow 
-- No flaky tests 
-- The build should return a status, a log, and an artifact 
-
-Important:
-1. Only build artifacts once
-2. Should be immutable 
-3. Deployment should go to a copy of the production
-4. Stop deploys if a previous step fails 
-5. Deployments should be idempotent 
+**Immutability and idempotency:** Deployments should never rely on manual steps and must be repeatable.
 
 ## Cycle and Overall Cycle Time 
-Types of testing 
-1. Unit testing 
-2. Code hygiene 
-  * Liting 
-  * Code formatting 
-  * Banned function checks
-3. Integration testing 
-4. Security testing 
-  * Given I have a website 
-  * When I try to attack it with XSS
-  * Then it should not be vulnerable  
-5. TDD Test Driven Development 
-  * State desired outcome as a test
-  * Write code to pass the test 
-  * Repeat 
-6. BDD Behavior Driven Development
-  * Work with stakeholders 
-  * Describe business functionality 
-  * Test is based on natural language 
-7. ATDD Acceptance Test Driven Development 
-* End user perpective 
-* Use case automated testing 
-* Testing is continuous during development 
-8. Infrastructure testing 
-9. Performance testing - types of performance 
 
-|                           |                    Annotations |                                              |               |  
-|---|---|---|---|
-| Version control `GitHub` | CI systems `jenkins`  `bamboo` | Build  `make/rake`, `maven`,  `gulp`, `packer`| Test  `j unit `, ` golint / gofmt / rubocop`|
+**Types of Testing:**
+1. Unit testing
+2. Code hygiene (linting, formatting, banned function checks)
+3. Integration testing
+4. Security testing (e.g., Azure Security Center, Defender for Cloud)
+5. Test Driven Development (TDD)
+6. Behavior Driven Development (BDD)
+7. Acceptance Test Driven Development (ATDD)
+8. Infrastructure testing (ensure IaC deploys as expected)
+9. Performance testing (Azure Load Testing, JMeter)
 
-###  Integration testing 
-- Robot 
-- Protractor 
-- Cucumber
-- Selenium 
-- Artifact repository 
- - Kitchen ci
- 
-` Performace testing apachebench, meter` ` Security testing brakeman, veracode`
+| Version control `GitHub/Azure Repos` | CI/CD systems `Azure Pipelines/Jenkins` | Build tools `Make/Maven` | Test tools `JUnit/pytest/Selenium/Azure Test Plans` |
 
-Where?
-- Artifactory 
-- Nexus 
-- Docker hub
-- AWS s3
+**Integration Testing:**  
+Use frameworks like Robot, Selenium, Protractor, and Cucumber. Store test artifacts and results in Azure DevOps or artifact repositories.
 
+- Performance testing: Apache Bench, Azure Load Testing.
+- Security testing: Brakeman, Veracode, integrated with Azure DevOps.
 
-Deployment:
-- Rundeck 
-- Urbancode
-- Thoughtworks
-- Deployinator 
+Artifact repositories: Azure Artifacts, Nexus, Docker Hub, AWS S3.
 
+Deployment automation: Azure Pipelines, Rundeck, Octopus Deploy.
 
-## Desing for operation theory 
-* Circuit breaker functionality ` dm_control ` if inside 
-* Design for operation practice 
-* Chaos monkey --- avoid failure by making fail it 
-* Cassandra 3 replicas
+## Design for Operation Theory 
 
-## Metrics and monitoring 
-How complex systems fail?
-* Change introduces new forms of failure 
-* Complex system contain changing mixtures of failures latent within them
-* All complex system is always running in degraded mode 
+- **Circuit Breakers:** Implement resilience patterns (e.g., Polly in .NET) for robust cloud applications.
+- **Chaos Engineering:** Use Azure Chaos Studio to proactively test for failures and validate recovery strategies.
+- **High Availability:** Design with redundancy (e.g., Cassandra 3 replicas, SQL Always On, AKS node pools).
 
+## Metrics and Monitoring 
 
-Lean approach:
-1. Build
-2. Measure 
-3. Learn 
-4. Repeat 
+Understanding failure in complex systems is critical:
 
-So: 
-* Service performance and uptime 
-* Software component metrics 
-* System metrics  
-* App metrics
-* Performance: Linting, code formatting, banned function checks 
-* Security systems 
+- Changes introduce new types of failure.
+- Complex systems always contain latent failures.
+- All complex systems operate in some degraded mode.
 
-## 5 ws of logging 
-1. What happend?
-2. When 
-3. Where
-4. Who 
-5. Where did that ebtuty come from?
+**Lean Feedback Cycle:** Build -> Measure -> Learn -> Repeat
 
-Remainders:
-- Do not collect log data if you never plan to use it
-- Retain log data for as long as it is conceivable that it can be used 
-- Log all you can but alert only what you must respond to 
-- Don't try to make your logging more available or more secure than your production stack
-- Logs change 
+Azure Monitor, Application Insights, and Log Analytics provide a unified platform for:
 
+- Service reliability and uptime monitoring
+- Application, system, and infrastructure metrics
+- Alerting and automated remediation
+- End-to-end distributed tracing
 
-## SRE tool chain 
-Software as a service monitoring:
-- ` Pingdom`
-- ` Datadog `
-- ` Netuitive `
-- ` Ruxit `
-- ` Librato`
-- ` New relic `
-- ` App dynamics `
+## 5 Ws of Logging 
 
+1. What happened?
+2. When?
+3. Where?
+4. Who?
+5. Where did the event come from?
 
-## Open source monitoring 
-* Graphite 
-* Grafana 
-* Statsd
-* Ganglia 
-* InfluxDB
-* OpenTSDB
-  - `prometeus `
-  - ` paperduty`
-  - ` flapjack `
-* SAAS providers 
- 
+**Best Practices:**
+
+- Log only what you need for audit, compliance, and troubleshooting.
+- Retain logs for as long as they have value.
+- Alert only on actionable events.
+- Ensure logging is as reliable and secure as your production stack.
+- Use Azure Log Analytics for querying and correlating logs.
+
+## SRE Tool Chain 
+
+**Software as a Service (SaaS) Monitoring:**
+
+- Pingdom
+- Datadog
+- Netuitive
+- Ruxit
+- Librato
+- New Relic
+- AppDynamics
+
+Azure-native monitoring: Azure Monitor, Application Insights.
+
+## Open Source Monitoring 
+
+- Graphite
+- Grafana (can be connected to Azure Monitor)
+- Statsd
+- Ganglia
+- InfluxDB
+- OpenTSDB
+- Prometheus (Azure Monitor supports Prometheus scraping)
+- PagerDuty, Flapjack for alerting
 
 <!-- START BADGE -->
 <div align="center">
