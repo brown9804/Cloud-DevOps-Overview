@@ -99,9 +99,9 @@ Consider:
 
 ### Kaizen
 
-> Continuous improvement—make small, regular changes for the better.
+> Continuous improvement: make small, regular changes for the better.
 
-**Gemba:** "Go to the real place"—visit the code, the infrastructure, and observe reality directly to find root causes.
+**Gemba:** "Go to the real place": visit the code, the infrastructure, and observe reality directly to find root causes.
 
 **Focus on symptoms:** Address process failures, not personal blame.
 
@@ -144,9 +144,9 @@ Lean principles diagram:
 
 ### ITIL, ITSM, SDLC
 
-- **ITSM:** IT Service Management—delivering value through managed IT services. Azure integrates with ITSM tools for service desk automation and incident management.
+- **ITSM:** IT Service Management: delivering value through managed IT services. Azure integrates with ITSM tools for service desk automation and incident management.
 - **ITIL:** A framework for IT service delivery, including service strategy, design, transition, and operation. Azure Blueprints and Policy help enforce ITIL-aligned governance across cloud resources.
-- **SDLC:** Software Development Lifecycle—the process of planning, creating, testing, and deploying information systems.
+- **SDLC:** Software Development Lifecycle: the process of planning, creating, testing, and deploying information systems.
 
 ## CALMS
 
