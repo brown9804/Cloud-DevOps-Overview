@@ -5,7 +5,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
 
-Last updated: 2024-12-13
+Last updated: 2025-07-22
 
 ----------------------
 
@@ -23,29 +23,59 @@ Last updated: 2024-12-13
 
 </details>
 
-## How to Commit/Push to Github
+## Why GitHub for DevOps and Azure?
 
-~~~
-git clone <repo>     or        git -c http.sslVerify=false clone <repository-name - ssh>
+> GitHub is the world’s leading platform for version control and collaboration. Used with Azure, it enables:
 
-cd <repo path>
+- **Continuous Integration/Continuous Deployment (CI/CD)** using GitHub Actions or Azure Pipelines.
+- **Infrastructure as Code (IaC)** through integration with tools like Terraform or Bicep.
+- **Automation** for testing, security, and delivery.
+- **Collaboration** using pull requests, code reviews, and issues—all traceable to Azure Boards.
 
-code . 
+## How to Commit/Push to GitHub
 
-git pull 
+> This section summarizes the standard workflow for contributing code.
 
-git checkout -b <new branch_name>
+> [!TIP]
+> For secure Azure DevOps integration, set up SSH keys ([see reference](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)).
 
-git status 
+1. Clone the repository  
+   `git clone <repo-url>`  
+   *(Use SSH for better security and automation in CI/CD pipelines.)* `git -c http.sslVerify=false clone <repository-name - ssh>`
 
-git add -A
+2. Change directory and open in VS Code  
+   `cd <repo-path>`  
+   `code .`
 
-git commit -m "" 
+3. Sync with latest changes  
+   `git pull`
 
-git push origin [branch]
+4. Create a new branch for your feature/bugfix  
+   `git checkout -b <branch-name>`
 
-git pull origin [branch]
-~~~
+5. Check status, stage, and commit  
+   `git status`  
+   `git add -A`  
+   `git commit -m "Description"`
+
+6. Push your branch  
+   `git push origin <branch-name>`
+
+7. (Optional) Pull latest changes from remote  
+   `git pull origin <branch-name>`
+
+**Troubleshooting:**  
+- If you get SSL or permission errors, verify your SSH key setup and repository access.
+- Use `git config --global user.name` and `git config --global user.email` to set your identity.
+
+## GitHub Actions: Automate with Azure
+
+> You can automate builds, tests, and deployments to Azure using [GitHub Actions](https://github.com/Azure/actions):
+
+- Deploy web apps, containers, or functions to Azure.
+- Run Terraform/Bicep scripts for infrastructure provisioning.
+- Integrate security scans and compliance checks into your CI/CD.
+
 
 ## Good Content List Format 
 
@@ -63,8 +93,8 @@ git pull origin [branch]
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1192-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-16</p>
+  <img src="https://img.shields.io/badge/Total%20views-1276-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-07-22</p>
 </div>
 <!-- END BADGE -->
 
