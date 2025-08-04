@@ -57,12 +57,29 @@ Last updated: 2025-08-04
 - If an organization deploys its own LLM (e.g., in Azure AI Foundry) and integrates it with GitHub Copilot, the assumption is that `code would not be sent to GitHub for training`.  
 - However, this depends on the integration method and data flow, so it’s important to `verify GitHub’s documentation and your LLM’s data-handling policies`.
 
-
 > [!NOTE]
 > - Free Copilot = personal use only + code may be used for training.
 > - Org use requires paid plans (Business or Enterprise) = code is **not** used for training.
 > - Pricing varies, but expect \$19–\$39 per user/month, with possible discounts for Visual Studio subscribers.
 > - For privacy-sensitive environments, confirm data policies when integrating custom LLMs.
+
+## VS code vs Visual Studio 
+
+| **Aspect**                     | **Visual Studio Code (VS Code)** | **Visual Studio (IDE)** |
+|--------------------------------|---------------------------------------------------------------|--------------------------------------------------------|
+| **Product Type**              | Lightweight, cross-platform **code editor** (Windows, macOS, Linux) | Full-featured **Integrated Development Environment** (Windows, Mac version available)                    |
+| **Primary Use Cases**         | Web development, scripting, multi-language projects (JavaScript, Python, Go, etc.)                                  | Enterprise development, .NET, C#, C++, large-scale applications |
+| **Copilot Installation**      | Install **GitHub Copilot** extension from VS Code Marketplace (Ctrl+Shift+X → search “GitHub Copilot”)              | Enable **GitHub Copilot** via Visual Studio Installer → Modify → Individual Components → GitHub Copilot |
+| **Supported Features**        | - Inline code completions<br>- Chat view & Quick Chat<br>- Slash commands<br>- MCP (Model Context Protocol)<br>- Agent Mode | - Inline completions<br>- Copilot Chat integrated into IDE<br>- Agent Mode<br>- Deep .NET/C++ integration |
+| **Customization**             | Highly extensible with extensions and custom tool sets | Limited to built-in .NET productivity tools and Copilot defaults |
+| **Language Focus**            | Multi-language (JS, TS, Python, Go, PHP, etc.) | Primarily .NET, C#, C++, with strong debugging and refactoring tools|
+| **Platform Support**          | Windows, macOS, Linux | Windows (full), macOS (Visual Studio for Mac – different feature set)|
+| **Pricing**                   | Requires GitHub Copilot Pro/Business/Enterprise subscription (\$19–\$39 per user/month)                              | `Visual Studio subscribers can often add GitHub Enterprise for $0.12 per user/month, then add Copilot for $19.` |
+
+## How to setup GitHub Copilot
+
+
+
 
 <!-- START BADGE -->
 <div align="center">
