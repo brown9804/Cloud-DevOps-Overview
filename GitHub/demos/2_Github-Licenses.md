@@ -78,24 +78,24 @@ Last updated: 2025-08-04
 
 ## How to setup GitHub Copilot
 
-1. Install Visual Studio Code
-  - Download and install VS Code from: https://code.visualstudio.com/
-  - Open VS Code once installation is complete.
-2. Create a GitHub account (if you don’t have one yet)
-  - Visit: https://github.com/join
-  - Sign up for a free account and verify your email address.
-3. Subscribe to GitHub Copilot Pro
-  - Log in at https://github.com
-  - Go to: https://github.com/features/copilot
-  - Click `Start my free trial` or subscribe to Copilot Paid Plan. `Choose the appropriate plan for individual or business use.`
-4. Add the GitHub Copilot extension in VS Code
-  - Open VS Code.
-  - Search for the Extensions view (Ctrl+Shift+X or Cmd+Shift+X).
-  - Search for GitHub Copilot and select Install.
-5. Sign in to GitHub within VS Code
-  - After installing the extension, sign in when prompted.
-  - Authorize VS Code to access your GitHub account through your browser.
-  - You’re now ready to use GitHub Copilot in VS Code.
+1. Install Visual Studio Code:
+    - Download and install VS Code from: https://code.visualstudio.com/
+    - Open VS Code once installation is complete.
+2. Create a GitHub account (if you don’t have one yet):
+    - Visit: https://github.com/join
+    - Sign up for a free account and verify your email address.
+3. Subscribe to GitHub Copilot Pro:
+    - Log in at https://github.com
+    - Go to: https://github.com/features/copilot
+    - Click `Start my free trial` or subscribe to Copilot Paid Plan. `Choose the appropriate plan for individual or business use.`
+4. Add the GitHub Copilot extension in VS Code:
+    - Open VS Code.
+    - Search for the Extensions view (Ctrl+Shift+X or Cmd+Shift+X).
+    - Search for GitHub Copilot and select Install.
+5. Sign in to GitHub within VS Code:
+    - After installing the extension, sign in when prompted.
+    - Authorize VS Code to access your GitHub account through your browser.
+    - You’re now ready to use GitHub Copilot in VS Code.
 
 <!-- START BADGE -->
 <div align="center">
