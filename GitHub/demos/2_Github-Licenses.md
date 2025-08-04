@@ -38,8 +38,14 @@ Last updated: 2025-08-04
 
 > [!IMPORTANT]
 > These are the prices as of today. Please make sure to check the current prices here in case anything has changed.
+> - [Github Copilot](https://github.com/features/copilot/plans) - features and plans
+> - [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339) - Table
+> - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=githubenterprise)
+
 - **Copilot for Business**: \$19 per user/month.  
 - **Copilot for Enterprise**: \$39 per user/month.  
+
+    https://github.com/user-attachments/assets/a80d8ab6-e9d0-4ef6-9352-30098bbcbbb3
 
 > [!TIP]
 > - To use these, each user typically needs a **GitHub Enterprise license** (around \$20 per user/month).  
