@@ -79,23 +79,23 @@ Last updated: 2025-08-04
 ## How to setup GitHub Copilot
 
 1. Install Visual Studio Code
-	- Download and install VS Code from: https://code.visualstudio.com/
-	- Launch VS Code after installation.
-2. Sign up for a GitHub account (if you don’t already have one)
-	- Go to: https://github.com/join
-	- Create your free account and verify your email.
+  - Download and install VS Code from: https://code.visualstudio.com/
+  - Open VS Code once installation is complete.
+2. Create a GitHub account (if you don’t have one yet)
+  - Visit: https://github.com/join
+  - Sign up for a free account and verify your email address.
 3. Subscribe to GitHub Copilot Pro
-	- Log in to https://github.com
-	- Visit: https://github.com/features/copilot
-	- Click `Start my free trial` or subscribe to Copilot Pro (requires a paid plan after trial). If your GH account is associated with Microsoft Id, you may already have access to Copilot Pro
-4. Install the GitHub Copilot extension in VS Code
-	- Open VS Code.
-	- Go to the Extensions view (or press Ctrl+Shift+X / Cmd+Shift+X).
-	- Search for GitHub Copilot and click Install.
-5. Sign in to GitHub in VS Code
-	- After installing the extension, you’ll be prompted to sign in.
-	- Follow the browser link to authorize VS Code with your GitHub account.
-	- That's it! You can now use GitHub Copilot in VS Code.
+  - Log in at https://github.com
+  - Go to: https://github.com/features/copilot
+  - Click `Start my free trial` or subscribe to Copilot Paid Plan. `Choose the appropriate plan for individual or business use.`
+4. Add the GitHub Copilot extension in VS Code
+  - Open VS Code.
+  - Search for the Extensions view (Ctrl+Shift+X or Cmd+Shift+X).
+  - Search for GitHub Copilot and select Install.
+5. Sign in to GitHub within VS Code
+  - After installing the extension, sign in when prompted.
+  - Authorize VS Code to access your GitHub account through your browser.
+  - You’re now ready to use GitHub Copilot in VS Code.
 
 <!-- START BADGE -->
 <div align="center">
