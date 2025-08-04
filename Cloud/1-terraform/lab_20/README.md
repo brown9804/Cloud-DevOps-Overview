@@ -8,7 +8,7 @@ Costa Rica
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-07-11
+Last updated: 2025-08-04
 
 ----------
 
@@ -115,7 +115,7 @@ output "instance_name" {
 
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1276-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-07-22</p>
+  <img src="https://img.shields.io/badge/Total%20views-1405-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-08-04</p>
 </div>
 <!-- END BADGE -->
