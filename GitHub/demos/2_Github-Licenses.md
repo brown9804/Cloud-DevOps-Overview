@@ -57,6 +57,15 @@ Last updated: 2025-08-04
 - If an organization deploys its own LLM (e.g., in Azure AI Foundry) and integrates it with GitHub Copilot, the assumption is that `code would not be sent to GitHub for training`.  
 - However, this depends on the integration method and data flow, so it’s important to `verify GitHub’s documentation and your LLM’s data-handling policies`.
 
+> e.g How to deploy an AI Foundry instance:
+
+https://github.com/user-attachments/assets/3e47ad50-5ccf-491a-a4c8-1703a219d36e
+
+> e.g How to deploy an LLM within AI Foundry:
+
+https://github.com/user-attachments/assets/b341cc70-f79b-4878-8f9d-7dcfb9255723
+
+
 > [!NOTE]
 > - Free Copilot = personal use only + code may be used for training.
 > - Org use requires paid plans (Business or Enterprise) = code is **not** used for training.
