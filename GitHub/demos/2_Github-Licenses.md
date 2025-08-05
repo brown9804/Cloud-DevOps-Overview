@@ -65,6 +65,9 @@ https://github.com/user-attachments/assets/3e47ad50-5ccf-491a-a4c8-1703a219d36e
 
 https://github.com/user-attachments/assets/b341cc70-f79b-4878-8f9d-7dcfb9255723
 
+> e.g How to integrate LLMs from AI Foundry within GitHub Copilot
+
+https://github.com/user-attachments/assets/3c993648-8a8d-4b5d-be79-19850aeef593
 
 > [!NOTE]
 > - Free Copilot = personal use only + code may be used for training.
