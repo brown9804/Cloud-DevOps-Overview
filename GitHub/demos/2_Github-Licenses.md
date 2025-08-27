@@ -8,6 +8,16 @@ Last updated: 2025-08-04
 
 ----------------------
 
+> [!NOTE]
+> GitHub areas:
+> - GitHub Enterprise Cloud
+> - GitHub Enterprise Server
+> - GitHub Advanced Security (Code Scanning, Secret Scanning)
+> - GitHub Copilot For Business
+> - GitHub Copilot for Enterprise
+> - GitHub Actions
+> - GitHub Code Quality (coming soon) 
+
 <details>
 <summary><b>List of References </b> (Click to expand)</summary>
 
