@@ -31,6 +31,10 @@ Last updated: 2025-08-04
 - [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans)
 - [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339) - Table
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=githubenterprise)
+- [Start your premium free trial by choosing an enterprise type](https://github.com/account/enterprises/new?ref_cta=GHEC+trial&ref_loc=setting+up+a+trial+of+github+enterprise+cloud&ref_page=docs) - Enterprise
+- [GitHub Enterprise Cloud Enterprise Managed Users - Microsoft Entra ID / Azure AD Single Sign-On (SSO) Integration Guide](https://se-resource-library.octodemo.com/Azure_SSO_EMU)
+- [GitHub Copilot Business - Setup Guide](https://se-resource-library.octodemo.com/GitHub_Copilot_Business)
+- [How to link Azure subscription to your GitHub's enterprise account](https://se-resource-library.octodemo.com/Link_Azure_Subscription)
 
 </details>
 
