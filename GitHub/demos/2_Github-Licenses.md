@@ -4,7 +4,7 @@ Costa Rica
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/) [brown9804](https://github.com/brown9804)
 
-Last updated: 2025-08-04
+Last updated: 2025-08-27
 
 ----------------------
 
@@ -31,16 +31,27 @@ Last updated: 2025-08-04
 - [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans)
 - [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339) - Table
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=githubenterprise)
-- [Start your premium free trial by choosing an enterprise type](https://github.com/account/enterprises/new?ref_cta=GHEC+trial&ref_loc=setting+up+a+trial+of+github+enterprise+cloud&ref_page=docs) - Enterprise
+- [Start your premium free trial by choosing an enterprise type](https://github.com/account/enterprises/new?ref_cta=GHEC+trial&ref_loc=setting+up+a+trial+of+github+enterprise+cloud&ref_page=docs) - Enterprise trial first
 - [GitHub Enterprise Cloud Enterprise Managed Users - Microsoft Entra ID / Azure AD Single Sign-On (SSO) Integration Guide](https://se-resource-library.octodemo.com/Azure_SSO_EMU)
 - [GitHub Copilot Business - Setup Guide](https://se-resource-library.octodemo.com/GitHub_Copilot_Business)
 - [How to link Azure subscription to your GitHub's enterprise account](https://se-resource-library.octodemo.com/Link_Azure_Subscription)
 
 </details>
 
+<details>
+<summary><b>Table of Content</b> (Click to expand)</summary>
+
+- [GitHub Copilot Personal vs. Businesses Use](#github-copilot-personal-vs-businesses-use)
+- [Pricing Details](#pricing-details)
+- [Custom LLM Scenario](#custom-llm-scenario)
+- [VS code vs Visual Studio](#vs-code-vs-visual-studio)
+- [How to setup GitHub Copilot](#how-to-setup-github-copilot)
+- [GitHub Copilot with GitHub Enterprise – Setup Procedure](#github-copilot-with-github-enterprise--setup-procedure)
+
+</details>
+
 > [!IMPORTANT]
 > The information provided and any document (such as scripts, sample codes, etc.) is provided `AS-IS` and `WITH ALL FAULTS`. Pricing estimates are for `demonstration purposes only and do not reflect final pricing`. `Microsoft assumes no liability` for your use of this information and makes no guarantees or warranties, expressed or implied, regarding its accuracy or completeness, including any pricing details. `Please note that these demos are intended as a guide and are based on my personal experiences. For official guidance, support, or more detailed information, please refer to Microsoft's official documentation or contact Microsoft directly`: [Microsoft Sales and Support](https://support.microsoft.com/contactus?ContactUsExperienceEntryPointAssetId=S.HP.SMC-HOME)
-
 
 ## GitHub Copilot Personal vs. Businesses Use
 
@@ -124,10 +135,24 @@ https://github.com/user-attachments/assets/3c993648-8a8d-4b5d-be79-19850aeef593
     - Authorize VS Code to access your GitHub account through your browser.
     - You’re now ready to use GitHub Copilot in VS Code.
 
+## GitHub Copilot with GitHub Enterprise – Setup Procedure 
+
+> This process enables secure, enterprise-managed deployment of GitHub Copilot
+
+1. Create a GitHub account for your organization. 
+2. Please go here [Start your premium free trial by choosing an enterprise type](https://github.com/account/enterprises/new?ref_cta=GHEC+trial&ref_loc=setting+up+a+trial+of+github+enterprise+cloud&ref_page=docs), and start a GitHub Enterprise trial (includes Copilot and advanced security). 
+3. Select the `Enterprise Managed Users` option.
+4. Enter required organization details and a short code for user management.
+5. Set up Single Sign-On (SSO) with your identity provider. Click here to read the steps: [GitHub Enterprise Cloud Enterprise Managed Users - Microsoft Entra ID / Azure AD Single Sign-On (SSO) Integration Guide](https://se-resource-library.octodemo.com/Azure_SSO_EMU)
+6. Link your Azure subscription for billing (optional during trial). Click here to read the steps: [How to link Azure subscription to your GitHub's enterprise account](https://se-resource-library.octodemo.com/Link_Azure_Subscription)
+7. Add users to the enterprise and assign Copilot seats. Click here to read how: [GitHub Copilot Business - Setup Guide](https://se-resource-library.octodemo.com/GitHub_Copilot_Business)
+8. Users install the Copilot extension in their IDE.
+9. Users activate their accounts and Copilot access is enabled automatically.
+
 <!-- START BADGE -->
 <div align="center">
-  <img src="https://img.shields.io/badge/Total%20views-1405-limegreen" alt="Total views">
-  <p>Refresh Date: 2025-08-04</p>
+  <img src="https://img.shields.io/badge/Total%20views-1312-limegreen" alt="Total views">
+  <p>Refresh Date: 2025-08-27</p>
 </div>
 <!-- END BADGE -->
 
