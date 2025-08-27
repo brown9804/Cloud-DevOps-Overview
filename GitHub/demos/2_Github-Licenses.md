@@ -18,6 +18,7 @@ Last updated: 2025-08-04
 - [Granting access to Copilot for members of your organization](https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-access/grant-access)
 - [About individual Copilot plans and benefits](https://docs.github.com/en/copilot/concepts/billing/individual-plans)
 - [Github Copilot](https://github.com/features/copilot/plans) - features and plans
+- [Plans for GitHub Copilot](https://docs.github.com/en/copilot/get-started/plans)
 - [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339) - Table
 - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=githubenterprise)
 
