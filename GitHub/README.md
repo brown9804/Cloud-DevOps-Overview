@@ -20,6 +20,9 @@ Last updated: 2025-08-04
 - [Learn Git Branching](https://learngitbranching.js.org/)
 - [GitHub Commands Glossary](https://www.atlassian.com/git/glossary#commands)
 - [MARKDOWN CHEAT SHEET](https://github.com/Kernix13/markdown-cheatsheet?tab=readme-ov-file#block-elements)
+- [GitHub Copilot Trust Center](https://copilot.github.trust.page/) -FAQs
+- [Accessing compliance reports for your organization](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/accessing-compliance-reports-for-your-organization)
+- [STAR Registry Listing for GitHub](https://cloudsecurityalliance.org/star/registry/github-inc/services/github)
 
 </details>
 
