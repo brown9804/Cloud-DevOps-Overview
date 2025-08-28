@@ -35,6 +35,9 @@ Last updated: 2025-08-27
 - [GitHub Enterprise Cloud Enterprise Managed Users - Microsoft Entra ID / Azure AD Single Sign-On (SSO) Integration Guide](https://se-resource-library.octodemo.com/Azure_SSO_EMU)
 - [GitHub Copilot Business - Setup Guide](https://se-resource-library.octodemo.com/GitHub_Copilot_Business)
 - [How to link Azure subscription to your GitHub's enterprise account](https://se-resource-library.octodemo.com/Link_Azure_Subscription)
+- [GitHub Copilot Trust Center](https://copilot.github.trust.page/) -FAQs
+- [Accessing compliance reports for your organization](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-security-settings-for-your-organization/accessing-compliance-reports-for-your-organization)
+- [STAR Registry Listing for GitHub](https://cloudsecurityalliance.org/star/registry/github-inc/services/github)
 
 </details>
 
