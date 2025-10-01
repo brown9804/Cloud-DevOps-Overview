@@ -8,6 +8,8 @@ Last updated: 2025-08-27
 
 ----------------------
 
+> For current Azure DevOps users, Microsoft suggest `moving your repositories over to GitHub so you can make the most of the latest agentic AI features`. You can still `keep using Azure Boards, Pipelines, and other tools like Test Plans thanks to our integrations.` Also, `Azure DevOps basic usage rights now come with GitHub Enterprise`, and Microsoft `working on making the migration process and integrations between GitHub and Azure DevOps even smoother.`
+
 > [!NOTE]
 > GitHub areas:
 > - GitHub Enterprise Cloud
