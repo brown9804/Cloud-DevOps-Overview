@@ -71,6 +71,7 @@ Last updated: 2025-08-27
 > These are the prices as of today. Please make sure to check the current prices here in case anything has changed.
 > - [Github Copilot](https://github.com/features/copilot/plans) - features and plans
 > - [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339) - Table
+> - [Visual Studio subscriptions pricing](https://visualstudio.microsoft.com/vs/pricing/?tab=paid-subscriptions) - plans
 > - [Pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=githubenterprise)
 
 - **Copilot for Business**: \$19 per user/month.  
@@ -80,7 +81,7 @@ Last updated: 2025-08-27
 
 > [!TIP]
 > - To use these, each user typically needs a **GitHub Enterprise license** (around \$20 per user/month).  
-> - `Visual Studio subscribers can often add GitHub Enterprise for $0.12 per user/month, then add Copilot for $19.`
+> - `Visual Studio subscribers can often add GitHub Enterprise for $0.12 per user/month, then add Copilot for $19.` Bundle with VS Studio license and GHE applies whether it's an Enterprise or Professional license, as today. More details here [Visual Studio subscriptions pricing](https://visualstudio.microsoft.com/vs/pricing/?tab=paid-subscriptions), [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339), [Github Copilot](https://github.com/features/copilot/plans)
 > - For large deals, GitHub sometimes offers a `1-month free trial`.
 
 ## Custom LLM Scenario
