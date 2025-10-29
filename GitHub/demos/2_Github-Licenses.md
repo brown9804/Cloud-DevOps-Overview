@@ -80,8 +80,8 @@ Last updated: 2025-08-27
     https://github.com/user-attachments/assets/a80d8ab6-e9d0-4ef6-9352-30098bbcbbb3
 
 > [!TIP]
-> - To use these, each user typically needs a **GitHub Enterprise license** (around \$20 per user/month).  
-> - `Visual Studio subscribers can often add GitHub Enterprise for $0.12 per user/month, then add Copilot for $19.` Bundle with VS Studio license and GHE applies whether it's an Enterprise or Professional license, as today. More details here [Visual Studio subscriptions pricing](https://visualstudio.microsoft.com/vs/pricing/?tab=paid-subscriptions), [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339), [Github Copilot](https://github.com/features/copilot/plans)
+> - To use these, each user typically needs a **GitHub Enterprise license** (around \$20 per user/month). `When`: code to be available on GitHub; but, this is not a requirement. Click here to read more about `GHC standaone` [Quickstart for GitHub Copilot](https://docs.github.com/en/copilot/get-started/quickstart)
+> - `Visual Studio subscribers can often add GitHub Enterprise for $0.12 per user/month, then add Copilot for $19.` Bundle with VS Studio license and GHE applies whether it's an Enterprise or Professional license, as today. More details here [Visual Studio subscriptions pricing](https://visualstudio.microsoft.com/vs/pricing/?tab=paid-subscriptions), [GitHub Enterprise pricing](https://azure.microsoft.com/en-us/pricing/details/githubenterprise/?msockid=38ec3806873362243e122ce086486339), [Github Copilot](https://github.com/features/copilot/plans) ` EA or SCE`
 > - For large deals, GitHub sometimes offers a `1-month free trial`.
 
 ## Custom LLM Scenario
