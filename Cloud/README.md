@@ -137,7 +137,7 @@ Last updated: 2025-08-04
 
     <img width="642" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/9d9cb10d-c74f-49e9-9cbf-73e7fba68746">
 
-- Cloud computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
+- [Cloud computing - Single tenant vs. Multi-tenant services](https://karliris62.medium.com/single-tenant-vs-multi-tenant-cloud-architecture-which-one-to-choose-and-why-8e962eaf8d7c) and [How to Choose for Your Organization](https://resources.igloosoftware.com/blog/multi-tenancy-database/)
 
     <img width="667" alt="image" src="https://github.com/brown9804/DevOps-Agile-Cloud_path/assets/24630902/b3e11d52-47ef-4ff0-b230-031a912084a9">
 
