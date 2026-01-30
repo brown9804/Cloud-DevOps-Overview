@@ -64,6 +64,8 @@ Last updated: 2025-08-04
 
 - SDLC - [What is and how it works](https://agilie.com/blog/what-is-the-software-development-life-cycle-sdlc-and-how-does-it-work)
 
+<img width="650" alt="image" src="https://github.com/user-attachments/assets/053edabd-7577-4f7c-bdf9-005399221113" />
+
 ## SDLC Methodologies
 
 > Below are four common SDLC methodologies, each with its own approach and advantages:
