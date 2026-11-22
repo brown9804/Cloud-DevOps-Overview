@@ -1,0 +1,89 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f3f7fb;
+  color: #10253d;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+.site-header {
+  background: #003366;
+  padding: 1rem 2%;
+  color: #fff;
+}
+
+.site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.site-header a { color: #fff; }
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+}
+
+.site-brand img { border-radius: 50%; }
+
+.markdown-body {
+  width: 96%;
+  max-width: 1440px;
+  margin: 2rem auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid #c2d4e5;
+  border-radius: 12px;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 { color: #003366; }
+.markdown-body a, .site-footer a { color: #004a99; }
+.markdown-body p, .markdown-body li { max-width: 85ch; }
+.markdown-body img { max-width: 100%; height: auto; }
+.markdown-body img[src*="shields.io"] { display: inline-block; vertical-align: middle; }
+.markdown-body pre { overflow-x: auto; }
+.markdown-body pre code { overflow-wrap: normal; }
+.markdown-body table { overflow-x: auto; }
+.markdown-body th { background: #eaf2fa; color: #10253d; }
+
+.markdown-body details {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #c2d4e5;
+  border-radius: 8px;
+}
+
+.markdown-body summary {
+  color: #003366;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.markdown-body details[open] summary { margin-bottom: 1rem; }
+.site-footer { text-align: center; padding: 1rem 2%; }
+
+a:focus-visible, summary:focus-visible {
+  outline: 3px solid #004a99;
+  outline-offset: 3px;
+}
+
+.site-header a:focus-visible { outline-color: #fff; }
+.skip-link { position: absolute; left: -10000px; }
+.skip-link:focus { position: fixed; left: 1rem; top: 1rem; padding: 0.5rem; background: #fff; z-index: 10; }

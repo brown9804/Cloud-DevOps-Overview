@@ -1,6 +1,6 @@
 # Cloud DevOps: <br> Learning Path - Overview
 
-Costa Rica
+Atlanta, USA
 
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
 [brown9804](https://github.com/brown9804)
@@ -11,7 +11,11 @@ Last updated: 2025-08-04
 
 > Provides the essential knowledge required to work effectively within Azure and embrace DevOps/Agile methodologies. Additionally, it offers insights into fundamental cloud concepts. 
 
-<details>
+Read the [published learning path](https://brown9804.github.io/Cloud-DevOps-Overview/).
+The website retains Markdown content and the native GitHub Pages/Jekyll publisher on `main`;
+its presentation is defined in `_layouts/default.html` and `assets/css/style.scss`.
+
+<details markdown="1">
 <summary><b>Table of Contents</b> (Click to expand)</summary>
 
 - [Agile](./Agile)
@@ -72,7 +76,7 @@ Last updated: 2025-08-04
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/e809d790-87d4-41a1-b9ea-071327ab6ef2)
 
-<details>
+<details markdown="1">
   <summary>Waterfall</summary>
 
   > **Waterfall** is a linear and sequential approach where each phase must be completed before the next begins.
@@ -83,7 +87,7 @@ Last updated: 2025-08-04
   > - **Cons**: Inflexible to changes, late discovery of issues  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Agile</summary>
 
   > **Agile** is an iterative and incremental approach that emphasizes flexibility, collaboration, and customer feedback.
@@ -94,7 +98,7 @@ Last updated: 2025-08-04
   > - **Cons**: Requires close collaboration, less predictability  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Iterative</summary>
 
   > **Iterative** development builds the system incrementally through repeated cycles (iterations), refining the product with each cycle.
@@ -105,7 +109,7 @@ Last updated: 2025-08-04
   > - **Cons**: Can be resource-intensive, potential for scope creep  
 </details>
 
-<details>
+<details markdown="1">
   <summary>DevOps</summary>
 
   > **DevOps** is a culture and set of practices that integrates software development (Dev) and IT operations (Ops) to shorten the development lifecycle.
@@ -120,7 +124,7 @@ Last updated: 2025-08-04
 
 ![Benefits](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/dc014629-a069-44f3-b657-7f8d39968272)
 
-<details>
+<details markdown="1">
   <summary>Protocol Testing</summary>
 
   > **Protocol Testing** ensures that communication protocols are implemented correctly and securely.  
@@ -129,7 +133,7 @@ Last updated: 2025-08-04
   > - **Benefits**: Prevents miscommunication and exploits in networked systems  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Automated Testing</summary>
 
   > **Automated Testing** uses scripts and tools to run tests on code automatically.  
@@ -138,7 +142,7 @@ Last updated: 2025-08-04
   > - **Benefits**: Increases test coverage and consistency  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Functional Testing</summary>
 
   > **Functional Testing** verifies that software behaves according to requirements.  
@@ -147,7 +151,7 @@ Last updated: 2025-08-04
   > - **Benefits**: Confirms correct behavior under expected conditions  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Penetration Testing (Pentests)</summary>
 
   > **Penetration Testing** simulates attacks to find exploitable vulnerabilities.  
@@ -156,7 +160,7 @@ Last updated: 2025-08-04
   > - **Benefits**: Helps prioritize and fix critical security issues  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Dynamic Code Analysis</summary>
 
   > **Dynamic Code Analysis** evaluates code behavior during execution.  
@@ -165,7 +169,7 @@ Last updated: 2025-08-04
   > - **Benefits**: Finds issues that static analysis might miss  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Secure Programming Practices</summary>
 
   > **Secure Programming Practices** involve writing code with security in mind from the start.  
@@ -174,7 +178,7 @@ Last updated: 2025-08-04
   > - **Benefits**: Reduces the number of bugs and security flaws  
 </details>
 
-<details>
+<details markdown="1">
   <summary>Monitoring and Incident Response</summary>
 
   > **Monitoring and Incident Response** involves tracking system activity and reacting to threats.  
@@ -189,7 +193,7 @@ Last updated: 2025-08-04
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9)
 
-<details>
+<details markdown="1">
   <summary>1. Planning Phase</summary>
 
   > **Planning** involves defining the scope, resources, timeline, and goals of the project.  
@@ -198,7 +202,7 @@ Last updated: 2025-08-04
   > - **Outcome**: Project plan and initial approval  
 </details>
 
-<details>
+<details markdown="1">
   <summary>2. Requirement Definition</summary>
 
   > **Requirement Definition** gathers and documents what the software must do.  
@@ -207,7 +211,7 @@ Last updated: 2025-08-04
   > - **Outcome**: Software Requirements Specification (SRS)  
 </details>
 
-<details>
+<details markdown="1">
   <summary>3. Design and Prototyping</summary>
 
   > **Design and Prototyping** translates requirements into architecture and UI/UX models.  
@@ -216,7 +220,7 @@ Last updated: 2025-08-04
   > - **Outcome**: Design documents and prototypes  
 </details>
 
-<details>
+<details markdown="1">
   <summary>4. Rapid Software Development</summary>
 
   > **Rapid Software Development** focuses on building the software quickly using iterative methods.  
@@ -225,7 +229,7 @@ Last updated: 2025-08-04
   > - **Outcome**: Functional software modules  
 </details>
 
-<details>
+<details markdown="1">
   <summary>5. Testing and Quality Assurance</summary>
 
   > **Testing and QA** ensures the software meets requirements and is free of defects.  
@@ -234,7 +238,7 @@ Last updated: 2025-08-04
   > - **Outcome**: Verified and validated software  
 </details>
 
-<details>
+<details markdown="1">
   <summary>6. Deployment</summary>
 
   > **Deployment** involves releasing the software to users or production environments.  
@@ -243,7 +247,7 @@ Last updated: 2025-08-04
   > - **Outcome**: Live software system  
 </details>
 
-<details>
+<details markdown="1">
   <summary>7. Operations and Maintenance</summary>
 
   > **Operations and Maintenance** includes monitoring, support, and updates post-deployment.  

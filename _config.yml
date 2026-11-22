@@ -1,0 +1,13 @@
+title: Cloud DevOps Learning Path
+description: Practical learning resources for Azure, cloud fundamentals, DevOps, and Agile.
+url: https://brown9804.github.io
+baseurl: /Cloud-DevOps-Overview
+theme: jekyll-theme-primer
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

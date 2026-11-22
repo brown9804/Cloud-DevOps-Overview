@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="icon" href="https://github.com/Cloud2BR-MSFTLearningHub.png?size=64">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <nav aria-label="Main navigation">
+        <a class="site-brand" href="{{ '/' | relative_url }}">
+          <img src="https://github.com/Cloud2BR-MSFTLearningHub.png?size=80" width="40" height="40" alt="">
+          <span>{{ site.title }}</span>
+        </a>
+        <a href="https://github.com/brown9804/Cloud-DevOps-Overview">View on GitHub</a>
+      </nav>
+    </header>
+    <main class="markdown-body" id="main-content">
+      {{ content }}
+    </main>
+    <footer class="site-footer">
+      <p><a href="https://github.com/Cloud2BR-MSFTLearningHub">Cloud2BR MSFT Learning Hub</a> &middot; Atlanta, USA</p>
+      <p>This site is open source. <a href="https://github.com/brown9804/Cloud-DevOps-Overview/edit/main/{{ page.path }}">Improve this page</a>.</p>
+    </footer>
+  </body>
+</html>
