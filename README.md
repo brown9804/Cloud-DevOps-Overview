@@ -15,8 +15,8 @@ Read the [published learning path](https://brown9804.github.io/Cloud-DevOps-Over
 The website retains Markdown content and the native GitHub Pages/Jekyll publisher on `main`;
 its presentation is defined in `_layouts/default.html` and `assets/css/style.scss`.
 
-<details markdown="1">
-<summary><b>Table of Contents</b> (Click to expand)</summary>
+<details markdown="block">
+<summary markdown="span"><b>Table of Contents</b> (Click to expand)</summary>
 
 - [Agile](./Agile)
 - [DevOps](./DevOps)
@@ -76,8 +76,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/e809d790-87d4-41a1-b9ea-071327ab6ef2)
 
-<details markdown="1">
-  <summary>Waterfall</summary>
+<details markdown="block">
+  <summary markdown="span">Waterfall</summary>
 
   > **Waterfall** is a linear and sequential approach where each phase must be completed before the next begins.
   >
@@ -87,8 +87,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Cons**: Inflexible to changes, late discovery of issues  
 </details>
 
-<details markdown="1">
-  <summary>Agile</summary>
+<details markdown="block">
+  <summary markdown="span">Agile</summary>
 
   > **Agile** is an iterative and incremental approach that emphasizes flexibility, collaboration, and customer feedback.
   >
@@ -98,8 +98,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Cons**: Requires close collaboration, less predictability  
 </details>
 
-<details markdown="1">
-  <summary>Iterative</summary>
+<details markdown="block">
+  <summary markdown="span">Iterative</summary>
 
   > **Iterative** development builds the system incrementally through repeated cycles (iterations), refining the product with each cycle.
   >
@@ -109,8 +109,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Cons**: Can be resource-intensive, potential for scope creep  
 </details>
 
-<details markdown="1">
-  <summary>DevOps</summary>
+<details markdown="block">
+  <summary markdown="span">DevOps</summary>
 
   > **DevOps** is a culture and set of practices that integrates software development (Dev) and IT operations (Ops) to shorten the development lifecycle.
   >
@@ -124,8 +124,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
 
 ![Benefits](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/dc014629-a069-44f3-b657-7f8d39968272)
 
-<details markdown="1">
-  <summary>Protocol Testing</summary>
+<details markdown="block">
+  <summary markdown="span">Protocol Testing</summary>
 
   > **Protocol Testing** ensures that communication protocols are implemented correctly and securely.  
   > - **Purpose**: Validate data exchange rules and detect vulnerabilities in protocol handling  
@@ -133,8 +133,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Benefits**: Prevents miscommunication and exploits in networked systems  
 </details>
 
-<details markdown="1">
-  <summary>Automated Testing</summary>
+<details markdown="block">
+  <summary markdown="span">Automated Testing</summary>
 
   > **Automated Testing** uses scripts and tools to run tests on code automatically.  
   > - **Purpose**: Quickly detect regressions and security flaws  
@@ -142,8 +142,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Benefits**: Increases test coverage and consistency  
 </details>
 
-<details markdown="1">
-  <summary>Functional Testing</summary>
+<details markdown="block">
+  <summary markdown="span">Functional Testing</summary>
 
   > **Functional Testing** verifies that software behaves according to requirements.  
   > - **Purpose**: Ensure features work as intended, including security-related functions  
@@ -151,8 +151,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Benefits**: Confirms correct behavior under expected conditions  
 </details>
 
-<details markdown="1">
-  <summary>Penetration Testing (Pentests)</summary>
+<details markdown="block">
+  <summary markdown="span">Penetration Testing (Pentests)</summary>
 
   > **Penetration Testing** simulates attacks to find exploitable vulnerabilities.  
   > - **Purpose**: Identify real-world security weaknesses  
@@ -160,8 +160,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Benefits**: Helps prioritize and fix critical security issues  
 </details>
 
-<details markdown="1">
-  <summary>Dynamic Code Analysis</summary>
+<details markdown="block">
+  <summary markdown="span">Dynamic Code Analysis</summary>
 
   > **Dynamic Code Analysis** evaluates code behavior during execution.  
   > - **Purpose**: Detect runtime vulnerabilities like memory leaks or injection flaws  
@@ -169,8 +169,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Benefits**: Finds issues that static analysis might miss  
 </details>
 
-<details markdown="1">
-  <summary>Secure Programming Practices</summary>
+<details markdown="block">
+  <summary markdown="span">Secure Programming Practices</summary>
 
   > **Secure Programming Practices** involve writing code with security in mind from the start.  
   > - **Purpose**: Prevent vulnerabilities like buffer overflows, XSS, and SQL injection  
@@ -178,8 +178,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Benefits**: Reduces the number of bugs and security flaws  
 </details>
 
-<details markdown="1">
-  <summary>Monitoring and Incident Response</summary>
+<details markdown="block">
+  <summary markdown="span">Monitoring and Incident Response</summary>
 
   > **Monitoring and Incident Response** involves tracking system activity and reacting to threats.  
   > - **Purpose**: Detect and respond to breaches or anomalies in real time  
@@ -193,8 +193,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
 
 ![image](https://github.com/brown9804/SDLC-Cloud_Lpath/assets/24630902/a3b6522f-88c2-4ede-a477-09280f5584b9)
 
-<details markdown="1">
-  <summary>1. Planning Phase</summary>
+<details markdown="block">
+  <summary markdown="span">1. Planning Phase</summary>
 
   > **Planning** involves defining the scope, resources, timeline, and goals of the project.  
   > - **Purpose**: Establish a roadmap and feasibility  
@@ -202,8 +202,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Outcome**: Project plan and initial approval  
 </details>
 
-<details markdown="1">
-  <summary>2. Requirement Definition</summary>
+<details markdown="block">
+  <summary markdown="span">2. Requirement Definition</summary>
 
   > **Requirement Definition** gathers and documents what the software must do.  
   > - **Purpose**: Understand user needs and system expectations  
@@ -211,8 +211,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Outcome**: Software Requirements Specification (SRS)  
 </details>
 
-<details markdown="1">
-  <summary>3. Design and Prototyping</summary>
+<details markdown="block">
+  <summary markdown="span">3. Design and Prototyping</summary>
 
   > **Design and Prototyping** translates requirements into architecture and UI/UX models.  
   > - **Purpose**: Create a blueprint for development  
@@ -220,8 +220,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Outcome**: Design documents and prototypes  
 </details>
 
-<details markdown="1">
-  <summary>4. Rapid Software Development</summary>
+<details markdown="block">
+  <summary markdown="span">4. Rapid Software Development</summary>
 
   > **Rapid Software Development** focuses on building the software quickly using iterative methods.  
   > - **Purpose**: Deliver working software in short cycles  
@@ -229,8 +229,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Outcome**: Functional software modules  
 </details>
 
-<details markdown="1">
-  <summary>5. Testing and Quality Assurance</summary>
+<details markdown="block">
+  <summary markdown="span">5. Testing and Quality Assurance</summary>
 
   > **Testing and QA** ensures the software meets requirements and is free of defects.  
   > - **Purpose**: Validate functionality, performance, and security  
@@ -238,8 +238,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Outcome**: Verified and validated software  
 </details>
 
-<details markdown="1">
-  <summary>6. Deployment</summary>
+<details markdown="block">
+  <summary markdown="span">6. Deployment</summary>
 
   > **Deployment** involves releasing the software to users or production environments.  
   > - **Purpose**: Make the software available for use  
@@ -247,8 +247,8 @@ its presentation is defined in `_layouts/default.html` and `assets/css/style.scs
   > - **Outcome**: Live software system  
 </details>
 
-<details markdown="1">
-  <summary>7. Operations and Maintenance</summary>
+<details markdown="block">
+  <summary markdown="span">7. Operations and Maintenance</summary>
 
   > **Operations and Maintenance** includes monitoring, support, and updates post-deployment.  
   > - **Purpose**: Ensure long-term stability and performance  

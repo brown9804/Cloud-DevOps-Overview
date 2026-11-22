@@ -5,7 +5,7 @@ baseurl: /Cloud-DevOps-Overview
 theme: jekyll-theme-primer
 markdown: kramdown
 kramdown:
-  parse_block_html: true
+  parse_block_html: false
 defaults:
   - scope:
       path: ""
